@@ -2,9 +2,6 @@
 ### Carrera de Ingeniería Ambiental / Informática   
 **Universidad Peruana Cayetano Heredia**
 
----
-
----
 
 
 ## 🌍 Descripción del equipo
