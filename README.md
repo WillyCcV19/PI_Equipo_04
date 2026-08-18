@@ -1,5 +1,5 @@
-# Equipo 10 - Fundamentos de Diseño 2025-2 
-### Carrera de Ingeniería Ambiental / Informática   
+# Equipo N° 4 - Proyecto Integrador 2026-2 
+### Carrera de Ingeniería Industrial / Informática   
 **Universidad Peruana Cayetano Heredia**
 
 ---
