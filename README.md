@@ -1,4 +1,4 @@
-# EQUIPO N° 4 - Proyecto Integrador 2026-2 
+# EQUIPO N° IV - Proyecto Integrador 2026-2 
 ### Carrera de Ingeniería Industrial / Informática   
 **Universidad Peruana Cayetano Heredia**
 
