@@ -3,7 +3,7 @@
 **Universidad Peruana Cayetano Heredia**
 
 ---
-![Escudo Spiritus Ubi Vult Spirat](https://raw.githubusercontent.com/TU_USUARIO/TU_REPOSITORIO/main/escudo-spiritus.png)
+<img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/c4207bbe-a760-44e4-b0a5-8a2c6042af49" />
 
 ---
 
