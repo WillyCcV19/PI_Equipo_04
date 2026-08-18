@@ -4,17 +4,6 @@
 
 ---
 
-## ENLACE DE DOCUMENTOS
-https://docs.google.com/document/d/1tMh8w4P5lDI5NhleI3tkeHCaXAwBYwVb13Nxs4feQHg/edit?tab=t.0
-
-## ENLACE DE ANTECEDENTES
-LINK: https://docs.google.com/document/d/1iryDLKVLULV_mIBQmUCyinJf2zCzh2xDUNVw8ERWV84/edit?tab=t.qnuqcshna2gs
-
-## ENLACE DE LISTA DE EXIGENCIAS
-LINK: https://docs.google.com/document/d/1k8qPc2LVsW6A_ICCk7txNZ1e9gbutrCt8sIwpefmW50/edit?tab=t.0
-
-## MODELADO 3D
-LINK: https://cad.onshape.com/documents/656ee1c99e9142d88051f12c/w/5371e5df41db558604f3e5a4/e/c92471acf1fb395369bb92c8
 ---
 
 
@@ -50,7 +39,7 @@ Hacer el descarte de aguas posiblemente contaminadas con un dispositivo costo ef
 
 ## 📷 Fotografía del equipo
 
-<img src="/Recursos/Integrantes/5.jpeg" width="1200"/>
+<img src="/Imagenes/Integrantes/5.jpeg" width="1200"/>
 
 ---
 
