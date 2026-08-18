@@ -9,7 +9,7 @@
 
 ## 🌍 Descripción del equipo
 
-Somos participantes del curso **Fundamentos de Diseño 2025-2**, integrados por estudiantes de Ingeniería Ambiental y Informática. Nuestra misión es utilizar la metodología de diseño para desarrollar soluciones creativas que aporten valor social, tecnológico y ambiental.
+Somos participantes del curso **Proyecto Integrador 2026-2**, integrados por estudiantes de Ingeniería Industrial e Informática. Nuestra misión es utilizar la metodología de diseño para desarrollar soluciones creativas que aporten valor social, tecnológico y ambiental.
 
 En esta ocasión, hemos decidido centrar nuestro trabajo en el **Objetivo de Desarrollo Sostenible 6**: Agua limpia y saneamiento. Nos comprometemos a abordar desafíos relacionados con el acceso y la gestión responsable del agua, buscando generar un impacto positivo en nuestras comunidades y en el entorno natural.  
 
