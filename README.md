@@ -25,7 +25,8 @@ En esta ocasión, hemos decidido centrar nuestro trabajo en los **Objetivos de D
 
 14.a Aumentar los conocimientos científicos, desarrollar la capacidad de investigación y transferir tecnología marina, teniendo en cuenta los Criterios y Directrices para la Transferencia de Tecnología Marina de la Comisión Oceanográfica Intergubernamental, a fin de mejorar la salud de los océanos y potenciar la contribución de la biodiversidad marina al desarrollo de los países en desarrollo, en particular los pequeños Estados insulares en desarrollo y los países menos adelantados
 
-Nos comprometemos a abordar desafíos relacionados con la gestión responsable del agua, buscando generar un impacto positivo en nuestras comunidades y en el entorno natural. 
+Nos comprometemos a abordar desafíos relacionados con la gestión responsable del agua, buscando generar un impacto positivo en nuestras comunidades y en el entorno natural.
+
 ---
 <!--
 ## Objetivo
