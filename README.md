@@ -17,8 +17,15 @@
 
 Somos participantes del curso **Proyecto Integrador 2026-2**, integrados por estudiantes de Ingeniería Industrial e Informática. Nuestra misión es utilizar la metodología de diseño para desarrollar soluciones creativas que aporten valor social, tecnológico y ambiental.
 
-En esta ocasión, hemos decidido centrar nuestro trabajo en el **Objetivo de Desarrollo Sostenible 6**: Agua limpia y saneamiento. Nos comprometemos a abordar desafíos relacionados con el acceso y la gestión responsable del agua, buscando generar un impacto positivo en nuestras comunidades y en el entorno natural.  
+En esta ocasión, hemos decidido centrar nuestro trabajo en los **Objetivos de Desarrollo Sostenibles**:
 
+12.a Ayudar a los países en desarrollo a fortalecer su capacidad científica y tecnológica para avanzar hacia modalidades de consumo y producción más sostenibles
+
+14.7 De aquí a 2030, aumentar los beneficios económicos que los pequeños Estados insulares en desarrollo y los países menos adelantados obtienen del uso sostenible de los recursos marinos, en particular mediante la gestión sostenible de la pesca, la acuicultura y el turismo
+
+14.a Aumentar los conocimientos científicos, desarrollar la capacidad de investigación y transferir tecnología marina, teniendo en cuenta los Criterios y Directrices para la Transferencia de Tecnología Marina de la Comisión Oceanográfica Intergubernamental, a fin de mejorar la salud de los océanos y potenciar la contribución de la biodiversidad marina al desarrollo de los países en desarrollo, en particular los pequeños Estados insulares en desarrollo y los países menos adelantados
+
+Nos comprometemos a abordar desafíos relacionados con la gestión responsable del agua, buscando generar un impacto positivo en nuestras comunidades y en el entorno natural. 
 ---
 <!--
 ## Objetivo
