@@ -69,10 +69,10 @@ Hacer el descarte de aguas posiblemente contaminadas con un dispositivo costo ef
 | Foto | Nombre | Rol | Intereses |
 |------|--------| --- | --------- |
 | <img src="/Imagenes/Integrantes/3.jpg" width="90"/> | **Karita John Kenneth** | **Líder / Diseñador** | **Diseño de prototipos, hardware** |
-| <img src="/Imagenes/Integrantes/1.jpg" width="90"/> | **Quispitongo Quispe Verenisse Mary**|  **Responsable de investigación** | **Gestión ambiental, desarrollo comunitario** |
+| <img src="/Imagenes/Integrantes/6.jpeg" width="90"/> | **Cabrera Cermeno Ruben Andre** | **Desarrollo de sistemas** | **Tecnología e implementación de programas** |
 | <img src="/Imagenes/Integrantes/2.jpeg" width="90"/> | **Ccatamayo Vasquez Willy Simeon** | **Programador / Modelador** | **Programación, simulación** |
 | <img src="/Imagenes/Integrantes/4.jpeg" width="90"/> | **Pauccara Huancara Eber** | **Encargado de Documentación** | **Producción de documentos científicos y técnicos** |
-| <img src="/Imagenes/Integrantes/6.jpeg" width="90"/> | **Cabrera Cermeno Ruben Andre** | **Desarrollo de sistemas** | **Tecnología e implementación de programas** |
+| <img src="/Imagenes/Integrantes/1.jpg" width="90"/> | **Quispitongo Quispe Verenisse Mary**|  **Responsable de investigación** | **Gestión ambiental, desarrollo comunitario** |
 
 ---
 
