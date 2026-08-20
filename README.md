@@ -33,6 +33,7 @@ Nos comprometemos a abordar desafíos relacionados con la gestión responsable d
 <!--
 ## Objetivo
 
+Bajar el costo de adquisición del equipo de monitoreo de calidad de agua de los criaderos de trucha en el Perú, para ayudar a aumentar su rentabilidad previniendo condiciones nocivas para la salud marina...
 Hacer el descarte de aguas posiblemente contaminadas con un dispositivo costo efectivo con lectura fácil y rápida, mostrando la categoría de los Estándares de Calidad del Agua para mejor comprensión y con una opción que describa los parámetros medidos. De esta manera se evita que la población use recursos hídricos comprometidos.
 -->
 
