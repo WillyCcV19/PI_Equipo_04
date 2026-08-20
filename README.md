@@ -1,4 +1,4 @@
-  # EQUIPO N° IV - Proyecto Integrador 2026-2 
+  # EQUIPO N° IV - Proyecto Integrador 2026-2  
 <p align="center">
   <img src="https://img.shields.io/badge/Grupo-4-red" alt="Grupo 4">
   <img src="https://img.shields.io/badge/Universidad-UPCH-blue" alt="UPCH">
