@@ -1,4 +1,10 @@
 # EQUIPO N° IV - Proyecto Integrador 2026-2 
+<p align="center">
+  <img src="https://img.shields.io/badge/Grupo-4-red" alt="Grupo 4">
+  <img src="https://img.shields.io/badge/Universidad-UPCH-blue" alt="UPCH">
+  <img src="https://img.shields.io/badge/Curso-Proyecto_Integrador-ligth_blue" alt="Curso">
+  <img src="https://img.shields.io/badge/Status-En_Desarrollo-orange" alt="Status">
+</p>
 ### Carrera de Ingeniería Industrial / Informática   
 **Universidad Peruana Cayetano Heredia**
 
