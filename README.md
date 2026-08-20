@@ -77,7 +77,7 @@ Hacer el descarte de aguas posiblemente contaminadas con un dispositivo costo ef
 
 ---
 ## 📷 Fotografía esperada del producto
-<img src="/Imagenes/Integrantes/referencia.jpeg" width="300"/>
+<img src="/Imagenes/Integrantes/referencia.jpeg" width="600"/>
 
 
 
