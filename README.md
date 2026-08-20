@@ -20,10 +20,11 @@ Somos participantes del curso **Proyecto Integrador 2026-2**, integrados por est
 En esta ocasión, hemos decidido centrar nuestro trabajo en el **Objetivo de Desarrollo Sostenible 6**: Agua limpia y saneamiento. Nos comprometemos a abordar desafíos relacionados con el acceso y la gestión responsable del agua, buscando generar un impacto positivo en nuestras comunidades y en el entorno natural.  
 
 ---
-
+<!--
 ## Objetivo
 
 Hacer el descarte de aguas posiblemente contaminadas con un dispositivo costo efectivo con lectura fácil y rápida, mostrando la categoría de los Estándares de Calidad del Agua para mejor comprensión y con una opción que describa los parámetros medidos. De esta manera se evita que la población use recursos hídricos comprometidos.
+-->
 
 ## Posibles criterios de medición
 - **pH:** Mide acidez/alcalinidad, clave para potabilidad y vida acuática.
