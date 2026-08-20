@@ -76,6 +76,10 @@ Hacer el descarte de aguas posiblemente contaminadas con un dispositivo costo ef
 | <img src="/Imagenes/Integrantes/1.jpg" width="90"/> | **Quispitongo Quispe Verenisse Mary**|  **Responsable de investigación** | **Gestión ambiental, desarrollo comunitario** |
 
 ---
+## 📷 Fotografía esperada del producto
+<img src="/Imagenes/Integrantes/referencia.jpeg" width="90"/>
+
+--
 
 ## Resumen Final
 - Este README explica quiénes somos, qué nos motiva y cómo enfocamos nuestro trabajo en los **Objetivos de Desarrollo Sostenibles 12.4, 14a y 14.7**. Somos un grupo comprometido con aprender y aportar soluciones para garantizar el acceso al agua potable y el saneamiento adecuado, fundamentales para la salud y el bienestar. Nuestro objetivo es contribuir a mejorar la gestión y consumo sostenible del agua, buscando generar un impacto positivo en nuestra comunidad y el medio ambiente.
