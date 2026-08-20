@@ -40,6 +40,7 @@ Hacer el descarte de aguas posiblemente contaminadas con un dispositivo costo ef
 - **Conductividad y salinidad:** Reflejan sales disueltas y riesgo para riego y consumo.
 - **Temperatura:** Afecta solubilidad de oxígeno y actividad biológica.
 - **Oxigeno disuelto:** Indican contaminación o exceso de materia orgánica en descomposición.
+- **Otros:** Por verse con investigación futura...
 
 <!-- 
 ## Impacto esperado
