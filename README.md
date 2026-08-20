@@ -39,12 +39,13 @@ Hacer el descarte de aguas posiblemente contaminadas con un dispositivo costo ef
 - ***Tecnológico:*** uso de sensores accesibles y plataformas digitales para monitoreo en tiempo real.
 -->
 
+<!--
 ## Resultados esperados / métricas
 
 - Conectar la información a un dashboard IoT.
 - Posible escalabilidad hacia sistemas de alerta 
 ---
-
+-->
 ## 📷 Fotografía del equipo
 
 <img src="/Imagenes/Integrantes/5.jpeg" width="1200"/>
