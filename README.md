@@ -13,7 +13,7 @@
 
 
 
-## 🌍 Descripción del equipo
+## Descripción del equipo
 
 Somos participantes del curso **Proyecto Integrador 2026-2**, integrados por estudiantes de Ingeniería Industrial e Informática. Nuestra misión es utilizar la metodología de diseño para desarrollar soluciones creativas que aporten valor social, tecnológico y ambiental.
 
