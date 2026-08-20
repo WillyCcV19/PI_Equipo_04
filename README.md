@@ -5,6 +5,7 @@
   <img src="https://img.shields.io/badge/Curso-Proyecto_Integrador-ligth_blue" alt="Curso">
   <img src="https://img.shields.io/badge/Status-En_Desarrollo-orange" alt="Status">
 </p>
+
 ### Carrera de Ingeniería Industrial / Informática   
 **Universidad Peruana Cayetano Heredia**
 
