@@ -1,4 +1,4 @@
-# NOMBRE DEL PROYECTO: FISHMON
+## NOMBRE DEL PROYECTO: FISHMON
   
   # EQUIPO N° IV - Proyecto Integrador 2026-2  
 <p align="center">
