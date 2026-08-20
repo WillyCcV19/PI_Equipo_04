@@ -17,7 +17,11 @@
 
 Somos participantes del curso **Proyecto Integrador 2026-2**, integrados por estudiantes de Ingeniería Industrial e Informática. Nuestra misión es utilizar la metodología de diseño para desarrollar soluciones creativas que aporten valor social, tecnológico y ambiental.
 
-En esta ocasión, hemos decidido centrar nuestro trabajo en el **Objetivo de Desarrollo Sostenible 6**: Agua limpia y saneamiento. Nos comprometemos a abordar desafíos relacionados con el acceso y la gestión responsable del agua, buscando generar un impacto positivo en nuestras comunidades y en el entorno natural.  
+En esta ocasión, hemos decidido centrar nuestro trabajo en los **Objetivos de Desarrollo Sostenibles**:
+- 12.2
+- 12.4
+- 14.a
+- 14.7
 
 ---
 
@@ -31,9 +35,10 @@ Hacer el descarte de aguas posiblemente contaminadas con un dispositivo costo ef
 - **Conductividad y salinidad:** Reflejan sales disueltas y riesgo para riego y consumo.
 - **Temperatura:** Afecta solubilidad de oxígeno y actividad biológica.
 - **Oxigeno disuelto:** Indican contaminación o exceso de materia orgánica en descomposición.
+- **Otros sensores:** A por verse con investigaciones futuras...
 
 ## Impacto esperado
-- ***Social:*** Acceso a agua segura en comunidades vulnerables.
+- ***Social:*** 
 - ***Ambiental***: Reducción de enfermedades de origen hídrico y mejor control de la calidad del agua.
 - ***Tecnológico:*** uso de sensores accesibles y plataformas digitales para monitoreo en tiempo real.
 
