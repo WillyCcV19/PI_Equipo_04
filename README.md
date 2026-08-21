@@ -21,6 +21,15 @@ Somos participantes del curso **Proyecto Integrador 2026-2**, integrados por est
 
 ---
 
+##  ¿En qué va a consistir el proyecto?
+
+**FISHMON 365** es un **dispositivo portátil y autónomo** diseñado para **monitorear en tiempo real la calidad del agua** en sistemas de cultivo de trucha (estanques, canales y sistemas de recirculación). Funciona mediante una sección sumergible con sensores y una sección flotante con electrónica, que mide los parámetros clave, los muestra en pantalla y los transmite a una plataforma IoT.
+
+Su propósito es **detectar a tiempo condiciones desfavorables** antes de que afecten a los peces, permitiendo actuar con rapidez, reducir pérdidas y mejorar la rentabilidad de los criadores.
+
+---
+
+
 En esta ocasión, hemos decidido centrar nuestro trabajo en los **Objetivos de Desarrollo Sostenibles**:
 
 - 12.a Ayudar a los países en desarrollo a fortalecer su capacidad científica y tecnológica para avanzar hacia modalidades de consumo y producción más sostenibles
