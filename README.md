@@ -102,7 +102,7 @@ Hacer el descarte de aguas posiblemente contaminadas con un dispositivo costo ef
 | <img src="/Imagenes/Integrantes/1.jpg" width="90"/> | **Quispitongo Quispe Verenisse Mary**|  **Responsable de investigación** | **Gestión ambiental, desarrollo comunitario** |
 
 ---
-## 📷 Fotografía esperada del producto
+##  Fotografía esperada del producto
 <img src="/Imagenes/Integrantes/referencia.jpeg" width="600"/>
 
 
