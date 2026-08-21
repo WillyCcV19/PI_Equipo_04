@@ -11,7 +11,7 @@
 ### Carrera de Ingeniería Industrial / Informática   
 **Universidad Peruana Cayetano Heredia**
 
-<img src="/Imagenes/Integrantes/banner.png" width="250"/>
+<img src="/Imagenes/Integrantes/banner.png" width="1000"/>
 
 
 
