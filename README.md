@@ -1,4 +1,4 @@
-## NOMBRE DEL PROYECTO: FISHMON 360
+## NOMBRE DEL PROYECTO: FISHMON 365
   
   # EQUIPO N° IV - Proyecto Integrador 2026-2  
 <p align="center">
