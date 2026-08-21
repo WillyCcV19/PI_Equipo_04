@@ -13,15 +13,14 @@
 
 <img src="/Imagenes/Integrantes/banner.png" width="1000"/>
 
----
+  
 
 ##         ¿Quiénes somos?
 
 Somos participantes del curso **Proyecto Integrador 2026-2**, integrados por estudiantes de Ingeniería Industrial e Informática. Nuestra misión es utilizar la metodología de diseño para desarrollar soluciones creativas que aporten valor social, tecnológico y ambiental.
 
 ---
----
-
+  
 ##         ¿En qué va a consistir el proyecto?
 
 **FISHMON 365** es un **dispositivo portátil y autónomo** diseñado para **monitorear en tiempo real la calidad del agua** en sistemas de cultivo de trucha (estanques, canales y sistemas de recirculación). Funciona mediante una sección sumergible con sensores y una sección flotante con electrónica, que mide los parámetros clave, los muestra en pantalla y los transmite a una plataforma IoT.
@@ -29,11 +28,11 @@ Somos participantes del curso **Proyecto Integrador 2026-2**, integrados por est
 Su propósito es **detectar a tiempo condiciones desfavorables** antes de que afecten a los peces, permitiendo actuar con rapidez, reducir pérdidas y mejorar la rentabilidad de los criadores.
 
 ---
----
+  
 
 ##         ¿Qué problemáticas soluciona?
 
-| Problema actual | Solución que aporta FISHMON 360 |
+| Problema actual | Solución que aporta FISHMON 365 |
 |---|---|
 | Equipos comerciales muy costosos, inaccesibles para pequeños productores | Diseño de bajo costo, con materiales disponibles localmente |
 | Mediciones lentas o en laboratorio → demora en detectar riesgos | Lectura **inmediata en campo**, con diagnóstico automático |
@@ -43,7 +42,7 @@ Su propósito es **detectar a tiempo condiciones desfavorables** antes de que af
 | Equipos genéricos, no adaptados a truchicultura peruana | Ajustado a los **estándares oficiales de PRODUCE** para cultivo de trucha |
 
 ---
----
+  
 
 En esta ocasión, hemos decidido centrar nuestro trabajo en los **Objetivos de Desarrollo Sostenibles**:
 
