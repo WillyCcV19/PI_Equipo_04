@@ -42,12 +42,12 @@ _Ministerio de Salud (MINSA). Decreto Supremo Nº 007-98-SA. Reglamento de DIGES
 
 _Organización Internacional de Normalización (ISO). Norma ISO 25178. Especificación de acabado de superficies. Recuperado de: <https://www.iso.org/standard/67237.html>_
 
-_Ministerio de la Producción (PRODUCE) / FONDEPES. Manual para una acuicultura sostenible: Cultivo de Trucha. Lima, Perú. Recuperado de: <https://www.gob.pe/institucion/fondepes/informes-publicaciones/2448662-manual-de-cultivo-de-trucha>_
+_Ministerio de la Producción (PRODUCE) / FONDEPES. Manual para una acuicultura sostenible: Cultivo de Trucha. Lima, Perú. Recuperado de:_ [_https://www.gob.pe/institucion/fondepes/informes-publicaciones/2448662-manual-de-cultivo-de-trucha_](https://www.gob.pe/institucion/fondepes/informes-publicaciones/2448662-manual-de-cultivo-de-trucha)
 
-**Patentes**
+_Effect of a low water concentration in chloride, sodium and potassium on oocyte maturation, oocyte hydration, ovulation and egg quality in rainbow trout. Recuperado de:_
 
-_Organización Mundial de la Propiedad Intelectual (OMPI). Base de datos de patentes — Dispositivos de monitoreo de calidad del agua. Recuperado de: <https://patentscope.wipo.int/search/>_
+_<https://www.sciencedirect.com/science/article/abs/pii/S0044848621010371>_
 
-_Oficina de Patentes y Marcas de Estados Unidos (USPTO). Dispositivos portátiles de medición de parámetros acuáticos. Recuperado de: <https://www.uspto.gov/>_
+_First description of Weissella ceti associated with mortalities in farmed rainbow trout (Oncorhynchus mykiss) in Peru. Recuperado de:_
 
-_Oficina Española de Patentes y Marcas. Dispositivos de monitoreo en tiempo real para acuicultura. Recuperado de: <https://www.oepm.es/>_
+_<https://www.sciencedirect.com/science/article/abs/pii/S0044848620304439>_
