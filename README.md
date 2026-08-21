@@ -13,12 +13,13 @@
 
 <img src="/Imagenes/Integrantes/banner.png" width="1000"/>
 
-
+---
 
 ##         ¿Quiénes somos?
 
 Somos participantes del curso **Proyecto Integrador 2026-2**, integrados por estudiantes de Ingeniería Industrial e Informática. Nuestra misión es utilizar la metodología de diseño para desarrollar soluciones creativas que aporten valor social, tecnológico y ambiental.
 
+---
 ---
 
 ##         ¿En qué va a consistir el proyecto?
@@ -41,6 +42,7 @@ Su propósito es **detectar a tiempo condiciones desfavorables** antes de que af
 | Falta de registro histórico para tomar decisiones | Almacena y organiza los datos para seguimiento y análisis |
 | Equipos genéricos, no adaptados a truchicultura peruana | Ajustado a los **estándares oficiales de PRODUCE** para cultivo de trucha |
 
+---
 ---
 
 En esta ocasión, hemos decidido centrar nuestro trabajo en los **Objetivos de Desarrollo Sostenibles**:
