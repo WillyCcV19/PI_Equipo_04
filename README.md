@@ -35,11 +35,11 @@ Su propósito es **detectar a tiempo condiciones desfavorables** antes de que af
 | Problema actual | Solución que aporta FISHMON 365 |
 |---|---|
 | Equipos comerciales muy costosos, inaccesibles para pequeños productores | Diseño de bajo costo, con materiales disponibles localmente |
-| Mediciones lentas o en laboratorio → demora en detectar riesgos | Lectura **inmediata en campo**, con diagnóstico automático |
+| Mediciones lentas en laboratorio, demora en detectar riesgos | Lectura **inmediata en campo**, con diagnóstico automático |
 | Sin acceso a internet en zonas rurales | Funciona sin conexión; guarda datos internos y los sincroniza cuando sea posible |
 | Desconocimiento de cuándo el agua deja de ser apta | **Alertas visuales y sonoras** cuando los valores salen de los rangos seguros |
 | Falta de registro histórico para tomar decisiones | Almacena y organiza los datos para seguimiento y análisis |
-| Equipos genéricos, no adaptados a truchicultura peruana | Ajustado a los **estándares oficiales de PRODUCE** para cultivo de trucha |
+| Equipos genéricos, no adaptados a acuicultura peruana | Ajustado a los **estándares oficiales de PRODUCE** para cultivo de trucha |
 
 ---
   
