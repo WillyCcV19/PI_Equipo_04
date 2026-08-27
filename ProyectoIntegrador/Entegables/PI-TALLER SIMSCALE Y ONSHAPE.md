@@ -1,12 +1,11 @@
+# Enlaces para las primeras tres tablas
+- Enlace: https://www.simscale.com/workbench/?pid=2451549434362735231&mi=spec:2c72ec2e-be86-4e93-a868-d52075bf7e47%2Cservice:SIMULATION%2Cstrategy:1
+- Enlace: https://cad.onshape.com/documents/f734143c3763251624e8f45f/w/73cf6cb80b72b76e410a83a7/e/c8a476fd1b14d66486f749a2
+
 # Intento de simulación de torsión en el eje del motor
 | Desplazamiento | Fuerza aplicada |
 | - | - |
 |<img src="/Imagenes/Simulaciones/sim1.png" width="500"/>|<img src="/Imagenes/Simulaciones/sim2.png" width="500"/>|
-
-Enlace: https://www.simscale.com/workbench/?pid=2451549434362735231&mi=spec:2c72ec2e-be86-4e93-a868-d52075bf7e47%2Cservice:SIMULATION%2Cstrategy:1
-Enlace: https://cad.onshape.com/documents/f734143c3763251624e8f45f/w/73cf6cb80b72b76e410a83a7/e/c8a476fd1b14d66486f749a2
-
-
 
 # Intento de simular estrés ente dientes de engranajes en el eje Z
 | Desplazamiento | Fuerza aplicada |
