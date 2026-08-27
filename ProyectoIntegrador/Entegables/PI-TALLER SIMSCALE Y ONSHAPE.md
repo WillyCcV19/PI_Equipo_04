@@ -2,6 +2,7 @@
 | Desplazamiento | Fuerza aplicada |
 | - | - |
 |<img src="/Imagenes/Simulaciones/sim1.png" width="500"/>|<img src="/Imagenes/Simulaciones/sim2.png" width="500"/>|
+
 Enlace: https://www.simscale.com/workbench/?pid=2451549434362735231&mi=spec:2c72ec2e-be86-4e93-a868-d52075bf7e47%2Cservice:SIMULATION%2Cstrategy:1
 
 
