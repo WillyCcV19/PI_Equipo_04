@@ -14,3 +14,9 @@
 | Desplazamiento | Fuerza aplicada |
 | - | - |
 |<img src="/Imagenes/Simulaciones/Engranaje3.png" width="500"/>|<img src="/Imagenes/Simulaciones/Engranaje4.png" width="500"/>|E
+
+# Intento simulación del prototipo bajo el agua
+| Desplazamiento | Fuerza aplicada |
+| - | - |
+|<img src="/Imagenes/Simulaciones/Screenshot 2026-08-27 164458.png" width="500"/>|<img src="/Imagenes/Simulaciones/Screenshot 2026-08-27 164458.png" width="500"/>|E
+
