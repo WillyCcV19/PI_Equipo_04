@@ -1,11 +1,11 @@
-# Simulación 1
+# Intento de simulación de torsión en el eje del motor
 | Desplazamiento | Fuerza aplicada |
 | - | - |
 |<img src="/Imagenes/Simulaciones/sim1.png" width="500"/>|<img src="/Imagenes/Simulaciones/sim2.png" width="500"/>|
 
 
 
-# Simulación 2
+# Intento de simular estrés ente dientes de engranajes
 | Desplazamiento | Fuerza aplicada |
 | - | - |
 |<img src="/Imagenes/Simulaciones/engranaje1.png" width="500"/>|<img src="/Imagenes/Simulaciones/engranaje2.png" width="500"/>|
