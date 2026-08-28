@@ -21,7 +21,7 @@
 # Intento de simulación térmica de una tapa expuesta al calor constante del ambiente [Willy C.]
 | Desplazamiento | Fuerza aplicada |
 | - | - |
-|<img src="/Imagenes/Simulaciones/tapa1.png" width="500"/>|<img src="/Imagenes/Simulaciones/Tapa2.png" width="500"/>|E 
+|<img src="/Imagenes/Simulaciones/tapa1.png" width="500"/>|<img src="/Imagenes/Simulaciones/tapa2.png" width="500"/>|E 
 
 
 # Intento simulación del prototipo bajo el agua [Verenisse Q.]
