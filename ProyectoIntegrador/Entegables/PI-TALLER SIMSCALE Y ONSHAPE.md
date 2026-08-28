@@ -19,9 +19,10 @@
 |<img src="/Imagenes/Simulaciones/Engranaje3.png" width="500"/>|<img src="/Imagenes/Simulaciones/Engranaje4.png" width="500"/>|E -->
 
 # Intento de simulación térmica de una tapa expuesta al calor constante del ambiente [Willy C.]
-| Desplazamiento | Fuerza aplicada |
+| Temperatura | Calor aplicado |
 | - | - |
-|<img src="/Imagenes/Simulaciones/tapa1.png" width="500"/>|<img src="/Imagenes/Simulaciones/tapa2.png" width="500"/>|E 
+|<img src="/Imagenes/Simulaciones/tapa1.png" width="500"/>|<img src="/Imagenes/Simulaciones/tapa2.png" width="500"/>|
+Enlace: https://www.simscale.com/workbench/?pid=4948183645136788433&rru=1fb664e7-1cb2-45bc-9f54-3f9133b5a362&ci=6be5e5a6-04b1-4e66-90bd-8e9614bb8f21&mt=SIMULATION_RESULT&ct=SOLUTION_FIELD
 
 
 # Intento simulación del prototipo bajo el agua [Verenisse Q.]
