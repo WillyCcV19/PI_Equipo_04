@@ -11,7 +11,8 @@
 | Desplazamiento | Fuerza aplicada |
 | - | - |
 |<img src="/Imagenes/Simulaciones/engranaje1.png" width="500"/>|<img src="/Imagenes/Simulaciones/engranaje2.png" width="500"/>|
-
+- Enlace: https://www.simscale.com/workbench/?pid=1817896418183541406&rru=10d6d244-946f-4d87-aea3-fc026517d39b&ci=cf5c803a-1f93-4714-8b29-649fc48cddcf&mt=SIMULATION_RESULT&ct=SOLUTION_FIELD
+  
 # Intento de simular estrés ente dientes de engranajes en el eje X [Willy C.]
 | Desplazamiento | Fuerza aplicada |
 | - | - |
