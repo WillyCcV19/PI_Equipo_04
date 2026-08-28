@@ -18,7 +18,7 @@
 | - | - |
 |<img src="/Imagenes/Simulaciones/Engranaje3.png" width="500"/>|<img src="/Imagenes/Simulaciones/Engranaje4.png" width="500"/>|E -->
 
-# Intento de simulación térmica de una tapa de PLA expuesta al calor constante del ambiente [Willy C.]
+# Intento de simulación térmica de una tapa expuesta al calor constante del ambiente [Willy C.]
 | Desplazamiento | Fuerza aplicada |
 | - | - |
 |<img src="/Imagenes/Simulaciones/tapa1.png" width="500"/>|<img src="/Imagenes/Simulaciones/Tapa2.png" width="500"/>|E 
