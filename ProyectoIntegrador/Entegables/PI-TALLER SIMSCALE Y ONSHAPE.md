@@ -13,10 +13,16 @@
 |<img src="/Imagenes/Simulaciones/engranaje1.png" width="500"/>|<img src="/Imagenes/Simulaciones/engranaje2.png" width="500"/>|
 - Enlace: https://www.simscale.com/workbench/?pid=1817896418183541406&rru=10d6d244-946f-4d87-aea3-fc026517d39b&ci=cf5c803a-1f93-4714-8b29-649fc48cddcf&mt=SIMULATION_RESULT&ct=SOLUTION_FIELD
   
-# Intento de simular estrés ente dientes de engranajes en el eje X [Willy C.]
+<!-- # Intento de simular estrés ente dientes de engranajes en el eje X [Willy C.]
 | Desplazamiento | Fuerza aplicada |
 | - | - |
-|<img src="/Imagenes/Simulaciones/Engranaje3.png" width="500"/>|<img src="/Imagenes/Simulaciones/Engranaje4.png" width="500"/>|E
+|<img src="/Imagenes/Simulaciones/Engranaje3.png" width="500"/>|<img src="/Imagenes/Simulaciones/Engranaje4.png" width="500"/>|E -->
+
+# Intento de simulación térmica de una tapa de PLA expuesta al calor constante del ambiente [Willy C.]
+| Desplazamiento | Fuerza aplicada |
+| - | - |
+|<img src="/Imagenes/Simulaciones/tapa1.png" width="500"/>|<img src="/Imagenes/Simulaciones/Tapa2.png" width="500"/>|E 
+
 
 # Intento simulación del prototipo bajo el agua [Verenisse Q.]
 | Desplazamiento | Fuerza aplicada |
