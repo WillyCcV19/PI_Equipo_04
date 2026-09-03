@@ -1,4 +1,3 @@
-
 **ELABORADO POR:** Verenisse Quispitongo
 **PROYECTO:** MODULO_PCB  
 
