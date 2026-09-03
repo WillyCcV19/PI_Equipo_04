@@ -1,17 +1,37 @@
 # Sistema de Monitoreo de Temperatura Subacuática
 
-ELABORADO POR EBER
+**ELABORADO POR:** Eber  
+**PROYECTO:** MODULO_PCB  
 
-A continuación se presentan los diagramas del diseño electrónico desarrollado en EasyEDA para el proyecto **MODULO_PCB** (Sistema de Monitoreo de Temperatura Subacuática).
-
----
-
-| Vista / Esquema | Descripción del Componente | Enlace de EasyEDA / Repositorio |
-| :---: | :--- | :---: |
-| <img src="/Imagenes/11.png" width="400"/> | **Esquemático General del Circuito (Schematic)**<br><br>Diagrama esquemático completo dividido en tres bloques funcionales principales:<br>- **Módulo de Procesamiento:** Basado en el microcontrolador ATmega328P-AU con su circuito de oscilador externo (16 MHz) y capacitores de desacople.<br>- **Módulo de Temperatura (SMD):** Incorpora el sensor de temperatura digital DS18B20Z con su respectiva resistencia de *pull-up* (4.7kΩ) y conector H1.<br>- **Módulo de Visualización:** Conector H2 para comunicación I2C (SDA, SCL) con resistencias de *pull-up* (R3, R4). | [Ver en EasyEDA](LINK_AQUI) |
-| <img src="/Imagenes/12.png" width="400"/> | **Diseño e Interconexión de la PCB (Layout / Ratsnest)**<br><br>Vista del diseño de la placa de circuito impreso mostrando la distribución de las huellas (*footprints*) en formato SMD (TQFP-32 para el ATmega328P, SOIC-8 para el DS18B20Z, componentes 0805 para resistencias/capacitores) y las líneas de conexión (*ratsnest*) previa al ruteo final de pistas. | [Ver en EasyEDA](LINK_AQUI) |
-| <img src="/Imagenes/13.png" width="400"/> | **Modelo 3D de la Placa Ensamblada**<br><br>Renderizado tridimensional de la PCB terminada con todos los componentes montados sobre la superficie:<br>- Microcontrolador ATmega328P (U2)<br>- Sensor DS18B20Z (U1)<br>- Oscilador de cristal (X1)<br>- Conectores hembra de interfaz (H1 y H2)<br>- Componentes pasivos (R1-R4, C1-C3) | [Ver en EasyEDA](LINK_AQUI) |
+A continuación se presentan los diagramas e imágenes del diseño electrónico realizado en EasyEDA.
 
 ---
 
-*Nota: Este proyecto fue diseñado y realizado en **EasyEDA**.*
+### 1. Esquemático General del Circuito
+
+<img src="/Imagenes/Simulaciones/11.png" width="80%"/>
+
+**Descripción:**
+Diagrama completo del circuito integrado en tres bloques: módulo de procesamiento con el microcontrolador ATmega328P-AU (16 MHz), módulo de sensor de temperatura DS18B20Z con resistencia pull-up, y módulo de visualización con interfaz I2C (SDA/SCL).
+
+---
+
+### 2. Distribución de Componentes en PCB (Layout)
+
+<img src="/Imagenes/Simulaciones/12.png" width="50%"/>
+
+**Descripción:**
+Diseño de la placa de circuito impreso que muestra la ubicación de los componentes SMD (TQFP-32 y 0805) junto con las líneas de interconexión (*ratsnest*) previas al ruteo final.
+
+---
+
+### 3. Modelo 3D de la Placa Ensamblada
+
+<img src="/Imagenes/Simulaciones/13.png" width="50%"/>
+
+**Descripción:**
+Vista tridimensional de la tarjeta electrónica finalizada con el chip principal, el sensor DS18B20, el oscilador de cristal y los conectores de interfaz montados.
+
+---
+
+*Diseño realizado en EasyEDA.*
