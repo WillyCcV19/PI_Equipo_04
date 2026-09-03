@@ -3,35 +3,32 @@
 **ELABORADO POR:** Eber  
 **PROYECTO:** MODULO_PCB  
 
-A continuación se presentan los diagramas e imágenes del diseño electrónico realizado en EasyEDA.
+A continuación se presenta el desarrollo del circuito electrónico en EasyEDA para el sistema subacuático, dividido en sus dos versiones de fabricación: **SMD** (montaje superficial / soldadura por encima) y **THT** (perforaciones / soldadura por agujeros).
 
 ---
 
-### 1. Esquemático General del Circuito
+## 1. Versión SMD (Surface-Mount Device) - Soldadura Superficial
 
-<img src="/Imagenes/Simulaciones/11.png" width="80%"/>
+En esta versión los componentes se sueldan directamente sobre la superficie de la placa de circuito impreso.
 
-**Descripción:**
-Diagrama completo del circuito integrado en tres bloques: módulo de procesamiento con el microcontrolador ATmega328P-AU (16 MHz), módulo de sensor de temperatura DS18B20Z con resistencia pull-up, y módulo de visualización con interfaz I2C (SDA/SCL).
-
----
-
-### 2. Distribución de Componentes en PCB (Layout)
-
-<img src="/Imagenes/Simulaciones/12.png" width="50%"/>
-
-**Descripción:**
-Diseño de la placa de circuito impreso que muestra la ubicación de los componentes SMD (TQFP-32 y 0805) junto con las líneas de interconexión (*ratsnest*) previas al ruteo final.
+| Vista | Tipo de Imagen | Descripción |
+| :---: | :--- | :--- |
+| <img src="/Imagenes/Simulaciones/11.png" width="500"/> | **Esquemático General SMD** | Diagrama eléctrico basado en el microcontrolador ATmega328P-AU, sensor de temperatura DS18B20Z en formato SMD y puerto de comunicación I2C. |
+| <img src="/Imagenes/Simulaciones/12.png" width="500"/> | **Diseño de PCB (Layout) SMD** | Distribución de componentes de montaje superficial con encapsulados TQFP-32 y pasivos 0805, mostrando las líneas de interconexión. |
+| <img src="/Imagenes/Simulaciones/13.png" width="500"/> | **Render 3D SMD** | Modelo tridimensional de la tarjeta electrónica ensamblada con componentes de perfil bajo para una placa compacta. |
 
 ---
 
-### 3. Modelo 3D de la Placa Ensamblada
+## 2. Versión THT (Through-Hole Technology) - Soldadura por Agujeros
 
-<img src="/Imagenes/Simulaciones/13.png" width="50%"/>
+En esta versión los componentes atraviesan la placa mediante perforaciones para ser soldados por el reverso.
 
-**Descripción:**
-Vista tridimensional de la tarjeta electrónica finalizada con el chip principal, el sensor DS18B20, el oscilador de cristal y los conectores de interfaz montados.
+| Vista | Tipo de Imagen | Descripción |
+| :---: | :--- | :--- |
+| <img src="/Imagenes/Simulaciones/14.png" width="500"/> | **Esquemático General THT** | Diseño eléctrico simplificado utilizando un módulo Arduino Nano como unidad de procesamiento y componentes discretos con terminales de inserción. |
+| <img src="/Imagenes/Simulaciones/15.png" width="500"/> | **Diseño de PCB (Layout) THT** | Placa con perforaciones (*pads through-hole*) para pines de Arduino Nano, resistencia de carbón y sensor en empaque TO-92. |
+| <img src="/Imagenes/Simulaciones/16.png" width="500"/> | **Render 3D THT** | Visualización tridimensional de la tarjeta montada con el desarrollo modular sobre Arduino Nano y conectores tipo header hembra/macho. |
 
 ---
 
-*Diseño realizado en EasyEDA.*
+*Diseño y documentación realizados en **EasyEDA**.*
