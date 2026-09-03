@@ -1,6 +1,6 @@
 **ELABORADO POR:** Verenisse Quispitongo
-**PROYECTO:** MODULO_PCB  
 
+**MODULO SENSOR DE TURBIDEZ**
 ---
 
 ## 1. Versión Soldadura por Agujeros
