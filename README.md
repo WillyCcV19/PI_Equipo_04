@@ -55,9 +55,36 @@ Específicamente, el factor crítico es la asfixia e hipoxia por baja concentrac
 
 ## 🌿 ¿En qué va a consistir el proyecto?
 
-**FISHMON 365** es un dispositivo portátil y autónomo diseñado para monitorear en tiempo real la calidad del agua dulce en sistemas de cultivo de trucha arco iris (*Oncorhynchus mykiss*). Funciona mediante una sección sumergible equipada con sensores y una sección flotante con electrónica blindada, la cual procesa los parámetros clave, los muestra en una pantalla integrada y los transmite a una plataforma IoT.
+**FISHMON 365** es un **dispositivo multiparámetro portátil y autónomo** diseñado para el **monitoreo en tiempo real y a multinivel** de la calidad del agua dulce en sistemas de cultivo de trucha(*Oncorhynchus mykiss*). 
 
-Su propósito central es mitigar la mortandad por asfixia y estrés térmico/químico, alertando en tiempo real al productor cuando el oxígeno disuelto o la temperatura salgan de los rangos críticos oficiales.
+El sistema está compuesto por una **sección flotante con electrónica blindada** y una **sonda sumergible vertical multinivel**, equipada con sensores calibrados para realizar lecturas continuas a tres profundidades distintas dentro de la columna de agua. Toda la información capturada es procesada y transmitida de forma inalámbrica mediante tecnología **IoT** directamente a una **aplicación móvil para smartphone**, enviando alertas tempranas en tiempo real ante variaciones fuera de los rangos seguros.
+
+Para garantizar la continuidad operativa en zonas rurales o ante posibles cortes de energía eléctrica, el equipo integra un **sistema de alimentación autónomo con batería de respaldo**, asegurando mediciones ininterrumpidas las 24 horas del día.
+
+---
+
+### Perfil de Medición Multinivel en la Columna de Agua
+
+Dado que parámetros críticos como el oxígeno disuelto y la temperatura varían verticalmente según la dinámica del estanque, la descomposición de materia orgánica y el nivel de alimentación, **FISHMON 365** monitorea tres estratos clave:
+
+| Profundidad / Estrato | Justificación Técnica Biológica | Impacto en la Trucha Arco Iris |
+| :--- | :--- | :--- |
+| **Superficie** | Zona de mayor intercambio gaseoso atmosférico e incidencia de radiación solar. | Evalúa la temperatura máxima y la saturación inicial de oxígeno. |
+| **Nivel Medio (Media Agua)** | Zona de natación activa y desplazamiento del cardumen de truchas en crecimiento]. | Garantiza que la masa de agua habitada mantenga tenores de $O_2 \ge 5.5\text{ mg/L}$. |
+| **Nivel de Fondo (Suelo acuícola)** | Zona de acumulación de alimento no consumido, heces, materia orgánica y alimentación del pez. | Detecta zonas anóxicas ($O_2 < 3.0\text{ mg/L}$), acumulación de gas metano/nitritos y variaciones de pH por descomposición. |
+
+---
+
+### Parámetros Fisicoquímicos Medidos y Rangos de Control
+
+El dispositivo evalúa de forma simultánea los cuatro parámetros fisicoquímicos fundamentales establecidos por FONDEPES para prevenir cuadros de asfixia, estrés térmico y lesiones branquiales:
+
+| Parámetro Fisicoquímico | Rango Óptimo de Cultivo | Rango Crítico / Riesgo | Justificación Biológica (FONDEPES) |
+| :--- | :--- | :--- | :--- |
+| **Oxígeno Disuelto ($O_2$)** | **$6.0 - 8.5\text{ mg/L}$**<br>(Mínimo seguro: $5.5\text{ mg/L}$) | **$< 3.0\text{ mg/L}$** (Letal)<br>**$3.1 - 4.5\text{ mg/L}$** (Estrés severo) | La falta de oxígeno causa asfixia, suspensión de la ingesta de alimento y muerte masiva. |
+| **Temperatura ($T^\circ\text{C}$)** | **$11 - 16^\circ\text{C}$**<br>(Óptimo engorde: $15 - 16^\circ\text{C}$)| **$< 3^\circ\text{C}$** o **$> 18^\circ\text{C}$** | Altas temperaturas reducen la solubilidad del $O_2$ y aceleran la propagación de patógenos. |
+| **Potencial de Hidrógeno (pH)** | **$7.0 - 8.0$** (Ligeramente alcalino) | **$< 6.0$** o **$> 9.0$** | Niveles por debajo de $6.5$ ocasionan hemorragias branquiales y mortalidades elevadas. |
+| **Turbidez / Sólidos** | **Agua clara / cristalina** | **Alta carga de sólidos en suspensión** | Los sólidos en suspensión erosionan las branquias, dificultan la respiración y frenan el crecimiento. |
 
 ---
 
