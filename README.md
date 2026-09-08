@@ -139,7 +139,7 @@ Basado estrictamente en las especificaciones del Manual de Cultivo de Trucha - F
 
 ---
 ##  Fotografía esperada del producto
-<img src="/Imagenes/Integrantes/referencia.jpeg" width="600"/>
+<img src="/Imagenes/Integrantes/100.png" width="600"/>
 
 ---
 
