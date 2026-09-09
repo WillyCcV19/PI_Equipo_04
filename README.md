@@ -161,7 +161,7 @@ Basado estrictamente en las especificaciones del Manual de Cultivo de Trucha - F
 | <img src="/Imagenes/Integrantes/6.jpeg" width="90"/> | **Cabrera Cermeno Ruben Andre** | **Desarrollo de sistemas** | **Tecnología e implementación de programas** |
 | <img src="/Imagenes/Integrantes/2.jpeg" width="90"/> | **Ccatamayo Vasquez Willy Simeon** | **Programador / Modelador** | **Programación, simulación** |
 | <img src="/Imagenes/Integrantes/4.jpeg" width="90"/> | **Pauccara Huancara Eber** | **Encargado de Documentación** | **Producción de documentos científicos y técnicos** |
-| <img src="/Imagenes/Integrantes/1.jpg" width="90"/> | **Quispitongo Quispe Verenisse Mary**|  **Responsable de investigación** | **Gestión ambiental, desarrollo comunitario** |
+| <img src="/Imagenes/Integrantes/1.jpg" width="90"/> | **Quispitongo Leon Verenisse Mary**|  **Responsable de investigación** | **Gestión ambiental, desarrollo comunitario** |
 
 ---
 ##  Fotografía esperada del producto
