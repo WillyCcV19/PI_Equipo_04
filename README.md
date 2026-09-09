@@ -172,13 +172,6 @@ Basado estrictamente en las especificaciones del Manual de Cultivo de Trucha - F
 <p align="center">
   <strong>🐟 FISHMON 365 — Monitoreo inteligente para una acuicultura sostenible</strong>
 </p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Made in Peru-❤️-red?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Open_Source-Yes-brightgreen?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Licencia-MIT-blue?style=for-the-badge">
-</p>
-
 <p align="center">
   <sub>© 2026 - Universidad Peruana Cayetano Heredia</sub>
 </p>
