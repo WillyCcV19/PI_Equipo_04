@@ -1,12 +1,23 @@
-## NOMBRE DEL PROYECTO: FISHMON 365
-  
   # EQUIPO N° IV - Proyecto Integrador 2026-2  
-<p align="center">
-  <img src="https://img.shields.io/badge/Grupo-4-red" alt="Grupo 4">
-  <img src="https://img.shields.io/badge/Universidad-UPCH-blue" alt="UPCH">
-  <img src="https://img.shields.io/badge/Curso-Proyecto_Integrador-ligth_blue" alt="Curso">
-  <img src="https://img.shields.io/badge/Status-En_Desarrollo-orange" alt="Status">
-</p>
+<div align="center">
+
+<!-- Banner animado (capsule-render funciona nativo en GitHub, sin GIFs pesados) -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0077B6,100:00B4D8&height=200&section=header&text=FISHMON%20365&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Monitoreo%20IoT%20de%20calidad%20de%20agua%20para%20truchicultura&descAlignY=55&descSize=18" width="100%"/>
+
+<!-- Texto tipo "máquina de escribir" (animado, se genera al vuelo) -->
+<a href="#-qué-va-a-consistir-el-proyecto">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=0077B6&center=true&vCenter=true&width=650&lines=Dispositivo+multiparam%C3%A9trico+portatil+y+aut%C3%B3nomo;Monitoreo+de+Ox%C3%ADgeno+Disuelto+en+tiempo+real;Alertas+tempranas+v%C3%ADa+IoT+%2B+Dashboard;Validado+en+campo+en+Santa+Eulalia%2C+Lima" alt="Typing SVG" />
+</a>
+
+<br/><br/>
+
+![Grupo](https://img.shields.io/badge/Grupo-IV-red?style=for-the-badge)
+![Universidad](https://img.shields.io/badge/Universidad-UPCH-0077B6?style=for-the-badge)
+![Curso](https://img.shields.io/badge/Curso-Proyecto_Integrador-00B4D8?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-En_Desarrollo-orange?style=for-the-badge)
+
+</div>
+
 
 ### Carrera de Ingeniería Industrial / Informática   
 **Universidad Peruana Cayetano Heredia**
