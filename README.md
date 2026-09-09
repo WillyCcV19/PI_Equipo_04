@@ -75,18 +75,6 @@ Dado que parámetros críticos como el oxígeno disuelto y la temperatura varía
 
 ---
 
-### Parámetros Fisicoquímicos Medidos y Rangos de Control
-
-El dispositivo evalúa de forma simultánea los cuatro parámetros fisicoquímicos fundamentales establecidos por FONDEPES para prevenir cuadros de asfixia, estrés térmico y lesiones branquiales:
-
-| Parámetro Fisicoquímico | Rango Óptimo de Cultivo | Rango Crítico / Riesgo | Justificación Biológica (FONDEPES) |
-| :--- | :--- | :--- | :--- |
-| **Oxígeno Disuelto ($O_2$)** | **$6.0 - 8.5\text{ mg/L}$**<br>(Mínimo seguro: $5.5\text{ mg/L}$) | **$< 3.0\text{ mg/L}$** (Letal)<br>**$3.1 - 4.5\text{ mg/L}$** (Estrés severo) | La falta de oxígeno causa asfixia, suspensión de la ingesta de alimento y muerte masiva. |
-| **Temperatura ($T^\circ\text{C}$)** | **$11 - 16^\circ\text{C}$**<br>(Óptimo engorde: $15 - 16^\circ\text{C}$)| **$< 3^\circ\text{C}$** o **$> 18^\circ\text{C}$** | Altas temperaturas reducen la solubilidad del $O_2$ y aceleran la propagación de patógenos. |
-| **Potencial de Hidrógeno (pH)** | **$7.0 - 8.0$** (Ligeramente alcalino) | **$< 6.0$** o **$> 9.0$** | Niveles por debajo de $6.5$ ocasionan hemorragias branquiales y mortalidades elevadas. |
-| **Turbidez / Sólidos** | **Agua clara / cristalina** | **Alta carga de sólidos en suspensión** | Los sólidos en suspensión erosionan las branquias, dificultan la respiración y frenan el crecimiento. |
-
----
 
 ## 🌿 Contexto de Aplicación y Validación de Campo: Santa Eulalia
 
