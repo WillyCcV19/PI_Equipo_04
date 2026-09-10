@@ -1,1 +1,1 @@
-<img src="/Imagenes/func/mmorf.jpg" width="1000"/>
+<img src="/Imagenes/func/mmorf.jpg" width="1500"/>
