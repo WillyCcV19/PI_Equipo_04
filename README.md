@@ -150,15 +150,16 @@ Basado estrictamente en las especificaciones del Manual de Cultivo de Trucha - F
 
 ---
 
-## 👫 AYUDA A ESTAS PERSONAS A REGRESAR A SUS CASAS
+## 👫 Integrantes
 
 | Foto | Nombre | Rol | Intereses |
 |------|--------| --- | --------- |
-| <img src="/Imagenes/Integrantes/JO.png" width="90"/> | **Karita John Kenneth** | **1/1/2026** | **Diseño de prototipos, hardware** |
-| <img src="/Imagenes/Integrantes/RU.png" width="90"/> | **Cabrera Cermeno Ruben Andre** | **14/6/2024** | **Tecnología e implementación de programas** |
-| <img src="/Imagenes/Integrantes/WI.png" width="90"/> | **Ccatamayo Vasquez Willy Simeon** | **28/1/2025** | **Programación, simulación** |
-| <img src="/Imagenes/Integrantes/EB.png" width="90"/> | **Pauccara Huancara Eber** | **11/6/2023** | **Producción de documentos científicos y técnicos** |
-| <img src="/Imagenes/Integrantes/VE.png" width="90"/> | **Quispitongo Leon Verenisse Mary**|  **28/7/2** | **Gestión ambiental, desarrollo comunitario** |
+| <img src="/Imagenes/Integrantes/JO.png" width="90"/> | **Karita John Kenneth** | **Líder / Diseñador** | **Diseño de prototipos, hardware** |
+| <img src="/Imagenes/Integrantes/RU.png" width="90"/> | **Cabrera Cermeno Ruben Andre** | **Desarrollo de sistemas** | **Tecnología e implementación de programas** |
+| <img src="/Imagenes/Integrantes/WI.png" width="90"/> | **Ccatamayo Vasquez Willy Simeon** | **Programador / Modelador** | **Programación, simulación** |
+| <img src="/Imagenes/Integrantes/EB.png" width="90"/> | **Pauccara Huancara Eber** | **Encargado de Documentación** | **Producción de documentos científicos y técnicos** |
+| <img src="/Imagenes/Integrantes/VE.png" width="90"/> | **Quispitongo Leon Verenisse Mary**|  **Responsable de investigación** | **Gestión ambiental, desarrollo comunitario** |
+
 
 ---
 ##  Fotografía esperada del producto
