@@ -34,13 +34,13 @@
 - Enlace: https://www.simscale.com/workbench/?pid=7910411673370197413&rru=d45b564a-62aa-4933-944a-83a83b4e83f7&ci=8ae51837-1f54-4004-bab8-7fe913920dd5&mt=SIMULATION_RESULT&ct=SOLUTION_FIELD 
 
 
-# Análisis de Simulaciones FEA del Prototipo Subacuático (Prueba Boya) [Eber P.]
+# Análisis de Simulaciones FEA del Prototipo Subacuático (Prueba Boya) [Eber P. H.]
 
 ## 1. Malla Volumétrica e Inspección de Calidad (Meshing)
 
 | Discretización del Modelo (Malla) | Inspección de Aspect Ratio (Calidad) |
 | :---: | :---: |
-| <img src="5.jpg" width="450"/> | <img src="6.jpg" width="450"/> |
+| <img src="/Imagenes/Simulaciones/5.png" width="450"/> | <img src="/Imagenes/Simulaciones/6.png" width="450"/> |
 
 ### Análisis de Configuración y Resultados
 * **Parámetros de Malla (Imagen 1):** Malla estándar tetraédrica (*Standard Algorithm*) con finura de nivel $5$, generando un total de **$52.4\text{k}$ celdas** y **$97\text{k}$ nodos** distribuidos en la geometría del ensamble (`Assembly 1`).
@@ -54,7 +54,7 @@
 
 | Configuración de Gravedad en el Modelo |
 | :---: |
-| <img src="1.png" width="600"/> |
+| <img src="/Imagenes/Simulaciones/1.png" width="600"/> |
 
 ### Análisis de Configuración
 * **Gravedad:** Se configuró una aceleración gravitacional con magnitud nula en magnitud global ($0\text{ m/s}^2$) pero con vector de dirección de **$e_y = -9.81\text{ m/s}^2$** sobre el eje $Y$ (*Gravity direction*).
@@ -68,7 +68,7 @@
 
 | Propiedades Mecánicas del Material |
 | :---: |
-| <img src="2.png" width="600"/> |
+| <img src="/Imagenes/Simulaciones/2.png" width="600"/> |
 
 ### Análisis de Configuración
 * **Material:** Polímero **PLA** (Ácido Poliláctico) configurado como material elástico e isotrópico (*Linear Elastic / Isotropic*).
@@ -83,7 +83,7 @@
 
 | Soporte Fijo (*Fixed Support 1*) | Presión Externa (*Pressure 2*) |
 | :---: | :---: |
-| <img src="3.png" width="450"/> | <img src="4.png" width="450"/> |
+| <img src="/Imagenes/Simulaciones/3.png" width="450"/> | <img src="/Imagenes/Simulaciones/4.png" width="450"/> |
 
 ### Análisis de Configuración
 1. **Soporte Fijo (Imagen 3):** Restringe todos los desplazamientos ($d_x=d_y=d_z=0$) en dos caras cónicas inferiores (`face 35@Part 1` y `face 146@Part 1`).
