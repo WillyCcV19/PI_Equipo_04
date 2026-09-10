@@ -14,7 +14,6 @@
 ![Universidad](https://img.shields.io/badge/Universidad-UPCH-0077B6?style=for-the-badge)
 ![Curso](https://img.shields.io/badge/Curso-Proyecto_Integrador-00B4D8?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-En_Desarrollo-orange?style=for-the-badge)
-![License](https://img.shields.io/badge/Licencia-MIT-blue?style=for-the-badge)
 
 </div>
 
@@ -213,7 +212,6 @@ Basado estrictamente en las especificaciones del *Manual de Cultivo de Trucha* �
 
 ![Made in Peru](https://img.shields.io/badge/Made%20in%20Peru-❤️-red?style=for-the-badge)
 ![Open Source](https://img.shields.io/badge/Open_Source-Yes-brightgreen?style=for-the-badge)
-![Licencia](https://img.shields.io/badge/Licencia-MIT-blue?style=for-the-badge)
 
 <sub>© 2026 – Universidad Peruana Cayetano Heredia</sub>
 
