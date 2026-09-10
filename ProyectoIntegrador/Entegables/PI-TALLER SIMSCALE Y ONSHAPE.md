@@ -12,6 +12,7 @@
 | - | - |
 |<img src="/Imagenes/Simulaciones/engranaje1.png" width="500"/>|<img src="/Imagenes/Simulaciones/engranaje2.png" width="500"/>|
 - Enlace: https://www.simscale.com/workbench/?pid=1817896418183541406&rru=10d6d244-946f-4d87-aea3-fc026517d39b&ci=cf5c803a-1f93-4714-8b29-649fc48cddcf&mt=SIMULATION_RESULT&ct=SOLUTION_FIELD
+- Justificación de fuerzas: Se aplicó una fuerza de 10 N en la dirección negativa del eje Z sobre la superficie del diente, con el objetivo de representar la carga mecánica que actúa sobre dicho elemento durante la interacción con el engranaje. Esta carga permite evaluar los esfuerzos y desplazamientos generados en el mecanismo bajo una condición de trabajo
   
 <!-- # Intento de simular estrés ente dientes de engranajes en el eje X [Willy C.]
 | Desplazamiento | Fuerza aplicada |
