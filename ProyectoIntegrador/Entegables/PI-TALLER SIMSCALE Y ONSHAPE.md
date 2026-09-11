@@ -34,6 +34,71 @@
 
 - Enlace: https://www.simscale.com/workbench/?pid=7910411673370197413&rru=d45b564a-62aa-4933-944a-83a83b4e83f7&ci=8ae51837-1f54-4004-bab8-7fe913920dd5&mt=SIMULATION_RESULT&ct=SOLUTION_FIELD 
 
+# ⚙️ Configuración de la simulación en SimScale [Verenisse Q.]
+
+Para evaluar preliminarmente el comportamiento estructural del prototipo **Fishmoon bajo el agua**, se consideraron las siguientes condiciones de simulación:
+
+---
+
+#### 🧱 Material — ABS
+
+Se asignó **ABS** a las tres partes del prototipo, debido a que es un material plástico comúnmente utilizado en prototipos y piezas fabricadas mediante impresión 3D.
+
+| Propiedad | Valor considerado |
+| :--- | :---: |
+| Densidad | **1200 kg/m³** |
+| Módulo de Young | **1.8 GPa** |
+| Coeficiente de Poisson | **0.35** |
+
+La elección del material permite realizar una evaluación preliminar del comportamiento estructural de la carcasa durante su operación en agua.
+
+---
+
+#### 🌎 Gravedad
+
+Se aplicó una aceleración gravitacional de **9.81 m/s²** para representar el peso propio del prototipo mientras permanece suspendido.
+
+Considerando la densidad del ABS:
+
+> **1200 kg/m³ × 9.81 m/s² = 11 772 N/m³**
+
+De esta manera se considera el efecto del peso del propio dispositivo sobre su estructura.
+
+---
+
+#### 🌊 Fuerza lateral por corriente de agua
+
+Se aplicó una fuerza lateral aproximada de **2 N** para representar de forma simplificada el efecto de una corriente de agua sobre Fishmoon.
+
+> **Fuerza aplicada: 2 N**
+
+Este valor se empleó como una **condición preliminar de diseño**, con el propósito de observar la respuesta de la estructura ante una carga transversal e identificar posibles zonas de concentración de esfuerzos.
+
+---
+
+#### 💧 Presión hidrostática
+
+Se consideró una profundidad aproximada de **1 m**, aplicando una presión hidrostática de **9.81 kPa** sobre las superficies externas del prototipo.
+
+La presión fue estimada mediante:
+
+> **P = ρ · g · h**
+
+> **P ≈ 1000 × 9.81 × 1 = 9810 Pa = 9.81 kPa**
+
+Esta condición representa aproximadamente la presión adicional ejercida por el agua sobre Fishmoon a **1 m de profundidad**.
+
+---
+
+#### 🔗 Sujeción del prototipo
+
+Se estableció un **soporte fijo en la zona superior destinada al cable**, representando la condición en la que Fishmoon permanece suspendido durante la medición.
+
+Esta restricción permite analizar cómo las cargas consideradas en la simulación se transmiten hacia la zona de sujeción.
+
+---
+
+> **📌 Nota:** La simulación corresponde a una evaluación estructural preliminar. La fuerza lateral de **2 N** representa una condición simplificada de corriente y deberá validarse posteriormente utilizando las condiciones reales del entorno de operación.
 
 # Análisis de Simulaciones FEA del Prototipo Subacuático (Prueba Boya) [Eber P. H.]
 
