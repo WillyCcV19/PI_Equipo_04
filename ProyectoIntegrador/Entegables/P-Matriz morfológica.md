@@ -1,1 +1,1 @@
-<img src="/Imagenes/func/MORFO.jpg" width="1500"/>
+<img src="/Imagenes/func/MATRIZ MORFOLÓGICA.png" width="1500"/>
