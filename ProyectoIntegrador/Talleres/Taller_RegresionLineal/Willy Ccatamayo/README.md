@@ -25,4 +25,4 @@
 - El OLS final utiliza todos los datos artificiales: su R² no corresponde a una evaluación en prueba ni al consumo energético.
 - La regresión del consumo se evaluó gráficamente; quedó pendiente calcular sus métricas numéricas de prueba.
 
-**Conclusión:** se practicó el proceso de explorar, entrenar, evaluar e interpretar modelos de regresión, reconociendo que un buen ajuste debe acompañarse de una revisión de los errores y las limitaciones del análisis.
+**Conclusión:** Se practicó el proceso de explorar, entrenar, evaluar e interpretar modelos de regresión, reconociendo que un buen ajuste debe acompañarse de una revisión de los errores y las limitaciones del análisis.
