@@ -24,7 +24,9 @@ Se utilizaron histogramas, gráficos de densidad, diagramas de dispersión y un 
 Se calculó la matriz de correlación para determinar qué variables presentan una mayor relación lineal con el **consumo de energía**.
 
 El análisis permitió observar que las **horas de operación** presentan una de las relaciones positivas más fuertes con el consumo energético dentro del conjunto de datos.
-
+<p align="center">
+  <img src="/Imagenes/TallerIA/Screenshot 2026-09-15 164704.png" width="900"/>
+</p>
 ###  3. Regresión Lineal Múltiple
 
 Se implementó un modelo de **Regresión Lineal Múltiple**, utilizando el consumo de energía como variable objetivo y las demás características como variables predictoras.
