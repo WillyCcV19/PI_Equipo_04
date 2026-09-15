@@ -21,9 +21,19 @@ Se utilizaron histogramas, gráficos de densidad, diagramas de dispersión y un 
 
 ###  2. Análisis de correlación
 
-Se calculó la matriz de correlación para determinar qué variables presentan una mayor relación lineal con el **consumo de energía**.
+Se seleccionaron únicamente las variables numéricas del conjunto de datos y se utilizó el método `corr()` de **Pandas** para calcular la matriz de correlación. Esto permitió identificar qué variables presentan una mayor relación lineal con el **consumo de energía**.
 
-El análisis permitió observar que las **horas de operación** presentan una de las relaciones positivas más fuertes con el consumo energético dentro del conjunto de datos.
+```python
+numeric_df = df.select_dtypes(include=np.number)
+
+# Selecciona solo las columnas con valores numéricos
+numeric_df.head()
+
+# Cálculo de la matriz de correlación
+numeric_df.corr().round(4)
+```
+
+Posteriormente, la matriz de correlación fue representada gráficamente mediante un **mapa de calor (heatmap)** utilizando la librería **Seaborn**.
 <p align="center">
   <img src="/Imagenes/TallerIA/Screenshot 2026-09-15 164704.png" width="900"/>
 </p>
