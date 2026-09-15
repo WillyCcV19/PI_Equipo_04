@@ -15,6 +15,9 @@ Se analizaron variables como:
 - 🔋 Consumo de energía
 
 Se utilizaron histogramas, gráficos de densidad, diagramas de dispersión y un mapa de calor para identificar posibles relaciones entre las variables.
+<p align="center">
+  <img src="/Imagenes/Integrantes/banner.png" width="900"/>
+</p>
 
 ### 🔗 2. Análisis de correlación
 
