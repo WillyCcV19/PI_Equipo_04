@@ -1,4 +1,4 @@
-# Resumen Técnico del Análisis Exploratorio de Datos (EDA) y Proyecto de Regresión
+# Resumen del Análisis Exploratorio de Datos (EDA) y Proyecto de Regresión
 
 Este documento sintetiza la estructura, el comportamiento y los hallazgos fundamentales del conjunto de datos analizado en el proyecto. Su objetivo es explicar de manera clara y rigurosa la relación entre las variables de operación y el consumo energético obtenido.
 
@@ -33,21 +33,22 @@ A continuación se detalla la caracterización estadística de cada variable ana
 
 Para facilitar la interpretación del análisis exploratorio, se incluyen las visualizaciones clave generadas en el entorno del notebook.
 
-### [Cuadro para Foto 50: Matriz de Dispersión / Pairplot]
+<p align="center">
+  <img src="/Imagenes/TallerIA/50.png" width="900"/>
+</p>
 
-**Identificador:** Foto 50
 
 **Descripción:** Visión global de las relaciones cruzadas entre todas las variables del dataset (sns.pairplot). En la diagonal principal se observan las distribuciones individuales (histogramas) y en los paneles fuera de la diagonal las nubes de puntos de dispersión.
 
-### [Cuadro para Foto 51: Matriz de Correlación / Heatmap]
-
-**Identificador:** Foto 51
+<p align="center">
+  <img src="/Imagenes/TallerIA/51.png" width="900"/>
+</p>
 
 **Descripción:** Mapa de calor de correlación de Pearson. Cuantifica en una escala de $-1$ a $+1$ la fuerza de la relación lineal entre cada par de variables.
 
-### [Cuadro para Foto 52: Dispersión Específica de Consumo vs. Horas de Operación]
-
-**Identificador:** Foto 52
+<p align="center">
+  <img src="/Imagenes/TallerIA/52.png" width="900"/>
+</p>
 
 **Descripción:** Gráfico de dispersión (scatterplot) que detalla cómo evoluciona el Consumo_Energia conforme aumentan las Horas_Operacion, discriminando los datos mediante la variable Temperatura.
 
