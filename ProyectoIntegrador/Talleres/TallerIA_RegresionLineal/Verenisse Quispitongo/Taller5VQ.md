@@ -43,9 +43,12 @@ Posteriormente, la matriz de correlación fue representada gráficamente mediant
 Se implementó un modelo de **Regresión Lineal Múltiple**, utilizando el consumo de energía como variable objetivo y las demás características como variables predictoras.
 
 Los datos fueron divididos en:
+El parámetro `test_size=0.2` indica que el **20 % de los datos se utiliza para prueba**, mientras que el **80 % restante se utiliza para entrenamiento**.
 
 > **80 % para entrenamiento**  
 > **20 % para prueba**
+
+Además, se utilizó `random_state=123` para que la división de los datos sea reproducible y se obtenga la misma separación cada vez que se ejecute el código
 
 El modelo fue entrenado utilizando `LinearRegression` de **Scikit-learn**.
 
@@ -55,7 +58,7 @@ Después de entrenar el modelo de **Regresión Lineal Múltiple**, se analizaron
 
 Además, se representó gráficamente la relación entre cada variable predictora y el **consumo de energía** mediante diagramas de dispersión.
 
-![Relación entre variables y consumo de energía](/Imagenes/TallerIA/Screenshot 2026-09-15 203843.png)
+![Relación entre variables y consumo de energía](/Imagenes/TallerIA/variables_consumo.png)
 
 
 En los gráficos se puede observar que las **horas de operación** presentan una relación positiva más clara con el consumo de energía, ya que conforme aumentan las horas de funcionamiento también tiende a aumentar el consumo.
