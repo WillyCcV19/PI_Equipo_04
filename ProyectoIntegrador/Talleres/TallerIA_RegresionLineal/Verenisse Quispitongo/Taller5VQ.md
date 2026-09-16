@@ -37,6 +37,7 @@ Posteriormente, la matriz de correlación fue representada gráficamente mediant
 <p align="center">
   <img src="/Imagenes/TallerIA/Screenshot 2026-09-15 164704.png" width="900"/>
 </p>
+
 ###  3. Regresión Lineal Múltiple
 
 Se implementó un modelo de **Regresión Lineal Múltiple**, utilizando el consumo de energía como variable objetivo y las demás características como variables predictoras.
@@ -50,9 +51,18 @@ El modelo fue entrenado utilizando `LinearRegression` de **Scikit-learn**.
 
 ###  4. Análisis de los coeficientes
 
-Después del entrenamiento se analizaron los coeficientes obtenidos por el modelo, junto con su error estándar y estadístico t.
+Después de entrenar el modelo de **Regresión Lineal Múltiple**, se analizaron los coeficientes obtenidos para conocer la influencia de cada variable sobre la predicción del consumo de energía.
 
-Esto permitió estudiar la influencia de cada variable sobre la predicción del consumo energético.
+Además, se representó gráficamente la relación entre cada variable predictora y el **consumo de energía** mediante diagramas de dispersión.
+
+![Relación entre variables y consumo de energía](/Imagenes/TallerIA/Screenshot 2026-09-15 203843.png)
+
+
+En los gráficos se puede observar que las **horas de operación** presentan una relación positiva más clara con el consumo de energía, ya que conforme aumentan las horas de funcionamiento también tiende a aumentar el consumo.
+
+La variable **carga** también muestra una tendencia positiva, aunque menos marcada. Por otro lado, la **temperatura** y la **humedad** presentan una relación visual mucho más débil con el consumo energético.
+
+Este análisis permite comprender cuáles de las variables tienen una mayor influencia y relación con el comportamiento del consumo de energía.
 
 ###  5. Evaluación del modelo
 
