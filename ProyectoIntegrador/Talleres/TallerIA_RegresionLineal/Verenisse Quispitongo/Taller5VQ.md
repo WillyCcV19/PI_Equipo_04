@@ -72,6 +72,11 @@ Este análisis permite comprender cuáles de las variables tienen una mayor infl
 Se realizaron predicciones utilizando los datos de prueba y se compararon los:
 
 > **Valores reales vs. Valores predichos**
+<p align="center">
+  <img src="/Imagenes/TallerIA/Screenshot 2026-09-15 210025.png" width="900"/>
+</p>
+
+*La cercanía de los puntos a una tendencia lineal indica que las predicciones del modelo se aproximan a los valores reales.*
 
 También se analizaron los **residuos**, es decir, las diferencias entre los valores reales y las predicciones del modelo, para evaluar su comportamiento.
 
