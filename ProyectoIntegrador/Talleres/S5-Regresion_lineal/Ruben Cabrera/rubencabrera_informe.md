@@ -403,23 +403,3 @@ the Reporting of Daily Air Quality — the Air Quality Index (AQI),"
 EPA 454/B-18-007, Research Triangle Park, NC, EE. UU., 2018.
 
 ---
-
-## Anexo — Estructura del repositorio
-
-```
-.
-├── README.md                            # Este informe
-├── regresion_NO2_Washington.ipynb       # Notebook de Google Colab
-├── datos/
-│   ├── ad_viz_plotval_data.csv          # NO2, Washington, 2022 (EPA)
-│   └── ad_viz_plotval_data-2.csv        # NO2, Washington, 2023 (EPA)
-└── figuras/
-    ├── fig1_estacionalidad.png
-    ├── fig2_residuos.png
-    ├── fig3_regresion_simple.png
-    ├── fig4_m2_prueba.png
-    └── fig5_qq.png
-```
-
-Para reproducir el análisis: abrir el notebook en Google Colab, subir los dos
-archivos CSV al entorno y ejecutar todas las celdas.
