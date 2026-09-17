@@ -170,7 +170,8 @@ refleja en un AQI promedio de 3.2 sobre una escala de 500.
 | Noviembre | 0.347 | 0.300 | 0.131 |
 | Diciembre | 0.349 | 0.300 | 0.149 |
 
-<img src="/Imagenes/TallerIA/Semana5_Tarea/Willy/fig1_estacionalidad.png" width="1000"/>
+<img src="/Imagenes/TallerIA/Semana5_Tarea/Willy/fig1_estacionalidad.png" width="900"/>
+
 *Figura 1. Distribución mensual de la concentración diaria de CO.*
 
 Se observa un patrón estacional claro: los valores mínimos se concentran en
@@ -194,7 +195,7 @@ anticipa la heterocedasticidad detectada posteriormente en los residuos.
 | Flax Pond | 0.204 | 0.4 |
 | PINNACLE STATE PARK | 0.125 | 0.3 |
 
-![CO promedio por estación](figuras/fig2_por_estacion.png)
+<img src="/Imagenes/TallerIA/Semana5_Tarea/Willy/fig2_por_estacion.png" width="900"/>
 
 *Figura 2. Concentración media anual de CO por estación de monitoreo.*
 
@@ -234,7 +235,7 @@ CO = 0.2828 + 0.0000799 · t
 | RMSE (ajuste) | 0.0971 ppm |
 | MAE (ajuste) | 0.0689 ppm |
 
-![Serie diaria y recta de regresión](figuras/fig3_regresion_simple.png)
+<img src="/Imagenes/TallerIA/Semana5_Tarea/Willy/fig3_regresion_simple.png" width="900"/>
 
 *Figura 3. Serie diaria de CO con la recta ajustada del modelo M1.*
 
@@ -322,7 +323,7 @@ de los coeficientes en escala logarítmica es directa:
 
 Entrenamiento: 272 días. Prueba: 92 días (octubre–diciembre de 2022).
 
-![Real vs predicho M4](figuras/fig4_m4_prueba.png)
+<img src="/Imagenes/TallerIA/Semana5_Tarea/Willy/fig4_m4_prueba.png" width="900"/>
 
 *Figura 4. Valores reales y predichos por el modelo M4 en el conjunto de prueba.*
 
@@ -357,7 +358,7 @@ asimétrica.
 | M2 (niveles) | 0.939 | 3.300 | 218.636 | < 0.0001 |
 | M4 (log-log) | 0.284 | 0.535 | 9.256 | 0.0098 |
 
-![Q-Q comparativo](figuras/fig5_qq.png)
+<img src="/Imagenes/TallerIA/Semana5_Tarea/Willy/fig5_qq.png" width="900"/>
 
 *Figura 5. Gráficos cuantil-cuantil de los residuos de M2 y M4.*
 
