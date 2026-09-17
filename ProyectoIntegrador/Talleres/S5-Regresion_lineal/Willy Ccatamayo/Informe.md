@@ -170,7 +170,7 @@ refleja en un AQI promedio de 3.2 sobre una escala de 500.
 | Noviembre | 0.347 | 0.300 | 0.131 |
 | Diciembre | 0.349 | 0.300 | 0.149 |
 
-<img src="/Imagenes/TallerIA/Semana 5_Tarea/fig1_estacionalidad.png" width="700"/>
+<img src="Imagenes/TallerIA/Semana 5_Tarea/Willy/fig1_estacionalidad.png" width="700"/>
 
 *Figura 1. Distribución mensual de la concentración diaria de CO.*
 
