@@ -286,7 +286,9 @@ un ligero aumento de la dispersión hacia los valores predichos más altos
 días del episodio de 2022. En la especificación logarítmica esta dispersión se
 estabiliza.
 
-![Q-Q comparativo](figuras/fig5_qq.png)
+
+<img src="/Imagenes/TallerIA/Semana5_Tarea/Ruben/figuras/fig5_qq.png" width="900"/>
+
 
 *Figura 5. Gráficos cuantil-cuantil de los residuos de M2 y M3.*
 
