@@ -40,7 +40,9 @@ La concentración de PM2.5 se encuentra expresada en **µg/m³**.
 
 Antes de construir el modelo se realizó un gráfico de dispersión entre la concentración media diaria de **PM2.5** y el valor diario del **AQI**.
 
-![Relación entre PM2.5 y AQI](Imagenes/TallerIA/pm25_aqi.png)
+<p align="center">
+  <img src="/Imagenes/TallerIA/Screenshot 2026-09-17 162529.png"/>
+</p>
 
 *Figura 1. Relación entre la concentración media diaria de PM2.5 y el AQI.*
 
@@ -94,6 +96,9 @@ Después de este proceso se obtuvieron los siguientes parámetros:
 |---|---:|
 | Intercepto | 13.5774 |
 | Coeficiente de PM2.5 | 3.3481 |
+<p align="center">
+  <img src="/Imagenes/TallerIA/Screenshot 2026-09-17 163441.png"/>
+</p>
 
 Por lo tanto, el modelo obtenido con los datos de entrenamiento puede representarse aproximadamente mediante:
 
@@ -107,21 +112,12 @@ Posteriormente se realizaron predicciones utilizando únicamente el conjunto de 
 predicciones = modelo.predict(X_test)
 ```
 
-### 2.5. Evaluación del modelo
+### 2.5. Predicciones y análisis de residuos
 
-Para evaluar el desempeño predictivo se utilizaron tres métricas:
-
-- **R²:** mide la proporción de variabilidad de la variable objetivo explicada por el modelo.
-- **MAE:** representa el error absoluto promedio entre los valores reales y predichos.
-- **RMSE:** mide el error cuadrático medio y penaliza en mayor medida los errores grandes.
-
-Los residuos se calcularon mediante:
+Después de entrenar el modelo se realizaron predicciones utilizando los datos de prueba:
 
 ```python
-residuos = y_test - predicciones
-```
-
-Estos representan la diferencia entre los valores reales y los valores estimados por el modelo.
+predicciones = modelo.predict(X_test)
 
 ### 2.6. Prueba estadística mediante OLS
 
@@ -173,21 +169,8 @@ Este valor cercano a 1 evidencia una **asociación lineal positiva fuerte** entr
 
 Esto también puede apreciarse en el diagrama de dispersión, donde los puntos siguen una tendencia ascendente.
 
-### 3.2. Evaluación predictiva
 
-Al realizar las predicciones sobre el **20 % de los datos reservado para prueba**, se obtuvieron los siguientes resultados:
-
-| Métrica | Resultado |
-|---|---:|
-| R² | **0.8992** |
-| MAE | **3.4520** |
-| RMSE | **4.0779** |
-
-El valor de **R² = 0.8992** indica que, para el conjunto de prueba utilizado, aproximadamente el **89.9 % de la variabilidad observada en el AQI fue explicada por el modelo lineal**.
-
-El MAE obtenido indica una diferencia absoluta promedio de aproximadamente **3.45 unidades de AQI** entre los valores reales y las predicciones.
-
-### 3.3. Valores reales frente a valores predichos
+### 3.2. Valores reales frente a valores predichos
 
 Se compararon gráficamente los valores reales del AQI con los valores estimados por el modelo.
 
@@ -197,7 +180,7 @@ Se compararon gráficamente los valores reales del AQI con los valores estimados
 
 Los puntos presentan una tendencia aproximadamente lineal, mostrando que gran parte de las predicciones se aproximan a los valores observados.
 
-### 3.4. Análisis de residuos
+### 3.3. Análisis de residuos
 
 También se analizó la diferencia entre cada observación real y su respectiva predicción.
 
@@ -207,7 +190,7 @@ También se analizó la diferencia entre cada observación real y su respectiva 
 
 El análisis de residuos permite observar el comportamiento de los errores y detectar posibles desviaciones o patrones que no hayan sido explicados por el modelo lineal.
 
-### 3.5. Resultados de la prueba estadística OLS
+### 3.4. Resultados de la prueba estadística OLS
 
 El análisis mediante Statsmodels se realizó utilizando las **115 observaciones** disponibles en el conjunto de datos.
 
@@ -254,40 +237,34 @@ lo cual indica que el modelo lineal considerado en su conjunto resulta estadíst
 ---
 
 ## 4. Discusión
+Los resultados obtenidos muestran una asociación positiva fuerte entre la concentración media diaria de **PM2.5** y el **AQI**.
 
-Los resultados obtenidos mediante diferentes métodos muestran una asociación positiva fuerte entre la concentración media diaria de **PM2.5** y el **AQI**.
+El coeficiente de correlación obtenido fue de aproximadamente **0.935**, mientras que el modelo estadístico mediante OLS presentó un **R² de 0.874**. Estos resultados muestran que existe una relación lineal importante entre ambas variables.
 
-El coeficiente de correlación obtenido fue de aproximadamente **0.935**, mientras que el modelo estadístico OLS presentó un **R² de 0.874**. En una regresión lineal simple con intercepto, estos resultados son coherentes entre sí, ya que el cuadrado de la correlación se encuentra muy próximo al coeficiente de determinación obtenido.
+Además, la prueba estadística presentó un **p-value menor a 0.001**, proporcionando evidencia suficiente para considerar estadísticamente significativo el coeficiente lineal asociado a PM2.5.
 
-Por otro lado, el modelo entrenado con Scikit-learn obtuvo un **R² de 0.8992 sobre el conjunto de prueba**, acompañado de un MAE de aproximadamente **3.45** y un RMSE de aproximadamente **4.08**.
+El análisis gráfico de los valores reales frente a los predichos permitió observar el comportamiento de las estimaciones realizadas por el modelo. Asimismo, mediante el gráfico de residuos se analizaron visualmente los errores generados durante la predicción.
 
-Debe considerarse que el R² obtenido mediante Scikit-learn y el R² mostrado por Statsmodels no corresponden exactamente al mismo procedimiento. El primero evalúa las predicciones sobre el **20 % reservado para prueba**, mientras que el modelo OLS fue ajustado utilizando las **115 observaciones** del conjunto completo.
-
-La prueba estadística mostró además un **p-value menor a 0.001**, proporcionando evidencia suficiente para considerar significativo el coeficiente lineal asociado a PM2.5.
-
-Sin embargo, esta relación debe interpretarse considerando la naturaleza de las variables. El AQI es un índice utilizado por la EPA para comunicar la calidad del aire y puede calcularse a partir de concentraciones de contaminantes, entre ellos PM2.5 [2], [3]. Por ello, la fuerte asociación encontrada entre ambas variables es esperable y el presente análisis debe entenderse principalmente como una aplicación de técnicas de regresión lineal y análisis estadístico, no como evidencia de una relación causal independiente.
+Sin embargo, esta relación debe interpretarse considerando la naturaleza de las variables. El AQI es un índice utilizado por la EPA para comunicar la calidad del aire y puede calcularse a partir de concentraciones de contaminantes, entre ellos PM2.5 [2], [3]. Por ello, la fuerte asociación encontrada entre ambas variables es esperable y el presente análisis debe entenderse principalmente como una aplicación de técnicas de regresión lineal y análisis estadístico.
 
 Otra limitación es que los datos analizados pertenecen a **un único sitio de monitoreo** y a un periodo específico del año 2022. Por lo tanto, los resultados no deben generalizarse automáticamente a otras ubicaciones o periodos.
 
-Asimismo, la división de entrenamiento y prueba fue realizada aleatoriamente. Al tratarse de observaciones fechadas, un análisis futuro podría considerar una separación cronológica para evaluar el comportamiento predictivo sobre periodos posteriores.
-
 ---
-
 ## 5. Conclusiones
 
-El análisis permitió estudiar la relación entre la concentración media diaria de **PM2.5** y el **Índice de Calidad del Aire (AQI)** utilizando técnicas de Regresión Lineal Simple.
+El análisis permitió estudiar la relación entre la concentración media diaria de **PM2.5** y el **Índice de Calidad del Aire (AQI)** mediante un modelo de Regresión Lineal Simple.
 
-Se encontró una correlación positiva fuerte de aproximadamente **0.935** entre ambas variables.
+Se encontró una correlación positiva fuerte de aproximadamente **0.935** entre ambas variables, indicando que los valores de AQI tienden a aumentar conforme aumenta la concentración de PM2.5.
 
-El modelo desarrollado con Scikit-learn obtuvo un **R² de 0.8992** sobre los datos de prueba, indicando un alto nivel de ajuste para las observaciones utilizadas. Asimismo, se obtuvo un MAE de **3.45** y un RMSE de **4.08**.
+Mediante la comparación entre los valores reales y los valores predichos se pudo observar el comportamiento de las estimaciones realizadas por el modelo. Asimismo, el análisis de residuos permitió estudiar visualmente los errores generados durante la predicción.
 
-La prueba estadística mediante OLS confirmó que el coeficiente correspondiente a PM2.5 es estadísticamente significativo, debido a que presentó un **p-value inferior a 0.05**.
+La prueba estadística realizada mediante **OLS** presentó un **R² de 0.874** y confirmó que el coeficiente correspondiente a PM2.5 es estadísticamente significativo, debido a que presentó un **p-value inferior a 0.05**.
 
-Por lo tanto, se concluye que existe una asociación lineal positiva y estadísticamente significativa entre las variables dentro del conjunto de datos analizado.
+Por lo tanto, se concluye que existe una asociación lineal positiva y estadísticamente significativa entre la concentración media diaria de PM2.5 y el AQI dentro del conjunto de datos analizado.
 
 Finalmente, el trabajo permitió aplicar las principales etapas de un análisis de regresión:
 
-> **Exploración de datos → Selección de variables → Entrenamiento → Predicción → Evaluación → Análisis estadístico**
+> **Exploración de datos → Selección de variables → Entrenamiento → Predicción → Análisis de residuos → Análisis estadístico**
 
 ---
 
