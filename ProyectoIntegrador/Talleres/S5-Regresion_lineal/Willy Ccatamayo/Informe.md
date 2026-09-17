@@ -506,23 +506,3 @@ https://www.epa.gov/co-pollution. [Accedido: 17-sep-2026].
 the Reporting of Daily Air Quality — the Air Quality Index (AQI),"
 EPA 454/B-18-007, Research Triangle Park, NC, EE. UU., 2018.
 
----
-
-## Anexo — Estructura del repositorio
-
-```
-.
-├── README.md                          # Este informe
-├── regresion_CO_NuevaYork.ipynb       # Notebook de Google Colab
-├── datos/
-│   └── Data1_CO_New_York.csv          # CO, Nueva York, 2022 (EPA)
-└── figuras/
-    ├── fig1_estacionalidad.png
-    ├── fig2_por_estacion.png
-    ├── fig3_regresion_simple.png
-    ├── fig4_m4_prueba.png
-    └── fig5_qq.png
-```
-
-Para reproducir el análisis: abrir el notebook en Google Colab, subir el archivo
-`Data1_CO_New_York.csv` al entorno y ejecutar todas las celdas.
