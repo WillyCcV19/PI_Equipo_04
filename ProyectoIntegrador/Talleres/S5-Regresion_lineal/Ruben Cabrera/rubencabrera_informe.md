@@ -130,7 +130,7 @@ Python 3 en Google Colab, con las librerías `pandas` [2], `numpy`,
 
 ### 3.2 Patrón estacional
 
-![Estacionalidad mensual del NO2](figuras/fig1_estacionalidad.png)
+<img src="/Imagenes/TallerIA/Semana5_Tarea/Ruben/fig1_estacionalidad.png" width="900"/>
 
 *Figura 1. Distribución mensual de la concentración diaria de NO₂.*
 
@@ -171,7 +171,7 @@ NO₂ = 24.9076 − 0.00210 · t
 | RMSE | 7.653 ppb |
 | MAE | 5.836 ppb |
 
-![Serie diaria y recta de regresión](figuras/fig3_regresion_simple.png)
+<img src="/Imagenes/TallerIA/Semana5_Tarea/Ruben/fig3_regresion_simple.png" width="900"/>
 
 *Figura 3. Serie diaria de NO₂ con la recta ajustada del modelo M1.*
 
@@ -207,7 +207,7 @@ NO₂ = 15.2260 − 0.00260·t − 1.0473·sin_doy + 0.7217·cos_doy + 0.4089·l
 | MAE | — | 5.059 ppb |
 | Durbin-Watson | 1.983 | — |
 
-![Real vs predicho M2](figuras/fig4_m2_prueba.png)
+<img src="/Imagenes/TallerIA/Semana5_Tarea/Ruben/fig4_m2_prueba.png" width="900"/>
 
 *Figura 4. Valores reales y predichos por el modelo M2 en el conjunto de prueba
 (julio–diciembre de 2023).*
@@ -274,7 +274,7 @@ sección siguiente.
 
 ### 3.8 Verificación de supuestos
 
-![Residuos frente a valores predichos](figuras/fig2_residuos.png)
+<img src="/Imagenes/TallerIA/Semana5_Tarea/Ruben/fig2_residuos.png" width="900"/>
 
 *Figura 2. Residuos frente a valores predichos en ambas especificaciones.*
 
