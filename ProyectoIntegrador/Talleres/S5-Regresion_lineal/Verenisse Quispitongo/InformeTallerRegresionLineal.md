@@ -174,9 +174,11 @@ Esto también puede apreciarse en el diagrama de dispersión, donde los puntos s
 
 Se compararon gráficamente los valores reales del AQI con los valores estimados por el modelo.
 
-![AQI real vs. AQI predicho](Imagenes/TallerIA/real_predicho.png)
+<p align="center">
+  <img src="/Imagenes/TallerIA/Screenshot 2026-09-17 165307.png"/>
+</p>
 
-*Figura 2. Comparación entre los valores reales y predichos del AQI.*
+*Comparación entre los valores reales y predichos del AQI.*
 
 Los puntos presentan una tendencia aproximadamente lineal, mostrando que gran parte de las predicciones se aproximan a los valores observados.
 
@@ -184,9 +186,11 @@ Los puntos presentan una tendencia aproximadamente lineal, mostrando que gran pa
 
 También se analizó la diferencia entre cada observación real y su respectiva predicción.
 
-![Valores residuales vs predichos](Imagenes/TallerIA/residuos_predichos.png)
+<p align="center">
+  <img src="/Imagenes/TallerIA/Screenshot 2026-09-17 165023.png"/>
+</p>
 
-*Figura 3. Residuos obtenidos por el modelo frente a los valores predichos.*
+*Residuos obtenidos por el modelo frente a los valores predichos.*
 
 El análisis de residuos permite observar el comportamiento de los errores y detectar posibles desviaciones o patrones que no hayan sido explicados por el modelo lineal.
 
