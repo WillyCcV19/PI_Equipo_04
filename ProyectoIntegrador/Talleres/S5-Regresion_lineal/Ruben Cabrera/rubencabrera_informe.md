@@ -287,7 +287,7 @@ días del episodio de 2022. En la especificación logarítmica esta dispersión 
 estabiliza.
 
 
-<img src="/Imagenes/TallerIA/Semana5_Tarea/Ruben/figuras/fig5_qq.png" width="900"/>
+<img src="/Imagenes/TallerIA/Semana5_Tarea/Ruben/fig5_qq.png" width="900"/>
 
 
 *Figura 5. Gráficos cuantil-cuantil de los residuos de M2 y M3.*
