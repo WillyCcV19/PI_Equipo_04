@@ -118,7 +118,7 @@ Después de entrenar el modelo se realizaron predicciones utilizando los datos d
 
 ```python
 predicciones = modelo.predict(X_test)
-
+```
 ### 2.6. Prueba estadística mediante OLS
 
 Además del modelo predictivo desarrollado con Scikit-learn, se realizó un análisis estadístico mediante **Ordinary Least Squares (OLS)** o Mínimos Cuadrados Ordinarios utilizando la biblioteca **Statsmodels** [5].
@@ -175,7 +175,7 @@ Esto también puede apreciarse en el diagrama de dispersión, donde los puntos s
 Se compararon gráficamente los valores reales del AQI con los valores estimados por el modelo.
 
 <p align="center">
-  <img src="/Imagenes/TallerIA/Screenshot 2026-09-17 165307.png"/>
+  <img src="/Imagenes/TallerIA/Screenshot 2026-09-17 212651.png"/>
 </p>
 
 *Comparación entre los valores reales y predichos del AQI.*
