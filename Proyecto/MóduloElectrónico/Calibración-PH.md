@@ -18,3 +18,9 @@ Unidades: mV
 |94| -67.3| -218|
 |95.7| -68| -230|
 |102| -63| -225|
+
+
+REF RIN
+OUT NC
+VCC GND
+SIGNAL PULSE
