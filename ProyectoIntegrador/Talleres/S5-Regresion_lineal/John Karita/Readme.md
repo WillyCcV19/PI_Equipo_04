@@ -43,11 +43,11 @@ Se utilizó un modelo de regresión lineal proveniente de la librería scikit le
 ## Con AQI (Índice de calidad de aire)
 | Curva de regresión | Residuales | Distribución de residuales |
 | --- | --- | --- |
-| a | a | a |
+| <img src="/Imagenes/TallerIA/regresion1.png" width=500/> | <img src="/Imagenes/TallerIA/residual1.png" width=500/> | <img src="/Imagenes/TallerIA/distribucion1.png" width=500/> |
 
 ## Sin AQI como una de las variables predictoras
 | Curva de regresión | Residuales | Distribución de residuales |
 | --- | --- | --- |
-| a | a | a |
+| <img src="/Imagenes/TallerIA/regresion2.png" width=500/> | <img src="/Imagenes/TallerIA/residual2.png" width=500/> | <img src="/Imagenes/TallerIA/distribucion2.png" width=500/> |
 
 ...
