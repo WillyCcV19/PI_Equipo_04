@@ -7,7 +7,7 @@
 
 <br>
 
-![Escudo UPCH](https://upload.wikimedia.org/wikipedia/commons/e/eb/Escudo_UPCH.png)
+<img src="/Imagenes/TallerIA/Semana5_Tarea/eber/123.png" width="500"/>
 
 <br>
 
