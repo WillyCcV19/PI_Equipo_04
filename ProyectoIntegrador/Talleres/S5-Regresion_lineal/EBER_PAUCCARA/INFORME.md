@@ -1,7 +1,3 @@
-<div align="center">
-
-
-<br>
 
 # “Año de la Esperanza y el Fortalecimiento de la Democracia”
 
