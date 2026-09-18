@@ -63,4 +63,5 @@ El modelo con AQI presenta un mejor desempeño y menor rango de residuales. Al e
 
 # Referencias
 [1] U.S. Environmental Protection Agency, U.S. E.P.A. Air data. [En línea]. Disponible en: https://rconnect-public.epa.gov/AirData/
+
 [2] U.S. Environmental Protection Agency, "Technical Assistance Document for the Reporting of Daily Air Quality", U.S. E.P.A. [En línea]. Disponible en: https://document.airnow.gov/technical-assistance-document-for-the-reporting-of-daily-air-quailty.pdf
