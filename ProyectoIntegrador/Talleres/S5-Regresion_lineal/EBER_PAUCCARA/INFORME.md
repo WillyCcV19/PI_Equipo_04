@@ -3,7 +3,7 @@
 
 <br>
 
-<img src="/Imagenes/TallerIA/Semana5_Tarea/eber/123.png" width="500"/>
+<img src="/Imagenes/TallerIA/Semana5_Tarea/eber/abc.png" width="500"/>
 
 <br>
 
