@@ -1,6 +1,42 @@
+<div align="center">
+
+
+<br>
+
+# “Año de la Esperanza y el Fortalecimiento de la Democracia”
+
+<br>
+
+![Escudo UPCH](https://upload.wikimedia.org/wikipedia/commons/e/eb/Escudo_UPCH.png)
+
+<br>
+
+
 # INFORME TÉCNICO DE EVALUACIÓN ESTADÍSTICA Y CALIDAD DEL AIRE POR DIÓXIDO DE AZUFRE ($SO_2$) EN NORTH BIRMINGHAM (2023)
 
 ---
+***Curso:*** *Proyecto Integrador*
+
+---
+
+### **Docentes:**
+
+- UMBERT LEWIS DE LA CRUZ RODRIGUEZ
+- VANESSA STEFANNY STEFANNY AREVALO
+- RENZO JOSE CHAN RIOS
+
+---
+
+### **Integrante:**
+
+- Eber Pauccara Huancara
+
+<br>
+
+### **2026**
+
+### **Lima – Perú**
+
 
 ## ÍNDICE
 
@@ -40,8 +76,8 @@ Los datos analizados corresponden a la medición continua de dióxido de azufre 
   * Estación Adyacente de Control: `01-073-1003` [1].
 * **Código de Parámetro del Contaminante:** `42401` (Dióxido de Azufre / $SO_2$) [1].
 
-![Ubicación Geográfica y Ficha AQS de la Estación North Birmingham](https://via.placeholder.com/800x400.png?text=Ubicacion+Estacion+North+Birmingham+AQS+Site+01-073-0023)
-*Figura 1: Ubicación geográfica de la estación de monitoreo AQS `01-073-0023` en North Birmingham, Condado de Jefferson, Alabama.*
+<img src="/Imagenes/TallerIA/Semana5_Tarea/eber/100.png" width="500"/>
+
 
 La **Figura 1** ilustra la localización estratégica de la estación de monitoreo dentro del entramado urbano de North Birmingham. El emplazamiento del sitio `01-073-0023` permite capturar de forma representativa la exposición atmosférica real de la población local, considerando la proximidad a vías de transporte con tráfico pesado e instalaciones industriales históricas de la zona [2], [3].
 
@@ -85,8 +121,9 @@ Las mediciones recolectadas provienen de analizadores automáticos operados bajo
 1. **Método Código 100 (*UV Fluorescence*):** El aire ingresa de forma continua a una cámara de reacción donde las moléculas de $SO_2$ son irradiadas con luz ultravioleta en una longitud de onda de aproximadamente $214 \text{ nm}$ [5]. Al volver a su estado fundamental, el $SO_2$ emite fotones fluorescentes cuya intensidad es medida por un tubo fotomultiplicador, siendo directamente proporcional a la concentración en el ambiente [5].
 2. **Método Código 188 (*Advanced UV Fluorescence*):** Sistema óptico mejorado que incorpora tecnología digital para la compensación de interferencias por hidrocarburos aromáticos y variaciones térmicas de la lámpara UV [3], [5].
 
-![Diagrama Instrumental del Método de Fluorescencia UV](https://via.placeholder.com/800x350.png?text=Diagrama+del+Metodo+100+y+188+Fluorescencia+UV)
-*Figura 2: Esquema de funcionamiento de los equipos de fluorescencia ultravioleta empleados en los canales POC 1 (Método 100) y POC 2 (Método 188).*
+<img src="/Imagenes/TallerIA/Semana5_Tarea/eber/102.png" width="500"/>
+<img src="/Imagenes/TallerIA/Semana5_Tarea/eber/102.1.png" width="500"/>
+
 
 La **Figura 2** detalla la configuración instrumental de la estación. La presencia concurrente de los métodos $100$ y $188$ en los canales de control **POC 1** y **POC 2** demuestra que la estación cuenta con redundancia tecnológica [1], [3]. Esto garantiza la recolección ininterrumpida de datos aun durante periodos de mantenimiento o calibración de uno de los equipos [3].
 
@@ -121,8 +158,8 @@ Tabla 2: *Resumen estadístico del monitoreo de $SO_2$, AQI y completitud de dat
 | **Índice AQI Diario** | $712$ | $1.7$ | $2.7$ | $0.0$ | $0.0$ | $1.0$ | $3.0$ | $24.0$ |
 | **Completitud de Datos ($\%$)** | $712$ | $98.3\%$ | $4.9\%$ | $75.0\%$ | $100.0\%$ | $100.0\%$ | $100.0\%$ | $100.0\%$ |
 
-![Histograma de Distribución de Concentración de SO2 y AQI](https://via.placeholder.com/800x400.png?text=Histograma+de+Distribucion+de+Frecuencias+SO2)
-*Figura 3: Histograma de frecuencias para las concentraciones máximas diarias de $SO_2$ durante el año 2023.*
+<img src="/Imagenes/TallerIA/Semana5_Tarea/eber/103.png" width="500"/>
+
 
 La **Figura 3** muestra una distribución fuertemente asimétrica hacia la derecha (sesgo positivo). La mayor densidad de observaciones se concentra de manera persistente entre $0.0$ y $2.5 \text{ ppb}$. El sesgo indica que la presencia de concentraciones más elevadas se reduce a eventos infrecuentes y acotados a lo largo del año [1].
 
@@ -149,8 +186,8 @@ El protocolo de control de calidad exige que cada día cuente con al menos el $7
 * **Desempeño Anual:** La completitud promedio de la estación alcanzó un **$98.3\%$**, registrando un valor mínimo del $75.0\%$ [1]. Esto confirma el cumplimiento riguroso de la norma de captura de datos de la EPA [3].
 * **Volumen Muestral:** Los $712$ registros recopilados en un año de $365$ días corresponden al monitoreo simultáneo de los canales **POC 1** y **POC 2** [1]. Sobre un total teórico de $730$ lecturas posibles para ambos canales, la captura efectiva alcanzó el **$97.5\%$**, demostrando la alta disponibilidad de la infraestructura [1], [3].
 
-![Línea de Tiempo del AQI Diario durante 2023](https://via.placeholder.com/800x350.png?text=Evolucion+Temporal+del+AQI+Diario+2023)
-*Figura 4: Evolución diaria del AQI por $SO_2$ en North Birmingham durante los 365 días del año 2023.*
+<img src="/Imagenes/TallerIA/Semana5_Tarea/eber/104.png" width="500"/>
+
 
 La **Figura 4** exhibe el comportamiento temporal del AQI a lo largo del año. Todos los puntos graficados se posicionan dentro de la franja inferior del gráfico, confirmando que la calidad del aire se mantuvo dentro del rango óptimo durante todo el periodo analizado [1], [2].
 
