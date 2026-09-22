@@ -23,3 +23,33 @@ En el ejercicio se trabajó específicamente con imágenes correspondientes a:
 > **Plastic (plástico)**
 
 Las imágenes fueron transformadas a escala de grises para utilizarlas como entrada del modelo.
+
+<p align="center">
+  <img src="/Imagenes/TallerRedesNeuronales/Screenshot 2026-09-22 153117.png" width="900"/>
+</p>
+
+### Construcción de la CNN
+
+Se creó una CNN desde cero utilizando PyTorch.
+
+El modelo está formado por varias capas convolucionales:
+
+```python
+self.features = nn.Sequential(
+    nn.Conv2d(1, 16, kernel_size=3, padding=1),
+    nn.ReLU(),
+    nn.MaxPool2d(2),
+
+    nn.Conv2d(16, 32, kernel_size=3, padding=1),
+    nn.ReLU(),
+    nn.MaxPool2d(2),
+
+    nn.Conv2d(32, 64, kernel_size=3, padding=1),
+    nn.ReLU(),
+    nn.AdaptiveAvgPool2d((1, 1))
+)
+```
+
+A medida que la imagen pasa por las diferentes capas, el modelo va aprendiendo características cada vez más específicas.
+
+Las primeras capas pueden detectar características simples, mientras que las capas posteriores combinan esta información para distinguir entre vidrio y plástico.
