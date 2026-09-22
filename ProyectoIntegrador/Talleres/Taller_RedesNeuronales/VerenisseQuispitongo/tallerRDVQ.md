@@ -136,22 +136,13 @@ En la gráfica se observa que el error de entrenamiento disminuye a medida que a
 ## Comparación con una red más pequeña
 
 También se creó un modelo más pequeño utilizando únicamente cuatro neuronas en la capa oculta.
-
-![Modelo original frente a modelo pequeño](imagenes_redes_neuronales/keras_modelo_original_vs_pequeno.png)
-
+<img width="855" height="787" alt="image" src="https://github.com/user-attachments/assets/1dd8d222-e8bb-4fca-bdfc-996427d2ad2e" />
 El modelo pequeño mantiene durante más épocas un valor de pérdida de validación relativamente estable.
-
 Esto permite observar que reducir la complejidad de una red puede ayudar a disminuir el sobreajuste.
 
 ## Regularización
 
-Posteriormente se aplicó regularización **L2**.
-
-<img width="855" height="787" alt="image" src="https://github.com/user-attachments/assets/1dd8d222-e8bb-4fca-bdfc-996427d2ad2e" />
-
-La regularización penaliza los pesos demasiado grandes y busca que el modelo aprenda una solución menos dependiente de los datos de entrenamiento.
-
-Esto puede producir inicialmente un error mayor, pero busca mejorar la capacidad de generalización.
+Posteriormente se aplicó regularización **L2**. La regularización penaliza los pesos demasiado grandes y busca que el modelo aprenda una solución menos dependiente de los datos de entrenamiento. Esto puede producir inicialmente un error mayor, pero busca mejorar la capacidad de generalización.
 
 ## Dropout
 
