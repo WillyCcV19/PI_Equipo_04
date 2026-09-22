@@ -14,6 +14,7 @@ La forma de trabajo de una CNN normalmente es la siguiente:
 ### Imagen representativa
 
 ![Ejemplos del dataset de vidrio y plástico](redes_neuronales_img/cnn_ejemplos.png)
+<img width="989" height="661" alt="cnn_ejemplos" src="https://github.com/user-attachments/assets/eb2030c0-70ac-4488-aad1-2df53735a41a" />
 
 **Interpretación:** En esta imagen se observan ejemplos del conjunto de datos utilizado en el laboratorio. Las imágenes corresponden a las clases **glass** y **plastic**, que son las dos categorías que la CNN debe aprender a diferenciar a partir de sus características visuales.
 
