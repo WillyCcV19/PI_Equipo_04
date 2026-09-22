@@ -208,7 +208,7 @@ En este gráfico los casos que pertenecen a la misma clase no pueden separarse u
 Por esta razón:
 **Un solo perceptrón no puede resolver XOR.**
 Para resolver este problema se necesitan varias neuronas trabajando juntas, por ejemplo:
-> **2 perceptrones + una capa de salida**
+**2 perceptrones + una capa de salida**
 Este ejemplo permite entender por qué las redes neuronales utilizan varias neuronas y varias capas: existen problemas que una única neurona no puede representar por sí sola.
 
 # 4.- ¿Cuál Red Neuronal usarian en su proyecto?
@@ -236,7 +236,7 @@ Un perceptrón simple puede realizar decisiones básicas, por ejemplo:
 
 Sin embargo, presenta limitaciones cuando existen relaciones más complejas entre varias variables. En Fishmoon no se busca únicamente indicar si existe o no una alerta, sino estimar un valor continuo, por ejemplo:
 
-> **Oxígeno disuelto estimado = 6.4 mg/L**
+**Oxígeno disuelto estimado = 6.4 mg/L**
 
 Además, variables como la temperatura, el pH, la turbidez y la conductividad pueden relacionarse de diferentes maneras con el oxígeno disuelto, por lo que una sola neurona podría resultar insuficiente.
 
