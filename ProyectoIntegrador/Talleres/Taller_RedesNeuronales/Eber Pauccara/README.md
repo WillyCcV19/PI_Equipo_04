@@ -1,4 +1,4 @@
-### CNN, Clasificación con Keras,  Perceptrón y aplicacion en Fishmon 365
+### Resumen de la sesión: CNN, Clasificación con Keras,  Perceptrón y aplicacion en Fishmon 365
 ---
 > Taller de Redes Neuronales — Fundamentos de CNN, Keras y Perceptrón aplicados a un caso de clasificación de residuos, análisis de texto y compuertas lógicas.
 ---
