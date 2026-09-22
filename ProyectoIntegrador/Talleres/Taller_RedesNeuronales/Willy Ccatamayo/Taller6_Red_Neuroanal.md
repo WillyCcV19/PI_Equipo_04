@@ -31,7 +31,7 @@ Además, Keras permite realizar predicciones una vez que el modelo ha sido entre
 
 ### Imagen representativa
 
-![Pérdida de entrenamiento y validación en Keras](redes_neuronales_img/keras_sobreajuste.png)
+<img width="826" height="813" alt="keras_sobreajuste" src="https://github.com/user-attachments/assets/9b79bde4-14e0-44ce-b0d9-c586a86ae1b1" />
 
 **Interpretación:** La gráfica compara el error del modelo durante el entrenamiento con el error obtenido en los datos de validación. En el notebook se observa que la curva de validación deja de disminuir al final, mientras que el modelo continúa aprendiendo los datos de entrenamiento. Esto representa un caso de **sobreajuste**, donde el modelo aprende demasiado bien los datos de entrenamiento y pierde capacidad de generalización.
 
