@@ -1,5 +1,5 @@
-CNN, Clasificación con Keras y Perceptrón
-
+### CNN, Clasificación con Keras,  Perceptrón y aplicacion en Fishmon 365
+---
 > Taller de Redes Neuronales — Fundamentos de CNN, Keras y Perceptrón aplicados a un caso de clasificación de residuos, análisis de texto y compuertas lógicas.
 ---
 
@@ -103,16 +103,16 @@ Esta limitación es la razón histórica por la cual se desarrollaron las redes 
 
 | N° | Sección correspondiente | Contenido |
 |---|---|---|
-| 1 | CNN — Preparación del dataset | Cuadrícula de 12 imágenes de ejemplo, etiquetadas "glass" y "plastic". |
-| 2 | CNN — Entrenamiento desde cero | Curvas de pérdida y de métricas de validación a lo largo de las rondas de entrenamiento. |
-| 3 | CNN — Evaluación final | Matriz de confusión con los aciertos y errores de clasificación en el conjunto de prueba. |
-| 4 | CNN — Interpretabilidad | Comparación entre imagen original, mapa de calor Grad-CAM y superposición de ambos. |
-| 5 | Keras — Modelo de clasificación de reseñas | Curva de pérdida en entrenamiento y validación. |
-| 6 | Keras — Comparación con modelo más pequeño | Curva comparativa entre el modelo original y una versión reducida. |
-| 7 | Keras — Regularización | Curva comparativa incorporando el modelo con regularización. |
-| 8 | Keras — Dropout | Curva comparativa incorporando el modelo con Dropout. |
-| 9 | Perceptrón — Compuertas AND y OR | Líneas de separación encontradas para ambos casos. |
-| 10 | Perceptrón — Límite con XOR | Representación visual de la imposibilidad de separar los casos con una línea recta. |
+| 1 |  <img src="/Imagenes/TallerRedesNeuronales/110.png" width="500"/> | Cuadrícula de 12 imágenes de ejemplo, etiquetadas "glass" y "plastic". |
+| 2 | <img src="/Imagenes/TallerRedesNeuronales/111.png" width="500"/> | Curvas de pérdida y de métricas de validación a lo largo de las rondas de entrenamiento. |
+| 3 |<img src="/Imagenes/TallerRedesNeuronales/112.png" width="500"/> | Matriz de confusión con los aciertos y errores de clasificación en el conjunto de prueba. |
+| 4 | <img src="/Imagenes/TallerRedesNeuronales/113.png" width="500"/> | Comparación entre imagen original, mapa de calor Grad-CAM y superposición de ambos. |
+| 5 | <img src="/Imagenes/TallerRedesNeuronales/114.png" width="500"/> | Curva de pérdida en entrenamiento y validación. |
+| 6 |<img src="/Imagenes/TallerRedesNeuronales/115.png" width="500"/> | Curva comparativa entre el modelo original y una versión reducida. |
+| 7 | <img src="/Imagenes/TallerRedesNeuronales/116.png" width="500"/> | Curva comparativa incorporando el modelo con regularización. |
+| 8 | <img src="/Imagenes/TallerRedesNeuronales/117.png" width="500"/> | Curva comparativa incorporando el modelo con Dropout. |
+| 9 |<img src="/Imagenes/TallerRedesNeuronales/118.png" width="500"/> | Líneas de separación encontradas para ambos casos. |
+| 10 | <img src="/Imagenes/TallerRedesNeuronales/119.png" width="500"/> | Representación visual de la imposibilidad de separar los casos con una línea recta. |
 
 ---
 
