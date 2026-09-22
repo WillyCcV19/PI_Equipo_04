@@ -246,15 +246,5 @@ Una red neuronal multicapa (MLP) permite utilizar varias variables de entrada y 
 
 Su estructura podría ser:
 
-Temperatura ────────┐
-pH ─────────────────┤
-Turbidez ───────────┤
-Conductividad ──────┤
-                    ↓
-          Red neuronal MLP
-            implementada
-              con Keras
-                    ↓
-        Oxígeno disuelto estimado
-                6.4 mg/L
+Temperatura -------pH --------Turbidez ----------Conductividad ---------> Red neuronal MLP implementada con Keras --------> Oxígeno disuelto estimado: 6.4 mg/L
 
