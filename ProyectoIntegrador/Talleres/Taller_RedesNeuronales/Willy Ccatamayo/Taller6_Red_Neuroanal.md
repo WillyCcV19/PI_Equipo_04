@@ -45,7 +45,7 @@ En el laboratorio se utilizan funciones de activación como **escalón** y **tan
 
 ### Imagen representativa
 
-![Fronteras de decisión del perceptrón](redes_neuronales_img/perceptron_fronteras.png)
+<img width="503" height="505" alt="perceptron_fronteras" src="https://github.com/user-attachments/assets/2bf1a97c-51ae-43a0-9c8a-3b64fd45735e" />
 
 **Interpretación:** La gráfica permite visualizar las fronteras de decisión de los perceptrones utilizados para representar las operaciones **AND** y **OR**. Para OR, la frontera separa el punto (0,0) del resto, mientras que para AND separa el punto (1,1) del resto. Esto muestra cómo un perceptrón puede separar diferentes grupos de datos mediante una frontera de decisión.
 
