@@ -107,3 +107,74 @@ Finalmente se utilizó Grad-CAM para visualizar qué regiones de una imagen fuer
 Las regiones más claras o amarillas representan las zonas que tuvieron mayor influencia en la decisión del modelo.
 Las regiones más oscuras representan zonas que tuvieron una menor participación en la predicción.
 Esto permite tener una idea de qué partes de la imagen está utilizando la CNN para distinguir entre los diferentes residuos.
+
+
+# 2. Clasificación binaria utilizando Keras
+
+En la segunda parte se utilizó Keras, una librería que facilita la creación y entrenamiento de redes neuronales.
+
+En este ejercicio se trabajó con el dataset IMDB, que contiene reseñas de películas. El objetivo fue clasificar cada reseña en una de dos categorías:
+> **0 → Reseña negativa**  
+> **1 → Reseña positiva**
+
+## Preparación de los datos
+
+Las palabras de las reseñas se encuentran inicialmente representadas mediante números. Posteriormente se realizó una transformación de los datos mediante una representación tipo One-Hot Encoding**, generando vectores de 10 000 posiciones.De esta manera, la red neuronal puede trabajar con la información de las reseñas en forma numérica.
+
+## Construcción del modelo
+
+La red fue construida utilizando `Sequential` de Keras. El modelo posee dos capas ocultas de **16 neuronas** y una capa final con una sola neurona. La función `ReLU` se utiliza en las capas internas, mientras que `sigmoid` se utiliza en la salida porque el problema tiene únicamente dos posibles resultados. La salida de `sigmoid` puede interpretarse como una probabilidad entre 0 y 1.
+
+## Entrenamiento y sobreajuste
+
+El modelo fue entrenado durante 20 épocas.
+
+<img width="876" height="840" alt="image" src="https://github.com/user-attachments/assets/e00a6448-70b8-4e03-ba5b-15a443507cda" />
+
+En la gráfica se observa que el error de entrenamiento disminuye a medida que avanzan las épocas. Sin embargo, aproximadamente desde la época 4 o 5, el error de validación comienza a aumentar. Este comportamiento indica un caso de **sobreajuste**, ya que el modelo continúa aprendiendo los datos de entrenamiento, pero comienza a perder capacidad para generalizar correctamente a otros datos.
+
+## Comparación con una red más pequeña
+
+También se creó un modelo más pequeño utilizando únicamente cuatro neuronas en la capa oculta.
+
+![Modelo original frente a modelo pequeño](imagenes_redes_neuronales/keras_modelo_original_vs_pequeno.png)
+
+El modelo pequeño mantiene durante más épocas un valor de pérdida de validación relativamente estable.
+
+Esto permite observar que reducir la complejidad de una red puede ayudar a disminuir el sobreajuste.
+
+## Regularización
+
+Posteriormente se aplicó regularización **L2**.
+
+<img width="855" height="787" alt="image" src="https://github.com/user-attachments/assets/1dd8d222-e8bb-4fca-bdfc-996427d2ad2e" />
+
+La regularización penaliza los pesos demasiado grandes y busca que el modelo aprenda una solución menos dependiente de los datos de entrenamiento.
+
+Esto puede producir inicialmente un error mayor, pero busca mejorar la capacidad de generalización.
+
+## Dropout
+
+También se utilizó **Dropout**. Durante el entrenamiento se desactiva aleatoriamente aproximadamente el 50 % de las neuronasde esa capa.bEsto obliga a la red a no depender siempre de las mismas neuronas y permite reducir el riesgo de sobreajuste.
+
+## Predicción
+
+Finalmente se realizaron predicciones utilizando:
+
+```python
+predictions = model.predict(x_test)
+```
+
+Por ejemplo, para uno de los elementos del conjunto de prueba se obtuvo:
+
+```python
+array([0.99375147])
+```
+
+Este valor equivale aproximadamente a una probabilidad de:
+
+> **99.4 %**
+
+Por lo tanto, el modelo interpreta esa reseña como **positiva** con una probabilidad elevada.
+
+
