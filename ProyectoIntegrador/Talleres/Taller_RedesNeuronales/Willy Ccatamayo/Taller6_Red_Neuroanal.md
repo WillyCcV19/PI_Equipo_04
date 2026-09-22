@@ -17,7 +17,7 @@ La forma de trabajo de una CNN normalmente es la siguiente:
 
 **Interpretación:** En esta imagen se observan ejemplos del conjunto de datos utilizado en el laboratorio. Las imágenes corresponden a las clases **glass** y **plastic**, que son las dos categorías que la CNN debe aprender a diferenciar a partir de sus características visuales.
 
-![Métricas de validación de la CNN](redes_neuronales_img/cnn_metricas.png)
+<img width="863" height="395" alt="cnn_metricas" src="https://github.com/user-attachments/assets/dbdbaff0-4ae2-4953-9171-055403d8bdaa" />
 
 **Interpretación:** La gráfica muestra la evolución de las métricas de validación de la CNN entrenada desde cero. De acuerdo con el análisis realizado en el notebook, a partir de la época 4 el modelo comienza a clasificar con mayor exactitud y alcanza aproximadamente un **63.27 % de accuracy**. El ROC-AUC se mantiene alrededor de **0.67 a 0.69**, lo que indica un aprendizaje moderado para diferenciar vidrio de plástico.
 
