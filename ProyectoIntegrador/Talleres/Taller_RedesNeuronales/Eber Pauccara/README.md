@@ -101,39 +101,36 @@ Esta limitación es la razón histórica por la cual se desarrollaron las redes 
 
 ## Imágenes del documento
 
-| N° | Sección correspondiente | Contenido |
+| N° | Sección correspondiente | Qué muestra y qué significa |
 |---|---|---|
-| 1 |  <img src="/Imagenes/TallerRedesNeuronales/110.png" width="500"/> | Cuadrícula de 12 imágenes de ejemplo, etiquetadas "glass" y "plastic". |
-| 2 | <img src="/Imagenes/TallerRedesNeuronales/111.png" width="500"/> | Curvas de pérdida y de métricas de validación a lo largo de las rondas de entrenamiento. |
-| 3 |<img src="/Imagenes/TallerRedesNeuronales/112.png" width="500"/> | Matriz de confusión con los aciertos y errores de clasificación en el conjunto de prueba. |
-| 4 | <img src="/Imagenes/TallerRedesNeuronales/113.png" width="500"/> | Comparación entre imagen original, mapa de calor Grad-CAM y superposición de ambos. |
-| 5 | <img src="/Imagenes/TallerRedesNeuronales/114.png" width="500"/> | Curva de pérdida en entrenamiento y validación. |
-| 6 |<img src="/Imagenes/TallerRedesNeuronales/115.png" width="500"/> | Curva comparativa entre el modelo original y una versión reducida. |
-| 7 | <img src="/Imagenes/TallerRedesNeuronales/116.png" width="500"/> | Curva comparativa incorporando el modelo con regularización. |
-| 8 | <img src="/Imagenes/TallerRedesNeuronales/117.png" width="500"/> | Curva comparativa incorporando el modelo con Dropout. |
-| 9 |<img src="/Imagenes/TallerRedesNeuronales/118.png" width="500"/> | Líneas de separación encontradas para ambos casos. |
-| 10 | <img src="/Imagenes/TallerRedesNeuronales/119.png" width="500"/> | Representación visual de la imposibilidad de separar los casos con una línea recta. |
+| 1 |  <img src="/Imagenes/TallerRedesNeuronales/110.png" width="500"/> | Son las fotos de vidrio y plástico usadas para entrenar el modelo. No mide ningún resultado, solo confirma con qué datos se trabajó. Las fotos están claras y bien etiquetadas, lo cual es necesario para que el modelo tenga una base decente de aprendizaje. |
+| 2 | <img src="/Imagenes/TallerRedesNeuronales/111.png" width="500"/> | La curva de error casi no baja y la precisión se mantiene plana durante varias rondas, subiendo recién al final. El modelo entrenado desde cero no aprendió bien, el resultado no es bueno. |
+| 3 |<img src="/Imagenes/TallerRedesNeuronales/112.png" width="500"/> | La matriz muestra 38 aciertos y 38 errores en vidrio, 44 aciertos y 29 errores en plástico. Los aciertos y los errores están muy parejos, el modelo casi no logra diferenciar mejor que adivinando al azar. |
+| 4 | <img src="/Imagenes/TallerRedesNeuronales/113.png" width="500"/> | El mapa de calor marca el cuerpo central de la botella como la zona que usó el modelo para decidir que era vidrio. Esa zona tiene sentido para un ojo humano también, es una señal de que el modelo miró algo razonable y no algo irrelevante como el fondo. |
+| 5 | <img src="/Imagenes/TallerRedesNeuronales/114.png" width="500"/> | El error de entrenamiento baja todo el tiempo, pero el error de validación empieza a subir cerca de la ronda 5. El modelo empieza a memorizar las reseñas que ya vio en vez de aprender el patrón general. |
+| 6 |<img src="/Imagenes/TallerRedesNeuronales/115.png" width="500"/> | El modelo más pequeño llega a su punto más bajo de error antes y se mantiene un poco más estable que el original. Con menos neuronas el modelo generaliza mejor en este caso, no peor. |
+| 7 | <img src="/Imagenes/TallerRedesNeuronales/116.png" width="500"/> | El modelo con regularización sigue subiendo su error con el tiempo, aunque de forma menos brusca que el original. Ayuda, pero no resuelve el problema por completo. |
+| 8 | <img src="/Imagenes/TallerRedesNeuronales/117.png" width="500"/> | El modelo con dropout arranca peor pero su curva sube de forma más pareja, sin el salto brusco que tiene la regularización. Es más estable, aunque también termina subiendo con el tiempo. |
+| 9 |<img src="/Imagenes/TallerRedesNeuronales/118.png" width="500"/> | La línea verde separa los casos de AND, la línea roja separa los casos de OR. Ambas compuertas quedan resueltas porque una sola línea recta logra dejar los casos verdaderos de un lado y los falsos del otro. |
+| 10 | <img src="/Imagenes/TallerRedesNeuronales/119.png" width="500"/> | Las líneas azules intentan separar los casos de XOR. Los puntos verdaderos (0,1) y (1,0) quedan en esquinas opuestas, y los falsos (0,0) y (1,1) también en esquinas opuestas entre sí. Ninguna línea recta logra dejar todos los verdaderos de un lado, por eso XOR no se resuelve con un solo perceptrón. |
 
 ---
 
 ## Aplicación al proyecto FISHMON 365
 
-| Herramienta | Aplicación en el monitoreo de calidad de agua para truchicultura |
-|---|---|
-| Perceptrón / red densa | Clasificación de lecturas de sensores (oxígeno, temperatura, pH) en "condición normal" o "condición de alerta". |
-| CNN | Análisis de imágenes captadas por una eventual cámara sumergible, para detectar turbidez o señales visuales relevantes. |
-| Grad-CAM | Justificación visual de las alertas generadas, indicando qué dato o zona de imagen influyó en la decisión. |
-| Transfer Learning | Aprovechamiento de modelos previamente entrenados en contextos acuícolas similares, reduciendo la necesidad de grandes volúmenes de datos propios. |
-| Regularización / Dropout | Mejora de la confiabilidad del modelo ante condiciones distintas a las registradas en el sitio de prueba. |
-| Aumento de datos | Generación de variaciones sobre datos limitados, para fortalecer el entrenamiento del modelo. |
+FISHMON 365 es una boya flotante autónoma, los sensores están selladas herméticamente en un recipiente cilíndrico, con los sensores de pH, temperatura, oxígeno disuelto y turbidez expuestos al agua en y a  distintas alturas. No tiene cámara ni conexión constante a internet porque trabaja en el campo.
+
+| Herramienta | ¿Aplica? | Justificación |
+|---|---|---|
+| Perceptrón | Sí | El perceptrón recibe varias entradas numéricas, las pondera y da una salida de alerta o no alerta, exactamente el mismo caso que la alarma de sobrecalentamiento del equipo industrial ya trabajada. Aquí las entradas serían las lecturas de pH, temperatura, oxígeno disuelto y turbidez, y la salida sería agua en condición normal. Es simple, no necesita imágenes ni grandes volúmenes de datos, y puede correr en un microcontrolador dentro de la caja sellada. |
+| Clasificación con Keras (tipo reseñas) | No | Ese modelo está pensado para textos largos con miles de palabras posibles como entrada, un problema mucho más grande que decidir con cuatro o cinco lecturas de sensores. Usar una red así sería más complejidad de la necesaria para este caso, el perceptrón ya cubre lo que se necesita. |
+| CNN | No | La CNN necesita imágenes para funcionar, y la boya no tiene cámara, solo sensores. Tampoco tiene sentido depender de ella porque el dispositivo trabaja en campo sin conexión constante a internet, y este tipo de modelo suele necesitar más capacidad de procesamiento de la que tendría un dispositivo sellado y autónomo como este. |
 
 ---
 
 ## Conclusiones
 
-- El perceptrón y la CNN abordan el mismo tipo de problema (clasificación entre categorías), pero en escalas distintas: uno es la unidad mínima de decisión, la otra es una arquitectura compleja orientada al análisis de imágenes.
-- El uso de un modelo previamente entrenado (transfer learning) resultó más eficiente que entrenar una CNN desde cero, tanto en precisión como en cantidad de datos requeridos.
-- Un modelo de mayor tamaño no garantiza mejores resultados; técnicas como la regularización y el Dropout existen para mantener el aprendizaje generalizable y evitar la memorización excesiva.
-- La interpretabilidad, mediante herramientas como Grad-CAM, permite verificar y explicar las decisiones de un modelo, un aspecto relevante en sistemas donde la confianza del usuario final es importante.
-- El perceptrón simple tiene una limitación estructural (no resuelve XOR), lo cual constituye el fundamento histórico del desarrollo de redes neuronales con múltiples capas.
-- Los conceptos abordados tienen aplicación directa en el proyecto FISHMON 365, tanto en su etapa actual basada en sensores como en una eventual incorporación de visión por cámara.
+- De las tres herramientas del taller, solo el perceptrón encaja de forma directa con FISHMON 365, porque el proyecto trabaja con unas pocas lecturas numéricas de sensores y necesita una decisión simple: alerta o no alerta.
+- La clasificación con Keras usada en el taller (reseñas de texto) no aplica, ese problema maneja un volumen de datos mucho mayor al que maneja la boya con sus sensores.
+- La CNN tampoco aplica, la boya no cuenta con cámara y su condición de trabajo en campo sin internet constante hace que un modelo de ese tamaño no sea viable.
+- El caso de la alarma de sobrecalentamiento resuelto con perceptrón en el taller es, en la práctica, el mismo tipo de problema que FISHMON 365 necesita resolver con sus lecturas de pH, temperatura, oxígeno disuelto y turbidez.
