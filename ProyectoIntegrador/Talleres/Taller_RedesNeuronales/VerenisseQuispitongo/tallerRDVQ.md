@@ -2,7 +2,7 @@
 
 En este taller se trabajaron diferentes conceptos relacionados con redes neuronales. Se utilizaron Redes Neuronales Convolucionales (CNN) para clasificación de imágenes, Keras para construir una red neuronal de clasificación binaria y finalmente se estudió el funcionamiento básico de un Perceptrón.
 
-## Redes Neuronales Convencionales (CNN)
+## 1.- Redes Neuronales Convencionales (CNN)
 
 Las CNN (Convolutional Neural Networks) son redes neuronales especialmente utilizadas para trabajar con imágenes. Su principal característica es que pueden analizar grupos de píxeles cercanos y aprender automáticamente patrones presentes en una imagen.
 
@@ -167,5 +167,75 @@ Este valor equivale aproximadamente a una probabilidad de:
 > **99.4 %**
 
 Por lo tanto, el modelo interpreta esa reseña como **positiva** con una probabilidad elevada.
+
+# 3. Perceptrón
+
+El funcionamiento del Perceptrón consiste en recibir diferentes entradas, asignar un peso a cada una, sumar los resultados y finalmente utilizar una función de activación para obtener una salida.
+De manera general puede representarse como:
+
+> **Salida = función de activación (entradas × pesos + bias)**
+
+En el taller se utilizó el siguiente ejemplo:
+
+```python
+temperatura = 100
+vibracion = 50
+
+weights = np.array([0.5, -0.5])
+bias = -30
+```
+Las variables utilizadas fueron la temperatura y vibración de un equipo industrial.
+La suma ponderada obtenida es:
+
+```text
+(100 × 0.5) + (50 × -0.5) - 30
+
+50 - 25 - 30 = -5
+```
+
+Como el resultado es negativo, la función escalón devuelve: 0
+Por lo tanto, el resultado obtenido fue:
+> **El equipo no presenta una alerta de sobrecalentamiento.**
+
+También se utilizó la función `tanh`, obteniendo aproximadamente:
+
+```text
+-0.9999
+```
+Al ser un valor negativo, la interpretación también corresponde a la ausencia de una alerta.
+
+
+## Perceptrón como compuerta AND
+
+Se probaron diferentes pesos para observar cómo un perceptrón puede representar operaciones lógicas.
+Con:
+```python
+weights = np.array([0.4, 0.4])
+bias = -0.5
+```
+El resultado corresponde a una compuerta **AND**, ya que solamente produce `1` cuando ambas entradas tienen el valor `1`.
+
+## Perceptrón como compuerta OR
+
+Para representar OR se utilizaron:
+```python
+weights = np.array([2, 1])
+bias = -0.5
+```
+En este caso el perceptrón genera una salida `1` cuando al menos una de las entradas tiene el valor `1`.
+
+## Limitación del perceptrón: XOR
+
+La compuerta XOR presenta el siguiente comportamiento:
+
+<img width="482" height="605" alt="image" src="https://github.com/user-attachments/assets/438e274b-c310-420d-bd40-31165b0e36e3" />
+
+En este gráfico los casos que pertenecen a la misma clase no pueden separarse utilizando una única línea recta.
+Por esta razón:
+**Un solo perceptrón no puede resolver XOR.**
+Para resolver este problema se necesitan varias neuronas trabajando juntas, por ejemplo:
+> **2 perceptrones + una capa de salida**
+Este ejemplo permite entender por qué las redes neuronales utilizan varias neuronas y varias capas: existen problemas que una única neurona no puede representar por sí sola.
+
 
 
