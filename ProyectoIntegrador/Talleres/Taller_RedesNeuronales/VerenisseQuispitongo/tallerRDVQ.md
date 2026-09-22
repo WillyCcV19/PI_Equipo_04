@@ -32,27 +32,7 @@ Las imágenes fueron transformadas a escala de grises para utilizarlas como entr
 
 Se creó una CNN desde cero utilizando PyTorch.
 
-El modelo está formado por varias capas convolucionales:
-
-```python
-self.features = nn.Sequential(
-    nn.Conv2d(1, 16, kernel_size=3, padding=1),
-    nn.ReLU(),
-    nn.MaxPool2d(2),
-
-    nn.Conv2d(16, 32, kernel_size=3, padding=1),
-    nn.ReLU(),
-    nn.MaxPool2d(2),
-
-    nn.Conv2d(32, 64, kernel_size=3, padding=1),
-    nn.ReLU(),
-    nn.AdaptiveAvgPool2d((1, 1))
-)
-```
-
-A medida que la imagen pasa por las diferentes capas, el modelo va aprendiendo características cada vez más específicas.
-
-Las primeras capas pueden detectar características simples, mientras que las capas posteriores combinan esta información para distinguir entre vidrio y plástico.
+El modelo está formado por varias capas convolucionales: A medida que la imagen pasa por las diferentes capas, el modelo va aprendiendo características cada vez más específicas. Las primeras capas pueden detectar características simples, mientras que las capas posteriores combinan esta información para distinguir entre vidrio y plástico.
 
 ### Entrenamiento del modelo
 
@@ -177,31 +157,25 @@ De manera general puede representarse como:
 
 En el taller se utilizó el siguiente ejemplo:
 
-```python
 temperatura = 100
 vibracion = 50
-
 weights = np.array([0.5, -0.5])
 bias = -30
-```
+
 Las variables utilizadas fueron la temperatura y vibración de un equipo industrial.
 La suma ponderada obtenida es:
 
-```text
 (100 × 0.5) + (50 × -0.5) - 30
-
 50 - 25 - 30 = -5
-```
+
 
 Como el resultado es negativo, la función escalón devuelve: 0
 Por lo tanto, el resultado obtenido fue:
 > **El equipo no presenta una alerta de sobrecalentamiento.**
 
 También se utilizó la función `tanh`, obteniendo aproximadamente:
-
-```text
 -0.9999
-```
+
 Al ser un valor negativo, la interpretación también corresponde a la ausencia de una alerta.
 
 
@@ -234,8 +208,43 @@ En este gráfico los casos que pertenecen a la misma clase no pueden separarse u
 Por esta razón:
 **Un solo perceptrón no puede resolver XOR.**
 Para resolver este problema se necesitan varias neuronas trabajando juntas, por ejemplo:
-> **2 perceptrones + una capa de salida**
+**2 perceptrones + una capa de salida**
 Este ejemplo permite entender por qué las redes neuronales utilizan varias neuronas y varias capas: existen problemas que una única neurona no puede representar por sí sola.
 
+# 4.- ¿Cuál Red Neuronal usarian en su proyecto?
 
+Para el proyecto **Fishmoon** se propone utilizar una red neuronal multicapa implementada con **Keras** para estimar el nivel de oxígeno disuelto en el agua.
+La elección se debe a que Fishmoon trabajaría principalmente con datos numéricos obtenidos de sensores, como:
+
+- Temperatura
+- pH
+- Turbidez
+- Conductividad
+
+A partir de estas variables, el modelo tendría como objetivo estimar un valor numérico de oxígeno disuelto expresado en **mg/L**.
+
+### ¿Por qué no utilizar una CNN?
+
+Las redes neuronales convolucionales (CNN) son especialmente útiles cuando se trabaja con imágenes, ya que pueden reconocer patrones espaciales como bordes, formas y texturas. En Fishmoon, las entradas principales serían valores numéricos provenientes de sensores y no imágenes. Por esta razón, una CNN no sería necesaria para esta función.
+
+### ¿Por qué no utilizar un perceptrón simple?
+
+Un perceptrón simple puede realizar decisiones básicas, por ejemplo:
+
+**0 → condición normal**  
+**1 → condición de alerta**
+
+Sin embargo, presenta limitaciones cuando existen relaciones más complejas entre varias variables. En Fishmoon no se busca únicamente indicar si existe o no una alerta, sino estimar un valor continuo, por ejemplo:
+
+**Oxígeno disuelto estimado = 6.4 mg/L**
+
+Además, variables como la temperatura, el pH, la turbidez y la conductividad pueden relacionarse de diferentes maneras con el oxígeno disuelto, por lo que una sola neurona podría resultar insuficiente.
+
+### ¿Por qué una MLP con Keras?
+
+Una red neuronal multicapa (MLP) permite utilizar varias variables de entrada y varias capas de neuronas para aprender relaciones más complejas entre los datos.
+
+Su estructura podría ser:
+
+Temperatura -------pH --------Turbidez ----------Conductividad ---------> Red neuronal MLP implementada con Keras --------> Oxígeno disuelto estimado: 6.4 mg/L
 

@@ -13,11 +13,11 @@ La forma de trabajo de una CNN normalmente es la siguiente:
 
 ### Imagen representativa
 
-![Ejemplos del dataset de vidrio y plástico](redes_neuronales_img/cnn_ejemplos.png)
+<img width="989" height="661" alt="cnn_ejemplos" src="https://github.com/user-attachments/assets/eb2030c0-70ac-4488-aad1-2df53735a41a" />
 
 **Interpretación:** En esta imagen se observan ejemplos del conjunto de datos utilizado en el laboratorio. Las imágenes corresponden a las clases **glass** y **plastic**, que son las dos categorías que la CNN debe aprender a diferenciar a partir de sus características visuales.
 
-![Métricas de validación de la CNN](redes_neuronales_img/cnn_metricas.png)
+<img width="863" height="395" alt="cnn_metricas" src="https://github.com/user-attachments/assets/dbdbaff0-4ae2-4953-9171-055403d8bdaa" />
 
 **Interpretación:** La gráfica muestra la evolución de las métricas de validación de la CNN entrenada desde cero. De acuerdo con el análisis realizado en el notebook, a partir de la época 4 el modelo comienza a clasificar con mayor exactitud y alcanza aproximadamente un **63.27 % de accuracy**. El ROC-AUC se mantiene alrededor de **0.67 a 0.69**, lo que indica un aprendizaje moderado para diferenciar vidrio de plástico.
 
@@ -31,7 +31,7 @@ Además, Keras permite realizar predicciones una vez que el modelo ha sido entre
 
 ### Imagen representativa
 
-![Pérdida de entrenamiento y validación en Keras](redes_neuronales_img/keras_sobreajuste.png)
+<img width="826" height="813" alt="keras_sobreajuste" src="https://github.com/user-attachments/assets/9b79bde4-14e0-44ce-b0d9-c586a86ae1b1" />
 
 **Interpretación:** La gráfica compara el error del modelo durante el entrenamiento con el error obtenido en los datos de validación. En el notebook se observa que la curva de validación deja de disminuir al final, mientras que el modelo continúa aprendiendo los datos de entrenamiento. Esto representa un caso de **sobreajuste**, donde el modelo aprende demasiado bien los datos de entrenamiento y pierde capacidad de generalización.
 
@@ -45,7 +45,7 @@ En el laboratorio se utilizan funciones de activación como **escalón** y **tan
 
 ### Imagen representativa
 
-![Fronteras de decisión del perceptrón](redes_neuronales_img/perceptron_fronteras.png)
+<img width="503" height="505" alt="perceptron_fronteras" src="https://github.com/user-attachments/assets/2bf1a97c-51ae-43a0-9c8a-3b64fd45735e" />
 
 **Interpretación:** La gráfica permite visualizar las fronteras de decisión de los perceptrones utilizados para representar las operaciones **AND** y **OR**. Para OR, la frontera separa el punto (0,0) del resto, mientras que para AND separa el punto (1,1) del resto. Esto muestra cómo un perceptrón puede separar diferentes grupos de datos mediante una frontera de decisión.
 
