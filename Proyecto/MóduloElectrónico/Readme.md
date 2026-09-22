@@ -1,0 +1,16 @@
+# Bill of materials (no necesariamente del esquemático presente en la carpeta)
+- Sensor de oxígeno disuelto gravity
+- 2x amplificadores CA3140
+- 1x amplificador LM324N
+- 2x transceptores LoRa V4 ... por especificar más
+- 1x arduino nano
+- 4x baterías 18650 1000mA (encontré varios en una laptop)
+- respectivo socket paralelo
+- módulo de carga
+- 4x convertidores boost MT3608
+- 1x regulador 7805 + circuito filtrado
+- varios componentes pasivos (resistencias, capacitores)
+- Conectores MOLEX varios ... por especificar más
+- Motor paso a paso ... 28BYJ48 + ULN2003?
+- Sensores IR de parada ... Por verse, se acoplarán con encoder
+- Pin headers y pin sockets 2.54mm
