@@ -28,3 +28,26 @@
 ## ¿Cuál utilizaría para el proyecto?
 - Utilizaría perceptrones para obtener los parámetros (Tiempo, PH, DO, Temperatura, Turbidez y conductividad) y simplemente una salida que decida advertir o no, sería un punto inicial.
 - Para características más refinadas o con variables más difíciles de pesar utilizaría Keras para construir una red más compleja. Solo tendría que recopilar un buen dataset y evitar el sobreajuste.
+
+## ¿Es necesario la inteligencia artificial?
+- Realísticamente advertir según límites no requiere una inteligencia artificial muy sofisticada, pero, para predecir posibles causantes de contaminantes asociando dos o más valores sí puede resultar útil.
+- Podría haber observaciones adicionales al agua, como la presencia de espuma o el color presente, sería como un dato adicional.
+
+### Ejemplo 1:
+- Detección de sensores: PH alto, conductividad alta, ligera turbidez
+- Observación: Presencia de espuma
+- Posible contaminante: Detergentes
+
+### Ejemplo 2:
+- Detección de sensores: PH bajo, conductividad alta
+- Observación: Ninguna
+- Posible contaminante: Ácidos descartados incorrectamente
+
+### Ejemplo 3:
+- Detección de sensores: PH bajo, temperatura alta, oxígeno disuelto decreciente con el tiempo, turbidez alta, conductividad alta
+- Observación: Agua turbia y maloliente
+- Posible contaminante: Aguas residuales
+
+### Notas:
+- Estos ejemplos, pese a no detallar rangos exactos, representan el tipo de tareas que podría desempeñar un modelo de redes neuronales, requiriendo una clasificación, por así decirlo.
+- No son asociaciones definitivas y tienen únicamente el fin de ilustrar la clasificación de patrones más complejos.
