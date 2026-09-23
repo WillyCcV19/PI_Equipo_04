@@ -4,7 +4,12 @@
 - Trabaja principalmente con imágenes y estas pueden aumentarse mediante transformaciones (data augmentation), salvo que dichas modificaciones puedan alterar información importante.
 - Menor tiempo de ejecución cuando se utiliza GPU.
 - Extrae características de las imágenes para identificar regiones relevantes, que pueden visualizarse posteriormente.
+
+  
 <img src="/Imagenes/TallerRedesNeuronales/s6i2.png" width="1000"/>
+<img src="/Imagenes/TallerRedesNeuronales/s6i3.png" width="1000"/>
+<img src="/Imagenes/TallerRedesNeuronales/s6i4.png" width="1000"/>
+- Se puede observar de las imágenes que las áreas de los cuellos de las botellas/frascos tienen bastante influencia para la clasificación
   
 ### Keras
 - Permite construir redes neuronales por capas de manera sencilla.
