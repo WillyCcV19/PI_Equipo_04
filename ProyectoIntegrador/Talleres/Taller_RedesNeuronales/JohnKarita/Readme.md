@@ -15,7 +15,7 @@
 - Realiza el producto punto entre las entradas y los pesos, y suma un sesgo (bias).
 - Puede realizar operaciones como AND y OR, pero no XOR con un solo perceptrón.
 - Utiliza una función de activación.
-- <img src="/Imagenes/TallerRedesNeuronales/s6i1.png" width="1000"/>
+- <img src="/Imagenes/TallerRedesNeuronales/s6i1.png" width="386"/>
 
 ## ¿Cuál utilizaría para el proyecto?
 - Utilizaría perceptrones para obtener los parámetros (Tiempo, PH, DO, Temperatura, Turbidez y conductividad) y simplemente una salida que decida advertir o no, sería un punto inicial.
