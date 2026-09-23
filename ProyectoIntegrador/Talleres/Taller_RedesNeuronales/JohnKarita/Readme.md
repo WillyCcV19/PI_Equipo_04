@@ -20,7 +20,10 @@
 - Realiza el producto punto entre las entradas y los pesos, y suma un sesgo (bias).
 - Puede realizar operaciones como AND y OR, pero no XOR con un solo perceptrón.
 - Utiliza una función de activación.
-- <img src="/Imagenes/TallerRedesNeuronales/s6i1.png" width="386"/>
+
+
+<img src="/Imagenes/TallerRedesNeuronales/s6i1.png" width="386"/>
+- Para que realice la discriminación tipo XOR requiere ambos perceptrones y definir una región entre ellos dos, como se detalla arriba.
 
 ## ¿Cuál utilizaría para el proyecto?
 - Utilizaría perceptrones para obtener los parámetros (Tiempo, PH, DO, Temperatura, Turbidez y conductividad) y simplemente una salida que decida advertir o no, sería un punto inicial.
