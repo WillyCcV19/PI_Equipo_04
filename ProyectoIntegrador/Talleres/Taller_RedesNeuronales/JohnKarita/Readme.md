@@ -8,7 +8,7 @@
   
 <img src="/Imagenes/TallerRedesNeuronales/s6i2.png" width="1000"/>
 <img src="/Imagenes/TallerRedesNeuronales/s6i3.png" width="1000"/>
-<img src="/Imagenes/TallerRedesNeuronales/s6i3.png" width="1000"/>
+<img src="/Imagenes/TallerRedesNeuronales/s6i4.png" width="1000"/>
 - Se puede observar de las imágenes que las áreas de los cuellos de las botellas/frascos tienen bastante influencia para la clasificación
   
 ### Keras
