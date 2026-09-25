@@ -32,6 +32,7 @@ La CNN obtuvo:
 - **ROC-AUC:** 0.6713
 
 La matriz de confusión mostró 27 aciertos para la clase 0 y 69 para la clase 1. Aunque el modelo consiguió predecir ambas clases, todavía presentó dificultades para diferenciarlas correctamente.
+
 <img width="466" height="376" alt="image" src="https://github.com/user-attachments/assets/d47f2c52-8f87-4704-b6c7-abcb53beb73b" />
 
 ## 3. Data Augmentation
