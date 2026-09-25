@@ -72,7 +72,7 @@ Esta gráfica muestra el **valor del AUC por época**, no una curva ROC. Tampoco
 
 ## 4. Tasa de aprendizaje
 
-![Learning rate de la CNN durante ocho épocas](graficas_ejecucion_corregida/04_learning_rate.png)
+<img width="868" height="387" alt="image" src="https://github.com/user-attachments/assets/928287ef-39fc-4c7f-bb16-729d3f52e5dc" />
 
 *Figura 4. Tasa de aprendizaje utilizada por el optimizador de la CNN base.*
 
@@ -89,7 +89,7 @@ La tasa se reduce a la mitad a partir de la quinta época. Esto coincide con la 
 
 ## 5. Matriz de confusión de la CNN
 
-![Matriz de confusión de la CNN sobre las cuatro clases de OCTMNIST](graficas_ejecucion_corregida/05_matriz_confusion.png)
+<img width="696" height="587" alt="image" src="https://github.com/user-attachments/assets/dbac7da8-7416-4a99-8cc8-fbd82dc50dc0" />
 
 *Figura 5. Resultados de la CNN sin aumento de datos sobre 1000 imágenes de prueba.*
 
@@ -114,7 +114,6 @@ El accuracy de prueba también queda **14.11 puntos porcentuales** por debajo de
 
 ## 6. Grad-CAM de ResNet18
 
-![Imagen OCT normal, mapa Grad-CAM y superposición de ResNet18](graficas_ejecucion_corregida/06_grad_cam.png)
 
 *Figura 6. Primera imagen de prueba: etiqueta real 3 y predicción 3, ambas correspondientes a la clase normal.*
 
