@@ -95,6 +95,4 @@ Esta técnica complementa las métricas obtenidas al proporcionar una interpreta
 
 Los experimentos muestran que los **picos observados en las curvas no implican automáticamente overfitting**, ya que pueden estar relacionados con el pequeño conjunto de validación, el desbalance de clases y la aleatoriedad propia del entrenamiento.
 
-La CNN desde cero obtuvo un desempeño moderado y Data Augmentation no produjo mejoras con las transformaciones utilizadas. En cambio, **Transfer Learning con ResNet18 y fine-tuning obtuvo los mejores resultados**, alcanzando un accuracy de 0.8846 y un ROC-AUC de 0.9190 en test.
-
-Durante las épocas analizadas no se observa un deterioro sostenido de las métricas de validación que indique claramente sobreajuste, aunque incorporar la pérdida de validación permitiría realizar un análisis más directo en futuros experimentos.
+La CNN desde cero obtuvo un desempeño moderado y Data Augmentation no produjo mejoras con las transformaciones utilizadas. En cambio, Transfer Learning con ResNet18 y fine-tuning obtuvo los mejores resultados, alcanzando un accuracy de 0.8846 y un ROC-AUC de 0.9190 en test.
