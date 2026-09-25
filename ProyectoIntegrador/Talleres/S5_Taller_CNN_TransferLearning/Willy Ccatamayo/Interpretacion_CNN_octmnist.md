@@ -33,7 +33,8 @@ Las imágenes originales tienen una resolución de **28 × 28 píxeles**, por lo
 
 ## 2. Pérdida de entrenamiento de la CNN
 
-![Pérdida de entrenamiento de la CNN durante ocho épocas](graficas_ejecucion_corregida/02_perdida.png)
+<img width="852" height="391" alt="image" src="https://github.com/user-attachments/assets/8a5bfdd2-df38-4d2e-8ab7-e3a2d73e67cb" />
+
 
 *Figura 2. Pérdida de entropía cruzada de la CNN sin aumento de datos.*
 
