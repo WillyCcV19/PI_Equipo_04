@@ -18,7 +18,8 @@ ResNet18 obtuvo los mejores valores globales en esta ejecución. La diferencia d
 
 ## 1. Imágenes de ejemplo del dataset
 
-![Ejemplos de imágenes de retina de OCTMNIST](graficas_ejecucion_corregida/01_ejemplos.png)
+<img width="933" height="385" alt="image" src="https://github.com/user-attachments/assets/cc382352-40e6-4152-b26e-a654fd2b0cd6" />
+
 
 *Figura 1. Primeras 12 imágenes del conjunto de entrenamiento y sus etiquetas reales.*
 
