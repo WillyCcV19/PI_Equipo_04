@@ -48,7 +48,8 @@ La mayor caída se produce al comienzo: entre las épocas 1 y 2 pasa de 0.5991 a
 
 ## 3. Accuracy y ROC-AUC de validación
 
-![Accuracy y ROC-AUC de validación de la CNN](graficas_ejecucion_corregida/03_metricas.png)
+<img width="851" height="391" alt="image" src="https://github.com/user-attachments/assets/54105586-3fb2-43f8-b331-bea6724c7ddd" />
+
 
 *Figura 3. Métricas de la CNN sin aumento de datos en el conjunto de validación.*
 
