@@ -1,0 +1,10 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "JohnsCustomLibrary") (type "KiCad") (uri "${KIPRJMOD}/JohnsCustomLibrary.pretty") (options "") (descr ""))
+	(lib (name "JohnsCustomLibrary") (type "KiCad") (uri "${KIPRJMOD}/JohnsCustomLibrary.pretty") (options "") (descr ""))
+	(lib (name "Sensing probe") (type "KiCad") (uri "C:/Users/jipxm/Documents/Schematic/Sensing probe.pretty") (options "") (descr ""))
+	(lib (name "Library") (type "KiCad") (uri "${KIPRJMOD}/Library.pretty") (options "") (descr ""))
+	(lib (name "JohnsCustomLibrary") (type "KiCad") (uri "${KIPRJMOD}/JohnsCustomLibrary.pretty") (options "") (descr ""))
+	(lib (name "JohnsCustomLibrary") (type "KiCad") (uri "${KIPRJMOD}/JohnsCustomLibrary.pretty") (options "") (descr ""))
+	(lib (name "CustomLibrary") (type "KiCad") (uri "${KIPRJMOD}/CustomLibrary.pretty") (options "") (descr ""))
+)
