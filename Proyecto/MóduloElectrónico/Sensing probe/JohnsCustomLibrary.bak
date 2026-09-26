@@ -75,7 +75,7 @@
 			)
 		)
 		(symbol "Arduino nano_1_1"
-			(pin tri_state line
+			(pin free line
 				(at -10.16 -5.08 0)
 				(length 2.54)
 				(name "D13"
@@ -93,7 +93,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin free line
 				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "3V3"
@@ -111,7 +111,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin free line
 				(at -10.16 -10.16 0)
 				(length 2.54)
 				(name "REF"
@@ -129,7 +129,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at -10.16 -12.7 0)
 				(length 2.54)
 				(name "A0"
@@ -147,7 +147,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at -10.16 -15.24 0)
 				(length 2.54)
 				(name "A1"
@@ -165,7 +165,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at -10.16 -17.78 0)
 				(length 2.54)
 				(name "A2"
@@ -183,7 +183,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at -10.16 -20.32 0)
 				(length 2.54)
 				(name "A3"
@@ -201,7 +201,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at -10.16 -22.86 0)
 				(length 2.54)
 				(name "A4"
@@ -219,7 +219,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at -10.16 -25.4 0)
 				(length 2.54)
 				(name "A5"
@@ -237,7 +237,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at -10.16 -27.94 0)
 				(length 2.54)
 				(name "A6"
@@ -255,7 +255,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at -10.16 -30.48 0)
 				(length 2.54)
 				(name "A7"
@@ -273,7 +273,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin free line
 				(at -10.16 -33.02 0)
 				(length 2.54)
 				(name "5V"
@@ -291,7 +291,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin free line
 				(at -10.16 -35.56 0)
 				(length 2.54)
 				(name "RST"
@@ -309,7 +309,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin free line
 				(at -10.16 -38.1 0)
 				(length 2.54)
 				(name "GND"
@@ -327,7 +327,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin free line
 				(at -10.16 -40.64 0)
 				(length 2.54)
 				(name "VIN"
@@ -345,7 +345,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at 10.16 -40.64 180)
 				(length 2.54)
 				(name "TX1"
@@ -363,7 +363,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at 10.16 -38.1 180)
 				(length 2.54)
 				(name "RX0"
@@ -381,7 +381,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin free line
 				(at 10.16 -35.56 180)
 				(length 2.54)
 				(name "RST"
@@ -399,7 +399,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin free line
 				(at 10.16 -33.02 180)
 				(length 2.54)
 				(name "GND"
@@ -417,7 +417,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at 10.16 -30.48 180)
 				(length 2.54)
 				(name "D2"
@@ -435,7 +435,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at 10.16 -27.94 180)
 				(length 2.54)
 				(name "D3"
@@ -453,7 +453,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at 10.16 -25.4 180)
 				(length 2.54)
 				(name "D4"
@@ -471,7 +471,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at 10.16 -22.86 180)
 				(length 2.54)
 				(name "D5"
@@ -489,7 +489,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at 10.16 -20.32 180)
 				(length 2.54)
 				(name "D6"
@@ -507,7 +507,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at 10.16 -17.78 180)
 				(length 2.54)
 				(name "D7"
@@ -525,7 +525,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at 10.16 -15.24 180)
 				(length 2.54)
 				(name "D8"
@@ -543,7 +543,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at 10.16 -12.7 180)
 				(length 2.54)
 				(name "D9"
@@ -561,7 +561,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at 10.16 -10.16 180)
 				(length 2.54)
 				(name "D10"
@@ -579,7 +579,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at 10.16 -7.62 180)
 				(length 2.54)
 				(name "D11"
@@ -597,7 +597,7 @@
 					)
 				)
 			)
-			(pin tri_state line
+			(pin free line
 				(at 10.16 -5.08 180)
 				(length 2.54)
 				(name "D12"
