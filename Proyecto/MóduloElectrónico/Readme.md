@@ -14,3 +14,11 @@
 - Motor paso a paso ... 28BYJ48 + ULN2003?
 - Sensores IR de parada ... Por verse, se acoplarán con encoder
 - Pin headers y pin sockets 2.54mm
+
+## Esquemático en KiCAD
+<img src="/Imagenes/ModuloElec/napduino_img1.png" width="1000"/>
+
+## Renderizado 3D
+<img src="/Imagenes/ModuloElec/napduino_img2.png" width="1000"/>
+<img src="/Imagenes/ModuloElec/napduino_img3.png" width="1000"/>
+<img src="/Imagenes/ModuloElec/napduino_img4.png" width="1000"/>
