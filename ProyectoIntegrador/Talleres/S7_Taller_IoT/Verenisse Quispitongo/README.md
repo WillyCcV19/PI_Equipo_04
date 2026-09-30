@@ -9,8 +9,18 @@ Finalmente, el valor promedio del ADC se convirtió a voltaje mediante la relaci
 ### Código utilizado
 <img width="1600" height="944" alt="image" src="https://github.com/user-attachments/assets/dfb474d4-aaea-479c-9268-c1a3ff628181" />
 ### Circuito Implementado
-Ejercicio2:
+
+
+## Ejercicio 2: Conexión del ESP32 a una red WiFi
+
+En este ejercicio se creó una red WiFi utilizando el hotspot de un smartphone. Luego, el ESP32 se conectó a dicha red mediante el nombre y contraseña configurados.
+Una vez establecida la conexión, se mostró en el monitor serial la dirección IP asignada al ESP32.
+
+### Evidencias
 <img width="1600" height="930" alt="image" src="https://github.com/user-attachments/assets/85a3aa75-629b-46dd-be8a-101ab75625be" />
+### Resultado
+Se logró conectar correctamente el ESP32 a la red WiFi creada desde el smartphone y visualizar en el monitor serial la dirección IP asignada.
+
 
 
 Ejercicio3:
