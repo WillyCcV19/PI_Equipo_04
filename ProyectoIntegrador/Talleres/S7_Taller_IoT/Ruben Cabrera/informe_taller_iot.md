@@ -67,7 +67,7 @@ Algunas redes aparecen **repetidas** con distinta intensidad (Estudiantes, Docen
 
 - Después del escaneo aparece `Conectando a iPhone...` seguido de muchos puntos, que representan los intentos de conexión. La conexión **no se logró**.
 - La red `iPhone` **no aparece entre las 25 redes detectadas**, por lo que el ESP32 no podía conectarse a ella. Una causa probable es que el hotspot transmitía en la banda de **5 GHz**, mientras que el ESP32 **solo trabaja en 2.4 GHz**. En iPhone esto se soluciona activando la opción **"Maximizar compatibilidad"** en los ajustes de Compartir Internet.
-- Al final aparecen **caracteres ilegibles** (`�����`). Esto suele indicar que el ESP32 **se reinició**: al arrancar, la placa imprime mensajes a 74880 baudios, y el monitor configurado en 115200 baudios los muestra como caracteres extraños. El reinicio pudo deberse a un tiempo de espera definido en el código, al watchdog o a una caída de voltaje.
+- Al final aparecen **caracteres ilegibles**. Esto suele indicar que el ESP32 **se reinició**: al arrancar, la placa imprime mensajes a 74880 baudios, y el monitor configurado en 115200 baudios los muestra como caracteres extraños. El reinicio pudo deberse a un tiempo de espera definido en el código, al watchdog o a una caída de voltaje.
 
 ---
 
@@ -90,7 +90,7 @@ El ESP32 lee el potenciómetro y envía el valor promedio a una variable de **Ar
 ### Interpretación de la gráfica
 
 - Cada **pico** (cerca de 4K) corresponde al potenciómetro girado al máximo, y cada **valle** (en 0) al mínimo. Las oscilaciones reflejan los giros de ida y vuelta durante la prueba.
-- Hacia el final de la gráfica (≈16:46:26, hora UTC−05), la curva se **estabiliza cerca de 3,500**: el potenciómetro se dejó en una posición fija.
+- Hacia el final de la gráfica , la curva se **estabiliza cerca de 3,500**: el potenciómetro se dejó en una posición fija.
 - La gráfica tiene **menos puntos** que el monitor serial. Esto es esperado: Arduino Cloud no envía cada lectura, sino que sincroniza la variable con una frecuencia limitada, mientras que el monitor serial muestra todas las lecturas.
 - El widget **suaviza la curva** uniendo los puntos con líneas curvas, por lo que la gráfica se ve más continua que los datos reales.
 
