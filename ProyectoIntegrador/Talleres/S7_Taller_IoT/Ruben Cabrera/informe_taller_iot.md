@@ -1,9 +1,5 @@
 # Informe – Taller IoT con ESP32
 
-**Autor:** Ruben Andre Cabrera Cermeño
-**Equipo:** PI_Equipo_04
-**Placa utilizada:** ESP32-WROOM-DA Module
-**Herramientas:** Arduino IDE 2.3.10, Arduino Cloud
 
 ---
 
@@ -88,7 +84,7 @@ El ESP32 lee el potenciómetro y envía el valor promedio a una variable de **Ar
 ### Interpretación de los valores
 
 - Los valores **varían entre 0 y 4095**, es decir, todo el rango del ADC. Esto confirma que el potenciómetro está correctamente conectado y que se giró de un extremo al otro durante la prueba.
-- **0** equivale a 0 V (potenciómetro al mínimo) y **4095** a 3.3 V (al máximo). Los valores intermedios corresponden a posiciones parciales; por ejemplo, 2125 ≈ 1.71 V y 1308 ≈ 1.05 V.
+- **0** equivale a 0 V (potenciómetro al mínimo) y **4095** a 3.3 V (al máximo). Los valores intermedios corresponden a posiciones parciales; por ejemplo, 2125 = 1.71 V y 1308 = 1.05 V.
 - Los valores se muestran como **enteros**, lo que indica que la variable enviada a la nube es de tipo entero.
 
 ### Interpretación de la gráfica
@@ -98,9 +94,6 @@ El ESP32 lee el potenciómetro y envía el valor promedio a una variable de **Ar
 - La gráfica tiene **menos puntos** que el monitor serial. Esto es esperado: Arduino Cloud no envía cada lectura, sino que sincroniza la variable con una frecuencia limitada, mientras que el monitor serial muestra todas las lecturas.
 - El widget **suaviza la curva** uniendo los puntos con líneas curvas, por lo que la gráfica se ve más continua que los datos reales.
 
-### Observación
-
-El eje Y del gráfico llega hasta 6K, aunque el valor máximo posible es 4095. Fijar el rango del eje entre 0 y 4095 haría la gráfica más clara.
 
 ---
 
