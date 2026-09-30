@@ -4,7 +4,8 @@ Taller de Internet de las Cosas (IoT)
 
 | Evidencia | Código utilizado | Resultado e interpretación |
 |---|---|---|
-| **Foto 1.1: Conexión física**<br><br>*(Insertar fotografía)* | ```cpp<br>int potPin = 34;<br>``` | Realicé la conexión del potenciómetro al pin 34 del ESP32 para obtener la lectura de la señal analógica. |
+| <img src="/Imagenes/TallerIA/Semana5_Tarea/eber/91.png" width="500"/>
+ | ```cpp<br>int potPin = 34;<br>``` | Realicé la conexión del potenciómetro al pin 34 del ESP32 para obtener la lectura de la señal analógica. |
 | **Foto 1.2: Lectura directa con ruido**<br><br>*(Insertar fotografía)* | ```cpp<br>valores[i] = analogRead(potPin);<br>suma = suma + valores[i];<br>delay(50);<br>``` | Realicé varias lecturas del potenciómetro para observar la variación de la señal. Para disminuir estas variaciones utilicé 10 lecturas y calculé su promedio. |
 | **Foto 1.3: Promediado y voltaje**<br><br>*(Insertar fotografía)* | ```cpp<br>float promedio = suma / 10.0;<br>float voltaje = (promedio * 3.3) / 4095.0;<br>``` | Obtuve un **ADC promedio de 3504.70**. Luego convertí este valor a voltaje mediante la fórmula del ADC, obteniendo aproximadamente **2.82 V**. |
 
