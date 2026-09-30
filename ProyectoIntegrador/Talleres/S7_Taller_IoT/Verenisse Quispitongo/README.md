@@ -15,14 +15,35 @@ Finalmente, el valor promedio del ADC se convirtió a voltaje mediante la relaci
 
 ## Ejercicio 2: Conexión del ESP32 a una red WiFi
 
-En este ejercicio se creó una red WiFi utilizando el hotspot de un smartphone. Luego, el ESP32 se conectó a dicha red mediante el nombre y contraseña configurados.
-Una vez establecida la conexión, se mostró en el monitor serial la dirección IP asignada al ESP32.
+En este ejercicio se creó una red WiFi utilizando la función de **Hotspot o zona WiFi de un smartphone**. El objetivo fue conectar el ESP32 a dicha red y verificar la comunicación mostrando en el monitor serial la dirección IP asignada al dispositivo.
+
+Para realizar la conexión se utilizaron el nombre de la red (`SSID`) y la contraseña del hotspot del celular.
+
+### Funcionamiento
+
+El programa realiza los siguientes pasos:
+
+1. Inicializa la comunicación serial a 115200 baudios.
+2. El ESP32 intenta conectarse al hotspot utilizando el nombre de red y contraseña configurados.
+3. Mientras no se establece la conexión, se muestran puntos en el monitor serial.
+4. Una vez conectado, se muestra el mensaje `WiFi conectado`.
+5. Finalmente, se imprime la dirección IP asignada al ESP32.
+
 
 ### Evidencias
 <img width="1600" height="930" alt="image" src="https://github.com/user-attachments/assets/85a3aa75-629b-46dd-be8a-101ab75625be" />
 
 ### Resultado
-Se logró conectar correctamente el ESP32 a la red WiFi creada desde el smartphone y visualizar en el monitor serial la dirección IP asignada.
+
+Se logró conectar correctamente el ESP32 al hotspot creado desde el smartphone.
+
+En el monitor serial se visualizaron los datos de la conexión:
+
+- **SSID:** dasmodel
+- **Dirección IP:** 10.69.108.27
+- **RSSI:** -50 dBm
+
+El valor RSSI representa la intensidad de la señal WiFi recibida por el ESP32. En este caso, el valor obtenido indica una buena conexión con el hotspot.
 
 
 
