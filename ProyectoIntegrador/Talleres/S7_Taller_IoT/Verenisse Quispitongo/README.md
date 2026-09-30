@@ -10,6 +10,8 @@ Finalmente, el valor promedio del ADC se convirtió a voltaje mediante la relaci
 
 ### Circuito Implementado
 
+<img width="736" height="839" alt="image" src="https://github.com/user-attachments/assets/51b4d3ce-6d4f-4c91-852b-95dfe66a73a0" />
+
 
 ## Ejercicio 2: Conexión del ESP32 a una red WiFi
 
