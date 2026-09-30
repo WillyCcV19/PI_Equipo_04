@@ -26,7 +26,7 @@ El programa realiza los siguientes pasos:
 1. Inicializa la comunicación serial a 115200 baudios.
 2. El ESP32 intenta conectarse al hotspot utilizando el nombre de red y contraseña configurados.
 3. Mientras no se establece la conexión, se muestran puntos en el monitor serial.
-4. Una vez conectado, se muestra el mensaje `WiFi conectado`.
+4. Una vez conectado, se muestra el mensaje WiFi conectado.
 5. Finalmente, se imprime la dirección IP asignada al ESP32.
 
 
