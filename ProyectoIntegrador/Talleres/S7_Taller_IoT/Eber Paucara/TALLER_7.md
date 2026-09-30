@@ -4,10 +4,9 @@ Taller de Internet de las Cosas (IoT)
 
 | Evidencia | Código utilizado | Resultado e interpretación |
 |---|---|---|
-| <img src="/Imagenes/TallerIA/Semana5_Tarea/eber/91.png" width="500"/>
- | ```cpp<br>int potPin = 34;<br>``` | Realicé la conexión del potenciómetro al pin 34 del ESP32 para obtener la lectura de la señal analógica. |
-| **Foto 1.2: Lectura directa con ruido**<br><br>*(Insertar fotografía)* | ```cpp<br>valores[i] = analogRead(potPin);<br>suma = suma + valores[i];<br>delay(50);<br>``` | Realicé varias lecturas del potenciómetro para observar la variación de la señal. Para disminuir estas variaciones utilicé 10 lecturas y calculé su promedio. |
-| **Foto 1.3: Promediado y voltaje**<br><br>*(Insertar fotografía)* | ```cpp<br>float promedio = suma / 10.0;<br>float voltaje = (promedio * 3.3) / 4095.0;<br>``` | Obtuve un **ADC promedio de 3504.70**. Luego convertí este valor a voltaje mediante la fórmula del ADC, obteniendo aproximadamente **2.82 V**. |
+| <img src="/Imagenes/taller_iot/91.png" width="500"/>| ```cpp<br>int potPin = 34;<br>``` | Realicé la conexión del potenciómetro al pin 34 del ESP32 para obtener la lectura de la señal analógica. |
+|<img src="/Imagenes/taller_iot/92.png" width="500"/>| ```cpp<br>valores[i] = analogRead(potPin);<br>suma = suma + valores[i];<br>delay(50);<br>``` | Realicé varias lecturas del potenciómetro para observar la variación de la señal. Para disminuir estas variaciones utilicé 10 lecturas y calculé su promedio. |
+| <img src="/Imagenes/taller_iot/93.png" width="500"/> | ```cpp<br>float promedio = suma / 10.0;<br>float voltaje = (promedio * 3.3) / 4095.0;<br>``` | Obtuve un **ADC promedio de 3504.70**. Luego convertí este valor a voltaje mediante la fórmula del ADC, obteniendo aproximadamente **2.82 V**. |
 
 ### Código completo utilizado
 
@@ -48,8 +47,8 @@ void loop() {
 
 | Evidencia | Código utilizado | Resultado e interpretación |
 |---|---|---|
-| **Foto 2.1: Escáner de redes Wi-Fi**<br><br>*(Insertar fotografía)* | ```cpp<br>#include <WiFi.h><br>``` | Realicé el escaneo de las redes disponibles y se identificó la red **dasmodel** con una intensidad de **-43 dBm**. |
-| **Foto 2.2: Confirmación de conexión e IP**<br><br>*(Insertar fotografía)* | ```cpp<br>WiFi.begin(ssid, password);<br>while (WiFi.status() != WL_CONNECTED) {<br>  delay(500);<br>}<br>Serial.println("WiFi conectado");<br>Serial.println(WiFi.localIP());<br>``` | La conexión se realizó correctamente y el ESP32 mostró el mensaje **“WiFi conectado”**. La dirección IP asignada fue **10.69.108.27** y se registró una intensidad de señal de **-50 dBm**. |
+| <img src="/Imagenes/taller_iot/94.png" width="500"/> | ```cpp<br>#include <WiFi.h><br>``` | Realicé el escaneo de las redes disponibles y se identificó la red **dasmodel** con una intensidad de **-43 dBm**. |
+| <img src="/Imagenes/taller_iot/95.png" width="500"/> | ```cpp<br>WiFi.begin(ssid, password);<br>while (WiFi.status() != WL_CONNECTED) {<br>  delay(500);<br>}<br>Serial.println("WiFi conectado");<br>Serial.println(WiFi.localIP());<br>``` | La conexión se realizó correctamente y el ESP32 mostró el mensaje **“WiFi conectado”**. La dirección IP asignada fue **10.69.108.27** y se registró una intensidad de señal de **-50 dBm**. |
 
 ### Código completo utilizado
 
@@ -86,8 +85,8 @@ void loop() {
 
 | Evidencia | Código utilizado | Resultado e interpretación |
 |---|---|---|
-| **Foto 3.1: Envío de datos**<br><br>*(Insertar fotografía)* | ```cpp<br>int valor = analogRead(potPin);<br>int respuesta = ThingSpeak.writeField(<br>  channelID, 1, valor, writeAPIKey<br>);<br>``` | Realicé la lectura del potenciómetro y envié su valor al **Campo 1** de ThingSpeak. La respuesta obtenida fue **200**, por lo que el envío se realizó correctamente. |
-| **Foto 3.2: Dashboard en ThingSpeak**<br><br>*(Insertar fotografía)* | ```cpp<br>if (respuesta == 200) {<br>  Serial.println("dato enviado correctamente a ThingSpeak");<br>}<br>delay(15000);<br>``` | En el dashboard se observaron las variaciones del potenciómetro, con lecturas aproximadamente entre **0 y 737**. Los datos fueron enviados periódicamente cada **15 segundos**. |
+| <img src="/Imagenes/taller_iot/96.png" width="800"/> | ```cpp<br>int valor = analogRead(potPin);<br>int respuesta = ThingSpeak.writeField(<br>  channelID, 1, valor, writeAPIKey<br>);<br>``` | Realicé la lectura del potenciómetro y envié su valor al **Campo 1** de ThingSpeak. La respuesta obtenida fue **200**, por lo que el envío se realizó correctamente. |
+| <img src="/Imagenes/taller_iot/97.png" width="800"/> | ```cpp<br>if (respuesta == 200) {<br>  Serial.println("dato enviado correctamente a ThingSpeak");<br>}<br>delay(15000);<br>``` | En el dashboard se observaron las variaciones del potenciómetro, con lecturas aproximadamente entre **0 y 737**. Los datos fueron enviados periódicamente cada **15 segundos**. |
 
 ### Código completo utilizado
 
