@@ -135,3 +135,9 @@ void loop() {
   delay(15000);
 }
 ```
+## Actividad 05: Control remoto de actuadores (LED) desde la plataforma IoT
+
+| Evidencia | Descripción de la actividad | Resultado e interpretación |
+|---|---|---|
+| <img src="/Imagenes/taller_iot/Captura de pantalla 2026-10-01 142318.png" width="500"/> | **Creación del botón de control en la plataforma web**<br>Configuré una plataforma en la nube (Ubidots) creando un botón virtual encendido de color verde para mandar señales de control a la distancia[cite: 18, 47]. | Al presionar el botón virtual en la pantalla, la plataforma envió la orden por internet para activar el foco LED desde la página web en tiempo real[cite: 47]. |
+| <img src="/Imagenes/taller_iot/WhatsApp Image 2026-10-01 at 2.30.36 PM.jpeg" width="500"/> | **Conexión e instalación del foco LED en la placa**<br>Conecté un foco LED rojo a la placa de pruebas junto a la tarjeta programable para que reciba las órdenes transmitidas por internet[cite: 5, 42]. | Al recibir la instrucción mandada desde la página web, la tarjeta encendió el foco LED rojo en la placa de manera inmediata[cite: 42]. |
