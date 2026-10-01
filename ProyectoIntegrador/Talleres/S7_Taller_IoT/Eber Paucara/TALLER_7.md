@@ -140,7 +140,7 @@ void loop() {
 | Evidencia | Descripción de la actividad | Resultado e interpretación |
 |---|---|---|
 | <img src="/Imagenes/taller_iot/actividad4_b.jpg" width="500"/> | **Armado y conexión física del sensor**<br>Conecté el sensor de turbidez a la placa de pruebas mediante cables jumper, enlazando sus salidas hacia la tarjeta de desarrollo para capturar las lecturas del medio líquido. | El circuito quedó correctamente instalado en la mesa de trabajo, permitiendo enviar la señal analógica capturada por el sensor hacia la tarjeta para su procesamiento. |
-| <img src="/Imagenes/taller_iot/Captura de pantalla 2026-10-01 160200.png" width="500"/> | **Monitoreo y gráfica de turbidez en Ubidots**<br>Configuré un panel en la plataforma en la nube (Ubidots) denominado "Turbidez" para recibir y graficar las variaciones continuas del sensor en tiempo real. | La plataforma registró exitosamente la señal transmitida por internet, mostrando en la gráfica los picos y variaciones de turbidez a lo largo del tiempo de medición. |
+| <img src="/Imagenes/taller_iot/actividad4_a.jpg" width="500"/> | **Monitoreo y gráfica de turbidez en Ubidots**<br>Configuré un panel en la plataforma en la nube (Ubidots) denominado "Turbidez" para recibir y graficar las variaciones continuas del sensor en tiempo real. | La plataforma registró exitosamente la señal transmitida por internet, mostrando en la gráfica los picos y variaciones de turbidez a lo largo del tiempo de medición. |
 
 ---
 
