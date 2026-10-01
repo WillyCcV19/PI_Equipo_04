@@ -10,4 +10,4 @@
 # Actividad 4
 
 # Actividad 5
-<img src="/Imagenes/taller_iot/actividad5-ubidots.png" width="800"/>
+<img src="/Imagenes/taller_iot/actividad5-ubidots.jpg" width="800"/>
