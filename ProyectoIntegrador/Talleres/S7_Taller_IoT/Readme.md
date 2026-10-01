@@ -1,4 +1,5 @@
 # Actividad 1
+<img src="/Imagenes/taller_iot/actividad1.jpg" width="800"/>
 
 # Actividad 2
 <img src="/Imagenes/taller_iot/actividad2a.png" width="800"/>
