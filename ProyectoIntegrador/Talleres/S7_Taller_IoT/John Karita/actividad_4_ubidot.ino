@@ -1,67 +1,39 @@
-/****************************************
- * Este ejemplo funciona para usuarios
- * tanto Industrial como STEM.
- *
- * Desarrollado por Jose Garcia
- * https://github.com/jotathebest/
- ****************************************/
-
-/****************************************
- * Incluir Bibliotecas
- ****************************************/
+// * https://github.com/jotathebest/ ← Origen del código original
 #include "UbidotsEsp32Mqtt.h"
+const char *UBIDOTS_TOKEN = "BBUS-FrvQ42QunoLdK7rZiQ38NOB0xE0UeQ";   // Token de ubidots [no me importa compartir este token]
+const char *WIFI_SSID = "dasmodel";                                  // SSID
+const char *WIFI_PASS = "cisco12345";                                // Contraseña
+const char *DEVICE_LABEL = "ESP-32";                                 // Etiqueta de dispositivo
+const char *VARIABLE_LABEL = "Turbidez";                             // Etiqueta de variable
 
-/****************************************
- * Definir Constantes
- ****************************************/
-const char *UBIDOTS_TOKEN = "BBUS-FrvQ42QunoLdK7rZiQ38NOB0xE0UeQ";   // Coloca aquí tu TOKEN de Ubidots
-const char *WIFI_SSID = "dasmodel";       // Coloca aquí tu SSID de Wi-Fi
-const char *WIFI_PASS = "cisco12345";       // Coloca aquí tu contraseña de Wi-Fi
-const char *DEVICE_LABEL = "ESP-32";    // Etiqueta de tu dispositivo
-const char *VARIABLE_LABEL = "Turbidez";  // Etiqueta de tu variable
-
-const int PUBLISH_FREQUENCY = 1000;  // Frecuencia de actualización en ms
+const int PUBLISH_FREQUENCY = 1000;                                  // Frecuencia de actualización en ms
 unsigned long timer;
-uint8_t analogPin = 34;  // GPIO15 del ESP32
+uint8_t analogPin = 34;                                              // Designar pin de lectura
 Ubidots ubidots(UBIDOTS_TOKEN);
 
-/****************************************
- * Funciones Auxiliares
- ****************************************/
-void callback(char *topic, byte *payload, unsigned int length) {
-  Serial.print("Mensaje recibido [");
-  Serial.print(topic);
+void callback(char *topic, byte *payload, unsigned int length) {     // Función auxiliar
+  Serial.print("Mensaje recibido [");                                // Indicar recepción
+  Serial.print(topic);                                               // Imprimir etiqueta de variable
   Serial.print("] ");
-  for (int i = 0; i < length; i++) {
-    Serial.print((char)payload[i]);
-  }
-  Serial.println();
-}
-
-/****************************************
- * Funciones Principales
- ****************************************/
+  for (int i = 0; i < length; i++) {                                 // Imprimir contenidos
+    Serial.print((char)payload[i]);}
+  Serial.println();}
 
 void setup() {
-  // Código de configuración, se ejecuta una sola vez
-  Serial.begin(115200);
-  ubidots.setDebug(true);  // Cambia a false para desactivar mensajes de depuración
-  ubidots.connectToWifi(WIFI_SSID, WIFI_PASS);
+  Serial.begin(115200);                                              // Iniciar comunicación serial
+  ubidots.setDebug(true);                                            // Desactivar mensajes de depuración
+  ubidots.connectToWifi(WIFI_SSID, WIFI_PASS);                       // Conectarse a la red
   ubidots.setCallback(callback);
   ubidots.setup();
   ubidots.reconnect();
-  timer = millis();
-}
+  timer = millis();}
 
 void loop() {
-  // Código principal, se ejecuta repetidamente
-  if (!ubidots.connected()) {
+  if (!ubidots.connected()) {                                        // Reconectarse en caso perder la conexión
     ubidots.reconnect();}
-  if (millis() - timer > PUBLISH_FREQUENCY) {
-    int value = analogRead(analogPin);
-    ubidots.add(VARIABLE_LABEL, value);
-    ubidots.publish(DEVICE_LABEL);
-    timer = millis();}
-
-  ubidots.loop();
-}
+  if (millis() - timer > PUBLISH_FREQUENCY) {                        // Si el tiempo transcurrido es igual al periodo designado
+    int value = analogRead(analogPin);                               // Leer pin analógico
+    ubidots.add(VARIABLE_LABEL, value);                              // Designar variable a publicar junto al valor leído
+    ubidots.publish(DEVICE_LABEL);                                   // Publicar valor
+    timer = millis();}                                               // Designar nuevo tiempo inicial
+  ubidots.loop();}
