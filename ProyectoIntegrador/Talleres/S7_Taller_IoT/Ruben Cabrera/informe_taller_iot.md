@@ -5,7 +5,7 @@
 
 ## Introducción
 
-En este taller se trabajó con la placa ESP32 en tres actividades: la lectura de una señal analógica mediante un potenciómetro, el escaneo y la conexión a redes WiFi, y el envío de datos a la plataforma Arduino Cloud para visualizarlos en tiempo real. En este informe se interpretan las salidas obtenidas en cada ejercicio.
+En este taller se trabajó con la placa ESP32 en cinco actividades: la lectura de una señal analógica mediante un potenciómetro, el escaneo y la conexión a redes WiFi, el envío de datos a la plataforma Arduino Cloud para visualizarlos en tiempo real, el envío de la lectura de un sensor de temperatura a plataformas IoT y el control de un LED desde la nube. En este informe se interpretan las salidas obtenidas en cada ejercicio.
 
 ---
 
@@ -97,9 +97,70 @@ El ESP32 lee el potenciómetro y envía el valor promedio a una variable de **Ar
 
 ---
 
+## Ejercicio 4: Envío de la temperatura a ThingSpeak
+
+### Actividad
+
+Escribir un código que muestre en tiempo real la variación de uno de los sensores del kit Keystudio (LM35, LDR, etc.) conectado al ESP32 en las plataformas de IoT Arduino Cloud, ThingSpeak y Ubidots.
+
+### Descripción del código
+
+Se utilizó el sensor de temperatura **LM35**. El programa lee el valor del ADC, lo convierte a voltaje y luego a temperatura en °C, e imprime los tres valores en el monitor serial. Después envía la temperatura al **campo 1** de un canal de **ThingSpeak** con la función `ThingSpeak.writeField(channelID, 1, temperatura, writeAPIKey)`. El programa espera **15 segundos** entre cada envío.
+
+### Salida obtenida
+
+![Salida del ejercicio 4](/Imagenes/taller_iot/img_Cabrera/ejercicio4.png)
+
+### Interpretación
+
+- Cada lectura muestra tres valores: el **ADC** (entre 124 y 138), el **voltaje** (entre 0.100 y 0.111 V) y la **temperatura** (entre 23.99 y 25.12 °C).
+- Después de cada lectura aparece `Temperatura enviada a ThingSpeak`. Este mensaje solo se imprime cuando la función devuelve el código **200**, que en HTTP significa que la solicitud fue **exitosa**. Por lo tanto, todos los envíos llegaron correctamente al canal.
+- El LM35 entrega **10 mV por cada °C**. En los datos se observa esa relación: una diferencia de 0.004 V entre lecturas corresponde a una diferencia de 0.4 °C. La temperatura obtenida, alrededor de **24 °C**, es coherente con la temperatura de un ambiente interior.
+- La variación entre lecturas (menos de 1.2 °C) no refleja un cambio real de temperatura, sino el **ruido del ADC**: cada unidad del ADC equivale a unos 0.8 mV, por lo que una variación de pocas unidades produce cambios de algunas décimas de grado.
+- La pausa de **15 segundos** responde al límite de la cuenta gratuita de ThingSpeak, que acepta como máximo una actualización cada 15 segundos por canal. Si se envían datos más rápido, el servidor los rechaza.
+
+### Observaciones
+
+- El ruido podría reducirse promediando varias lecturas antes de calcular la temperatura, como se hizo en el ejercicio 1.
+- El ADC del ESP32 es poco preciso en voltajes bajos, cercanos a 0 V, que es justamente el rango en el que trabaja el LM35 a temperatura ambiente. Para mejorar la precisión se puede usar la función `analogReadMilliVolts()`, que aplica la calibración interna del ESP32.
+
+---
+
+## Ejercicio 5: Control de un LED desde la nube con Ubidots
+
+### Actividad
+
+Conectar un LED en uno de los pines digitales del ESP32 y controlar su encendido desde alguna de las plataformas web de su preferencia.
+
+### Descripción
+
+Se eligió la plataforma **Ubidots**. En el dashboard `Turbidez` se agregó un widget **Switch** vinculado a la variable `led` del dispositivo `dasmod`. Al activar o desactivar el switch, Ubidots cambia el valor de la variable a 1 o 0. El ESP32, conectado a la plataforma, recibe ese valor y enciende o apaga el LED conectado al pin digital.
+
+### Salida obtenida
+
+![Salida del ejercicio 5](/Imagenes/taller_iot/img_Cabrera/ejercicio5.png)
+
+### Interpretación
+
+- El widget **Switch** muestra el control de la variable `led` del dispositivo `dasmod`. Su color **verde** indica que está en estado **encendido** (valor 1), por lo que el LED conectado al ESP32 debería estar prendido.
+- Este ejercicio funciona en sentido contrario a los anteriores: en lugar de que el ESP32 **envíe** datos a la nube, el ESP32 **recibe** una orden desde la nube y la ejecuta sobre un actuador. Así, el LED puede controlarse desde cualquier lugar con acceso a internet.
+- El dashboard también tiene dos gráficos de línea (**Line chart**), con el rango de tiempo desde el 1 de octubre de 2026 a las 13:23 hasta el momento actual. Ambos aparecen **vacíos**, lo que indica que las variables asociadas a esos gráficos no recibieron datos en ese periodo. Estos gráficos no forman parte de esta actividad, que solo requiere el control del LED.
+
+### Evidencia del LED encendido
+
+![LED encendido desde Ubidots](/Imagenes/taller_iot/img_Cabrera/ejercicio55.png)
+
+- La foto muestra el **circuito físico**: el ESP32 montado en el protoboard, alimentado por USB-C, y el LED rojo conectado a la placa mediante dos cables (uno al pin digital de control y otro a tierra).
+- El **LED rojo está encendido**, lo que coincide con el estado **activado** del switch en el dashboard de Ubidots. Esto confirma que la orden enviada desde la nube llegó al ESP32 y se ejecutó sobre el pin digital.
+- La pequeña luz roja sobre la placa, junto al conector USB, es el **LED de encendido del ESP32**, que indica que la placa está alimentada. No forma parte del ejercicio.
+
+---
+
 ## Conclusiones
 
 1. El ADC de 12 bits del ESP32 convierte voltajes de 0 a 3.3 V en valores de 0 a 4095, y promediar varias lecturas permite obtener mediciones más estables.
 2. El escaneo WiFi permite evaluar la calidad de señal de las redes cercanas mediante el RSSI. Para conectarse, la red debe transmitir en la banda de 2.4 GHz, la única compatible con el ESP32.
 3. Arduino Cloud permite visualizar en tiempo real los datos del sensor desde un dashboard web, lo que muestra la integración entre el hardware y una plataforma IoT en la nube.
 4. Los caracteres ilegibles en el monitor serial son una señal útil para diagnosticar reinicios de la placa.
+5. ThingSpeak permite almacenar y graficar datos de sensores mediante solicitudes HTTP. El código de respuesta 200 confirma que cada envío fue exitoso, y el límite de una actualización cada 15 segundos debe respetarse en el código.
+6. Ubidots permite controlar actuadores desde un dashboard web. Esto demuestra que la comunicación IoT funciona en ambos sentidos: el ESP32 puede enviar datos a la nube y también recibir órdenes desde ella.
