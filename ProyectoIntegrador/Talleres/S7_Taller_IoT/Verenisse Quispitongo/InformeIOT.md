@@ -91,3 +91,128 @@ Se utilizó un intervalo de aproximadamente 15 segundos entre cada envío de inf
 Se logró conectar el ESP32 a ThingSpeak mediante WiFi y enviar correctamente las lecturas obtenidas del potenciómetro.
 
 Al modificar la posición del potenciómetro, los valores enviados también cambiaron, permitiendo visualizar su variación mediante una gráfica en tiempo real en ThingSpeak.
+
+# Actividad 04: Monitoreo de temperatura con LM35 y ThingSpeak
+
+## Objetivo
+
+Implementar un sistema IoT utilizando un sensor **LM35 conectado al ESP32**, con el fin de obtener mediciones de temperatura y enviarlas mediante WiFi a la plataforma **ThingSpeak**, donde se puede observar su variación mediante una gráfica.
+
+## Componentes utilizados
+
+- ESP32
+- Sensor de temperatura LM35
+- Protoboard
+- Cables jumper
+- Conexión WiFi
+- Plataforma ThingSpeak
+
+## Funcionamiento
+
+El sensor LM35 genera una salida analógica que cambia dependiendo de la temperatura. Esta señal es leída por el ADC del ESP32.
+Primero se obtiene la lectura analógica:
+
+```cpp
+int valorADC = analogRead(lm35Pin);
+```
+
+Luego, el valor del ADC se convierte a voltaje:
+
+```cpp
+float voltaje = (valorADC * 3.3) / 4095.0;
+```
+
+Se utiliza `4095` debido a que el ADC del ESP32 trabaja con una resolución de 12 bits, permitiendo valores entre aproximadamente 0 y 4095.
+
+### Conversión de voltaje a temperatura
+
+El LM35 entrega aproximadamente **10 mV por cada grado Celsius**, es decir:
+
+```text
+10 mV = 0.01 V = 1 °C
+```
+
+Por este motivo, para convertir el voltaje a temperatura se divide entre `0.01`:
+
+```text
+Temperatura = Voltaje / 0.01
+```
+
+lo cual es equivalente a multiplicar por 100:
+
+```cpp
+float temperatura = voltaje * 100.0;
+```
+
+Por ejemplo:
+
+```text
+0.25 V × 100 = 25 °C
+```
+
+De esta manera, la lectura analógica del sensor puede expresarse directamente en grados Celsius.
+
+## Envío de datos a ThingSpeak
+
+El ESP32 se conectó a una red WiFi y posteriormente se utilizó la librería de ThingSpeak para enviar las mediciones.
+La plataforma fue inicializada mediante:
+
+```cpp
+ThingSpeak.begin(client);
+```
+
+La temperatura obtenida se envió al `Field 1` del canal creado en ThingSpeak:
+
+```cpp
+int respuesta = ThingSpeak.writeField(
+    channelID,
+    1,
+    temperatura,
+    writeAPIKey
+);
+```
+
+## Resultados obtenidos
+
+Durante la ejecución se visualizaron en el monitor serial los valores obtenidos por el sensor.
+
+<div align="center">
+  <img width="85%" alt="image" src="https://github.com/user-attachments/assets/bffa854f-df20-454c-872f-8aeff3cbfe57" />
+</div>
+
+<p align="center">
+  <em>Lecturas del LM35 y envío de datos a ThingSpeak.</em>
+</p>
+
+En el monitor serial se observaron diferentes valores del ADC, voltaje y temperatura. Además, el mensaje:
+
+```text
+Temperatura enviada a ThingSpeak
+```
+
+permitió comprobar que las mediciones estaban siendo enviadas correctamente a la plataforma.
+
+Posteriormente, en ThingSpeak se observó la variación de la temperatura mediante una gráfica.
+
+<div align="center">
+  <img width="80%" alt="image" src="https://github.com/user-attachments/assets/2176f058-8ee8-4e18-a330-6ad8252c85bc" />
+</div>
+
+<p align="center">
+  <em>Variación de temperatura registrada en ThingSpeak.</em>
+</p>
+
+La gráfica muestra las diferentes mediciones recibidas desde el ESP32. Durante las pruebas se produjeron algunos cambios bruscos debido a conexiones, desconexiones y ajustes realizados al sensor durante la implementación. Finalmente, las mediciones se estabilizaron alrededor de los valores observados en el monitor serial.
+
+## Resultado
+
+Se logró obtener información del sensor LM35 mediante el ESP32 y enviar las mediciones a ThingSpeak utilizando una conexión WiFi.
+
+La plataforma permitió visualizar de manera remota la variación de la temperatura, demostrando el funcionamiento básico de un sistema IoT compuesto por un sensor, un microcontrolador, conexión a Internet y una plataforma de visualización.
+
+
+## Conclusión
+
+La actividad permitió implementar un sistema de monitoreo de temperatura utilizando el LM35 y el ESP32. La señal analógica del sensor fue convertida primero a voltaje y posteriormente a grados Celsius.
+
+Finalmente, los valores fueron enviados correctamente a ThingSpeak, donde fue posible observar su comportamiento mediante una gráfica.
