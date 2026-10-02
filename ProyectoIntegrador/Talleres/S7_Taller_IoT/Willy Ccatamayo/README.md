@@ -4,7 +4,10 @@
 
 Se mejoró el código del ESP32 para tomar 20 lecturas del potenciómetro conectado al pin 34 y calcular su promedio, reduciendo las fluctuaciones de la medición. Luego, se convirtió el promedio del ADC a un voltaje aproximado mediante la fórmula `voltaje = promedio × 3.3 / 4095`. Ambos resultados se mostraron en el monitor serial a 115200 baudios.
 
-## Interpretación de la captura
+## Resultados
+
+<img width="825" height="787" alt="1" src="https://github.com/user-attachments/assets/af2f9b44-70c4-4921-9fcd-163c5825ec61" />
+
 
 En el monitor serial se observa que el promedio del ADC aumenta desde 0 hasta 4095, mientras el voltaje calculado pasa de 0.00 a 3.30 V. Por ejemplo, un promedio de 1084.70 corresponde a 0.87 V y uno de 2515.90 corresponde a 2.03 V. Esta variación es consistente con el ajuste del potenciómetro. Las últimas lecturas permanecen en 4095 y 3.30 V, indicando que el ADC alcanzó su valor máximo.
 
