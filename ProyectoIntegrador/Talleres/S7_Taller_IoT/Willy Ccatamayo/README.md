@@ -44,3 +44,61 @@ void loop() {
   delay(500);
 }
 ```
+
+
+# Actividad 02: Conexión del ESP32 a un hotspot WiFi
+
+## Procedimiento realizado
+
+Se creó una red WiFi mediante la función de compartir Internet del smartphone. Se programó el ESP32 para escanear las redes disponibles, mostrar sus nombres e intensidad de señal y conectarse al hotspot llamado “iPhone”. El programa muestra la dirección IP asignada cuando se establece la conexión.
+
+## Resultados
+
+<img width="480" height="816" alt="image" src="https://github.com/user-attachments/assets/b5690826-b07e-436d-a63c-7bf51be2e184" />
+
+<img width="1919" height="1020" alt="2" src="https://github.com/user-attachments/assets/850e4916-6c04-4e58-bf0f-6959c2c2daac" />
+
+La captura muestra las redes WiFi detectadas y su intensidad de señal en dBm. Un valor menos negativo indica una señal más fuerte. Al final aparece el mensaje “Conectando a iPhone…”, indicando que el ESP32 está intentando conectarse. Todavía no aparece el mensaje de conexión exitosa ni la dirección IP, por lo que esta captura confirma el escaneo y el inicio de la conexión, pero no su finalización.
+
+## Código utilizado
+
+```cpp
+#include <WiFi.h>
+
+const char* ssid     = "iPhone";          // Nombre del hotspot
+const char* password = "TU_CONTRASEÑA";   // Contraseña de Compartir Internet
+
+void setup() {
+  Serial.begin(115200);
+  delay(1000);
+  WiFi.mode(WIFI_STA);
+  WiFi.disconnect();
+  delay(100);
+
+  // 1. Escaneo de redes
+  Serial.println("Escaneando redes WiFi...");
+  int n = WiFi.scanNetworks();
+  for (int i = 0; i < n; i++) {
+    Serial.printf("%d: %s (%d dBm)\n", i + 1, WiFi.SSID(i).c_str(), WiFi.RSSI(i));
+  }
+
+  // 2. Conexión al hotspot del iPhone
+  Serial.printf("\nConectando a %s", ssid);
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  // 3. Mostrar IP asignada
+  Serial.println("\n¡Conectado!");
+  Serial.print("Dirección IP asignada: ");
+  Serial.println(WiFi.localIP());
+}
+
+void loop() {
+}
+```
+
+
+
