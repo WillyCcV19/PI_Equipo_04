@@ -24,9 +24,7 @@ Broker MQTT
 Dashboard
 ```
 
-El ESP32 obtiene los datos del sensor y los publica mediante MQTT. Node-RED se suscribe al topic correspondiente, procesa la información recibida y finalmente la muestra mediante diferentes elementos gráficos.
-
-Node-RED permite conectar dispositivos, API y servicios mediante un editor visual basado en nodos. :chatgpt-content-reference{index="4"}
+El ESP32 obtiene los datos del sensor y los publica mediante MQTT. Node-RED se suscribe al topic correspondiente, procesa la información recibida y finalmente la muestra mediante diferentes elementos gráficos. Node-RED permite conectar dispositivos, API y servicios mediante un editor visual basado en nodos.
 
 ---
 
