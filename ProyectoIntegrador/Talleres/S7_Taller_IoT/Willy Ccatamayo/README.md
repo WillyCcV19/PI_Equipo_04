@@ -131,3 +131,32 @@ En el monitor serial se registraron diferentes lecturas, como 1308, 3274 y 1521,
 
 Finalmente, el dispositivo apareció con el estado ONLINE y asociado a la red “iPhone”, confirmando su conexión con Arduino Cloud.
 
+
+
+# Actividad 04: Monitoreo de temperatura mediante ThingSpeak
+
+## Procedimiento realizado
+
+Se utilizó el sensor de temperatura LM35 conectado al ESP32 para registrar sus mediciones en ThingSpeak.
+
+1. **Lectura del sensor:** Se programó el ESP32 para obtener la lectura del ADC, convertirla a voltaje y calcular la temperatura del LM35.
+
+2. **Conexión WiFi:** Se configuró la conexión del ESP32 a una red con acceso a Internet para enviar las mediciones a la plataforma.
+
+3. **Configuración de ThingSpeak:** Se utilizó un canal y se destinó el campo 1 al registro de temperatura, con el gráfico titulado “Temperatura LM35”.
+
+4. **Envío de datos:** Se empleó la función `ThingSpeak.writeField()` para enviar la temperatura utilizando el identificador del canal y la clave de escritura. El programa incluyó una espera de 15 segundos entre envíos.
+
+5. **Verificación:** Se revisaron los mensajes del monitor serial y el gráfico del canal para comprobar la recepción de las mediciones.
+
+## Resultados
+
+<img width="1600" height="913" alt="image" src="https://github.com/user-attachments/assets/df4e1e8b-07dc-4ab2-bc23-21d13e8a0b5d" />
+
+
+En el monitor serial se muestran las lecturas del sensor y mensajes de envío de temperatura a ThingSpeak. El código verifica la respuesta del servidor y muestra un mensaje de confirmación cuando recibe el código 200.
+
+<img width="1600" height="925" alt="image" src="https://github.com/user-attachments/assets/5330062a-0928-4edd-af5d-c509e590e030" />
+
+En ThingSpeak se observa el gráfico “Temperatura LM35” y un total de 98 registros en el canal al momento de la captura. Esto confirma que la plataforma recibió datos y permitió visualizar las mediciones de temperatura a lo largo del tiempo.
+
