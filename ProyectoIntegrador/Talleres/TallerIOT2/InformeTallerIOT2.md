@@ -140,7 +140,7 @@ La gráfica permite observar los cambios producidos en las mediciones conforme e
 
 ## 9. Resultado
 
-Se logró establecer correctamente la comunicación entre el ESP32, el broker MQTT y Node-RED. Los valores de temperatura y humedad fueron recibidos mediante el topic `equipo04/sensor/datos` y posteriormente mostrados en un dashboard mediante indicadores y una gráfica.También se implementó un control para el LED, demostrando que la comunicación puede realizarse en ambos sentidos: desde el ESP32 hacia Node-RED para enviar datos y desde Node-RED hacia el ESP32 para enviar comandos.
+Se logró establecer correctamente la comunicación entre el ESP32, el broker MQTT y Node-RED. Los valores de temperatura y humedad fueron recibidos mediante el topic `equipo04/sensor/datos` y posteriormente mostrados en un dashboard mediante indicadores y una gráfica. También se implementó un control para el LED, demostrando que la comunicación puede realizarse en ambos sentidos: desde el ESP32 hacia Node-RED para enviar datos y desde Node-RED hacia el ESP32 para enviar comandos.
 
 ---
 
