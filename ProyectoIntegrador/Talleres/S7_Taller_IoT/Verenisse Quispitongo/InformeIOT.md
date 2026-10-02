@@ -206,13 +206,4 @@ La gráfica muestra las diferentes mediciones recibidas desde el ESP32. Durante 
 
 ## Resultado
 
-Se logró obtener información del sensor LM35 mediante el ESP32 y enviar las mediciones a ThingSpeak utilizando una conexión WiFi.
-
-La plataforma permitió visualizar de manera remota la variación de la temperatura, demostrando el funcionamiento básico de un sistema IoT compuesto por un sensor, un microcontrolador, conexión a Internet y una plataforma de visualización.
-
-
-## Conclusión
-
-La actividad permitió implementar un sistema de monitoreo de temperatura utilizando el LM35 y el ESP32. La señal analógica del sensor fue convertida primero a voltaje y posteriormente a grados Celsius.
-
-Finalmente, los valores fueron enviados correctamente a ThingSpeak, donde fue posible observar su comportamiento mediante una gráfica.
+Se logró obtener información del sensor LM35 mediante el ESP32 y enviar las mediciones a ThingSpeak utilizando una conexión WiFi. La plataforma permitió visualizar de manera remota la variación de la temperatura, demostrando el funcionamiento básico de un sistema IoT compuesto por un sensor, un microcontrolador, conexión a Internet y una plataforma de visualización.
