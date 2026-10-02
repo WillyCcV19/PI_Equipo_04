@@ -1,55 +1,33 @@
-/****************************************
- * Include Libraries
- ****************************************/
 #include "UbidotsESPMQTT.h"
 
-/****************************************
- * Define Constants
- ****************************************/
-#define TOKEN "BBUS-FrvQ42QunoLdK7rZiQ38NOB0xE0UeQ" // Your Ubidots TOKEN
-#define WIFINAME "dasmodel" //Your SSID
-#define WIFIPASS "cisco12345" // Your Wifi Pass
+#define TOKEN "BBUS-FrvQ42QunoLdK7rZiQ38NOB0xE0UeQ"  // Token de ubidots [En este caso no me importa compartirlo]
+#define WIFINAME "dasmodel"                          // SSID
+#define WIFIPASS "cisco12345"                        // Contraseña
 
 Ubidots client(TOKEN);
 
-/****************************************
- * Auxiliar Functions
- ****************************************/
-
-void callback(char* topic, byte* payload, unsigned int length) {
-  Serial.print("Message arrived [");
-  Serial.print(topic);
+void callback(char* topic, byte* payload, unsigned int length) { // Función auxiliar
+  Serial.print("Message arrived [");          // Indicar el mensaje llegado
+  Serial.print(topic);                        // Mencionar la etiqueta
   Serial.print("] ");
   for (int i=0;i<length;i++) {
-    Serial.print((char)payload[i]);
+    Serial.print((char)payload[i]);           // Y el contenido del mensaje
   }
-  Serial.println();
-}
-
-/****************************************
- * Main Functions
- ****************************************/
+  Serial.println();}
 
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(115200);
-  client.setDebug(true); // Pass a true or false bool value to activate debug messages
-  client.wifiConnection(WIFINAME, WIFIPASS);
-  client.begin(callback);
-  }
+  client.setDebug(true);                     // Activar mensajes de depuración
+  client.wifiConnection(WIFINAME, WIFIPASS); // Conectarse a la red
+  client.begin(callback);}
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  if(!client.connected()){
-      client.reconnect();
-      }
+  if(!client.connected()){                   // En caso de no estar conectado intentar conectarse
+      client.reconnect();}
   
-  // Publish values to 2 different data sources
-  
-  client.add("stuff", 10.2); //Insert your variable Labels and the value to be sent
+  client.add("stuff", 10.2);                 // Insertar variables de etiqueta junto a sus valores para enviarlos
   client.ubidotsPublish("source1");
   client.add("stuff", 10.2);
   client.add("more-stuff", 120.2);
   client.ubidotsPublish("source2");
-  client.loop();
-  }
+  client.loop();}
