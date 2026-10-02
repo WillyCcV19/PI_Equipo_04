@@ -105,7 +105,7 @@ Escribir un código que muestre en tiempo real la variación de uno de los senso
 
 ### Descripción del código
 
-Se utilizó el sensor de temperatura **LM35**. El programa lee el valor del ADC, lo convierte a voltaje y luego a temperatura en °C, e imprime los tres valores en el monitor serial. Después envía la temperatura al **campo 1** de un canal de **ThingSpeak** con la función `ThingSpeak.writeField(channelID, 1, temperatura, writeAPIKey)`. El programa espera **15 segundos** entre cada envío.
+Se utilizó el sensor de temperatura **LM35**. El programa lee el valor del ADC, lo convierte a voltaje y luego a temperatura en C, e imprime los tres valores en el monitor serial. Después envía la temperatura al **campo 1** de un canal de **ThingSpeak** con la función `ThingSpeak.writeField(channelID, 1, temperatura, writeAPIKey)`. El programa espera **15 segundos** entre cada envío.
 
 ### Salida obtenida
 
@@ -113,10 +113,10 @@ Se utilizó el sensor de temperatura **LM35**. El programa lee el valor del ADC,
 
 ### Interpretación
 
-- Cada lectura muestra tres valores: el **ADC** (entre 124 y 138), el **voltaje** (entre 0.100 y 0.111 V) y la **temperatura** (entre 23.99 y 25.12 °C).
+- Cada lectura muestra tres valores: el **ADC** (entre 124 y 138), el **voltaje** (entre 0.100 y 0.111 V) y la **temperatura** (entre 23.99 y 25.12 C).
 - Después de cada lectura aparece `Temperatura enviada a ThingSpeak`. Este mensaje solo se imprime cuando la función devuelve el código **200**, que en HTTP significa que la solicitud fue **exitosa**. Por lo tanto, todos los envíos llegaron correctamente al canal.
-- El LM35 entrega **10 mV por cada °C**. En los datos se observa esa relación: una diferencia de 0.004 V entre lecturas corresponde a una diferencia de 0.4 °C. La temperatura obtenida, alrededor de **24 °C**, es coherente con la temperatura de un ambiente interior.
-- La variación entre lecturas (menos de 1.2 °C) no refleja un cambio real de temperatura, sino el **ruido del ADC**: cada unidad del ADC equivale a unos 0.8 mV, por lo que una variación de pocas unidades produce cambios de algunas décimas de grado.
+- El LM35 entrega **10 mV por cada C**. En los datos se observa esa relación: una diferencia de 0.004 V entre lecturas corresponde a una diferencia de 0.4 C. La temperatura obtenida, alrededor de **24 C**, es coherente con la temperatura de un ambiente interior.
+- La variación entre lecturas (menos de 1.2 C) no refleja un cambio real de temperatura, sino el **ruido del ADC**: cada unidad del ADC equivale a unos 0.8 mV, por lo que una variación de pocas unidades produce cambios de algunas décimas de grado.
 - La pausa de **15 segundos** responde al límite de la cuenta gratuita de ThingSpeak, que acepta como máximo una actualización cada 15 segundos por canal. Si se envían datos más rápido, el servidor los rechaza.
 
 ### Observaciones
