@@ -1,4 +1,4 @@
-# Taller OIT
+# Taller de Internet de las Cosas (IoT)
 
 # Actividad 01: Promediado del ADC y conversión a voltaje
 
