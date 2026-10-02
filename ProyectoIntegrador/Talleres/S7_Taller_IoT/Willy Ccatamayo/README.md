@@ -66,7 +66,7 @@ La captura muestra las redes WiFi detectadas y su intensidad de señal en dBm. U
 #include <WiFi.h>
 
 const char* ssid     = "iPhone";          // Nombre del hotspot
-const char* password = "TU_CONTRASEÑA";   // Contraseña de Compartir Internet
+const char* password = "20170051";   // Contraseña de Compartir Internet
 
 void setup() {
   Serial.begin(115200);
