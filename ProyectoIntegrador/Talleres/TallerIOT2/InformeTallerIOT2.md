@@ -138,7 +138,6 @@ Además de los indicadores, se utilizó una gráfica para observar la variación
 
 La gráfica permite observar los cambios producidos en las mediciones conforme el ESP32 continúa enviando información. Durante las pruebas se observan algunos cambios bruscos y una caída puntual en los valores, debido a que el ESP32 fue desconectado temporalmente para realizar ajustes y pruebas en el circuito. Una vez restablecida la conexión, el envío de datos continuó con normalidad, comprobándose que la comunicación entre el ESP32, el broker MQTT y Node-RED estaba funcionando correctamente.
 
-Node-RED y MQTT trabajan conjuntamente para recibir información de los dispositivos IoT y también enviar comandos, permitiendo una comunicación en tiempo real.
 ---
 
 ## 9. Resultado
