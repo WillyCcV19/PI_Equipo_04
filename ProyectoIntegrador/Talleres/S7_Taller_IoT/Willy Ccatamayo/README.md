@@ -1,3 +1,5 @@
+# Taller OIT
+
 # Actividad 01: Promediado del ADC y conversión a voltaje
 
 ## Procedimiento realizado
