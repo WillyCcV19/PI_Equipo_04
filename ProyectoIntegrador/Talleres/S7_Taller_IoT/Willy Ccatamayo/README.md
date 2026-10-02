@@ -160,3 +160,28 @@ En el monitor serial se muestran las lecturas del sensor y mensajes de envío de
 
 En ThingSpeak se observa el gráfico “Temperatura LM35” y un total de 98 registros en el canal al momento de la captura. Esto confirma que la plataforma recibió datos y permitió visualizar las mediciones de temperatura a lo largo del tiempo.
 
+
+
+# Actividad 05: Control remoto de un LED desde Ubidots
+
+## Descripción de la actividad
+
+1. **Configuración del control web:** Se creó un botón virtual en el dashboard de Ubidots para enviar las órdenes de encendido y apagado al ESP32.
+
+2. **Conexión del LED:** Se conectó un LED rojo en la placa de pruebas junto al ESP32, utilizando una resistencia limitadora y un pin digital configurado como salida.
+
+3. **Programación del ESP32:** Se configuró la conexión WiFi y la recepción de las órdenes de control para cambiar el estado del LED desde la plataforma.
+
+<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/a657c5f6-0898-4663-a9b8-1195329a8336" />
+
+## Resultados e interpretación
+
+Al activar el botón virtual en Ubidots, se envió una orden por Internet al ESP32 y el LED rojo se encendió. Al desactivar el botón, el dispositivo recibió la orden de apagado.
+
+Esta prueba permitió comprobar la comunicación entre la plataforma web y el ESP32, así como el control remoto de un actuador mediante Internet.
+
+<img width="320" height="513" alt="image" src="https://github.com/user-attachments/assets/fd5d36dd-e99c-4b51-b56b-105a733762ef" />
+
+
+
+
