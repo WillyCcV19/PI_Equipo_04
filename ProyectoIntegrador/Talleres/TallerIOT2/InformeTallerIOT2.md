@@ -63,7 +63,8 @@ Se establecieron las credenciales correspondientes para permitir la autenticaci�
 ### Configuración de seguridad
 
 <img width="1600" height="722" alt="image" src="https://github.com/user-attachments/assets/23696d7d-bee1-436e-b656-6832135de5ee" />
-
+   
+</div>
 Posteriormente, en el nodo de entrada MQTT se configuró el topic:
 
 ```text
@@ -79,8 +80,26 @@ El mensaje fue configurado para recibirse como un **objeto JSON**, facilitando l
 El broker actúa como intermediario entre el ESP32 y Node-RED, permitiendo que ambos puedan intercambiar información sin comunicarse directamente entre sí.
 
 ---
+## 6. Circuito implementado
 
-## 6. Visualización de los datos
+Para la implementación práctica se utilizó un ESP32 conectado a los sensores mediante una protoboard. El ESP32 se encargó de adquirir los datos de los sensores y posteriormente enviarlos mediante WiFi utilizando el protocolo MQTT.
+
+A continuación se muestra el circuito utilizado durante la práctica:
+
+<div align="center">
+<img width="48%" alt="image" src="https://github.com/user-attachments/assets/7733d6ae-798f-45dc-a066-e8d96bef9131" />
+<img width="48%" alt="image" src="https://github.com/user-attachments/assets/1dfd9c17-92a0-4f14-8d42-895a2c62e8f6" />
+
+<br><br>
+<img width="55%" alt="image" src="https://github.com/user-attachments/assets/0faf5f38-21bf-46aa-8398-fb8600ac0ef3" />
+
+</div>
+
+<p align="center">
+  <em>Figura 1. Circuito implementado con ESP32 y sensores.</em>
+</p>
+
+## 7. Visualización de los datos
 
 Luego de establecer correctamente la comunicación, los datos recibidos fueron mostrados en el dashboard de Node-RED.
 El dashboard permitió visualizar:
@@ -93,7 +112,9 @@ El dashboard permitió visualizar:
 
 ### Dashboard
 
-<img width="526" height="803" alt="image" src="https://github.com/user-attachments/assets/825ec56b-f97e-4c04-a3ee-4f64c433f694" />
+<div align="center">
+  <img width="526" height="803" alt="image" src="https://github.com/user-attachments/assets/825ec56b-f97e-4c04-a3ee-4f64c433f694" />
+</div>
 
 Durante la prueba se obtuvo, por ejemplo:
 
@@ -107,23 +128,25 @@ Esto permitió comprobar que los datos enviados desde el ESP32 estaban llegando 
 
 ---
 
-## 7. Gráfica en tiempo real
+## 8. Gráfica en tiempo real
 
 Además de los indicadores, se utilizó una gráfica para observar la variación de los datos a lo largo del tiempo.
 
+<div align="center">
 <img width="523" height="972" alt="image" src="https://github.com/user-attachments/assets/baeebd8f-9622-4ef7-87ed-ba4c4de42de1" />
+</div>
 
 La gráfica permite observar los cambios producidos en las mediciones conforme el ESP32 continúa enviando información.
 Node-RED y MQTT pueden trabajar conjuntamente para recibir información de dispositivos IoT y también enviar comandos, permitiendo comunicación en tiempo real. 
 
 ---
 
-## 8. Resultado
+## 9. Resultado
 
 Se logró establecer correctamente la comunicación entre el ESP32, el broker MQTT y Node-RED. Los valores de temperatura y humedad fueron recibidos mediante el topic `equipo04/sensor/datos` y posteriormente mostrados en un dashboard mediante indicadores y una gráfica.También se implementó un control para el LED, demostrando que la comunicación puede realizarse en ambos sentidos: desde el ESP32 hacia Node-RED para enviar datos y desde Node-RED hacia el ESP32 para enviar comandos.
 
 ---
 
-## 9. Conclusión
+## 10. Conclusión
 
 La práctica permitió comprender de manera aplicada el funcionamiento de una arquitectura IoT utilizando MQTT. El ESP32 actuó como dispositivo encargado de obtener y publicar los datos, el broker MQTT permitió gestionar la comunicación y Node-RED fue utilizado para procesar y visualizar la información mediante un dashboard. De esta manera se implementó un sistema básico de monitoreo y control en tiempo real.
