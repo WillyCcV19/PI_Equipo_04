@@ -174,6 +174,8 @@ En ThingSpeak se observa el gráfico “Temperatura LM35” y un total de 98 reg
 
 <img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/a657c5f6-0898-4663-a9b8-1195329a8336" />
 
+Se configuró un botón virtual en Ubidots para enviar órdenes de control al ESP32. Este botón permite seleccionar el encendido o apagado del LED desde la plataforma web.
+
 ## Resultados e interpretación
 
 Al activar el botón virtual en Ubidots, se envió una orden por Internet al ESP32 y el LED rojo se encendió. Al desactivar el botón, el dispositivo recibió la orden de apagado.
@@ -182,6 +184,6 @@ Esta prueba permitió comprobar la comunicación entre la plataforma web y el ES
 
 <img width="320" height="513" alt="image" src="https://github.com/user-attachments/assets/fd5d36dd-e99c-4b51-b56b-105a733762ef" />
 
-
+El LED rojo conectado al ESP32 se encendió al recibir la orden enviada desde Ubidots. Este resultado demuestra la comunicación entre la plataforma web y el dispositivo para controlar un actuador a distancia.
 
 
