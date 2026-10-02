@@ -100,5 +100,34 @@ void loop() {
 }
 ```
 
+# Actividad 03: Monitoreo del potenciómetro mediante Arduino Cloud
 
+## Procedimiento realizado
+
+Para esta actividad se utilizó Arduino Cloud para visualizar la variación del potenciómetro conectado al ESP32.
+
+1. **Configuración del dispositivo:** Se registró el ESP32 Dev Module con el nombre “Actividad3” y se vinculó a un Thing en Arduino Cloud.
+
+2. **Configuración de la red:** Se ingresaron el nombre del hotspot “iPhone”, su contraseña y la clave del dispositivo para permitir la conexión con la plataforma. Durante las primeras pruebas se observaron intentos fallidos de conexión.
+
+3. **Creación de la variable:** Se configuró la variable `potenciometro` como un número entero, con permiso de solo lectura y actualización cuando cambia su valor.
+
+<img width="1821" height="687" alt="3 6" src="https://github.com/user-attachments/assets/cfd6ba9c-0845-44bc-af05-3b16cae0c542" />
+
+
+4. **Programación del ESP32:** Se utilizó un código que obtiene varias lecturas del ADC, calcula su promedio y asigna el resultado a la variable `potenciometro`. También se imprimieron las lecturas en el monitor serial para comprobar sus cambios.
+
+5. **Configuración del dashboard:** Se agregó un widget de tipo Chart y se vinculó a la variable `potenciometro` para representar sus valores a lo largo del tiempo.
+
+6. **Prueba de funcionamiento:** Se varió la posición del potenciómetro y se revisaron las lecturas del monitor serial, la variable en Arduino Cloud y el estado de conexión del ESP32.
+
+## Resultados
+
+<img width="1681" height="749" alt="3 5" src="https://github.com/user-attachments/assets/93c29b21-8770-4abb-9fa7-94b18c1f939b" />
+
+En el monitor serial se registraron diferentes lecturas, como 1308, 3274 y 1521, mostrando la variación del potenciómetro. Además, Arduino Cloud registró un último valor de 3712 en la variable configurada, lo que confirma la recepción de datos en la plataforma.
+
+<img width="1901" height="853" alt="3 7" src="https://github.com/user-attachments/assets/aab43476-99e5-4ef8-89ec-cd194a73ee85" />
+
+Finalmente, el dispositivo apareció con el estado ONLINE y asociado a la red “iPhone”, confirmando su conexión con Arduino Cloud.
 
