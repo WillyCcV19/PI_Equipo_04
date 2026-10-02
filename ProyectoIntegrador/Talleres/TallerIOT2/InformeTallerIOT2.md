@@ -96,7 +96,7 @@ A continuación se muestra el circuito utilizado durante la práctica:
 </div>
 
 <p align="center">
-  <em>Figura 1. Circuito implementado con ESP32 y sensores.</em>
+  <em>Circuito implementado con ESP32 y sensor DTH11 con pin GPIO4.</em>
 </p>
 
 ## 7. Visualización de los datos
