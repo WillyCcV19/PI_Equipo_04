@@ -1,3 +1,5 @@
+Ver códigos en la carpeta
+
 ## Actividad 1
 - Lectura de voltaje promediado de un pin analógico
 <img src="/Imagenes/taller_iot/actividad1.jpg" width="800"/>
