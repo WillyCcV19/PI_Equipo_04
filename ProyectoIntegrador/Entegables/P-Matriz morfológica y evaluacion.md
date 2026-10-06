@@ -39,3 +39,5 @@
 | Mantenimiento  | 0.15 | 0.60 | 0.30 | 0.45 | 0 | -0.30 | -0.15 |
 | Suma           | 1    | 3.30 | 3.05 | 1.95 | 0 | -0.25 | -1.35 |
 
+Concepto solución ganador: A
+
