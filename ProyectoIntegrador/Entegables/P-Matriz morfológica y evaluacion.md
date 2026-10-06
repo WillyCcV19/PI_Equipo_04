@@ -1,5 +1,5 @@
 ## Matriz morfológica
-<img src="/Imagenes/func/matriz_morfolofica_new.png" width="1500"/>
+<img src="/Imagenes/func/matriz_morfologica_new.png" width="1500"/>
 
 # Criterios y pesos
 | Criterio       | Peso |
