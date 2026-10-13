@@ -21,6 +21,14 @@ El taller permitió comprender la integración de un modelo de distinción de g�
 </div>
 
 <p align="center">
-  <em>Modelo Detección de género.</em>
+  <em>Modelo Detección de género (Female).</em>
+</p>
+
+<div align="center">
+  <img width="963" height="1280" alt="image" src="https://github.com/user-attachments/assets/5169148d-a0d6-4288-a87f-2e06d3e16ca8" />
+</div>
+
+<p align="center">
+  <em>Modelo Detección de género con valor > 50 (Male + LED PRENDIDO).</em>
 </p>
 
