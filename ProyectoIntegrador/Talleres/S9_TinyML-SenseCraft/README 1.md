@@ -13,9 +13,6 @@ El objetivo fue demostrar cómo los datos procesados por un modelo pueden utiliz
 5. **Salida:** Si el valor es menor o igual a 50, el LED permanece apagado.
 
 
-## Conclusión
-El taller permitió comprender la integración de un modelo de distinción de género con el uso de **GPIO**, aplicando condiciones para activar una salida física según el resultado obtenido.
-
 <div align="center">
   <img width="963" height="1280" alt="image" src="https://github.com/user-attachments/assets/dc689939-bbbc-44e6-88b5-0ebb6bc90865" />
 </div>
@@ -27,6 +24,9 @@ El taller permitió comprender la integración de un modelo de distinción de g�
 <div align="center">
   <img width="963" height="1280" alt="image" src="https://github.com/user-attachments/assets/5169148d-a0d6-4288-a87f-2e06d3e16ca8" />
 </div>
+
+## Conclusión
+El taller permitió comprender la integración de un modelo de distinción de género con el uso de **GPIO**, aplicando condiciones para activar una salida física según el resultado obtenido.
 
 <p align="center">
   <em>Modelo Detección de género con valor > 50 (Male + LED PRENDIDO).</em>
