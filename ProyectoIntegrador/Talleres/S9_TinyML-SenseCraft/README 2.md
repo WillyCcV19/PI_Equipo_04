@@ -30,3 +30,73 @@ El taller permitió comprender la integración de modelos de TinyML con hardware
 
 
 
+# Modelo 2 (adicional) - Clasificación de objetos
+
+## Descripción 1
+Se entrenó un modelo de clasificación para distinguir tres objetos: Osciloscopio, Multímetro y Calculadora. No se colocó un control de LED mediante GPIO
+El objetivo principal es demostrar el funcionamiento del modelo y ver qué inconvenientes puede presentar.
+
+## Funcionamiento 1
+
+1. **Procesamiento:** El modelo analiza los datos de entrada
+2. **Predicción:** Se obtiene un resultado numérico del modelo
+3. **Condición:** No se colocó ningún umbral
+4. **Activación GPIO:** No se configuró GPIO
+5. **Salida:** Clasificación del modelo
+
+<div align="center">
+  <img width="800" alt="image" src="/Imagenes/TinyML-MOC/img7.png" />
+</div>
+
+<p align="center">
+  <em>Datos de entrenamiento</em>
+</p>
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="/Imagenes/TinyML-MOC/img3.jpeg" width="100%">
+      <br>
+      <em>Clasificación multímetro 84%</em>
+    </td>
+    <td align="center">
+      <img src="/Imagenes/TinyML-MOC/img2.jpeg" width="100%">
+      <br>
+      <em>Clasificación multímetro 61%, calculadora 38%</em>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="/Imagenes/TinyML-MOC/img4.jpeg" width="100%">
+      <br>
+      <em>Clasificación calculadora 64%</em>
+    </td>
+    <td align="center">
+      <img src="/Imagenes/TinyML-MOC/img1.jpeg" width="100%">
+      <br>
+      <em>Clasificación calculadora 61%, multímetro 38%</em>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="/Imagenes/TinyML-MOC/img6.jpeg" width="100%">
+      <br>
+      <em>Clasificación osciloscopio 54%, calculadora 39%</em>
+    </td>
+    <td align="center">
+      <img src="/Imagenes/TinyML-MOC/img5.jpeg" width="100%">
+      <br>
+      <em>Clasificación osciloscopio 47% multímetro 36%</em>
+    </td>
+  </tr>
+</table>
+
+
+
+
