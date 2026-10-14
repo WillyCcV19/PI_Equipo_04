@@ -17,10 +17,10 @@ En este taller se desarrolló un modelo de **Tiny Machine Learning (TinyML)** ut
 
 ## Descripción detallada de las imágenes
 
-- **Fotografía 200:** Se muestra la configuración inicial y el espacio de trabajo en la laptop utilizando la interfaz de SenseCraft. Aquí se aprecia el sensor conectado mediante el cable USB junto con los materiales preparados (como el teléfono celular y el entorno de pruebas) listos para iniciar con la digitalización y el reconocimiento.
-- **Fotografía 201:** Se observa la prueba de detección utilizando una calculadora. Al sostener la calculadora frente al sensor, la interfaz de SenseCraft procesa la imagen en tiempo real y genera los registros de inferencia correspondientes en el panel lateral de la pantalla.
-- **Fotografía 202:** Muestra el proceso de prueba con una pila cilíndrica. Sostenemos el módulo del sensor apuntando hacia el objeto situado en la mesa; en la laptop se visualiza cómo la cámara captura la pila y el modelo comienza a reconocer sus características visuales asociadas.
-- **Fotografía 203:** Corresponde al panel general de entrenamiento dentro de la plataforma, enfocado en la categoría de "Lentes" con sus respectivas muestras de imágenes capturadas. Se visualiza el botón para iniciar el entrenamiento y la barra de confianza de resultados en la esquina inferior derecha (alcanzando un 97% de acierto), la cual activa una respuesta física como encender un foquito al superar el rango establecido del 70%.
+- **<img src="/Imagenes/TinyML/200.png" width="1000"/>** Se muestra la configuración inicial y el espacio de trabajo en la laptop utilizando la interfaz de SenseCraft. Aquí se aprecia el sensor conectado mediante el cable USB junto con los materiales preparados (como el teléfono celular y el entorno de pruebas) listos para iniciar con la digitalización y el reconocimiento.
+- **<img src="/Imagenes/TinyML/200.png" width="1000"/>** Se observa la prueba de detección utilizando una calculadora. Al sostener la calculadora frente al sensor, la interfaz de SenseCraft procesa la imagen en tiempo real y genera los registros de inferencia correspondientes en el panel lateral de la pantalla.
+- **<img src="/Imagenes/TinyML/200.png" width="1000"/>** Muestra el proceso de prueba con una pila cilíndrica. Sostenemos el módulo del sensor apuntando hacia el objeto situado en la mesa; en la laptop se visualiza cómo la cámara captura la pila y el modelo comienza a reconocer sus características visuales asociadas.
+- **<img src="/Imagenes/TinyML/200.png" width="1000"/>** Corresponde al panel general de entrenamiento dentro de la plataforma, enfocado en la categoría de "Lentes" con sus respectivas muestras de imágenes capturadas. Se visualiza el botón para iniciar el entrenamiento y la barra de confianza de resultados en la esquina inferior derecha (alcanzando un 97% de acierto), la cual activa una respuesta física como encender un foquito al superar el rango establecido del 70%.
 
 ## Conclusión
 
