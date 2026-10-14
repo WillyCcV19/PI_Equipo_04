@@ -97,6 +97,8 @@ El objetivo principal es demostrar el funcionamiento del modelo y ver qué incon
   </tr>
 </table>
 
-
+## Conclusión
+- El alto error se debe a pocos datos de entrenamiento
+- Las imágenes, desde la perspectiva del modelo, son similares. Por ejemplo: La parte trasera del multímetro y calculadora. Puede que el modelo esté confundiendo eso
 
 
