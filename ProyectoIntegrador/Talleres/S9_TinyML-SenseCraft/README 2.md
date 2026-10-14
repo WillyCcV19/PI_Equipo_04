@@ -35,6 +35,7 @@ El taller permitió comprender la integración de modelos de TinyML con hardware
 ## Descripción 1
 Se entrenó un modelo de clasificación para distinguir tres objetos: Osciloscopio, Multímetro y Calculadora. No se colocó un control de LED mediante GPIO
 El objetivo principal es demostrar el funcionamiento del modelo y ver qué inconvenientes puede presentar.
+- Archivos de entrenamiento en la carpeta "Recursos"
 
 ## Funcionamiento 1
 
@@ -97,6 +98,8 @@ El objetivo principal es demostrar el funcionamiento del modelo y ver qué incon
   </tr>
 </table>
 
-
+## Conclusión
+- El alto error se debe a pocos datos de entrenamiento
+- Las imágenes, desde la perspectiva del modelo, son similares. Por ejemplo: La parte trasera del multímetro y calculadora. Puede que el modelo esté confundiendo eso
 
 
