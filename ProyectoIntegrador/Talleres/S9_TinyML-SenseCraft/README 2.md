@@ -5,7 +5,7 @@
 
 ## Descripción
 
-En este taller se desarrolló un modelo de **Tiny Machine Learning (TinyML)** utilizando la plataforma SenseCraft en combinación con un sensor de visión artificial y hardware conectado mediante cables USB. El objetivo fue demostrar cómo un modelo de inteligencia artificial liviano puede entrenarse para reconocer diferentes objetos cotidianos en tiempo real y activar una respuesta lógica o física al superar un rango de confianza determinado.
+En este taller se desarrolló un modelo de **Tiny Machine Learning (TinyML)** utilizando la plataforma SenseCraft junto con un sensor de visión artificial y hardware conectado mediante cables USB. Como parte de la actividad, se nos indicó crear y entrenar nuestro propio modelo de clasificación de objetos, trabajando con cuatro categorías: celular, calculadora, pila y lentes. Además, se configuró el GPIO específicamente para la detección de la pila, estableciendo un rango de confianza a partir del cual se activaba un LED como respuesta física. De esta manera, se pudo comprobar cómo un modelo de inteligencia artificial liviano puede reconocer objetos en tiempo real y generar una acción automática al superar un umbral definido.
 
 ## Funcionamiento
 
