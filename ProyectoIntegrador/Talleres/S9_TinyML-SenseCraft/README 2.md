@@ -1,77 +1,32 @@
-# Modelo 1
-
-## Descripción 1
-En este taller se desarrolló un modelo de **distinción de género**, integrando sus resultados con el control de un LED mediante GPIO.
-El objetivo fue demostrar cómo los datos procesados por un modelo pueden utilizarse para controlar dispositivos electrónicos mediante condiciones lógicas.
-
-## Funcionamiento 1
-
-1. **Procesamiento:** El modelo analiza los datos de entrada.
-2. **Predicción:** Se obtiene un resultado numérico del modelo.
-3. **Condición:** Se evalúa si el valor obtenido es mayor que 50.
-4. **Activación GPIO:** Si se cumple la condición, el LED se enciende.
-5. **Salida:** Si el valor es menor o igual a 50, el LED permanece apagado.
-
-
-<div align="center">
-  <img width="963" height="1280" alt="image" src="https://github.com/user-attachments/assets/dc689939-bbbc-44e6-88b5-0ebb6bc90865" />
-</div>
-
-<p align="center">
-  <em>Modelo Detección de género (Female).</em>
-</p>
-
-## Conclusión 1
-
 # Modelo 2
 
-## Descripción 2
-En este taller se desarrolló un modelo de **distinción de género**, integrando sus resultados con el control de un LED mediante GPIO.
-El objetivo fue demostrar cómo los datos procesados por un modelo pueden utilizarse para controlar dispositivos electrónicos mediante condiciones lógicas.
 
-## Funcionamiento 2
+# Tiny Machine Learning con SenseCraft y Detección de Objetos
 
-1. **Procesamiento:** El modelo analiza los datos de entrada.
-2. **Predicción:** Se obtiene un resultado numérico del modelo.
-3. **Condición:** Se evalúa si el valor obtenido es mayor que 50.
-4. **Activación GPIO:** Si se cumple la condición, el LED se enciende.
-5. **Salida:** Si el valor es menor o igual a 50, el LED permanece apagado.
+## Descripción
 
+En este taller se desarrolló un modelo de **Tiny Machine Learning (TinyML)** utilizando la plataforma SenseCraft en combinación con un sensor de visión artificial y hardware conectado mediante cables USB. El objetivo fue demostrar cómo un modelo de inteligencia artificial liviano puede entrenarse para reconocer diferentes objetos cotidianos en tiempo real y activar una respuesta lógica o física al superar un rango de confianza determinado.
 
-<div align="center">
-  <img width="963" height="1280" alt="image" src="https://github.com/user-attachments/assets/dc689939-bbbc-44e6-88b5-0ebb6bc90865" />
-</div>
+## Funcionamiento
 
-<p align="center">
-  <em>Modelo Detección de género (Female).</em>
-</p>
+1. **Configuración de Hardware:** Se conecta el sensor a la computadora mediante cables y puerto USB para habilitar la transmisión de video y datos.
+2. **Captura de Muestras:** Se toman múltiples muestras fotográficas de los objetos a clasificar (como pilas, celulares, calculadoras y lentes) para definir las categorías del modelo.
+3. **Entrenamiento:** Se procesan las imágenes dentro de la plataforma SenseCraft utilizando el modelo correspondiente (porergic, Grove Vision AI V2).
+4. **Evaluación e Inferencia:** Al colocar un objeto frente al sensor, la interfaz calcula la probabilidad en tiempo real.
+5. **Activación de Salida:** Si el valor de inferencia supera el rango establecido (por ejemplo, mayor al 70%), el sistema activa una respuesta física —como encender un pequeño foquito— confirmando la detección exitosa.
 
-## Conclusión 2
+## Descripción detallada de las imágenes
 
-# Modelo 3
+- **Fotografía 200:** Se muestra la configuración inicial y el espacio de trabajo en la laptop utilizando la interfaz de SenseCraft. Aquí se aprecia el sensor conectado mediante el cable USB junto con los materiales preparados (como el teléfono celular y el entorno de pruebas) listos para iniciar con la digitalización y el reconocimiento.
+- **Fotografía 201:** Se observa la prueba de detección utilizando una calculadora. Al sostener la calculadora frente al sensor, la interfaz de SenseCraft procesa la imagen en tiempo real y genera los registros de inferencia correspondientes en el panel lateral de la pantalla.
+- **Fotografía 202:** Muestra el proceso de prueba con una pila cilíndrica. Sostenemos el módulo del sensor apuntando hacia el objeto situado en la mesa; en la laptop se visualiza cómo la cámara captura la pila y el modelo comienza a reconocer sus características visuales asociadas.
+- **Fotografía 203:** Corresponde al panel general de entrenamiento dentro de la plataforma, enfocado en la categoría de "Lentes" con sus respectivas muestras de imágenes capturadas. Se visualiza el botón para iniciar el entrenamiento y la barra de confianza de resultados en la esquina inferior derecha (alcanzando un 97% de acierto), la cual activa una respuesta física como encender un foquito al superar el rango establecido del 70%.
 
-## Descripción 3
-En este taller se desarrolló un modelo de **distinción de género**, integrando sus resultados con el control de un LED mediante GPIO.
-El objetivo fue demostrar cómo los datos procesados por un modelo pueden utilizarse para controlar dispositivos electrónicos mediante condiciones lógicas.
+## Conclusión
 
-## Funcionamiento 3
-
-1. **Procesamiento:** El modelo analiza los datos de entrada.
-2. **Predicción:** Se obtiene un resultado numérico del modelo.
-3. **Condición:** Se evalúa si el valor obtenido es mayor que 50.
-4. **Activación GPIO:** Si se cumple la condición, el LED se enciende.
-5. **Salida:** Si el valor es menor o igual a 50, el LED permanece apagado.
+El taller permitió comprender la integración de modelos de TinyML con hardware de bajo consumo, aplicando condiciones lógicas y rangos de confianza para activar salidas físicas según el reconocimiento exitoso de objetos en tiempo real.
 
 
-<div align="center">
-  <img width="963" height="1280" alt="image" src="https://github.com/user-attachments/assets/dc689939-bbbc-44e6-88b5-0ebb6bc90865" />
-</div>
-
-<p align="center">
-  <em>Modelo Detección de género (Female).</em>
-</p>
-
-## Conclusión 3
 
 
 
