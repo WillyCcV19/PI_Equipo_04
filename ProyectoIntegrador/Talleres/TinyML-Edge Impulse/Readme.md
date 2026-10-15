@@ -113,4 +113,24 @@ Además, se visualizaron las muestras clasificadas mediante **Data Explorer**, p
 *Figura 7.Visualización de datos y rendimiento*
 </div>
 
+## 6. Prueba del modelo (Model Testing)
+
+En esta etapa evaluamos el modelo entrenado utilizando las 30 imágenes reservadas para pruebas en Edge Impulse. Se utilizó la herramienta Model Testing para comprobar la capacidad del modelo de reconocer las tres categorías: **Celular, Cepillo y Mouse**.
+
+### Resultados
+
+- **Precisión general:** 96.67 %.
+- **Celular:** 100 % de clasificación correcta.
+- **Cepillo:** 90 % de clasificación correcta y 10 % de resultados inciertos.
+- **Mouse:** 100 % de clasificación correcta.
+
+Los resultados muestran un buen desempeño del modelo con las imágenes de prueba, aunque todavía presenta cierta incertidumbre al reconocer cepillos.
+
+### Evidencia
+
+<div align="center">
+<img width="1600" height="848" alt="image" src="https://github.com/user-attachments/assets/7d69c7f1-6bdf-490f-b95e-bbe5cde68ab8" />
+  
+*Figura 8.Prueba del modelo en Edge Impulse*
+</div>
 
