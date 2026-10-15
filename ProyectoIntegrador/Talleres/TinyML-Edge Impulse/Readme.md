@@ -17,3 +17,9 @@ Durante el laboratorio realizamos pruebas de captura y visualización de imágen
 *Figura 1. Prueba de funcionamiento de la cámara durante el laboratorio.*
 
 </div>
+
+<div align="center">
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/7c9bffcf-fa20-4e8c-9ffc-69306f558431" />
+  
+*Figura 2. Creación de proyecto.*
+</div>
