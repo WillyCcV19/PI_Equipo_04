@@ -78,4 +78,39 @@ En esta etapa configuramos el modelo de clasificación de imágenes utilizando *
 *Figura 4.*
 </div>
 
+## 5. Entrenamiento y evaluación del modelo
+
+En esta etapa entrenamos el modelo de clasificación de imágenes utilizando Transfer Learning con la arquitectura MobileNetV2 en Edge Impulse. Se configuraron 30 ciclos de entrenamiento, una tasa de aprendizaje de 0.0005 y el procesamiento mediante CPU.
+
+### Resultados del entrenamiento
+
+El modelo obtuvo una precisión de validación del 75 % y una pérdida (*loss*) de 0.51.
+La matriz de confusión mostró los siguientes resultados:
+
+- **Celular:** 100 % de clasificación correcta.
+- **Cepillo:** 54.5 % de clasificación correcta.
+- **Mouse:** 83.3 % de clasificación correcta.
+
+Además, se visualizaron las muestras clasificadas mediante **Data Explorer**, permitiendo identificar los aciertos y errores del modelo.
+
+### Evidencias
+
+<div align="center">
+<img width="1600" height="848" alt="image" src="https://github.com/user-attachments/assets/d1996ca7-f6ee-4348-978a-d74571a342c6" />
+  
+*Figura 5.Configuración y entrenamiento del modelo*
+</div>
+
+<div align="center">
+<img width="751" height="776" alt="image" src="https://github.com/user-attachments/assets/2c0ee8b6-469e-4d08-9020-f9dc1da273c0" />
+  
+*Figura 6.Resultados y matriz de confusión*
+</div>
+
+<div align="center">
+<img width="767" height="656" alt="image" src="https://github.com/user-attachments/assets/6eb7dfe9-4c4e-4be5-966b-a28206c3dc36" />
+  
+*Figura 7.Visualización de datos y rendimiento*
+</div>
+
 
