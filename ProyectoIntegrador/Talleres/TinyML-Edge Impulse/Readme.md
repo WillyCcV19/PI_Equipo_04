@@ -9,6 +9,11 @@ En esta primera etapa del laboratorio realizamos la configuración de la cámara
 ### 1.1 Evidencia de la práctica
 
 Durante el laboratorio realizamos pruebas de captura y visualización de imágenes utilizando la cámara conectada al XIAO ESP32S3 Sense.
+
+<div align="center">
+  
 <img width="400" height="500" alt="image" src="https://github.com/user-attachments/assets/f4b34197-ca5d-459c-8ab9-0529a7f89775" />
 
 *Figura 1. Prueba de funcionamiento de la cámara durante el laboratorio.*
+
+</div>
