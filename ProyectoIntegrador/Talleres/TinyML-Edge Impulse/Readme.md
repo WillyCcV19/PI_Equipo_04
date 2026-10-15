@@ -134,3 +134,18 @@ Los resultados muestran un buen desempeño del modelo con las imágenes de prueb
 *Figura 8.Prueba del modelo en Edge Impulse*
 </div>
 
+Además, se utilizó la matriz de confusión para identificar los aciertos y el Feature Explorer para visualizar cómo el modelo diferencia las imágenes de cada categoría.
+
+Estos resultados indican que el modelo logró un buen desempeño con las imágenes de prueba, aunque todavía presenta cierta incertidumbre al reconocer cepillos.
+
+<div align="center">
+<img width="1600" height="716" alt="image" src="https://github.com/user-attachments/assets/b9c0be0a-6ab9-4407-8f27-85cf1f8ce6c1" />
+  
+*Figura 9.*
+</div>
+
+<div align="center">
+<img width="756" height="658" alt="image" src="https://github.com/user-attachments/assets/d1f587c1-d358-4708-b677-4e18ad07c677" />
+  
+*Figura 10.*
+</div>
