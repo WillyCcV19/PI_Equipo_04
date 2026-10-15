@@ -68,4 +68,14 @@ En la sección **Data Acquisition** se visualizaron las imágenes recopiladas ju
 *Figura 3. Adquisición de datos.*
 </div>
 
+## 4. Diseño del modelo (Create Impulse)
+
+En esta etapa configuramos el modelo de clasificación de imágenes utilizando **Edge Impulse**. Se estableció una resolución de 96 × 96 píxeles y se seleccionó Transfer Learning para entrenar el modelo con tres categorías: Celular, Cepillo y Mouse. Esta configuración permite preparar las imágenes para el entrenamiento y posterior reconocimiento de objetos.
+
+<div align="center">
+<img width="1600" height="848" alt="image" src="https://github.com/user-attachments/assets/a9df1f09-94a1-4cbe-b88a-4d33ff4a0da7" />
+  
+*Figura 4.*
+</div>
+
 
