@@ -223,7 +223,7 @@ En la primera prueba enfocamos el sensor directamente sobre el dispositivo rató
 <div align="center">
 <img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/91da04ea-7bf1-44b5-9cf7-42f0158482eb" />
 
-*Figura 11. Inferencia en tiempo real del objeto Mouse.*
+*Figura 15. Inferencia en tiempo real del objeto Mouse.*
 </div>
 
 **Resultado:** Clasificación exitosa con un **86 % de confianza** asignado a la categoría **Mouse** y un 0 % de probabilidad asignada a las demás clases.
@@ -236,7 +236,7 @@ Posteriormente, se posicionó el teléfono móvil frente al lente del XIAO ESP32
 <div align="center">
 <img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/a368c4cb-e50e-4253-a952-98773af37a87" />
 
-*Figura 12. Inferencia en tiempo real del objeto Celular.*
+*Figura 16. Inferencia en tiempo real del objeto Celular.*
 </div>
 
 **Resultado:** El sistema logró clasificar correctamente el objeto, alcanzando un **88 % de confianza** para la categoría **Celular**, mientras que las demás clases obtuvieron un 0 %.
@@ -250,7 +250,7 @@ Para evaluar el comportamiento del sistema en un entorno completo, se colocaron 
 <div align="center">
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/5b28f2c3-0e86-46c3-83f0-264eae1c220c" />
 
-*Figura 13. Montaje del entorno de prueba con el XIAO ESP32S3 Sense, laptop y los objetos de prueba.*
+*Figura 17. Montaje del entorno de prueba con el XIAO ESP32S3 Sense, laptop y los objetos de prueba.*
 </div>
 
 #### Sustento y Justificación Técnica de la Falla en la Detección del Cepillo
