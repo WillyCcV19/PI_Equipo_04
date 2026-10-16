@@ -174,7 +174,7 @@ Sin embargo, debido a los problemas encontrados durante la ejecución en el ESP3
 **Prueba 1: Reconocimiento de celular**
 
 <div align="center">
-<img width="560" height="800" alt="image" src="https://github.com/user-attachments/assets/4d4ce3d9-73cb-4ccc-af94-d44abc60624b" />
+<img width="460" height="600" alt="image" src="https://github.com/user-attachments/assets/4d4ce3d9-73cb-4ccc-af94-d44abc60624b" />
   
 *Figura 12. Prueba con celular.*
 
@@ -184,7 +184,7 @@ Sin embargo, debido a los problemas encontrados durante la ejecución en el ESP3
 **Prueba 2: Reconocimiento de cepillo**
 
 <div align="center">
-<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/8e52c7f1-1d48-44f5-b4e5-51a162877ab3" />
+<img width="460" height="600" alt="image" src="https://github.com/user-attachments/assets/8e52c7f1-1d48-44f5-b4e5-51a162877ab3" />
   
 *Figura 13. Prueba con cepillo.*
 
@@ -193,7 +193,7 @@ Sin embargo, debido a los problemas encontrados durante la ejecución en el ESP3
 **Prueba 3: Reconocimiento de mouse**
 
 <div align="center">
-<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/471899c7-8d10-4108-a464-4d778c7dc6ba" />
+<img width="460" height="600" alt="image" src="https://github.com/user-attachments/assets/471899c7-8d10-4108-a464-4d778c7dc6ba" />
 
   
 *Figura 14. Prueba con mouse.*
