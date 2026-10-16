@@ -149,3 +149,63 @@ Estos resultados indican que el modelo logró un buen desempeño con las imágen
   
 *Figura 10.*
 </div>
+
+## 7. Despliegue y Pruebas en Tiempo Real (SenseCraft AI)
+---
+### Descripción
+---
+Una vez finalizadas las fases de entrenamiento y optimización en Edge Impulse, exportamos el modelo entrenado en formato comprimido para inferencia mediante **TensorFlow Lite con cuantización int8 (`TensorFlow Lite int8 quantized`)**. Este modelo ligero (`.lite`) fue cargado e implementado dentro de la plataforma web **SenseCraft AI** para interactuar directamente con la cámara del **XIAO ESP32S3 Sense** y validar las predicciones gráficas en un entorno real.
+
+Durante el despliegue se configuraron las tres clases proyectadas (`0: Celular`, `1: Mouse`, `2: Cepillo`) y se ajustaron los parámetros operacionales del entorno: un umbral de **confianza del 50 %** y un **umbral IoU (Intersection over Union) del 60 %**, para garantizar que los objetos solo sean reconocidos cuando la confianza de la predicción supere el estándar establecido por el sistema.
+
+### 7.1 Pruebas de Clasificación e Inferencias Obtenidas
+---
+#### A. Inferencia de la clase Mouse
+
+En la primera prueba enfocamos el sensor directamente sobre el dispositivo ratón. El modelo TinyML respondió de forma inmediata al patrón geométrico y de color del objeto.
+
+<div align="center">
+<img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/91da04ea-7bf1-44b5-9cf7-42f0158482eb" />
+
+*Figura 11. Inferencia en tiempo real del objeto Mouse.*
+</div>
+
+**Resultado:** Clasificación exitosa con un **86 % de confianza** asignado a la categoría **Mouse** y un 0 % de probabilidad asignada a las demás clases.
+**Fundamentación técnica:** La forma ovalada, el contraste de su tonalidad blanca respecto a la superficie de la mesa de madera y los bordes continuos facilitaron que el bloque de extracción de características (*Transfer Learning / MobileNetV2*)  identificara el objeto sin ambigüedades, superando ampliamente el umbral mínimo del 50 %.
+
+#### B. Inferencia de la clase Celular
+
+Posteriormente, se posicionó el teléfono móvil frente al lente del XIAO ESP32S3 para verificar la capacidad del algoritmo frente a las condiciones de reflexión de la luz.
+
+<div align="center">
+<img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/a368c4cb-e50e-4253-a952-98773af37a87" />
+
+*Figura 12. Inferencia en tiempo real del objeto Celular.*
+</div>
+
+**Resultado:** El sistema logró clasificar correctamente el objeto, alcanzando un **88 % de confianza** para la categoría **Celular**, mientras que las demás clases obtuvieron un 0 %.
+ **Fundamentación técnica:** A pesar de los destellos generados por la luz ambiental sobre la pantalla del teléfono, la disposición visual del módulo de cámaras posterior y la geometría rectangular con esquinas redondeadas proporcionaron características visuales distintivas para la red neuronal, permitiendo una clasificación firme y precisa.
+
+#### C. Disposición del Entorno de Laboratorio y Análisis de la clase Cepillo (Peine)
+
+Para evaluar el comportamiento del sistema en un entorno completo, se colocaron sobre la mesa de trabajo los componentes de desarrollo junto a los tres objetos físicos seleccionados para el laboratorio.
+
+
+<div align="center">
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/5b28f2c3-0e86-46c3-83f0-264eae1c220c" />
+
+*Figura 13. Montaje del entorno de prueba con el XIAO ESP32S3 Sense, laptop y los objetos de prueba.*
+</div>
+
+#### Sustento y Justificación Técnica de la Falla en la Detección del Cepillo
+
+Durante la prueba física con el **cepillo/peine azul**, observamos que el módulo XIAO ESP32S3 no lograba clasificarlo correctamente o lo asociaba de manera errónea con la categoría *Celular*. Las principales causas que podrían explicar este comportamiento técnico son las siguientes:
+
+1. **Similitud cromática entre el objeto y el teléfono celular:** El mango del cepillo tiene un tono azul muy parecido al color de la carcasa trasera del teléfono celular utilizado. Al reducir las imágenes a una resolución de \(96 \times 96\) píxeles para el procesamiento TinyML, la red puede perder detalles finos de textura, como las cerdas blancas, y dar mayor importancia a las regiones de color azul, confundiendo ambas clases.
+
+2. **Deficiencia de muestreo en el dataset:** Según las métricas obtenidas durante la fase de entrenamiento, la clase Cepillo alcanzó solamente un **54.5 % de precisión de validación**. Este resultado sugiere que podrían faltar muestras con mayor variación de ángulos, perspectivas laterales y condiciones de iluminación para mejorar la capacidad de reconocimiento del modelo.
+
+3. **Pérdida de información espacial por compresión:** La cuantización a **int8** permite reducir el tamaño del modelo y su consumo de memoria, facilitando su implementación en dispositivos con recursos limitados. Sin embargo, la cuantización por sí sola no implica necesariamente una pérdida de resolución espacial. La dificultad para reconocer las cerdas pequeñas del peine puede estar relacionada principalmente con la resolución de entrada, la calidad de las imágenes y las características aprendidas durante el entrenamiento.
+
+**Conclusión operacional:** Aunque el cepillo no alcanzó el umbral del 50 % necesario para ser validado, el experimento permite identificar tanto los aciertos como las limitaciones del sistema. **Dos de los tres objetos evaluados (Mouse y Celular) obtuvieron porcentajes de confianza superiores al 85 %**, lo que demuestra un resultado favorable en estas dos clases y evidencia la viabilidad de la tecnología TinyML en el microcontrolador XIAO ESP32S3 Sense. No obstante, será necesario ampliar y diversificar las muestras de la clase Cepillo para mejorar su reconocimiento y conseguir un desempeño más uniforme en las tres categorías.
+
