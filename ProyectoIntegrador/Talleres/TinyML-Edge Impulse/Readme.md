@@ -150,7 +150,46 @@ Estos resultados indican que el modelo logró un buen desempeño con las imágen
 *Figura 10.*
 </div>
 
-## 7. Despliegue y Pruebas en Tiempo Real (SenseCraft AI)
+### 7. Implementación del modelo en ESP32
+
+Se intentó implementar el modelo de reconocimiento de objetos entrenado en Edge Impulse utilizando Arduino IDE y la placa XIAO ESP32S3. Durante la ejecución se presentó un error de memoria (`LoadProhibited`), lo que provocó el reinicio del dispositivo e impidió completar las pruebas de reconocimiento en tiempo real.
+
+<div align="center">
+<img width="1600" height="856" alt="image" src="https://github.com/user-attachments/assets/a2ccf943-811b-4fc5-8f30-b5ac28fed21b" />
+  
+*Figura 11. Error de ejecución durante la implementación del modelo en ESP32.*
+
+</div>
+
+## Paso 8: Pruebas de reconocimiento de objetos
+
+Se realizaron intentos de reconocimiento utilizando los tres objetos definidos durante el entrenamiento: **celular, cepillo y mouse**.
+
+El objetivo era comprobar si la cámara podía capturar las imágenes y si el modelo podía identificar correctamente cada objeto.
+
+Sin embargo, debido a los problemas encontrados durante la ejecución en el ESP32, no se logró confirmar el funcionamiento completo del reconocimiento en tiempo real.
+
+### Evidencias de las pruebas
+
+**Prueba 1: Reconocimiento de celular**
+
+![Prueba con celular](imagenes/prueba_celular.jpg)
+
+**Prueba 2: Reconocimiento de cepillo**
+
+![Prueba con cepillo](imagenes/prueba_cepillo.jpg)
+
+**Prueba 3: Reconocimiento de mouse**
+
+![Prueba con mouse](imagenes/prueba_mouse.jpg)
+
+## Conclusión
+
+El modelo desarrollado en Edge Impulse obtuvo una exactitud del **96.67 % en las pruebas realizadas en la plataforma**. No obstante, durante la implementación en el ESP32 se presentaron errores que impidieron validar completamente su funcionamiento en tiempo real.
+
+Como mejora futura, se propone revisar el código, la configuración de la cámara y la memoria disponible para completar la implementación.
+
+## 9. Despliegue y Pruebas en Tiempo Real (SenseCraft AI)
 ---
 ### Descripción
 ---
@@ -158,7 +197,7 @@ Una vez finalizadas las fases de entrenamiento y optimización en Edge Impulse, 
 
 Durante el despliegue se configuraron las tres clases proyectadas (`0: Celular`, `1: Mouse`, `2: Cepillo`) y se ajustaron los parámetros operacionales del entorno: un umbral de **confianza del 50 %** y un **umbral IoU (Intersection over Union) del 60 %**, para garantizar que los objetos solo sean reconocidos cuando la confianza de la predicción supere el estándar establecido por el sistema.
 
-### 7.1 Pruebas de Clasificación e Inferencias Obtenidas
+### 9.1 Pruebas de Clasificación e Inferencias Obtenidas
 ---
 #### A. Inferencia de la clase Mouse
 
