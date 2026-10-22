@@ -5,7 +5,7 @@
 
 ## Descripción
 
-En este taller se desarrolló un modelo de **Tiny Machine Learning (TinyML)** utilizando la plataforma SenseCraft en combinación con un sensor de visión artificial y hardware conectado mediante cables USB. El objetivo fue demostrar cómo un modelo de inteligencia artificial liviano puede entrenarse para reconocer diferentes objetos cotidianos en tiempo real y activar una respuesta lógica o física al superar un rango de confianza determinado.
+En este taller se desarrolló un modelo de **Tiny Machine Learning (TinyML)** utilizando la plataforma SenseCraft junto con un sensor de visión artificial y hardware conectado mediante cables USB. Como parte de la actividad, se nos indicó crear y entrenar nuestro propio modelo de clasificación de objetos, trabajando con cuatro categorías: celular, calculadora, pila y lentes. Además, se configuró el GPIO específicamente para la detección de la pila, estableciendo un rango de confianza a partir del cual se activaba un LED como respuesta física. De esta manera, se pudo comprobar cómo un modelo de inteligencia artificial liviano puede reconocer objetos en tiempo real y generar una acción automática al superar un umbral definido.
 
 ## Funcionamiento
 
@@ -19,87 +19,9 @@ En este taller se desarrolló un modelo de **Tiny Machine Learning (TinyML)** ut
 
 - **<img src="/Imagenes/Imagenes/TinyML/200.png" width="1000"/>** Se muestra la configuración inicial y el espacio de trabajo en la laptop utilizando la interfaz de SenseCraft. Aquí se aprecia el sensor conectado mediante el cable USB junto con los materiales preparados (como el teléfono celular y el entorno de pruebas) listos para iniciar con la digitalización y el reconocimiento.
 - **<img src="/Imagenes/Imagenes/TinyML/201.png" width="1000"/>** Se observa la prueba de detección utilizando una calculadora. Al sostener la calculadora frente al sensor, la interfaz de SenseCraft procesa la imagen en tiempo real y genera los registros de inferencia correspondientes en el panel lateral de la pantalla.
-- **<img src="/Imagenes/Imagenes/TinyML/202.png" width="1000"/>** Muestra el proceso de prueba con una pila cilíndrica. Sostenemos el módulo del sensor apuntando hacia el objeto situado en la mesa; en la laptop se visualiza cómo la cámara captura la pila y el modelo comienza a reconocer sus características visuales asociadas.
+- **<img src="/Imagenes/Imagenes/TinyML/202.png" width="1000"/>** Muestra el proceso de prueba con una pila cilíndrica. Sostenemos el módulo del sensor apuntando hacia el objeto situado en la mesa; en la laptop se visualiza cómo la cámara captura la pila y el modelo comienza a reconocer sus características visuales asociadas. Además, se configuró el GPIO para activar un LED cuando el nivel de detección superaba el 40 %. En la prueba se observa que, al alcanzar ese umbral, se encendió correctamente el LED amarillo como señal de detección.
 - **<img src="/Imagenes/Imagenes/TinyML/203.png" width="1000"/>** Corresponde al panel general de entrenamiento dentro de la plataforma, enfocado en la categoría de "Lentes" con sus respectivas muestras de imágenes capturadas. Se visualiza el botón para iniciar el entrenamiento y la barra de confianza de resultados en la esquina inferior derecha (alcanzando un 97% de acierto), la cual activa una respuesta física como encender un foquito al superar el rango establecido del 70%.
 
 ## Conclusión
 
 El taller permitió comprender la integración de modelos de TinyML con hardware de bajo consumo, aplicando condiciones lógicas y rangos de confianza para activar salidas físicas según el reconocimiento exitoso de objetos en tiempo real.
-
-
-
-
-
-# Modelo 2 (adicional) - Clasificación de objetos
-
-## Descripción 1
-Se entrenó un modelo de clasificación para distinguir tres objetos: Osciloscopio, Multímetro y Calculadora. No se colocó un control de LED mediante GPIO
-El objetivo principal es demostrar el funcionamiento del modelo y ver qué inconvenientes puede presentar.
-- Archivos de entrenamiento en la carpeta "Recursos"
-
-## Funcionamiento 1
-
-1. **Procesamiento:** El modelo analiza los datos de entrada
-2. **Predicción:** Se obtiene un resultado numérico del modelo
-3. **Condición:** No se colocó ningún umbral
-4. **Activación GPIO:** No se configuró GPIO
-5. **Salida:** Clasificación del modelo
-
-<div align="center">
-  <img width="800" alt="image" src="/Imagenes/TinyML-MOC/img7.png" />
-</div>
-
-<p align="center">
-  <em>Datos de entrenamiento</em>
-</p>
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="/Imagenes/TinyML-MOC/img3.jpeg" width="100%">
-      <br>
-      <em>Clasificación multímetro 84%</em>
-    </td>
-    <td align="center">
-      <img src="/Imagenes/TinyML-MOC/img2.jpeg" width="100%">
-      <br>
-      <em>Clasificación multímetro 61%, calculadora 38%</em>
-    </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="/Imagenes/TinyML-MOC/img4.jpeg" width="100%">
-      <br>
-      <em>Clasificación calculadora 64%</em>
-    </td>
-    <td align="center">
-      <img src="/Imagenes/TinyML-MOC/img1.jpeg" width="100%">
-      <br>
-      <em>Clasificación calculadora 61%, multímetro 38%</em>
-    </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="/Imagenes/TinyML-MOC/img6.jpeg" width="100%">
-      <br>
-      <em>Clasificación osciloscopio 54%, calculadora 39%</em>
-    </td>
-    <td align="center">
-      <img src="/Imagenes/TinyML-MOC/img5.jpeg" width="100%">
-      <br>
-      <em>Clasificación osciloscopio 47% multímetro 36%</em>
-    </td>
-  </tr>
-</table>
-
-## Conclusión
-- El alto error se debe a pocos datos de entrenamiento
-- Las imágenes, desde la perspectiva del modelo, son similares. Por ejemplo: La parte trasera del multímetro y calculadora. Puede que el modelo esté confundiendo eso
-
-
