@@ -69,7 +69,13 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -203,7 +209,11 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.4,
+        1.2
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +240,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -645,13 +660,18 @@
       {
         "filename": "Main board.kicad_sch",
         "name": "Main board",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "3074f465-00ce-4f16-a9d9-5150ea9c0d30"
       }
     ],
-    "used_designators": "",
+    "used_designators": "U1-5,R1-4,#FLG1,J1-6,D1-5,#PWR1-13",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "3074f465-00ce-4f16-a9d9-5150ea9c0d30",
+      "Main board"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
