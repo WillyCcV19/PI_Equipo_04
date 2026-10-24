@@ -28,10 +28,9 @@ En esta etapa se realizó una revisión inicial de los factores físico-químico
 El objetivo de esta etapa no es desarrollar todavía una solución tecnológica, sino comprender los fenómenos y principios científicos relacionados con las condiciones del agua y su influencia sobre la trucha.
 
 ---
-
 ## 2. Indicador 1: Identificación del principio de la tecnología
 
-El principio fundamental identificado consiste en que las **condiciones físico-químicas del agua influyen directamente en la supervivencia, crecimiento y bienestar de la trucha arco iris (*Oncorhynchus mykiss*)**. Entre los principales parámetros relacionados con estas condiciones se encuentran el oxígeno disuelto, la temperatura, el pH y la turbidez [1].
+El principio fundamental identificado consiste en que las condiciones físico-químicas del agua influyen directamente en la supervivencia, crecimiento y bienestar de la trucha arco iris (*Oncorhynchus mykiss*). Entre los principales parámetros relacionados con estas condiciones se encuentran el oxígeno disuelto, la temperatura, el pH y la turbidez [1].
 
 ### Oxígeno disuelto
 
@@ -46,11 +45,55 @@ De acuerdo con FONDEPES, se recomienda que la concentración de oxígeno disuelt
 
 Por ello, se identifica como principio fundamental la relación existente entre la disponibilidad de oxígeno en el agua y las condiciones necesarias para la supervivencia y desarrollo de la trucha.
 
+Para obtener una mejor estimación de los niveles de oxígeno disuelto se consideran parámetros como la temperatura, la presión y la salinidad. Esta última puede estimarse a partir de la conductividad del agua mediante la siguiente ecuación empírica:
+
+\[
+S = 5.572 \times 10^{-4}(SC) + 2.02 \times 10^{-9}(SC)^2
+\]
+
+[6]
+
+Donde:
+
+- **S:** salinidad estimada del agua.
+- **SC:** conductividad del agua.
+
+Esta ecuación puede no ser aplicable cuando la composición del agua es significativamente diferente a la composición del agua de mar [Fuente].
+
+A partir de los parámetros mencionados anteriormente, es posible estimar la concentración de oxígeno disuelto utilizando factores de corrección. Una forma general empleada en estimaciones basadas en Weiss (1970) y Benson-Krause (1980, 1984) es:
+
+\[
+[DO] = DO_0 \times F_s \times F_p
+\]
+
+Donde:
+
+- **DO:** concentración de oxígeno disuelto.
+- **DO₀:** concentración base de oxígeno disuelto en agua dulce.
+- **Fs:** factor de corrección por salinidad.
+- **Fp:** factor de corrección por presión.
+
+Para mayor detalle, véase [6].
+
+El USGS utilizó formulaciones desarrolladas por Weiss y posteriormente adoptó las formulaciones de Benson y Krause en **DOTABLES 3.0**, publicada en 2011.
+
+Finalmente, existen tres métodos principales para determinar el oxígeno disuelto en agua [5]:
+
+- Método colorimétrico.
+- Método de Winkler o titulación.
+- Método electrométrico.
+
 ### Temperatura
 
 La temperatura del agua influye en procesos biológicos como el metabolismo, el consumo de alimento y el crecimiento de la trucha. Según FONDEPES, un rango aproximado de **11 °C a 16 °C** presenta condiciones favorables para el cultivo [1].
 
 Estudios experimentales en *Oncorhynchus mykiss* también han demostrado que la temperatura y el oxígeno disuelto interactúan y pueden afectar el crecimiento y la condición fisiológica de los peces [2].
+
+La temperatura puede medirse mediante diferentes instrumentos, además de los termómetros de líquido en vidrio. Entre ellos se encuentran [7]:
+
+- Termómetros de resistencia de platino (RTD).
+- Termistores.
+- Termopares.
 
 ### Potencial de hidrógeno (pH)
 
@@ -66,11 +109,7 @@ Por esta razón, la turbidez también fue identificada como un parámetro releva
 
 ### Principio identificado
 
-A partir de la revisión realizada se establece que la calidad del agua depende de la interacción de diferentes parámetros físico-químicos y que sus variaciones pueden generar condiciones favorables o de riesgo para la trucha arco iris.
-
-Este conocimiento constituye una **base científica para investigaciones y desarrollos tecnológicos posteriores**.
-
----
+A partir de la revisión realizada se establece que la calidad del agua depende de la interacción de diferentes parámetros físico-químicos y que sus variaciones pueden generar condiciones favorables o de riesgo para la trucha arco iris. Este conocimiento constituye una base científica para investigaciones y desarrollos tecnológicos posteriores.
 
 ## 3. Indicador 2: Generación de conocimiento
 
