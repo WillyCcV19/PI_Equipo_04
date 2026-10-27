@@ -151,6 +151,8 @@ Es el método químico de referencia y se usa ampliamente para verificar otros m
 | Winkler | Fijación del oxígeno, liberación de yodo y titulación | Alta; método de referencia [[10]](#ref10), [[11]](#ref11) | Laboratorio y verificación | No |
 | Electrométrico | Difusión del oxígeno hacia un electrodo y señal eléctrica | Alta si está bien calibrado [[10]](#ref10) | Monitoreo en sitio | Sí |
 
+**Método y función del sensor:** Se emplea el método electrométrico o amperométrico mediante un sensor electroquímico de oxígeno disuelto. El oxígeno presente en el agua atraviesa una membrana y genera una respuesta eléctrica relacionada con su concentración. La función del sensor es transformar esta respuesta en una lectura de oxígeno disuelto, normalmente expresada en mg/L o ppm [10], [11].
+
 > En este nivel solo se identifica el principio de cada método. No se selecciona ningún sensor ni equipo, porque eso corresponde a etapas posteriores.
 
 ---
@@ -183,6 +185,8 @@ Además de los termómetros de líquido en vidrio, existen sensores electrónico
 | **Termistor** | La resistencia de un semiconductor varía mucho con la temperatura. | Muy sensible y compacto. |
 | **Termopar** | Dos metales unidos generan un voltaje que depende de la temperatura (efecto Seebeck). | Amplio rango; menor exactitud que el RTD. |
 
+**Método y función del sensor:** La temperatura puede determinarse mediante sensores resistivos, como termistores o RTD. Estos sensores aprovechan la variación de la resistencia eléctrica del material frente a cambios de temperatura. En un RTD de platino, por ejemplo, la resistencia aumenta de manera predecible cuando aumenta la temperatura [6]. La función del sensor es transformar esta variación eléctrica en una lectura de temperatura.
+
 ---
 
 ### 2.5 Potencial de hidrógeno (pH)
@@ -202,6 +206,8 @@ El pH es un buen indicador de que el agua está cambiando químicamente, ya que 
 | Favorable | **7.0 – 8.0** | [[1]](#ref1) |
 | De riesgo | **< 6.0 o > 9.0** | [[1]](#ref1) |
 
+**Método y función del sensor:** El pH se determina mediante un método electrométrico utilizando un electrodo de vidrio sensible a la actividad de los iones hidrógeno y un electrodo de referencia. La diferencia de potencial eléctrico a través de la membrana de vidrio depende del pH de la muestra y puede relacionarse mediante la ecuación de Nernst [17](#ref17). La función del sensor es convertir esta diferencia de potencial en un valor de pH.
+
 ---
 
 ### 2.6 Turbidez
@@ -218,6 +224,8 @@ Una elevada concentración de sólidos suspendidos puede afectar las branquias d
 |---|---|---|
 | Favorable | Baja presencia de sólidos en suspensión | [[1]](#ref1) |
 | De riesgo | Elevada presencia de sólidos | [[1]](#ref1) |
+
+**Método y función del sensor:** La turbidez se determina mediante un método óptico o nefelométrico. El sensor dirige luz hacia la muestra y detecta la cantidad de luz dispersada por las partículas suspendidas. Cuanto mayor sea la cantidad de luz dispersada, mayor será la turbidez [14]. La función del sensor es transformar la respuesta óptica en un valor de turbidez, normalmente expresado en NTU.
 
 ---
 
@@ -239,6 +247,8 @@ La conductividad cambia con la temperatura, por lo que siempre debe reportarse c
 | Sistemas de recirculación (referencia) | **20 – 500 µS/cm a 20 °C** | [[7]](#ref7) |
 
 La conductividad se vincula además con la salinidad mediante la ecuación empírica de la sección 2.3.4 [[3]](#ref3), lo que la conecta directamente con el cálculo del oxígeno disuelto.
+
+**Método y función del sensor:** La conductividad se determina mediante un método conductimétrico utilizando una celda con electrodos en contacto con el agua. Los iones disueltos permiten el paso de corriente eléctrica, por lo que un aumento en su concentración generalmente incrementa la conductividad [16]. La función del sensor es medir esta capacidad de conducción eléctrica y expresarla normalmente en µS/cm. Debido a que la conductividad depende de la temperatura, la medición debe considerar una temperatura de referencia [16].
 
 ---
 
@@ -419,7 +429,7 @@ Estos conocimientos constituyen la base científica inicial para las siguientes 
 | **Generación de conocimiento** | Rangos de referencia, interacciones entre parámetros y variación según la profundidad. [[1]](#ref1), [[9]](#ref9) | 3 | Cumplido |
 | **Responde a una pregunta de investigación** | Pregunta principal y preguntas complementarias con su base científica. | 4 | Cumplido |
 | **No declara un uso aplicativo de la tecnología** | Se declara qué se estudia y qué queda fuera de esta etapa. [[12]](#ref12), [[13]](#ref13) | 5 | Cumplido |
-| **Genera como resultado artículos científicos** | Revisión de literatura científica y técnica [[2]](#ref2)–[[11]](#ref11), [[14]](#ref14)–[[16]](#ref16). | 6 | En fortalecimiento |
+| **Genera como resultado artículos científicos** | Revisión de literatura científica y técnica [[2]](#ref2)–[[11]](#ref11), [[14]](#ref14)–[[17]](#ref17). | 6 | En fortalecimiento |
 
 ### 8.2 Síntesis y limitaciones
 
@@ -479,3 +489,5 @@ En coherencia con la metodología TRL adoptada en el Perú [[12]](#ref12), este 
 <a id="ref15"></a>[15] U.S. Geological Survey, “pH and water,” *USGS Water Science School*, s. f. [Online]. Available: [https://www.usgs.gov/water-science-school/science/ph-and-water](https://www.usgs.gov/water-science-school/science/ph-and-water)
 
 <a id="ref16"></a>[16] D. B. Radtke, J. V. Davis, and F. D. Wilde, “Specific electrical conductance (Version 1.2),” *U.S. Geological Survey Techniques of Water-Resources Investigations*, book 9, chap. A6.3, 2005, doi: [10.3133/twri09A6.3](https://doi.org/10.3133/twri09A6.3).
+
+<a id="ref17"></a>[17] U.S. Geological Survey, *Chapter A6.4. Measurement of pH*, U.S. Geological Survey Techniques and Methods, book 9, chap. A6.4, 2021. [Online]. Available: [https://pubs.usgs.gov/publication/tm9A6.4](https://pubs.usgs.gov/publication/tm9A6.4)
