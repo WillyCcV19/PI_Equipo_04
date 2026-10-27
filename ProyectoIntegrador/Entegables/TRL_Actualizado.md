@@ -151,7 +151,7 @@ Es el método químico de referencia y se usa ampliamente para verificar otros m
 | Winkler | Fijación del oxígeno, liberación de yodo y titulación | Alta; método de referencia [[10]](#ref10), [[11]](#ref11) | Laboratorio y verificación | No |
 | Electrométrico | Difusión del oxígeno hacia un electrodo y señal eléctrica | Alta si está bien calibrado [[10]](#ref10) | Monitoreo en sitio | Sí |
 
-**Método y función del sensor:** Se emplea el método electrométrico o amperométrico mediante un sensor electroquímico de oxígeno disuelto. El oxígeno presente en el agua atraviesa una membrana y genera una respuesta eléctrica relacionada con su concentración. La función del sensor es transformar esta respuesta en una lectura de oxígeno disuelto, normalmente expresada en mg/L o ppm [10], [11].
+**Método y función del sensor:** Para el monitoreo continuo del oxígeno disuelto se considera el método electrométrico o amperométrico mediante un sensor electroquímico. El oxígeno presente en el agua atraviesa una membrana y genera una respuesta eléctrica relacionada con su concentración. La función del sensor es transformar esta respuesta en una lectura de oxígeno disuelto, normalmente expresada en mg/L o ppm [[10]](#ref10), [[11]](#ref11).
 
 > En este nivel solo se identifica el principio de cada método. No se selecciona ningún sensor ni equipo, porque eso corresponde a etapas posteriores.
 
