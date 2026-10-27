@@ -65,7 +65,7 @@ Donde:
 - **S:** salinidad estimada del agua.
 - **SC:** conductividad del agua.
 
-Esta ecuación puede no ser aplicable si la composición actual del agua es muy diferente a la del agua de mar [Fuente].
+Esta ecuación puede no ser aplicable si la composición actual del agua es muy diferente a la del agua de mar [6].
 
 Con los parámetros mencionados anteriormente se puede estimar la concentración de oxígeno disuelto utilizando distintos factores de corrección, mediante la siguiente expresión utilizada en las estimaciones de Weiss (1970) y Benson-Krause (1980, 1984):
 
@@ -122,11 +122,15 @@ Por esta razón, la turbidez también fue identificada como un parámetro releva
 
 ### Conductividad
 
-La conductividad eléctrica del agua representa su capacidad para conducir corriente eléctrica y está relacionada con la concentración de sales e iones disueltos presentes en el medio.
+La conductividad eléctrica del agua está relacionada con la concentración de sales e iones disueltos y constituye un parámetro útil para caracterizar las condiciones físico-químicas del medio acuático [9].
 
-En la documentación técnica revisada para FishMon 365 se considera como referencia un rango aproximado de **20 a 500 µS/cm**, mientras que valores superiores a **500 µS/cm** pueden considerarse una señal de alerta. Asimismo, cambios bruscos en la conductividad pueden indicar modificaciones en la concentración de sales disueltas o posibles aportes de sedimentos al agua.
+En sistemas destinados al cultivo de trucha arco iris se han registrado valores de conductividad entre **35 y 204 µS/cm** en raceways de Nepal, donde las condiciones evaluadas fueron consideradas adecuadas para el cultivo de *Oncorhynchus mykiss* [8].
 
-La conductividad también resulta relevante porque puede utilizarse como una variable auxiliar para estimar la salinidad del agua, parámetro que interviene en los cálculos de solubilidad y concentración del oxígeno disuelto.
+Asimismo, estudios realizados en sistemas de recirculación para el cultivo de trucha arco iris consideran como valor de referencia un rango aproximado de **20 a 500 µS/cm a 20 °C** [9].
+
+La conductividad también resulta relevante porque se relaciona con la cantidad de sustancias iónicas disueltas en el agua y puede utilizarse como una variable complementaria para caracterizar cambios en las condiciones del medio acuático.
+
+Por ello, la conductividad se incorpora como uno de los parámetros físico-químicos de interés dentro del análisis de calidad del agua para la crianza de trucha arco iris.
 
 ### Principio identificado
 
@@ -205,8 +209,7 @@ En esta etapa, el análisis se limita principalmente a estudiar:
 - Los rangos de pH asociados con condiciones adecuadas para la especie.
 - Los efectos de la turbidez y los sólidos en suspensión.
 - Las posibles diferencias de estos parámetros según la profundidad de la columna de agua.
-- La conductividad del agua y su relación con la presencia de sales e iones disueltos.
-
+- La conductividad eléctrica como parámetro de calidad del agua y su comportamiento en sistemas destinados al cultivo de trucha arco iris.
 Por lo tanto, en este nivel no se evalúa todavía una solución tecnológica específica ni se busca demostrar el funcionamiento de un sistema aplicado.
 
 Aspectos como la selección de sensores, el diseño electrónico, la programación, la comunicación IoT, el desarrollo de una aplicación, la fabricación de una carcasa o la construcción de un prototipo corresponden a etapas posteriores de madurez tecnológica.
@@ -247,7 +250,7 @@ Como resultado de la revisión realizada durante esta etapa, se identificaron lo
 4. El pH y la turbidez también son parámetros importantes para caracterizar las condiciones del ambiente acuático y detectar situaciones que puedan resultar desfavorables para los peces [1].
 5. Las condiciones físico-químicas del agua pueden presentar diferencias según la profundidad, especialmente entre la superficie, la zona media y el fondo [4].
 6. Se identificó la necesidad de continuar investigando la relación entre estas variables para comprender de manera más completa las condiciones favorables y de riesgo presentes en los sistemas de crianza de trucha.
-7. La conductividad permite caracterizar indirectamente la concentración de sales e iones disueltos presentes en el agua y puede utilizarse como variable auxiliar para estimar la salinidad, la cual influye en la estimación de la concentración de oxígeno disuelto.
+7. La conductividad eléctrica constituye un parámetro útil para caracterizar las condiciones físico-químicas del agua debido a su relación con la presencia de sustancias iónicas disueltas. En sistemas de cultivo de trucha arco iris se han reportado diferentes valores de conductividad dependiendo de las características del agua y del sistema de cultivo [8], [9].
 
 En conjunto, estos conocimientos constituyen la base científica inicial necesaria para continuar con etapas posteriores de investigación y desarrollo tecnológico.
 
@@ -297,6 +300,6 @@ En conjunto, la investigación desarrollada permitió generar una base inicial d
 
 [7] D. C. Ripple and G. F. Strouse, “Selection of alternatives to liquid-in-glass thermometers,” *Journal of ASTM International*, vol. 2, no. 9, 2005, doi: 10.1520/JAI13404.
 
-La investigación desarrollada permitió generar una base inicial de conocimiento, formular una pregunta de investigación y comprender el fenómeno antes de plantear una aplicación tecnológica específica.
+[8] R. P. Bhagat and S. Barat, “Water quality parameters for the culture of rainbow trout, Oncorhynchus mykiss (Walbaum) in the raceways of Kathmandu, Nepal,” *Our Nature*, vol. 13, no. 1, pp. 50–57, 2015, doi: 10.3126/on.v13i1.14209.
 
-Por lo tanto, la información obtenida constituye el sustento científico necesario para continuar con etapas posteriores de madurez tecnológica, en las que podrá avanzarse hacia la formulación y desarrollo de una solución tecnológica.
+[9] R. Pepe-Victoriano, P. Pepe-Vargas, A. Pérez-Aravena, H. Aravena-Ambrosetti, J. I. Huanacuni, F. Méndez-Abarca, G. Olivares-Cantillano, O. Acosta-Angulo, and L. Espinoza-Ramos, “Evaluation of water quality in the production of rainbow trout (Oncorhynchus mykiss) in a recirculating aquaculture system (RAS) in the precordilleran region of northern Chile,” *Water*, vol. 17, no. 11, Art. no. 1685, 2025, doi: 10.3390/w17111685.
