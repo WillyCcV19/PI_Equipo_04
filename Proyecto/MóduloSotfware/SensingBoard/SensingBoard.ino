@@ -9,6 +9,7 @@ uint8_t ref = A1;       // Referencia
 uint8_t cond = A2;      // Lectura de conductividad
 uint8_t ph = A3;        // Lectura de PH
 uint8_t turb = A4;      // Lectura de Turbidez
+uint8_t d_o = A5;       // Lectura de oxígeno disuelto
 uint8_t relay = 7;      // Pin de desactivación de sensor de conductividad
 float m_res = 150;      // Valor de resistencia para sensor de conductividad
 uint8_t pulse = 13;     // Pin para pulso de excitación
@@ -21,6 +22,7 @@ float resistencia;      // Resistencia leída del sensor de conductividad
 float turbidez;         // Voltaje del sensor de turbidez
 float pothid;           // Voltaje del sensor de PH
 float temperatura;      // Temperatura
+float oxigeno_dis;      // Oxígen disuelto
 
 
 float read_cond(){                          // Leer una muestra de conductividad
@@ -49,7 +51,7 @@ float get_conductivity(){
   return (acc / 500.0);           // Retornar valor promediado de conductividad
 }
 
-float get_turb(){
+float get_turbidity(){
   float acc = 0;
   float temp = 0;
   uint8_t counter = 0;
@@ -60,16 +62,31 @@ float get_turb(){
     delay(1);                     // Delay de lectura
     counter ++;
   }
-
   return acc / 250;               // Retornar voltaje promediado del sensor de turbidez
+}
+
+float get_do(){
+  float acc = 0;
+  float temp = 0;
+  uint8_t counter = 0;
+
+  while(counter != 250){          // Repetir 250 veces (cada iteración dura ~ 1 milisegundo)
+    temp = float(5.0 * analogRead(d_o) / adc);  // Leer sensor de turbidez
+    acc = acc + temp;             // Acumular valor de voltaje
+    delay(1);                     // Delay de lectura
+    counter ++;
+  }
+  return acc / 250;               // Retornar voltaje promediado del sensor de oxígeno disuelto
 }
 
 float get_ph(){
   float acc = 0;
+  float temp = 0;
   uint8_t counter = 0;
 
   while(counter != 250){          // Repetir 250 veces (cada iteración dura ~ 1 milisegundo)
-    acc = acc + (5.0*(analogRead(ph) - analogRead(ref)))/6.0;  // Leer sensor de ph
+  temp = (5.0*(analogRead(ph) - analogRead(ref)))/(2.5*adc);  // Leer sensor de ph
+    acc = acc + temp;
     delay(1);                     // Delay de lectura
     counter ++;
   }
@@ -94,19 +111,36 @@ void setup() {
 }
 
 void loop() {
-  resistencia = get_conductivity();  // Llamar la función de lectura de conductividad
-  temperatura = get_temperature();   // Llamar la función de lectura de temperatura
+  //resistencia = get_conductivity();  // Llamar la función de lectura de conductividad
+  //temperatura = get_temperature();   // Llamar la función de lectura de temperatura
+  //turbidez = get_turbidity();
+  //pothid = get_ph();
+  //oxigeno_dis = get_do();
+
   delay(1000);
-  Serial.println();
-  Serial.print("Resistencia: ");
-  Serial.print(resistencia);
-  Serial.println();
-  Serial.print("Temperatura: ");
-  Serial.print(temperatura);
-  Serial.println();
+  //Serial.println();
+  //Serial.print("Resistencia: ");
+  //Serial.print(resistencia);
+  //Serial.println();
+  //Serial.print("Temperatura: ");
+  //Serial.print(temperatura);
+  //Serial.println();
+  //Serial.print("Turbidez: ");
+  //Serial.print(turbidez);
+  //Serial.println();
+  //Serial.print("pH: ");
+  //Serial.print(pothid);
+  //Serial.println();
+  //Serial.print("Oxígeno disuelto: ");
+  //Serial.print(oxigeno_dis);
+  //Serial.println();
+
+  Serial.begin(9600, SERIAL_8N1);
+  byte datos[5] = {10, 25, 100, 200, 255};
+  Serial.write(datos, 5);
 }
 
 // Falta colocar una función para leer oxígeno disuelto
 // Voltajes de ph y turbidez no calibrados
 // Calibrar sensor de conductividad
-// Ver Benson-Krause
+// Ver Benson-Krausevoid setup() {
