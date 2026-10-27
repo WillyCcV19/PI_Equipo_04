@@ -33,7 +33,7 @@ El objetivo de esta etapa no es desarrollar todavía una solución tecnológica,
 
 El principio fundamental identificado consiste en que las condiciones físico-químicas del agua influyen directamente en la supervivencia, crecimiento y bienestar de la trucha arco iris (*Oncorhynchus mykiss*).
 
-Entre los principales parámetros relacionados con estas condiciones se encuentran el oxígeno disuelto, la temperatura, el pH y la turbidez [1].
+Entre los principales parámetros relacionados con estas condiciones se encuentran el oxígeno disuelto, la temperatura, el pH, la turbidez y la conductividad [1].
 
 ### Oxígeno disuelto
 
@@ -120,6 +120,14 @@ Una elevada concentración de estos materiales puede afectar las branquias de lo
 
 Por esta razón, la turbidez también fue identificada como un parámetro relevante para comprender las condiciones ambientales asociadas con la crianza de trucha arco iris.
 
+### Conductividad
+
+La conductividad eléctrica del agua representa su capacidad para conducir corriente eléctrica y está relacionada con la concentración de sales e iones disueltos presentes en el medio.
+
+En la documentación técnica revisada para FishMon 365 se considera como referencia un rango aproximado de **20 a 500 µS/cm**, mientras que valores superiores a **500 µS/cm** pueden considerarse una señal de alerta. Asimismo, cambios bruscos en la conductividad pueden indicar modificaciones en la concentración de sales disueltas o posibles aportes de sedimentos al agua.
+
+La conductividad también resulta relevante porque puede utilizarse como una variable auxiliar para estimar la salinidad del agua, parámetro que interviene en los cálculos de solubilidad y concentración del oxígeno disuelto.
+
 ### Principio identificado
 
 A partir de la revisión realizada se establece que la calidad del agua depende de la interacción de diferentes parámetros físico-químicos y que sus variaciones pueden generar condiciones favorables o de riesgo para la trucha arco iris.
@@ -140,6 +148,7 @@ Esta organización permitió establecer rangos de referencia que facilitan la id
 | **Temperatura** | 11 – 16 °C | < 3 °C o > 20 °C |
 | **pH** | 7.0 – 8.0 | < 6.0 o > 9.0 |
 | **Turbidez** | Baja presencia de sólidos en suspensión | Elevada presencia de sólidos |
+| **Conductividad** | 20 – 500 µS/cm | > 500 µS/cm |
 
 La información revisada permitió reconocer que estos parámetros no deben analizarse de manera aislada.
 
@@ -169,7 +178,7 @@ Este conocimiento constituye una base para continuar investigando el comportamie
 
 A partir del problema identificado y de la revisión inicial se plantea la siguiente pregunta de investigación:
 
-> **¿Cómo varían los principales parámetros físico-químicos del agua, especialmente el oxígeno disuelto, la temperatura, el pH y la turbidez, y cómo pueden estas variaciones relacionarse con condiciones adecuadas o de riesgo para la crianza de trucha arco iris (*Oncorhynchus mykiss*)?**
+> **¿Cómo varían los principales parámetros físico-químicos del agua, especialmente el oxígeno disuelto, la temperatura, el pH, la turbidez y la conductividad, y cómo pueden estas variaciones relacionarse con condiciones adecuadas o de riesgo para la crianza de trucha arco iris (*Oncorhynchus mykiss*)?**
 
 Esta pregunta busca comprender el fenómeno antes de proponer una solución tecnológica.
 
@@ -179,6 +188,8 @@ De manera complementaria pueden plantearse las siguientes preguntas:
 - ¿Existe variación de las condiciones del agua según la profundidad?
 - ¿Cómo influye la temperatura sobre las condiciones de oxígeno disuelto?
 - ¿Qué relación existe entre las variaciones simultáneas de oxígeno disuelto, temperatura, pH y turbidez en las condiciones del ambiente acuático?
+- ¿Qué relación existe entre la conductividad del agua y las variaciones en la concentración de sales disueltas?
+
 
 ---
 
@@ -194,6 +205,7 @@ En esta etapa, el análisis se limita principalmente a estudiar:
 - Los rangos de pH asociados con condiciones adecuadas para la especie.
 - Los efectos de la turbidez y los sólidos en suspensión.
 - Las posibles diferencias de estos parámetros según la profundidad de la columna de agua.
+- La conductividad del agua y su relación con la presencia de sales e iones disueltos.
 
 Por lo tanto, en este nivel no se evalúa todavía una solución tecnológica específica ni se busca demostrar el funcionamiento de un sistema aplicado.
 
@@ -209,17 +221,19 @@ Para establecer la base científica de esta investigación se realizó una revis
 
 Como fuente técnica inicial se utilizó el *Manual de Cultivo de Trucha en Ambientes Convencionales* de FONDEPES, donde se describen parámetros relevantes para la calidad del agua, como el oxígeno disuelto, la temperatura, el pH y la presencia de sólidos en suspensión [1].
 
-Esta revisión fue complementada con literatura científica relacionada con los principales fenómenos estudiados.
+Esta revisión fue complementada con literatura científica y técnica relacionada con los principales fenómenos estudiados.
 
-Se revisaron investigaciones experimentales sobre:
+Se revisaron investigaciones y fuentes relacionadas con:
 
 - La interacción entre temperatura y oxígeno disuelto en *Oncorhynchus mykiss* [2].
 - Los efectos de la hipoxia en la trucha arco iris [3].
 - La variación vertical del oxígeno en sistemas acuícolas [4].
+- Los principales métodos utilizados para determinar el oxígeno disuelto en agua [5].
+- La influencia de la temperatura, salinidad y presión en la estimación de la concentración de oxígeno disuelto [6].
+- Los métodos e instrumentos empleados para la medición de la temperatura del agua [7].
+- La conductividad eléctrica como parámetro relacionado con la presencia de sales e iones disueltos en el agua y como variable auxiliar para estimar la salinidad.
 
-La comparación entre estas fuentes permitió contrastar la información técnica presentada por FONDEPES con resultados obtenidos en investigaciones experimentales y fortalecer la base científica relacionada con la calidad del agua.
-
-De esta manera, la revisión realizada permite sustentar los principios identificados durante el TRL 1 y proporciona una base científica para continuar con etapas posteriores de investigación.
+La comparación entre estas fuentes permitió contrastar la información técnica presentada por FONDEPES con resultados obtenidos en investigaciones experimentales y documentos técnicos, fortaleciendo la base científica relacionada con la calidad del agua. Asimismo, permitió reconocer que parámetros como el oxígeno disuelto, la temperatura, el pH, la turbidez y la conductividad pueden analizarse de manera conjunta para comprender mejor las condiciones físico-químicas del agua utilizadas en la crianza de trucha. De esta manera, la revisión realizada permite sustentar los principios identificados durante el TRL 1 y proporciona una base científica para continuar con etapas posteriores de investigación.
 
 ---
 
@@ -233,6 +247,7 @@ Como resultado de la revisión realizada durante esta etapa, se identificaron lo
 4. El pH y la turbidez también son parámetros importantes para caracterizar las condiciones del ambiente acuático y detectar situaciones que puedan resultar desfavorables para los peces [1].
 5. Las condiciones físico-químicas del agua pueden presentar diferencias según la profundidad, especialmente entre la superficie, la zona media y el fondo [4].
 6. Se identificó la necesidad de continuar investigando la relación entre estas variables para comprender de manera más completa las condiciones favorables y de riesgo presentes en los sistemas de crianza de trucha.
+7. La conductividad permite caracterizar indirectamente la concentración de sales e iones disueltos presentes en el agua y puede utilizarse como variable auxiliar para estimar la salinidad, la cual influye en la estimación de la concentración de oxígeno disuelto.
 
 En conjunto, estos conocimientos constituyen la base científica inicial necesaria para continuar con etapas posteriores de investigación y desarrollo tecnológico.
 
@@ -258,11 +273,9 @@ El componente relacionado con la generación de artículos científicos requiere
 
 ## 9. Conclusión
 
-La etapa TRL 1 permitió identificar y organizar los principios científicos fundamentales relacionados con la calidad del agua y su influencia en la crianza de trucha arco iris (*Oncorhynchus mykiss*).
+La etapa TRL 1 permitió identificar y organizar los principios científicos fundamentales relacionados con la calidad del agua y su influencia en la crianza de trucha arco iris (*Oncorhynchus mykiss*). A partir de la revisión realizada, se reconoció al oxígeno disuelto, la temperatura, el pH y la turbidez como parámetros relevantes para caracterizar las condiciones del ambiente acuático. Asimismo, se identificó que estas condiciones pueden presentar diferencias según la profundidad de la columna de agua.
 
-A partir de la revisión realizada, se reconoció al oxígeno disuelto, la temperatura, el pH y la turbidez como parámetros relevantes para caracterizar las condiciones del ambiente acuático.
-
-Asimismo, se identificó que estas condiciones pueden presentar diferencias según la profundidad de la columna de agua.
+---
 
 ## Referencias
 
