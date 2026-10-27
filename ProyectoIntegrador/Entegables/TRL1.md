@@ -28,13 +28,18 @@ En esta etapa se realizó una revisión inicial de los factores físico-químico
 El objetivo de esta etapa no es desarrollar todavía una solución tecnológica, sino comprender los fenómenos y principios científicos relacionados con las condiciones del agua y su influencia sobre la trucha.
 
 ---
+
 ## 2. Indicador 1: Identificación del principio de la tecnología
 
-El principio fundamental identificado consiste en que las condiciones físico-químicas del agua influyen directamente en la supervivencia, crecimiento y bienestar de la trucha arco iris (*Oncorhynchus mykiss*). Entre los principales parámetros relacionados con estas condiciones se encuentran el oxígeno disuelto, la temperatura, el pH y la turbidez [1].
+El principio fundamental identificado consiste en que las condiciones físico-químicas del agua influyen directamente en la supervivencia, crecimiento y bienestar de la trucha arco iris (*Oncorhynchus mykiss*).
+
+Entre los principales parámetros relacionados con estas condiciones se encuentran el oxígeno disuelto, la temperatura, el pH y la turbidez [1].
 
 ### Oxígeno disuelto
 
-El oxígeno disuelto corresponde a la cantidad de oxígeno disponible en el agua para la respiración de los organismos acuáticos. En la crianza de trucha constituye uno de los parámetros más críticos, debido a que una reducción significativa de su concentración puede producir estrés, asfixia y mortalidad [1], [3].
+El oxígeno disuelto corresponde a la cantidad de oxígeno disponible en el agua para la respiración de los organismos acuáticos.
+
+En la crianza de trucha constituye uno de los parámetros más críticos, debido a que una reducción significativa de su concentración puede producir estrés, asfixia y mortalidad [1], [3].
 
 De acuerdo con FONDEPES, se recomienda que la concentración de oxígeno disuelto no sea menor a **5.5 mg/L**. Asimismo, se identifican los siguientes valores de referencia [1]:
 
@@ -45,11 +50,13 @@ De acuerdo con FONDEPES, se recomienda que la concentración de oxígeno disuelt
 
 Por ello, se identifica como principio fundamental la relación existente entre la disponibilidad de oxígeno en el agua y las condiciones necesarias para la supervivencia y desarrollo de la trucha.
 
-Para obtener una mejor estimación de los niveles de oxígeno disuelto se consideran parámetros como la temperatura, la presión y la salinidad. Esta última puede estimarse a partir de la conductividad del agua mediante la siguiente ecuación empírica:
+Para obtener una mejor estimación de los niveles de oxígeno disuelto se consideran parámetros como la temperatura, presión y salinidad.
 
-\[
+La salinidad puede estimarse a partir de la conductividad del agua mediante la siguiente ecuación empírica:
+
+$$
 S = 5.572 \times 10^{-4}(SC) + 2.02 \times 10^{-9}(SC)^2
-\]
+$$
 
 [6]
 
@@ -58,24 +65,24 @@ Donde:
 - **S:** salinidad estimada del agua.
 - **SC:** conductividad del agua.
 
-Esta ecuación puede no ser aplicable cuando la composición del agua es significativamente diferente a la composición del agua de mar [Fuente].
+Esta ecuación puede no ser aplicable si la composición actual del agua es muy diferente a la del agua de mar [Fuente].
 
-A partir de los parámetros mencionados anteriormente, es posible estimar la concentración de oxígeno disuelto utilizando factores de corrección. Una forma general empleada en estimaciones basadas en Weiss (1970) y Benson-Krause (1980, 1984) es:
+Con los parámetros mencionados anteriormente se puede estimar la concentración de oxígeno disuelto utilizando distintos factores de corrección, mediante la siguiente expresión utilizada en las estimaciones de Weiss (1970) y Benson-Krause (1980, 1984):
 
-\[
+$$
 [DO] = DO_0 \times F_s \times F_p
-\]
+$$
 
 Donde:
 
-- **DO:** concentración de oxígeno disuelto.
+- **DO:** oxígeno disuelto.
 - **DO₀:** concentración base de oxígeno disuelto en agua dulce.
-- **Fs:** factor de corrección por salinidad.
-- **Fp:** factor de corrección por presión.
+- **Fs:** factor de corrección de salinidad.
+- **Fp:** factor de corrección de presión.
 
 Para mayor detalle, véase [6].
 
-El USGS utilizó formulaciones desarrolladas por Weiss y posteriormente adoptó las formulaciones de Benson y Krause en **DOTABLES 3.0**, publicada en 2011.
+El USGS utilizó las formulaciones de Weiss y posteriormente adoptó las de Benson y Krause en **DOTABLES 3.0**, publicada en 2011.
 
 Finalmente, existen tres métodos principales para determinar el oxígeno disuelto en agua [5]:
 
@@ -85,11 +92,13 @@ Finalmente, existen tres métodos principales para determinar el oxígeno disuel
 
 ### Temperatura
 
-La temperatura del agua influye en procesos biológicos como el metabolismo, el consumo de alimento y el crecimiento de la trucha. Según FONDEPES, un rango aproximado de **11 °C a 16 °C** presenta condiciones favorables para el cultivo [1].
+La temperatura del agua influye en procesos biológicos como el metabolismo, el consumo de alimento y el crecimiento de la trucha.
+
+Según FONDEPES, un rango aproximado de **11 °C a 16 °C** presenta condiciones favorables para el cultivo [1].
 
 Estudios experimentales en *Oncorhynchus mykiss* también han demostrado que la temperatura y el oxígeno disuelto interactúan y pueden afectar el crecimiento y la condición fisiológica de los peces [2].
 
-La temperatura puede medirse mediante diferentes instrumentos, además de los termómetros de líquido en vidrio. Entre ellos se encuentran [7]:
+La temperatura puede medirse mediante distintos tipos de termómetros, además de los termómetros de líquido en vidrio, entre ellos [7]:
 
 - Termómetros de resistencia de platino (RTD).
 - Termistores.
@@ -97,19 +106,27 @@ La temperatura puede medirse mediante diferentes instrumentos, además de los te
 
 ### Potencial de hidrógeno (pH)
 
-El pH permite determinar el grado de acidez o alcalinidad del agua. Para la crianza de trucha arco iris se considera favorable un rango aproximado entre **7.0 y 8.0** [1].
+El pH permite determinar el grado de acidez o alcalinidad del agua.
+
+Para la crianza de trucha arco iris se considera favorable un rango aproximado entre **7.0 y 8.0** [1].
 
 Las variaciones significativas de este parámetro pueden generar condiciones inadecuadas para el desarrollo de los peces y afectar sus procesos fisiológicos.
 
 ### Turbidez
 
-La turbidez está relacionada con la presencia de partículas y sólidos suspendidos en el agua. Una elevada concentración de estos materiales puede afectar las branquias de los peces y disminuir la calidad del medio acuático [1].
+La turbidez está relacionada con la presencia de partículas y sólidos suspendidos en el agua.
+
+Una elevada concentración de estos materiales puede afectar las branquias de los peces y disminuir la calidad del medio acuático [1].
 
 Por esta razón, la turbidez también fue identificada como un parámetro relevante para comprender las condiciones ambientales asociadas con la crianza de trucha arco iris.
 
 ### Principio identificado
 
-A partir de la revisión realizada se establece que la calidad del agua depende de la interacción de diferentes parámetros físico-químicos y que sus variaciones pueden generar condiciones favorables o de riesgo para la trucha arco iris. Este conocimiento constituye una base científica para investigaciones y desarrollos tecnológicos posteriores.
+A partir de la revisión realizada se establece que la calidad del agua depende de la interacción de diferentes parámetros físico-químicos y que sus variaciones pueden generar condiciones favorables o de riesgo para la trucha arco iris.
+
+Este conocimiento constituye una base científica para investigaciones y desarrollos tecnológicos posteriores.
+
+---
 
 ## 3. Indicador 2: Generación de conocimiento
 
@@ -124,9 +141,15 @@ Esta organización permitió establecer rangos de referencia que facilitan la id
 | **pH** | 7.0 – 8.0 | < 6.0 o > 9.0 |
 | **Turbidez** | Baja presencia de sólidos en suspensión | Elevada presencia de sólidos |
 
-La información revisada permitió reconocer que estos parámetros no deben analizarse de manera aislada. Por ejemplo, las condiciones de temperatura pueden relacionarse con la disponibilidad de oxígeno disuelto, mientras que una elevada presencia de sólidos puede afectar directamente las branquias de los peces [1].
+La información revisada permitió reconocer que estos parámetros no deben analizarse de manera aislada.
 
-Asimismo, durante el análisis se identificó que las condiciones físico-químicas del agua pueden presentar diferencias según la profundidad de la columna de agua. En sistemas acuícolas se han observado diferencias verticales en la concentración de oxígeno asociadas a procesos de estratificación y mezcla del agua [4].
+Por ejemplo, las condiciones de temperatura pueden relacionarse con la disponibilidad de oxígeno disuelto, mientras que una elevada presencia de sólidos puede afectar directamente las branquias de los peces [1].
+
+Asimismo, durante el análisis se identificó que las condiciones físico-químicas del agua pueden presentar diferencias según la profundidad de la columna de agua.
+
+En sistemas acuícolas se han observado diferencias verticales en la concentración de oxígeno asociadas a procesos de estratificación y mezcla del agua [4].
+
+### Zonas de la columna de agua
 
 **Superficie:** corresponde a la zona con mayor intercambio gaseoso con la atmósfera y mayor exposición a la radiación solar.
 
@@ -138,6 +161,8 @@ Esta diferenciación permitió generar como conocimiento inicial que una medici�
 
 Por lo tanto, la revisión realizada permitió integrar información sobre los rangos físico-químicos adecuados para la trucha y reconocer la importancia de considerar la distribución espacial de estas variables.
 
+Este conocimiento constituye una base para continuar investigando el comportamiento de la calidad del agua en sistemas de crianza de trucha.
+
 ---
 
 ## 4. Indicador 3: Pregunta de investigación
@@ -148,7 +173,7 @@ A partir del problema identificado y de la revisión inicial se plantea la sigui
 
 Esta pregunta busca comprender el fenómeno antes de proponer una solución tecnológica.
 
-De manera complementaria se plantean las siguientes preguntas:
+De manera complementaria pueden plantearse las siguientes preguntas:
 
 - ¿Qué parámetro físico-químico presenta mayor importancia para identificar condiciones de riesgo en la crianza de truchas?
 - ¿Existe variación de las condiciones del agua según la profundidad?
@@ -170,7 +195,7 @@ En esta etapa, el análisis se limita principalmente a estudiar:
 - Los efectos de la turbidez y los sólidos en suspensión.
 - Las posibles diferencias de estos parámetros según la profundidad de la columna de agua.
 
-Por lo tanto, en este nivel **no se evalúa todavía una solución tecnológica específica ni se busca demostrar el funcionamiento de un sistema aplicado**.
+Por lo tanto, en este nivel no se evalúa todavía una solución tecnológica específica ni se busca demostrar el funcionamiento de un sistema aplicado.
 
 Aspectos como la selección de sensores, el diseño electrónico, la programación, la comunicación IoT, el desarrollo de una aplicación, la fabricación de una carcasa o la construcción de un prototipo corresponden a etapas posteriores de madurez tecnológica.
 
@@ -184,7 +209,13 @@ Para establecer la base científica de esta investigación se realizó una revis
 
 Como fuente técnica inicial se utilizó el *Manual de Cultivo de Trucha en Ambientes Convencionales* de FONDEPES, donde se describen parámetros relevantes para la calidad del agua, como el oxígeno disuelto, la temperatura, el pH y la presencia de sólidos en suspensión [1].
 
-Esta revisión fue complementada con literatura científica relacionada con los principales fenómenos estudiados. Se revisaron investigaciones experimentales sobre la interacción entre la temperatura y el oxígeno disuelto en *Oncorhynchus mykiss* [2], los efectos de la hipoxia en la trucha arco iris [3] y la variación vertical del oxígeno en sistemas acuícolas [4].
+Esta revisión fue complementada con literatura científica relacionada con los principales fenómenos estudiados.
+
+Se revisaron investigaciones experimentales sobre:
+
+- La interacción entre temperatura y oxígeno disuelto en *Oncorhynchus mykiss* [2].
+- Los efectos de la hipoxia en la trucha arco iris [3].
+- La variación vertical del oxígeno en sistemas acuícolas [4].
 
 La comparación entre estas fuentes permitió contrastar la información técnica presentada por FONDEPES con resultados obtenidos en investigaciones experimentales y fortalecer la base científica relacionada con la calidad del agua.
 
@@ -229,20 +260,10 @@ El componente relacionado con la generación de artículos científicos requiere
 
 La etapa TRL 1 permitió identificar y organizar los principios científicos fundamentales relacionados con la calidad del agua y su influencia en la crianza de trucha arco iris (*Oncorhynchus mykiss*).
 
-A partir de la revisión realizada, se reconoció al oxígeno disuelto, la temperatura, el pH y la turbidez como parámetros relevantes para caracterizar las condiciones del ambiente acuático. Asimismo, se identificó que estas condiciones pueden presentar diferencias según la profundidad de la columna de agua.
+A partir de la revisión realizada, se reconoció al oxígeno disuelto, la temperatura, el pH y la turbidez como parámetros relevantes para caracterizar las condiciones del ambiente acuático.
+
+Asimismo, se identificó que estas condiciones pueden presentar diferencias según la profundidad de la columna de agua.
 
 La investigación desarrollada permitió generar una base inicial de conocimiento, formular una pregunta de investigación y comprender el fenómeno antes de plantear una aplicación tecnológica específica.
 
 Por lo tanto, la información obtenida constituye el sustento científico necesario para continuar con etapas posteriores de madurez tecnológica, en las que podrá avanzarse hacia la formulación y desarrollo de una solución tecnológica.
-
----
-
-## Referencias
-
-[1] Fondo Nacional de Desarrollo Pesquero (FONDEPES), *Manual de Cultivo de Trucha en Ambientes Convencionales*. Lima, Perú: Ministerio de la Producción, Dirección General de Capacitación y Desarrollo Técnico en Acuicultura, 2013.
-
-[2] X. Jiang, S. Dong, R. Liu, M. Huang, K. Dong, J. Ge, Q. Gao, and Y. Zhou, “Effects of temperature, dissolved oxygen, and their interaction on the growth performance and condition of rainbow trout (*Oncorhynchus mykiss*),” *Journal of Thermal Biology*, vol. 98, Art. no. 102928, 2021, doi: 10.1016/j.jtherbio.2021.102928.
-
-[3] Z.-S. Hou, H.-S. Wen, J.-F. Li, F. He, Y. Li, and X. Qi, “Environmental hypoxia causes growth retardation, osteoclast differentiation and calcium dyshomeostasis in juvenile rainbow trout (*Oncorhynchus mykiss*),” *Science of the Total Environment*, vol. 705, Art. no. 135272, 2020, doi: 10.1016/j.scitotenv.2019.135272.
-
-[4] M. Oberle, S. Salomon, B. Ehrmaier, P. Richter, M. Lebert, and S. M. Strauch, “Diurnal stratification of oxygen in shallow aquaculture ponds in central Europe and recommendations for optimal aeration,” *Aquaculture*, vol. 501, pp. 482–487, 2019, doi: 10.1016/j.aquaculture.2018.12.005.
