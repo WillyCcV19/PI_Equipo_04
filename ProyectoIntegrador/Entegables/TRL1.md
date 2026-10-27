@@ -33,13 +33,13 @@ El objetivo de esta etapa no es desarrollar todavía una solución tecnológica,
 
 El principio fundamental identificado consiste en que las condiciones físico-químicas del agua influyen directamente en la supervivencia, crecimiento y bienestar de la trucha arco iris (*Oncorhynchus mykiss*).
 
-Entre los principales parámetros relacionados con estas condiciones se encuentran el oxígeno disuelto, la temperatura, el pH, la turbidez y la conductividad [1].
+Entre los principales parámetros relacionados con estas condiciones se encuentran el oxígeno disuelto, la temperatura, el pH y la turbidez [1], así como la conductividad [7], [8].
 
 ### Oxígeno disuelto
 
 El oxígeno disuelto corresponde a la cantidad de oxígeno disponible en el agua para la respiración de los organismos acuáticos.
 
-En la crianza de trucha constituye uno de los parámetros más críticos, debido a que una reducción significativa de su concentración puede producir estrés, asfixia y mortalidad [1], [3].
+En la crianza de trucha constituye uno de los parámetros más críticos, debido a que una reducción significativa de su concentración puede producir estrés, asfixia y mortalidad [1], [2].
 
 De acuerdo con FONDEPES, se recomienda que la concentración de oxígeno disuelto no sea menor a **5.5 mg/L**. Asimismo, se identifican los siguientes valores de referencia [1]:
 
@@ -52,20 +52,18 @@ Por ello, se identifica como principio fundamental la relación existente entre 
 
 Para obtener una mejor estimación de los niveles de oxígeno disuelto se consideran parámetros como la temperatura, presión y salinidad.
 
-La salinidad puede estimarse a partir de la conductividad del agua mediante la siguiente ecuación empírica:
+La salinidad puede estimarse a partir de la conductividad del agua mediante la siguiente ecuación empírica [3]:
 
 $$
 S = 5.572 \times 10^{-4}(SC) + 2.02 \times 10^{-9}(SC)^2
 $$
-
-[6]
 
 Donde:
 
 - **S:** salinidad estimada del agua.
 - **SC:** conductividad del agua.
 
-Esta ecuación puede no ser aplicable si la composición actual del agua es muy diferente a la del agua de mar [6].
+Esta ecuación puede no ser aplicable si la composición actual del agua es muy diferente a la del agua de mar [3].
 
 Con los parámetros mencionados anteriormente se puede estimar la concentración de oxígeno disuelto utilizando distintos factores de corrección, mediante la siguiente expresión utilizada en las estimaciones de Weiss (1970) y Benson-Krause (1980, 1984):
 
@@ -80,11 +78,11 @@ Donde:
 - **Fs:** factor de corrección de salinidad.
 - **Fp:** factor de corrección de presión.
 
-Para mayor detalle, véase [6].
+Para mayor detalle, véase [3].
 
-El USGS utilizó las formulaciones de Weiss y posteriormente adoptó las de Benson y Krause en **DOTABLES 3.0**, publicada en 2011.
+El USGS utilizó las formulaciones de Weiss y posteriormente adoptó las de Benson y Krause en **DOTABLES 3.0**, publicada en 2011 [3].
 
-Finalmente, existen tres métodos principales para determinar el oxígeno disuelto en agua [5]:
+Finalmente, existen tres métodos principales para determinar el oxígeno disuelto en agua [4]:
 
 - Método colorimétrico.
 - Método de Winkler o titulación.
@@ -96,9 +94,9 @@ La temperatura del agua influye en procesos biológicos como el metabolismo, el 
 
 Según FONDEPES, un rango aproximado de **11 °C a 16 °C** presenta condiciones favorables para el cultivo [1].
 
-Estudios experimentales en *Oncorhynchus mykiss* también han demostrado que la temperatura y el oxígeno disuelto interactúan y pueden afectar el crecimiento y la condición fisiológica de los peces [2].
+Estudios experimentales en *Oncorhynchus mykiss* también han demostrado que la temperatura y el oxígeno disuelto interactúan y pueden afectar el crecimiento y la condición fisiológica de los peces [5].
 
-La temperatura puede medirse mediante distintos tipos de termómetros, además de los termómetros de líquido en vidrio, entre ellos [7]:
+La temperatura puede medirse mediante distintos tipos de termómetros, además de los termómetros de líquido en vidrio, entre ellos [6]:
 
 - Termómetros de resistencia de platino (RTD).
 - Termistores.
@@ -122,13 +120,13 @@ Por esta razón, la turbidez también fue identificada como un parámetro releva
 
 ### Conductividad
 
-La conductividad eléctrica del agua está relacionada con la concentración de sales e iones disueltos y constituye un parámetro útil para caracterizar las condiciones físico-químicas del medio acuático [9].
+La conductividad eléctrica del agua está relacionada con la concentración de sales e iones disueltos y constituye un parámetro útil para caracterizar las condiciones físico-químicas del medio acuático [7].
 
 En sistemas destinados al cultivo de trucha arco iris se han registrado valores de conductividad entre **35 y 204 µS/cm** en raceways de Nepal, donde las condiciones evaluadas fueron consideradas adecuadas para el cultivo de *Oncorhynchus mykiss* [8].
 
-Asimismo, estudios realizados en sistemas de recirculación para el cultivo de trucha arco iris consideran como valor de referencia un rango aproximado de **20 a 500 µS/cm a 20 °C** [9].
+Asimismo, estudios realizados en sistemas de recirculación para el cultivo de trucha arco iris consideran como valor de referencia un rango aproximado de **20 a 500 µS/cm a 20 °C** [7].
 
-La conductividad también resulta relevante porque se relaciona con la cantidad de sustancias iónicas disueltas en el agua y puede utilizarse como una variable complementaria para caracterizar cambios en las condiciones del medio acuático.
+La conductividad también resulta relevante porque se relaciona con la cantidad de sustancias iónicas disueltas en el agua y puede utilizarse como una variable complementaria para caracterizar cambios en las condiciones del medio acuático [7].
 
 Por ello, la conductividad se incorpora como uno de los parámetros físico-químicos de interés dentro del análisis de calidad del agua para la crianza de trucha arco iris.
 
@@ -144,15 +142,15 @@ Este conocimiento constituye una base científica para investigaciones y desarro
 
 A partir de la revisión documental realizada, se organizaron los principales parámetros físico-químicos relacionados con las condiciones adecuadas para la crianza de trucha arco iris (*Oncorhynchus mykiss*).
 
-Esta organización permitió establecer rangos de referencia que facilitan la identificación de condiciones favorables y situaciones de riesgo [1].
+Esta organización permitió establecer rangos de referencia que facilitan la identificación de condiciones favorables y situaciones de riesgo.
 
-| Parámetro | Condición favorable | Condición de riesgo |
+| Parámetro | Condición favorable / referencia | Condición de riesgo o fuera de referencia |
 |---|---|---|
-| **Oxígeno disuelto** | 6.0 – 8.5 mg/L | < 5.5 mg/L |
-| **Temperatura** | 11 – 16 °C | < 3 °C o > 20 °C |
-| **pH** | 7.0 – 8.0 | < 6.0 o > 9.0 |
-| **Turbidez** | Baja presencia de sólidos en suspensión | Elevada presencia de sólidos |
-| **Conductividad** | 20 – 500 µS/cm | > 500 µS/cm |
+| **Oxígeno disuelto** | 6.0 – 8.5 mg/L [1] | < 5.5 mg/L [1] |
+| **Temperatura** | 11 – 16 °C [1] | < 3 °C o > 20 °C [1] |
+| **pH** | 7.0 – 8.0 [1] | < 6.0 o > 9.0 [1] |
+| **Turbidez** | Baja presencia de sólidos en suspensión [1] | Elevada presencia de sólidos [1] |
+| **Conductividad** | 20 – 500 µS/cm a 20 °C [7] | Fuera del rango de referencia: > 500 µS/cm [7] |
 
 La información revisada permitió reconocer que estos parámetros no deben analizarse de manera aislada.
 
@@ -160,7 +158,7 @@ Por ejemplo, las condiciones de temperatura pueden relacionarse con la disponibi
 
 Asimismo, durante el análisis se identificó que las condiciones físico-químicas del agua pueden presentar diferencias según la profundidad de la columna de agua.
 
-En sistemas acuícolas se han observado diferencias verticales en la concentración de oxígeno asociadas a procesos de estratificación y mezcla del agua [4].
+En sistemas acuícolas se han observado diferencias verticales en la concentración de oxígeno asociadas a procesos de estratificación y mezcla del agua [9].
 
 ### Zonas de la columna de agua
 
@@ -191,9 +189,8 @@ De manera complementaria pueden plantearse las siguientes preguntas:
 - ¿Qué parámetro físico-químico presenta mayor importancia para identificar condiciones de riesgo en la crianza de truchas?
 - ¿Existe variación de las condiciones del agua según la profundidad?
 - ¿Cómo influye la temperatura sobre las condiciones de oxígeno disuelto?
-- ¿Qué relación existe entre las variaciones simultáneas de oxígeno disuelto, temperatura, pH y turbidez en las condiciones del ambiente acuático?
+- ¿Qué relación existe entre las variaciones simultáneas de oxígeno disuelto, temperatura, pH, turbidez y conductividad en las condiciones del ambiente acuático?
 - ¿Qué relación existe entre la conductividad del agua y las variaciones en la concentración de sales disueltas?
-
 
 ---
 
@@ -210,6 +207,7 @@ En esta etapa, el análisis se limita principalmente a estudiar:
 - Los efectos de la turbidez y los sólidos en suspensión.
 - Las posibles diferencias de estos parámetros según la profundidad de la columna de agua.
 - La conductividad eléctrica como parámetro de calidad del agua y su comportamiento en sistemas destinados al cultivo de trucha arco iris.
+
 Por lo tanto, en este nivel no se evalúa todavía una solución tecnológica específica ni se busca demostrar el funcionamiento de un sistema aplicado.
 
 Aspectos como la selección de sensores, el diseño electrónico, la programación, la comunicación IoT, el desarrollo de una aplicación, la fabricación de una carcasa o la construcción de un prototipo corresponden a etapas posteriores de madurez tecnológica.
@@ -228,15 +226,19 @@ Esta revisión fue complementada con literatura científica y técnica relaciona
 
 Se revisaron investigaciones y fuentes relacionadas con:
 
-- La interacción entre temperatura y oxígeno disuelto en *Oncorhynchus mykiss* [2].
-- Los efectos de la hipoxia en la trucha arco iris [3].
-- La variación vertical del oxígeno en sistemas acuícolas [4].
-- Los principales métodos utilizados para determinar el oxígeno disuelto en agua [5].
-- La influencia de la temperatura, salinidad y presión en la estimación de la concentración de oxígeno disuelto [6].
-- Los métodos e instrumentos empleados para la medición de la temperatura del agua [7].
-- La conductividad eléctrica como parámetro relacionado con la presencia de sales e iones disueltos en el agua y como variable auxiliar para estimar la salinidad.
+- Los efectos de la hipoxia en la trucha arco iris [2].
+- La influencia de la temperatura, salinidad y presión en la estimación de la concentración de oxígeno disuelto [3].
+- Los principales métodos utilizados para determinar el oxígeno disuelto en agua [4].
+- La interacción entre temperatura y oxígeno disuelto en *Oncorhynchus mykiss* [5].
+- Los métodos e instrumentos empleados para la medición de la temperatura del agua [6].
+- La conductividad eléctrica y los valores reportados en sistemas destinados al cultivo de trucha arco iris [7], [8].
+- La variación vertical del oxígeno en sistemas acuícolas [9].
 
-La comparación entre estas fuentes permitió contrastar la información técnica presentada por FONDEPES con resultados obtenidos en investigaciones experimentales y documentos técnicos, fortaleciendo la base científica relacionada con la calidad del agua. Asimismo, permitió reconocer que parámetros como el oxígeno disuelto, la temperatura, el pH, la turbidez y la conductividad pueden analizarse de manera conjunta para comprender mejor las condiciones físico-químicas del agua utilizadas en la crianza de trucha. De esta manera, la revisión realizada permite sustentar los principios identificados durante el TRL 1 y proporciona una base científica para continuar con etapas posteriores de investigación.
+La comparación entre estas fuentes permitió contrastar la información técnica presentada por FONDEPES con resultados obtenidos en investigaciones experimentales y documentos técnicos, fortaleciendo la base científica relacionada con la calidad del agua.
+
+Asimismo, permitió reconocer que parámetros como el oxígeno disuelto, la temperatura, el pH, la turbidez y la conductividad pueden analizarse de manera conjunta para comprender mejor las condiciones físico-químicas del agua utilizadas en la crianza de trucha.
+
+De esta manera, la revisión realizada permite sustentar los principios identificados durante el TRL 1 y proporciona una base científica para continuar con etapas posteriores de investigación.
 
 ---
 
@@ -245,12 +247,18 @@ La comparación entre estas fuentes permitió contrastar la información técnic
 Como resultado de la revisión realizada durante esta etapa, se identificaron los siguientes conocimientos principales:
 
 1. La calidad del agua influye directamente en la supervivencia, crecimiento y bienestar de la trucha arco iris (*Oncorhynchus mykiss*) [1].
-2. El oxígeno disuelto constituye uno de los parámetros más críticos, debido a que concentraciones bajas pueden generar estrés, asfixia e incluso mortalidad en los peces [1].
-3. La temperatura del agua influye en procesos como el metabolismo, la alimentación y el crecimiento de la trucha [1].
+
+2. El oxígeno disuelto constituye uno de los parámetros más críticos, debido a que concentraciones bajas pueden generar estrés, asfixia e incluso mortalidad en los peces [1], [2].
+
+3. La temperatura del agua influye en procesos como el metabolismo, la alimentación y el crecimiento de la trucha [1], [5].
+
 4. El pH y la turbidez también son parámetros importantes para caracterizar las condiciones del ambiente acuático y detectar situaciones que puedan resultar desfavorables para los peces [1].
-5. Las condiciones físico-químicas del agua pueden presentar diferencias según la profundidad, especialmente entre la superficie, la zona media y el fondo [4].
+
+5. Las condiciones físico-químicas del agua pueden presentar diferencias según la profundidad, especialmente entre la superficie, la zona media y el fondo [9].
+
 6. Se identificó la necesidad de continuar investigando la relación entre estas variables para comprender de manera más completa las condiciones favorables y de riesgo presentes en los sistemas de crianza de trucha.
-7. La conductividad eléctrica constituye un parámetro útil para caracterizar las condiciones físico-químicas del agua debido a su relación con la presencia de sustancias iónicas disueltas. En sistemas de cultivo de trucha arco iris se han reportado diferentes valores de conductividad dependiendo de las características del agua y del sistema de cultivo [8], [9].
+
+7. La conductividad eléctrica constituye un parámetro útil para caracterizar las condiciones físico-químicas del agua debido a su relación con la presencia de sustancias iónicas disueltas. En sistemas de cultivo de trucha arco iris se han reportado diferentes valores de conductividad dependiendo de las características del agua y del sistema de cultivo [7], [8].
 
 En conjunto, estos conocimientos constituyen la base científica inicial necesaria para continuar con etapas posteriores de investigación y desarrollo tecnológico.
 
@@ -264,7 +272,7 @@ En conjunto, estos conocimientos constituyen la base científica inicial necesar
 | **Generación de conocimiento** | Se organizaron los principales parámetros críticos, sus rangos de referencia y las posibles diferencias de las condiciones del agua según la profundidad. |
 | **Responde a una pregunta de investigación** | Se formuló una pregunta orientada a comprender la variación de los principales parámetros físico-químicos del agua y su relación con condiciones adecuadas o de riesgo para la trucha. |
 | **No declara un uso aplicativo de la tecnología** | En esta etapa no se evalúa una solución tecnológica específica; el análisis se concentra en los principios científicos y en la comprensión del fenómeno. |
-| **Genera como resultado artículos científicos** | Se complementó la documentación técnica con literatura científica sobre temperatura, oxígeno disuelto, hipoxia y variación de parámetros en sistemas acuícolas, fortaleciendo la base científica de la investigación [2]–[4]. |
+| **Genera como resultado artículos científicos** | Se complementó la documentación técnica con literatura científica y técnica sobre oxígeno disuelto, temperatura, hipoxia, conductividad y variación de parámetros en sistemas acuícolas [2]–[9]. |
 
 ### Síntesis
 
@@ -288,18 +296,18 @@ En conjunto, la investigación desarrollada permitió generar una base inicial d
 
 [1] Fondo Nacional de Desarrollo Pesquero (FONDEPES), *Manual de Cultivo de Trucha en Ambientes Convencionales*. Lima, Perú: Ministerio de la Producción, Dirección General de Capacitación y Desarrollo Técnico en Acuicultura, 2013.
 
-[2] X. Jiang, S. Dong, R. Liu, M. Huang, K. Dong, J. Ge, Q. Gao, and Y. Zhou, “Effects of temperature, dissolved oxygen, and their interaction on the growth performance and condition of rainbow trout (*Oncorhynchus mykiss*),” *Journal of Thermal Biology*, vol. 98, Art. no. 102928, 2021, doi: 10.1016/j.jtherbio.2021.102928.
+[2] Z.-S. Hou, H.-S. Wen, J.-F. Li, F. He, Y. Li, and X. Qi, “Environmental hypoxia causes growth retardation, osteoclast differentiation and calcium dyshomeostasis in juvenile rainbow trout (*Oncorhynchus mykiss*),” *Science of the Total Environment*, vol. 705, Art. no. 135272, 2020, doi: 10.1016/j.scitotenv.2019.135272.
 
-[3] Z.-S. Hou, H.-S. Wen, J.-F. Li, F. He, Y. Li, and X. Qi, “Environmental hypoxia causes growth retardation, osteoclast differentiation and calcium dyshomeostasis in juvenile rainbow trout (*Oncorhynchus mykiss*),” *Science of the Total Environment*, vol. 705, Art. no. 135272, 2020, doi: 10.1016/j.scitotenv.2019.135272.
+[3] U.S. Geological Survey, “Change to solubility equations for oxygen in water,” *Office of Water Quality Technical Memorandum 2011.03*, Jul. 13, 2011. [Online]. Available: https://water.usgs.gov/water-resources/memos/documents/WQ.2011.03.pdf
 
-[4] M. Oberle, S. Salomon, B. Ehrmaier, P. Richter, M. Lebert, and S. M. Strauch, “Diurnal stratification of oxygen in shallow aquaculture ponds in central Europe and recommendations for optimal aeration,” *Aquaculture*, vol. 501, pp. 482–487, 2019, doi: 10.1016/j.aquaculture.2018.12.005.
+[4] N. H. Omer, “Water quality parameters,” in *Water Quality—Science, Assessments and Policy*, J. K. Summers, Ed. London, U.K.: IntechOpen, 2020, doi: 10.5772/intechopen.89657.
 
-[5] N. H. Omer, “Water quality parameters,” in *Water Quality—Science, Assessments and Policy*, J. K. Summers, Ed. London, U.K.: IntechOpen, 2020, doi: 10.5772/intechopen.89657.
+[5] X. Jiang, S. Dong, R. Liu, M. Huang, K. Dong, J. Ge, Q. Gao, and Y. Zhou, “Effects of temperature, dissolved oxygen, and their interaction on the growth performance and condition of rainbow trout (*Oncorhynchus mykiss*),” *Journal of Thermal Biology*, vol. 98, Art. no. 102928, 2021, doi: 10.1016/j.jtherbio.2021.102928.
 
-[6] U.S. Geological Survey, “Change to solubility equations for oxygen in water,” *Office of Water Quality Technical Memorandum 2011.03*, Jul. 13, 2011. [Online]. Available: [https://water.usgs.gov/water-resources/memos/documents/WQ.2011.03.pdf](https://water.usgs.gov/water-resources/memos/documents/WQ.2011.03.pdf)
+[6] D. C. Ripple and G. F. Strouse, “Selection of alternatives to liquid-in-glass thermometers,” *Journal of ASTM International*, vol. 2, no. 9, 2005, doi: 10.1520/JAI13404.
 
-[7] D. C. Ripple and G. F. Strouse, “Selection of alternatives to liquid-in-glass thermometers,” *Journal of ASTM International*, vol. 2, no. 9, 2005, doi: 10.1520/JAI13404.
+[7] R. Pepe-Victoriano, P. Pepe-Vargas, A. Pérez-Aravena, H. Aravena-Ambrosetti, J. I. Huanacuni, F. Méndez-Abarca, G. Olivares-Cantillano, O. Acosta-Angulo, and L. Espinoza-Ramos, “Evaluation of water quality in the production of rainbow trout (*Oncorhynchus mykiss*) in a recirculating aquaculture system (RAS) in the precordilleran region of northern Chile,” *Water*, vol. 17, no. 11, Art. no. 1685, 2025, doi: 10.3390/w17111685.
 
-[8] R. P. Bhagat and S. Barat, “Water quality parameters for the culture of rainbow trout, Oncorhynchus mykiss (Walbaum) in the raceways of Kathmandu, Nepal,” *Our Nature*, vol. 13, no. 1, pp. 50–57, 2015, doi: 10.3126/on.v13i1.14209.
+[8] R. P. Bhagat and S. Barat, “Water quality parameters for the culture of rainbow trout, *Oncorhynchus mykiss* (Walbaum) in the raceways of Kathmandu, Nepal,” *Our Nature*, vol. 13, no. 1, pp. 50–57, 2015, doi: 10.3126/on.v13i1.14209.
 
-[9] R. Pepe-Victoriano, P. Pepe-Vargas, A. Pérez-Aravena, H. Aravena-Ambrosetti, J. I. Huanacuni, F. Méndez-Abarca, G. Olivares-Cantillano, O. Acosta-Angulo, and L. Espinoza-Ramos, “Evaluation of water quality in the production of rainbow trout (Oncorhynchus mykiss) in a recirculating aquaculture system (RAS) in the precordilleran region of northern Chile,” *Water*, vol. 17, no. 11, Art. no. 1685, 2025, doi: 10.3390/w17111685.
+[9] M. Oberle, S. Salomon, B. Ehrmaier, P. Richter, M. Lebert, and S. M. Strauch, “Diurnal stratification of oxygen in shallow aquaculture ponds in central Europe and recommendations for optimal aeration,” *Aquaculture*, vol. 501, pp. 482–487, 2019, doi: 10.1016/j.aquaculture.2018.12.005.
