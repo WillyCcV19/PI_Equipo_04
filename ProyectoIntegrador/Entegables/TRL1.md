@@ -264,6 +264,22 @@ A partir de la revisión realizada, se reconoció al oxígeno disuelto, la tempe
 
 Asimismo, se identificó que estas condiciones pueden presentar diferencias según la profundidad de la columna de agua.
 
+## Referencias
+
+[1] Fondo Nacional de Desarrollo Pesquero (FONDEPES), *Manual de Cultivo de Trucha en Ambientes Convencionales*. Lima, Perú: Ministerio de la Producción, Dirección General de Capacitación y Desarrollo Técnico en Acuicultura, 2013.
+
+[2] X. Jiang, S. Dong, R. Liu, M. Huang, K. Dong, J. Ge, Q. Gao, and Y. Zhou, “Effects of temperature, dissolved oxygen, and their interaction on the growth performance and condition of rainbow trout (*Oncorhynchus mykiss*),” *Journal of Thermal Biology*, vol. 98, Art. no. 102928, 2021, doi: 10.1016/j.jtherbio.2021.102928.
+
+[3] Z.-S. Hou, H.-S. Wen, J.-F. Li, F. He, Y. Li, and X. Qi, “Environmental hypoxia causes growth retardation, osteoclast differentiation and calcium dyshomeostasis in juvenile rainbow trout (*Oncorhynchus mykiss*),” *Science of the Total Environment*, vol. 705, Art. no. 135272, 2020, doi: 10.1016/j.scitotenv.2019.135272.
+
+[4] M. Oberle, S. Salomon, B. Ehrmaier, P. Richter, M. Lebert, and S. M. Strauch, “Diurnal stratification of oxygen in shallow aquaculture ponds in central Europe and recommendations for optimal aeration,” *Aquaculture*, vol. 501, pp. 482–487, 2019, doi: 10.1016/j.aquaculture.2018.12.005.
+
+[5] N. H. Omer, “Water quality parameters,” in *Water Quality—Science, Assessments and Policy*, J. K. Summers, Ed. London, U.K.: IntechOpen, 2020, doi: 10.5772/intechopen.89657.
+
+[6] U.S. Geological Survey, “Change to solubility equations for oxygen in water,” *Office of Water Quality Technical Memorandum 2011.03*, Jul. 13, 2011. [Online]. Available: [https://water.usgs.gov/water-resources/memos/documents/WQ.2011.03.pdf](https://water.usgs.gov/water-resources/memos/documents/WQ.2011.03.pdf)
+
+[7] D. C. Ripple and G. F. Strouse, “Selection of alternatives to liquid-in-glass thermometers,” *Journal of ASTM International*, vol. 2, no. 9, 2005, doi: 10.1520/JAI13404.
+
 La investigación desarrollada permitió generar una base inicial de conocimiento, formular una pregunta de investigación y comprender el fenómeno antes de plantear una aplicación tecnológica específica.
 
 Por lo tanto, la información obtenida constituye el sustento científico necesario para continuar con etapas posteriores de madurez tecnológica, en las que podrá avanzarse hacia la formulación y desarrollo de una solución tecnológica.
