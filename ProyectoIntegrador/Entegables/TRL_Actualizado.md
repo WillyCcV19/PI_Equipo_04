@@ -21,153 +21,236 @@ Pauccara Huancara Eber
 
 ## 1. Introducción
 
-La primera etapa del desarrollo tecnológico corresponde al **TRL 1**, nivel en el cual se estudian y reportan los principios básicos que podrían servir posteriormente como fundamento para una tecnología.
+### 1.1 ¿Qué es el TRL y por qué comenzamos en el nivel 1?
 
-En esta etapa se realizó una revisión inicial de los factores físico-químicos relacionados con la calidad del agua en la crianza de trucha arco iris (*Oncorhynchus mykiss*), tomando como principal referencia el *Manual de Cultivo de Trucha en Ambientes Convencionales* de FONDEPES [[1]](#ref1).
+Los Niveles de Madurez Tecnológica (*Technology Readiness Levels*, TRL) son una escala que surgió en la NASA y que hoy sirve como guía para que investigadores e innovadores identifiquen en qué etapa se encuentra su desarrollo y qué esfuerzos necesitan para avanzar [[12]](#ref12). En el Perú, el Consejo Nacional de Ciencia, Tecnología e Innovación (Concytec) implementó una metodología TRL de nueve niveles para evaluar proyectos de investigación, innovación y emprendimiento, y la puso a disposición del Sistema Nacional de Ciencia, Tecnología e Innovación (Sinacti) en la plataforma Vincúlate [[12]](#ref12).
 
-El objetivo de esta etapa no es desarrollar todavía una solución tecnológica, sino comprender los fenómenos y principios científicos relacionados con las condiciones del agua y su influencia sobre la trucha.
+Esta escala permite ubicar una tecnología en una de cuatro fases: investigación básica, investigación aplicada, desarrollo tecnológico o innovación [[12]](#ref12). El **TRL 1** corresponde al inicio de una nueva tecnología [[12]](#ref12): es el nivel más bajo de madurez, en el que se observan y reportan los principios básicos que, más adelante, podrían sustentar una solución [[13]](#ref13). El resultado típico de este nivel es la existencia de artículos científicos publicados sobre los principios de la tecnología [[13]](#ref13).
 
-**Nota sobre unidades:** las concentraciones se expresan en ppm (partes por millón). En agua dulce, 1 ppm equivale aproximadamente a 1 mg/L.
+Dicho de forma sencilla: en el TRL 1 todavía no construimos nada. Nos dedicamos a **entender el fenómeno** con el rigor suficiente como para que lo que se construya después tenga un fundamento sólido.
+
+### 1.2 Contexto del trabajo
+
+Este informe corresponde al TRL 1 del proyecto integrador del Grupo 4. Nuestro tema de estudio es la **calidad del agua en la crianza de trucha arco iris** (*Oncorhynchus mykiss*). La razón es práctica: la trucha es una especie exigente con su medio, y el agua es, a la vez, su ambiente, su fuente de oxígeno y el vehículo de sus desechos. Si las condiciones del agua se desvían de lo adecuado, el pez lo sufre de inmediato en su respiración, su crecimiento y su supervivencia [[1]](#ref1), [[2]](#ref2).
+
+Para esta primera etapa tomamos como referencia técnica principal el *Manual de Cultivo de Trucha en Ambientes Convencionales* de FONDEPES [[1]](#ref1) y lo contrastamos con literatura científica y técnica internacional [[2]](#ref2)–[[11]](#ref11), [[14]](#ref14)–[[16]](#ref16).
+
+### 1.3 Objetivo y alcance
+
+El objetivo de esta etapa **no es desarrollar una solución tecnológica**, sino comprender los fenómenos y principios científicos que relacionan las condiciones del agua con la vida de la trucha. Por eso este documento se organiza según los cinco indicadores del TRL 1 (secciones 2 a 6) y cierra con el conocimiento obtenido, el cumplimiento de indicadores y la conclusión.
+
+### 1.4 Convenciones del documento
+
+| Aspecto | Convención |
+|---|---|
+| Concentraciones | Se expresan en ppm (partes por millón). En agua dulce, 1 ppm equivale aproximadamente a 1 mg/L. |
+| Conductividad | Se expresa en µS/cm (microsiemens por centímetro) y se indica la temperatura de referencia cuando la fuente la menciona. |
+| Turbidez | Se expresa en NTU (unidades nefelométricas de turbidez) [[14]](#ref14). |
+| Citas | Numeradas entre corchetes; cada una enlaza a la sección de Referencias, donde el DOI o URL lleva al documento original. |
 
 ---
 
 ## 2. Indicador 1: Identificación del principio de la tecnología
 
-El principio fundamental identificado consiste en que las condiciones físico-químicas del agua influyen directamente en la supervivencia, crecimiento y bienestar de la trucha arco iris (*Oncorhynchus mykiss*).
+### 2.1 El principio en una frase
 
-Entre los principales parámetros relacionados con estas condiciones se encuentran el oxígeno disuelto, la temperatura, el pH y la turbidez [[1]](#ref1), así como la conductividad [[7]](#ref7), [[8]](#ref8).
+El principio fundamental identificado es que **las condiciones físico-químicas del agua determinan directamente la supervivencia, el crecimiento y el bienestar de la trucha arco iris** (*Oncorhynchus mykiss*).
 
-La trucha es un pez de respiración branquial: toma el oxígeno directamente del agua y su metabolismo depende de la temperatura del medio. Por ello, cualquier cambio en las propiedades del agua se traduce en un cambio en su fisiología, su alimentación y su supervivencia [[1]](#ref1), [[5]](#ref5).
+Los parámetros que concentran esta relación son el oxígeno disuelto, la temperatura, el pH y la turbidez [[1]](#ref1), a los que se suma la conductividad como variable que caracteriza la carga de sales del medio [[7]](#ref7), [[8]](#ref8).
 
-### 2.1 Oxígeno disuelto
+### 2.2 ¿Por qué la trucha es tan sensible al agua?
 
-#### Fundamento científico
+La trucha respira por branquias: extrae del agua el oxígeno que necesita, de modo que su respiración depende por completo de cuánto oxígeno haya disuelto y de qué tan limpias estén sus branquias [[1]](#ref1), [[2]](#ref2). Además, es un animal de sangre fría: su temperatura corporal sigue a la del agua, por lo que la temperatura del medio regula su metabolismo, su apetito y su crecimiento [[1]](#ref1), [[5]](#ref5). En otras palabras, la trucha no puede "aislarse" del agua; lo que ocurre en el agua ocurre dentro del pez.
 
-El oxígeno disuelto corresponde a la cantidad de oxígeno gaseoso (O₂) disponible en el agua para la respiración de los organismos acuáticos. Este oxígeno ingresa al agua por intercambio con la atmósfera y se consume por la respiración de los peces y de otros organismos.
+Cada parámetro que se describe a continuación se presenta con la misma lógica: **qué es, por qué importa para la trucha, qué valores se consideran adecuados y cómo se mide**.
 
-La trucha extrae el oxígeno del agua a través de las branquias. Cuando la concentración disminuye (hipoxia), el pez sufre estrés fisiológico y, en estudios experimentales con trucha arco iris juvenil, la hipoxia ambiental produjo retraso del crecimiento y alteraciones en el metabolismo del calcio [[2]](#ref2). En casos extremos provoca asfixia y mortalidad [[1]](#ref1), [[2]](#ref2).
+---
 
-#### Valores de referencia
+### 2.3 Oxígeno disuelto
 
-De acuerdo con FONDEPES, se recomienda que la concentración de oxígeno disuelto no sea menor a **5.5 ppm** [[1]](#ref1):
+#### 2.3.1 ¿Qué es?
 
-| Concentración | Condición | Fuente |
+El oxígeno disuelto es la cantidad de oxígeno gaseoso (O₂) que se encuentra mezclado en el agua y que está disponible para la respiración de los organismos acuáticos. Entra al agua principalmente por intercambio con la atmósfera y se consume con la respiración de los peces y de otros organismos del sistema. En estanques, además, su concentración cambia a lo largo del día y entre capas de agua, como se verá más adelante [[9]](#ref9).
+
+#### 2.3.2 ¿Por qué es crítico para la trucha?
+
+Es uno de los parámetros más críticos en la crianza de trucha, porque una reducción significativa de su concentración puede producir estrés, asfixia y mortalidad [[1]](#ref1), [[2]](#ref2). Los efectos no se limitan a la muerte súbita: en trucha arco iris juvenil, la hipoxia ambiental produjo retraso del crecimiento y alteraciones en el metabolismo del calcio [[2]](#ref2). Es decir, un oxígeno bajo sostenido también "frena" al pez aunque no lo mate.
+
+#### 2.3.3 Valores de referencia
+
+De acuerdo con FONDEPES, la concentración de oxígeno disuelto no debería ser menor a **5.5 ppm**; los valores de referencia son [[1]](#ref1):
+
+| Concentración | Condición | Interpretación |
 |---|---|---|
-| **< 3.0 ppm** | Crítica, asociada a mortalidad | [[1]](#ref1) |
-| **3.1 – 4.5 ppm** | Estrés grave | [[1]](#ref1) |
-| **5.5 ppm** | Mínima recomendada | [[1]](#ref1) |
-| **6.0 – 8.5 ppm** | Favorable para el cultivo | [[1]](#ref1) |
+| **< 3.0 ppm** | Crítica | Asociada a mortalidad. |
+| **3.1 – 4.5 ppm** | Estrés grave | El pez sobrevive, pero con afectación seria. |
+| **5.5 ppm** | Mínima recomendada | Umbral por debajo del cual se considera riesgo. |
+| **6.0 – 8.5 ppm** | Favorable | Rango de trabajo recomendado para el cultivo. |
 
-Por ello, se identifica como principio fundamental la relación entre la disponibilidad de oxígeno en el agua y las condiciones necesarias para la supervivencia y desarrollo de la trucha.
+#### 2.3.4 ¿De qué depende cuánto oxígeno puede contener el agua?
 
-#### Factores que determinan cuánto oxígeno puede disolverse
+El agua no puede disolver cualquier cantidad de oxígeno: existe un máximo (solubilidad) que depende de tres factores [[3]](#ref3):
 
-La cantidad máxima de oxígeno que el agua puede contener (solubilidad) no es constante: depende de la **temperatura**, la **presión** y la **salinidad** [[3]](#ref3). En general, el agua más cálida, más salina o sometida a menor presión (mayor altitud) disuelve menos oxígeno. Por eso, estos tres factores deben considerarse para estimar correctamente el oxígeno disuelto.
+| Factor | Efecto sobre el oxígeno que el agua puede contener |
+|---|---|
+| **Temperatura** | A mayor temperatura, menor solubilidad. |
+| **Presión** | A menor presión (por ejemplo, a mayor altitud), menor solubilidad. |
+| **Salinidad** | A mayor salinidad, menor solubilidad. |
 
-La salinidad puede estimarse a partir de la conductividad del agua mediante la siguiente ecuación empírica [[3]](#ref3):
+Estos tres factores son los que contemplan las ecuaciones utilizadas por el USGS. Este organismo empleó primero las formulaciones de Weiss y luego adoptó las de Benson y Krause en la herramienta **DOTABLES 3.0**, publicada en 2011 [[3]](#ref3).
+
+La salinidad no siempre se mide de forma directa; puede estimarse a partir de la conductividad mediante la siguiente ecuación empírica [[3]](#ref3):
 
 $$
 S = 5.572 \times 10^{-4}(SC) + 2.02 \times 10^{-9}(SC)^2
 $$
 
-Donde:
+Donde **S** es la salinidad estimada del agua y **SC** es su conductividad. Esta ecuación puede no ser aplicable cuando la composición del agua es muy diferente a la del agua de mar [[3]](#ref3); por eso, en agua dulce de cultivo debe usarse con cautela.
 
-- **S:** salinidad estimada del agua.
-- **SC:** conductividad del agua.
-
-Esta ecuación puede no ser aplicable si la composición actual del agua es muy diferente a la del agua de mar [[3]](#ref3).
-
-Con los parámetros anteriores se puede estimar la concentración de oxígeno disuelto utilizando factores de corrección, mediante la siguiente expresión utilizada en las estimaciones de Weiss (1970) y Benson-Krause (1980, 1984) [[3]](#ref3):
+Con temperatura, presión y salinidad se calcula la concentración de oxígeno mediante factores de corrección, siguiendo la expresión de las estimaciones de Weiss (1970) y Benson-Krause (1980, 1984) [[3]](#ref3):
 
 $$
 [DO] = DO_0 \times F_s \times F_p
 $$
 
-Donde:
+Donde **DO** es el oxígeno disuelto, **DO₀** la concentración base en agua dulce, **Fs** el factor de corrección de salinidad y **Fp** el factor de corrección de presión [[3]](#ref3).
 
-- **DO:** oxígeno disuelto.
-- **DO₀:** concentración base de oxígeno disuelto en agua dulce.
-- **Fs:** factor de corrección de salinidad.
-- **Fp:** factor de corrección de presión.
+#### 2.3.5 Métodos para medir el oxígeno disuelto
 
-El USGS utilizó las formulaciones de Weiss y posteriormente adoptó las de Benson y Krause en **DOTABLES 3.0**, publicada en 2011 [[3]](#ref3).
+Existen tres métodos principales: colorimétrico, Winkler (titulación) y electrométrico [[4]](#ref4), [[10]](#ref10). Cada uno se basa en un principio científico distinto.
 
-#### Métodos para determinar el oxígeno disuelto
+**a) Método colorimétrico.** Se basa en que ciertos reactivos cambian de color en presencia de oxígeno, y la intensidad del color es proporcional a la cantidad de oxígeno disuelto. El resultado se obtiene comparando el color con una escala patrón o midiéndolo con un fotómetro. Es un método rápido y práctico para el campo, pero su exactitud es menor que la de los otros dos [[10]](#ref10).
 
-Existen tres métodos principales para determinar el oxígeno disuelto en agua [[4]](#ref4), [[10]](#ref10):
+**b) Método de Winkler (titulación).** Es un método químico en el que el oxígeno se "captura" y luego se cuantifica mediante una cadena de reacciones [[11]](#ref11):
 
-| Método | Principio científico | Cómo se obtiene el resultado | Ventajas | Limitaciones |
+1. *Fijación del oxígeno:* el oxígeno disuelto oxida el hidróxido de manganeso (II) y forma un precipitado de manganeso oxidado.
+
+$$
+Mn^{2+} + 2OH^- \rightarrow Mn(OH)_2 \qquad 2Mn(OH)_2 + O_2 \rightarrow 2MnO(OH)_2
+$$
+
+2. *Liberación de yodo:* al acidificar en presencia de yoduro, el manganeso oxidado libera yodo (I₂) en una cantidad equivalente al oxígeno que había en la muestra.
+
+$$
+MnO(OH)_2 + 2I^- + 4H^+ \rightarrow Mn^{2+} + I_2 + 3H_2O
+$$
+
+3. *Titulación:* el yodo liberado se mide agregando tiosulfato hasta que desaparece el color. A partir del volumen de tiosulfato consumido se calcula el oxígeno de la muestra (1 molécula de O₂ equivale a 4 de tiosulfato).
+
+$$
+I_2 + 2S_2O_3^{2-} \rightarrow 2I^- + S_4O_6^{2-}
+$$
+
+Es el método químico de referencia y se usa ampliamente para verificar otros métodos, pero exige reactivos, trabajo manual y cuidado al manipular la muestra, porque el oxígeno del aire puede ingresar y alterar el resultado [[10]](#ref10), [[11]](#ref11). No permite medición continua.
+
+**c) Método electrométrico (sensor o sonda).** El oxígeno se difunde a través de una membrana hacia un electrodo y genera una señal eléctrica proporcional a la cantidad de oxígeno presente [[10]](#ref10). El equipo convierte esa señal en concentración y normalmente compensa la temperatura. Su gran ventaja es que mide directamente en el sitio y de forma continua; su limitación es que requiere calibración y mantenimiento del sensor.
+
+| Método | Principio | Exactitud | Uso típico | Medición continua |
 |---|---|---|---|---|
-| **Colorimétrico** | Un reactivo cambia de color en presencia de oxígeno; la intensidad del color es proporcional a la concentración de oxígeno disuelto. | Se compara el color de la muestra con una escala de colores patrón, o se mide con un fotómetro. | Rápido y sencillo; útil para mediciones de campo [[10]](#ref10). | Medición aproximada; menor exactitud que los otros métodos [[10]](#ref10). |
-| **Winkler (titulación o yodométrico)** | Reacción química en cadena: (1) el oxígeno disuelto oxida hidróxido de manganeso (II) y lo fija en la muestra; (2) al acidificar en presencia de yoduro, se libera yodo en cantidad equivalente al oxígeno original; (3) ese yodo se cuantifica titulando con tiosulfato [[11]](#ref11). | Del volumen de titulante consumido se calcula la concentración de oxígeno. | Método químico de referencia, ampliamente aplicado y base para calibrar otros métodos [[10]](#ref10), [[11]](#ref11). | Requiere reactivos, procedimiento manual y cuidado al manipular la muestra, porque el oxígeno del aire puede ingresar y alterar el resultado [[10]](#ref10). No es continuo. |
-| **Electrométrico (sensor o sonda)** | El oxígeno se difunde a través de una membrana hacia un electrodo; la señal eléctrica generada es proporcional al oxígeno presente en el agua [[10]](#ref10). | El equipo convierte la señal eléctrica en concentración, normalmente con compensación de temperatura. | Medición directa, en sitio y continua; apto para monitoreo automatizado. | Requiere calibración y mantenimiento (membrana o sensor) y se ve afectado por la temperatura y la salinidad. |
+| Colorimétrico | Cambio de color proporcional al oxígeno | Menor [[10]](#ref10) | Campo, revisión rápida | No |
+| Winkler | Fijación del oxígeno, liberación de yodo y titulación | Alta; método de referencia [[10]](#ref10), [[11]](#ref11) | Laboratorio y verificación | No |
+| Electrométrico | Difusión del oxígeno hacia un electrodo y señal eléctrica | Alta si está bien calibrado [[10]](#ref10) | Monitoreo en sitio | Sí |
 
-> **Relación con el proyecto:** el método electrométrico es el que permite medición continua, por eso será relevante en etapas posteriores. En el TRL 1 solo se identifica el principio físico de cada método; no se selecciona ningún sensor.
+> En este nivel solo se identifica el principio de cada método. No se selecciona ningún sensor ni equipo, porque eso corresponde a etapas posteriores.
 
-### 2.2 Temperatura
+---
 
-#### Fundamento científico
+### 2.4 Temperatura
 
-La trucha es un animal de sangre fría (ectotermo): su temperatura corporal sigue la del agua. Por eso la temperatura controla la velocidad de su metabolismo, su consumo de alimento y su crecimiento [[1]](#ref1), [[5]](#ref5).
+#### 2.4.1 ¿Qué es y por qué importa?
 
-Además, la temperatura determina cuánto oxígeno puede contener el agua [[3]](#ref3). Cuando sube, el agua retiene menos oxígeno mientras el pez necesita más; esta combinación explica por qué ambos parámetros deben analizarse juntos. Estudios experimentales en *Oncorhynchus mykiss* demostraron que la temperatura y el oxígeno disuelto interactúan y afectan el crecimiento y la condición fisiológica de los peces [[5]](#ref5).
+La temperatura mide el grado de calor del agua. Para la trucha es decisiva por dos razones que se refuerzan entre sí:
 
-Según FONDEPES, un rango aproximado de **11 °C a 16 °C** presenta condiciones favorables para el cultivo [[1]](#ref1).
+1. **Regula el cuerpo del pez.** Al ser un animal de sangre fría, su metabolismo, su consumo de alimento y su crecimiento dependen de la temperatura del agua [[1]](#ref1), [[5]](#ref5).
+2. **Regula el oxígeno disponible.** Cuanto más cálida el agua, menos oxígeno puede contener [[3]](#ref3), justo cuando el pez, más activo, lo necesita más.
 
-#### Principios de medición
+Por esta doble influencia, la temperatura y el oxígeno disuelto interactúan y afectan conjuntamente el crecimiento y la condición fisiológica de la trucha arco iris, como lo demostró un estudio experimental con esta especie [[5]](#ref5).
 
-Además de los termómetros de líquido en vidrio, la temperatura puede medirse con sensores electrónicos [[6]](#ref6):
+#### 2.4.2 Valores de referencia
 
-| Sensor | Principio físico | Característica |
+| Condición | Rango | Fuente |
 |---|---|---|
-| **Termómetro de resistencia de platino (RTD)** | La resistencia eléctrica del platino aumenta de forma predecible con la temperatura. | Alta exactitud y estabilidad. |
-| **Termistor** | La resistencia de un material semiconductor cambia fuertemente con la temperatura. | Alta sensibilidad; amplio uso en sensores compactos. |
-| **Termopar** | Dos metales distintos unidos generan un voltaje que depende de la temperatura (efecto Seebeck). | Amplio rango de medición; menor exactitud que el RTD. |
+| Favorable para el cultivo | **11 – 16 °C** | [[1]](#ref1) |
+| De riesgo | **< 3 °C o > 20 °C** | [[1]](#ref1) |
 
-### 2.3 Potencial de hidrógeno (pH)
+#### 2.4.3 ¿Cómo se mide?
 
-#### Fundamento científico
+Además de los termómetros de líquido en vidrio, existen sensores electrónicos [[6]](#ref6):
 
-El pH es una escala que expresa la concentración de iones hidrógeno (H⁺) en el agua y permite determinar su grado de acidez o alcalinidad. La escala va de 0 a 14: valores menores a 7 son ácidos, 7 es neutro y valores mayores a 7 son alcalinos. Es una escala logarítmica, por lo que un cambio de una unidad representa una variación de diez veces en la concentración de H⁺.
+| Sensor | Principio físico | Característica general |
+|---|---|---|
+| **Termómetro de resistencia de platino (RTD)** | La resistencia eléctrica del platino cambia de forma predecible con la temperatura. | Muy exacto y estable. |
+| **Termistor** | La resistencia de un semiconductor varía mucho con la temperatura. | Muy sensible y compacto. |
+| **Termopar** | Dos metales unidos generan un voltaje que depende de la temperatura (efecto Seebeck). | Amplio rango; menor exactitud que el RTD. |
 
-Para la crianza de trucha arco iris se considera favorable un rango aproximado entre **7.0 y 8.0** [[1]](#ref1). Las variaciones significativas de este parámetro pueden generar condiciones inadecuadas para el desarrollo de los peces y afectar sus procesos fisiológicos. FONDEPES identifica valores de riesgo por debajo de 6.0 o por encima de 9.0 [[1]](#ref1).
+---
 
-### 2.4 Turbidez
+### 2.5 Potencial de hidrógeno (pH)
 
-#### Fundamento científico
+#### 2.5.1 ¿Qué es?
 
-La turbidez mide qué tan opaca o turbia está el agua por la presencia de partículas y sólidos suspendidos (arcilla, materia orgánica, restos de alimento, plancton). Estas partículas dispersan y absorben la luz que atraviesa el agua; a mayor cantidad de partículas, mayor turbidez.
+El pH es una medida de qué tan ácida o básica es el agua [[15]](#ref15). Su escala va de 0 a 14: el agua pura tiene pH 7 (neutro), los valores menores indican acidez creciente y los mayores, alcalinidad creciente [[15]](#ref15). La escala es logarítmica: un agua con pH 5 es diez veces más ácida que una con pH 6 [[15]](#ref15).
 
-Una elevada concentración de estos materiales puede afectar las branquias de los peces y disminuir la calidad del medio acuático [[1]](#ref1). Como las branquias son el órgano de intercambio de oxígeno, su obstrucción o irritación afecta directamente la respiración.
+#### 2.5.2 ¿Por qué importa para la trucha?
 
-Por esta razón, la turbidez fue identificada como un parámetro relevante para comprender las condiciones ambientales asociadas con la crianza de trucha arco iris.
+El pH es un buen indicador de que el agua está cambiando químicamente, ya que puede verse afectado por las sustancias que contiene [[15]](#ref15). Para el pez, las variaciones significativas generan condiciones inadecuadas y afectan sus procesos fisiológicos [[1]](#ref1). Además, el pH influye en la forma química en que se presentan otras sustancias disueltas, por lo que su monitoreo ayuda a interpretar el resto de los parámetros.
 
-### 2.5 Conductividad
+#### 2.5.3 Valores de referencia
 
-#### Fundamento científico
+| Condición | Rango | Fuente |
+|---|---|---|
+| Favorable | **7.0 – 8.0** | [[1]](#ref1) |
+| De riesgo | **< 6.0 o > 9.0** | [[1]](#ref1) |
 
-La conductividad eléctrica mide la capacidad del agua para conducir corriente eléctrica. El agua pura conduce muy poco; la corriente es transportada por los iones de las sales disueltas (por ejemplo, calcio, sodio, cloruros y sulfatos). Por tanto, a mayor cantidad de sales disueltas, mayor conductividad. Se expresa en microsiemens por centímetro (µS/cm) [[7]](#ref7).
+---
 
-Su medición suele referirse a una temperatura estándar (por ejemplo, 20 °C), porque la conductividad varía con la temperatura [[7]](#ref7).
+### 2.6 Turbidez
 
-#### Valores reportados en cultivos de trucha
+#### 2.6.1 ¿Qué es?
+
+La turbidez es la claridad del agua: qué tan cloudy u opaca está [[14]](#ref14). Se debe a partículas y sólidos suspendidos, como sedimentos arrastrados desde el suelo, que dispersan la luz que atraviesa el agua. En la práctica se mide haciendo pasar luz por la muestra y se reporta en NTU [[14]](#ref14).
+
+#### 2.6.2 ¿Por qué importa para la trucha?
+
+Una elevada concentración de sólidos suspendidos puede afectar las branquias de los peces y disminuir la calidad del medio acuático [[1]](#ref1). Como las branquias son el órgano con el que la trucha obtiene oxígeno, un agua muy turbia perjudica indirectamente la respiración. Además, la turbidez es útil como señal de alerta: sus lecturas pueden indicar una posible contaminación en un cuerpo de agua [[14]](#ref14).
+
+| Condición | Descripción | Fuente |
+|---|---|---|
+| Favorable | Baja presencia de sólidos en suspensión | [[1]](#ref1) |
+| De riesgo | Elevada presencia de sólidos | [[1]](#ref1) |
+
+---
+
+### 2.7 Conductividad
+
+#### 2.7.1 ¿Qué es?
+
+La conductividad eléctrica mide la capacidad del agua para conducir corriente. Depende de los tipos y cantidades de sustancias disueltas, y se expresa para una temperatura determinada [[16]](#ref16). En términos sencillos: el agua pura conduce muy poco, y cada sal que se disuelve aporta iones que facilitan el paso de la corriente. Por eso es una variable útil para caracterizar la carga de sales e iones del medio [[7]](#ref7).
+
+#### 2.7.2 La importancia de la temperatura de referencia
+
+La conductividad cambia con la temperatura, por lo que siempre debe reportarse con su temperatura de referencia. El USGS reporta sus mediciones a 25 °C [[16]](#ref16), mientras que los valores de referencia de los sistemas de recirculación consultados se dan a 20 °C [[7]](#ref7). Esto debe tenerse presente al comparar datos de distintas fuentes.
+
+#### 2.7.3 Valores reportados en cultivos de trucha
 
 | Sistema | Conductividad | Fuente |
 |---|---|---|
 | Raceways en Nepal (condiciones consideradas adecuadas) | **35 – 204 µS/cm** | [[8]](#ref8) |
-| Sistemas de recirculación (RAS), valor de referencia | **20 – 500 µS/cm a 20 °C** | [[7]](#ref7) |
+| Sistemas de recirculación (referencia) | **20 – 500 µS/cm a 20 °C** | [[7]](#ref7) |
 
-La conductividad se relaciona además con la salinidad, como muestra la ecuación empírica de la sección 2.1 [[3]](#ref3), y por eso resulta útil como variable complementaria para caracterizar cambios en el medio acuático [[7]](#ref7).
+La conductividad se vincula además con la salinidad mediante la ecuación empírica de la sección 2.3.4 [[3]](#ref3), lo que la conecta directamente con el cálculo del oxígeno disuelto.
 
-### 2.6 Principio identificado
+---
 
-A partir de la revisión realizada se establece que la calidad del agua depende de la interacción de diferentes parámetros físico-químicos y que sus variaciones pueden generar condiciones favorables o de riesgo para la trucha arco iris.
+### 2.8 Síntesis del principio identificado
 
-| Interacción | Explicación |
+La calidad del agua depende de la interacción de varios parámetros físico-químicos, y sus variaciones generan condiciones favorables o de riesgo para la trucha. Los parámetros no actúan por separado:
+
+| Interacción | Qué ocurre |
 |---|---|
-| Temperatura ↔ Oxígeno disuelto | Al subir la temperatura disminuye el oxígeno que el agua puede contener y aumenta la demanda del pez [[3]](#ref3), [[5]](#ref5). |
-| Conductividad ↔ Salinidad ↔ Oxígeno disuelto | La conductividad permite estimar la salinidad, que a su vez corrige la estimación del oxígeno [[3]](#ref3). |
-| Turbidez ↔ Respiración | Los sólidos suspendidos afectan las branquias y, con ello, la captación de oxígeno [[1]](#ref1). |
+| Temperatura ↔ Oxígeno disuelto | Al subir la temperatura baja el oxígeno que el agua puede contener y aumenta la demanda del pez [[3]](#ref3), [[5]](#ref5). |
+| Conductividad ↔ Salinidad ↔ Oxígeno disuelto | La conductividad permite estimar la salinidad, que corrige el cálculo del oxígeno [[3]](#ref3). |
+| Turbidez ↔ Respiración | Los sólidos suspendidos afectan las branquias y la captación de oxígeno [[1]](#ref1). |
 
 Este conocimiento constituye una base científica para investigaciones y desarrollos tecnológicos posteriores.
 
@@ -175,9 +258,9 @@ Este conocimiento constituye una base científica para investigaciones y desarro
 
 ## 3. Indicador 2: Generación de conocimiento
 
-A partir de la revisión documental realizada, se organizaron los principales parámetros físico-químicos relacionados con las condiciones adecuadas para la crianza de trucha arco iris (*Oncorhynchus mykiss*).
+### 3.1 Organización del conocimiento: rangos de referencia
 
-Esta organización permitió establecer rangos de referencia que facilitan la identificación de condiciones favorables y situaciones de riesgo.
+A partir de la revisión documental organizamos los parámetros críticos en rangos de referencia, que permiten reconocer condiciones favorables y situaciones de riesgo:
 
 | Parámetro | Condición favorable / referencia | Condición de riesgo o fuera de referencia |
 |---|---|---|
@@ -185,159 +268,181 @@ Esta organización permitió establecer rangos de referencia que facilitan la id
 | **Temperatura** | 11 – 16 °C [[1]](#ref1) | < 3 °C o > 20 °C [[1]](#ref1) |
 | **pH** | 7.0 – 8.0 [[1]](#ref1) | < 6.0 o > 9.0 [[1]](#ref1) |
 | **Turbidez** | Baja presencia de sólidos en suspensión [[1]](#ref1) | Elevada presencia de sólidos [[1]](#ref1) |
-| **Conductividad** | 20 – 500 µS/cm a 20 °C [[7]](#ref7) | Fuera del rango de referencia: > 500 µS/cm [[7]](#ref7) |
+| **Conductividad** | 20 – 500 µS/cm a 20 °C [[7]](#ref7) | > 500 µS/cm [[7]](#ref7) |
 
-### 3.1 Los parámetros no actúan de forma aislada
+### 3.2 Los parámetros se influyen entre sí
 
-La información revisada permitió reconocer que estos parámetros no deben analizarse de manera aislada. Por ejemplo, las condiciones de temperatura se relacionan con la disponibilidad de oxígeno disuelto [[3]](#ref3), [[5]](#ref5), mientras que una elevada presencia de sólidos puede afectar directamente las branquias de los peces [[1]](#ref1).
+Una lectura aislada puede engañar. Por ejemplo, una temperatura aceptable no garantiza buen oxígeno, porque el oxígeno depende también de la presión y la salinidad [[3]](#ref3), y su efecto sobre el pez se combina con el de la temperatura [[5]](#ref5). Del mismo modo, una elevada presencia de sólidos puede afectar directamente las branquias [[1]](#ref1) y comprometer la captación de oxígeno aunque la concentración medida sea adecuada. Por ello, el análisis debe ser conjunto.
 
-### 3.2 Variación según la profundidad
+### 3.3 Variación según la profundidad
 
-Durante el análisis se identificó que las condiciones físico-químicas del agua pueden presentar diferencias según la profundidad de la columna de agua. En sistemas acuícolas se han observado diferencias verticales en la concentración de oxígeno asociadas a procesos de estratificación (formación de capas con distintas propiedades) y mezcla del agua [[9]](#ref9).
+En sistemas acuícolas se han observado diferencias verticales en la concentración de oxígeno asociadas a procesos de estratificación y mezcla de la columna de agua [[9]](#ref9). La estratificación es la formación de capas de agua con propiedades distintas, y la mezcla es el proceso que las vuelve a homogeneizar. En el estudio de estanques poco profundos citado, el oxígeno mostró un comportamiento diurno con diferencias entre capas [[9]](#ref9).
 
-| Zona de la columna de agua | Características | Relevancia |
+Para organizar este conocimiento dividimos la columna de agua en tres zonas:
+
+| Zona | Características | Por qué importa |
 |---|---|---|
-| **Superficie** | Mayor intercambio gaseoso con la atmósfera y mayor exposición a la radiación solar. | Zona de ingreso natural de oxígeno y de mayor variación térmica. |
-| **Zona media** | Espacio de desplazamiento y actividad de las truchas. | Representa las condiciones que experimenta directamente el pez. |
-| **Fondo** | Puede acumular alimento no consumido, heces y materia orgánica. | Esa materia orgánica puede modificar las condiciones locales del agua. |
+| **Superficie** | Mayor intercambio gaseoso con la atmósfera y mayor exposición a la radiación solar. | Es la zona de ingreso natural de oxígeno y de mayor variación de temperatura. |
+| **Zona media** | Espacio donde se desplazan y permanecen las truchas. | Representa las condiciones que el pez realmente experimenta. |
+| **Fondo** | Puede acumular alimento no consumido, heces y materia orgánica. | Esos residuos pueden modificar las condiciones locales del agua. |
 
-Esta diferenciación permitió generar como conocimiento inicial que una medición realizada en un único punto de la columna de agua podría no representar completamente las condiciones presentes en todo el ambiente acuático [[9]](#ref9).
+De aquí surge el conocimiento inicial más importante de este indicador: **una medición en un solo punto de la columna de agua podría no representar las condiciones de todo el ambiente acuático** [[9]](#ref9). Reconocerlo desde el TRL 1 evita partir de supuestos que luego habría que corregir.
 
-Por lo tanto, la revisión permitió integrar información sobre los rangos físico-químicos adecuados para la trucha y reconocer la importancia de considerar la distribución espacial de estas variables. Este conocimiento constituye una base para continuar investigando el comportamiento de la calidad del agua en sistemas de crianza de trucha.
+### 3.4 Síntesis
+
+La revisión permitió (1) establecer los rangos de referencia de cada parámetro, (2) comprender cómo se relacionan entre sí y (3) reconocer la importancia de la distribución espacial de las variables. Esto constituye la base para continuar investigando el comportamiento de la calidad del agua en sistemas de crianza de trucha.
 
 ---
 
 ## 4. Indicador 3: Pregunta de investigación
 
-A partir del problema identificado y de la revisión inicial se plantea la siguiente pregunta de investigación:
+### 4.1 Pregunta principal
+
+Con base en el problema identificado y la revisión inicial, planteamos la siguiente pregunta de investigación:
 
 > **¿Cómo varían los principales parámetros físico-químicos del agua, especialmente el oxígeno disuelto, la temperatura, el pH, la turbidez y la conductividad, y cómo pueden estas variaciones relacionarse con condiciones adecuadas o de riesgo para la crianza de trucha arco iris (*Oncorhynchus mykiss*)?**
 
-Esta pregunta busca comprender el fenómeno antes de proponer una solución tecnológica.
+La pregunta apunta a **comprender el fenómeno**, no a proponer una solución, en coherencia con el nivel TRL 1 [[12]](#ref12), [[13]](#ref13).
 
-### Preguntas complementarias y su sustento
+### 4.2 Preguntas complementarias y su origen
 
 | Pregunta complementaria | Base científica que la origina |
 |---|---|
-| ¿Qué parámetro físico-químico presenta mayor importancia para identificar condiciones de riesgo en la crianza de truchas? | El oxígeno disuelto se identifica como uno de los parámetros más críticos por su relación con estrés y mortalidad [[1]](#ref1), [[2]](#ref2). |
+| ¿Qué parámetro presenta mayor importancia para identificar condiciones de riesgo en la crianza de truchas? | El oxígeno disuelto se identifica como uno de los más críticos por su relación con estrés y mortalidad [[1]](#ref1), [[2]](#ref2). |
 | ¿Existe variación de las condiciones del agua según la profundidad? | Se han observado diferencias verticales de oxígeno por estratificación y mezcla [[9]](#ref9). |
-| ¿Cómo influye la temperatura sobre las condiciones de oxígeno disuelto? | La temperatura determina la solubilidad del oxígeno y afecta el crecimiento junto con este [[3]](#ref3), [[5]](#ref5). |
-| ¿Qué relación existe entre las variaciones simultáneas de oxígeno disuelto, temperatura, pH, turbidez y conductividad en las condiciones del ambiente acuático? | Los parámetros interactúan entre sí y no deben analizarse de forma aislada [[1]](#ref1), [[5]](#ref5), [[7]](#ref7). |
-| ¿Qué relación existe entre la conductividad del agua y las variaciones en la concentración de sales disueltas? | La conductividad depende de los iones disueltos y permite estimar la salinidad [[3]](#ref3), [[7]](#ref7). |
+| ¿Cómo influye la temperatura sobre las condiciones de oxígeno disuelto? | La temperatura determina la solubilidad del oxígeno [[3]](#ref3) y actúa junto con él sobre el crecimiento [[5]](#ref5). |
+| ¿Qué relación existe entre las variaciones simultáneas de oxígeno disuelto, temperatura, pH, turbidez y conductividad? | Los parámetros interactúan y no deben analizarse de forma aislada [[1]](#ref1), [[5]](#ref5), [[7]](#ref7). |
+| ¿Qué relación existe entre la conductividad y las variaciones en la concentración de sales disueltas? | La conductividad depende de las sustancias disueltas [[16]](#ref16) y permite estimar la salinidad [[3]](#ref3). |
 
 ---
 
 ## 5. Indicador 4: No se declara un uso aplicativo de la tecnología
 
-En el nivel TRL 1, el trabajo se concentra en la comprensión de los principios científicos relacionados con la calidad del agua y las condiciones necesarias para la crianza de trucha arco iris (*Oncorhynchus mykiss*).
+### 5.1 Qué significa este indicador
 
-### 5.1 Qué se estudia en esta etapa
+En el TRL 1 el trabajo se concentra en comprender los principios científicos; todavía no se plantea cómo se aplicará ese conocimiento [[12]](#ref12), [[13]](#ref13). Declararlo explícitamente es parte de la honestidad metodológica: evita afirmar avances tecnológicos que aún no existen.
+
+### 5.2 Qué se estudia en esta etapa
 
 | Aspecto estudiado | Principio científico asociado |
 |---|---|
 | Propiedades físico-químicas del agua | Interacción entre oxígeno, temperatura, pH, turbidez y conductividad [[1]](#ref1), [[7]](#ref7). |
 | Importancia del oxígeno disuelto | La trucha respira por branquias; la hipoxia genera estrés, retraso del crecimiento y mortalidad [[1]](#ref1), [[2]](#ref2). |
-| Influencia de la temperatura | Controla el metabolismo del pez y la solubilidad del oxígeno [[3]](#ref3), [[5]](#ref5). |
+| Influencia de la temperatura | Regula el metabolismo del pez y la solubilidad del oxígeno [[3]](#ref3), [[5]](#ref5). |
 | Rangos de pH | Rango favorable 7.0 – 8.0 [[1]](#ref1). |
-| Efectos de la turbidez y los sólidos | Afectan las branquias y la calidad del medio [[1]](#ref1). |
+| Efectos de la turbidez y los sólidos | Afectan las branquias y la calidad del medio [[1]](#ref1), [[14]](#ref14). |
 | Diferencias según profundidad | Estratificación y mezcla de la columna de agua [[9]](#ref9). |
-| Conductividad eléctrica | Refleja los iones disueltos; valores reportados en cultivos de trucha [[7]](#ref7), [[8]](#ref8). |
+| Conductividad eléctrica | Refleja las sustancias disueltas; valores reportados en cultivos de trucha [[7]](#ref7), [[8]](#ref8), [[16]](#ref16). |
 
-### 5.2 Qué queda fuera de esta etapa
+### 5.3 Qué queda fuera de esta etapa
 
-Por lo tanto, en este nivel no se evalúa todavía una solución tecnológica específica ni se busca demostrar el funcionamiento de un sistema aplicado.
+No se evalúa una solución tecnológica específica ni se busca demostrar el funcionamiento de un sistema. Los siguientes aspectos corresponden a niveles posteriores de madurez, cuando la tecnología pasa de la investigación básica a la aplicada y al desarrollo [[12]](#ref12):
 
 | Aspecto | Etapa en que corresponde |
 |---|---|
-| Selección de sensores | Etapas posteriores de madurez tecnológica |
-| Diseño electrónico | Etapas posteriores |
-| Programación | Etapas posteriores |
-| Comunicación IoT | Etapas posteriores |
-| Desarrollo de una aplicación | Etapas posteriores |
-| Fabricación de una carcasa | Etapas posteriores |
-| Construcción de un prototipo | Etapas posteriores |
+| Selección de sensores | Niveles posteriores |
+| Diseño electrónico | Niveles posteriores |
+| Programación | Niveles posteriores |
+| Comunicación IoT | Niveles posteriores |
+| Desarrollo de una aplicación | Niveles posteriores |
+| Fabricación de una carcasa | Niveles posteriores |
+| Construcción de un prototipo | Niveles posteriores |
 
-De esta manera, el resultado del TRL 1 es principalmente la generación de una base científica y conceptual que permita comprender el fenómeno antes de plantear una solución tecnológica.
+El resultado del TRL 1 es, por tanto, una base científica y conceptual que permita entender el fenómeno antes de plantear una solución.
 
 ---
 
 ## 6. Indicador 5: Generación y revisión de conocimiento científico
 
-Para establecer la base científica de esta investigación se realizó una revisión documental inicial sobre las condiciones necesarias para el cultivo de trucha arco iris (*Oncorhynchus mykiss*).
+### 6.1 Por qué este indicador es central en el TRL 1
 
-Como fuente técnica inicial se utilizó el *Manual de Cultivo de Trucha en Ambientes Convencionales* de FONDEPES, donde se describen parámetros relevantes para la calidad del agua, como el oxígeno disuelto, la temperatura, el pH y la presencia de sólidos en suspensión [[1]](#ref1).
+En el TRL 1, la evidencia esperada son artículos científicos publicados sobre los principios de la tecnología [[13]](#ref13). Por eso este indicador es el que respalda a todos los demás: sin literatura que sustente los principios, el resto sería solo una afirmación.
 
-Esta revisión fue complementada con literatura científica y técnica relacionada con los principales fenómenos estudiados:
+### 6.2 Cómo se realizó la revisión
+
+Tomamos como fuente técnica inicial el manual de FONDEPES, que describe parámetros relevantes de calidad del agua: oxígeno disuelto, temperatura, pH y sólidos en suspensión [[1]](#ref1). Luego la complementamos con literatura científica y técnica, y contrastamos lo que dice el manual con resultados experimentales y documentos técnicos.
+
+### 6.3 Matriz de fuentes revisadas
 
 | Tema revisado | Fuente(s) | Aporte principal |
 |---|---|---|
+| Parámetros de calidad del agua en cultivo de trucha | [[1]](#ref1) | Rangos de referencia de oxígeno, temperatura, pH y sólidos. |
 | Efectos de la hipoxia en la trucha arco iris | [[2]](#ref2) | La falta de oxígeno retrasa el crecimiento y altera el metabolismo del calcio. |
-| Influencia de temperatura, salinidad y presión en el oxígeno disuelto | [[3]](#ref3) | Ecuaciones para estimar la solubilidad del oxígeno en agua. |
+| Influencia de temperatura, salinidad y presión en el oxígeno disuelto | [[3]](#ref3) | Ecuaciones de solubilidad del oxígeno en agua. |
 | Métodos para determinar el oxígeno disuelto | [[4]](#ref4), [[10]](#ref10), [[11]](#ref11) | Principios de los métodos colorimétrico, Winkler y electrométrico. |
-| Interacción entre temperatura y oxígeno disuelto | [[5]](#ref5) | Ambos factores interactúan sobre el crecimiento y la condición del pez. |
+| Interacción temperatura–oxígeno disuelto | [[5]](#ref5) | Ambos factores interactúan sobre el crecimiento y la condición del pez. |
 | Medición de la temperatura del agua | [[6]](#ref6) | Alternativas al termómetro de vidrio: RTD, termistores y termopares. |
-| Conductividad eléctrica en cultivos de trucha | [[7]](#ref7), [[8]](#ref8) | Valores de referencia y valores registrados en sistemas reales. |
+| Conductividad en cultivos de trucha | [[7]](#ref7), [[8]](#ref8), [[16]](#ref16) | Valores de referencia, valores registrados y fundamento de la medición. |
 | Variación vertical del oxígeno | [[9]](#ref9) | Diferencias de oxígeno por estratificación en la columna de agua. |
+| Turbidez y pH | [[14]](#ref14), [[15]](#ref15) | Definición, principio de medición e importancia como indicadores de calidad. |
+| Metodología TRL en el Perú | [[12]](#ref12), [[13]](#ref13) | Marco de niveles de madurez y resultados esperados del TRL 1. |
 
-La comparación entre estas fuentes permitió contrastar la información técnica presentada por FONDEPES con resultados obtenidos en investigaciones experimentales y documentos técnicos, fortaleciendo la base científica relacionada con la calidad del agua.
+### 6.4 Qué aportó la comparación entre fuentes
 
-Asimismo, permitió reconocer que parámetros como el oxígeno disuelto, la temperatura, el pH, la turbidez y la conductividad pueden analizarse de manera conjunta para comprender mejor las condiciones físico-químicas del agua utilizadas en la crianza de trucha.
-
-De esta manera, la revisión realizada permite sustentar los principios identificados durante el TRL 1 y proporciona una base científica para continuar con etapas posteriores de investigación.
+Contrastar el manual de FONDEPES con estudios internacionales permitió confirmar que el oxígeno es un parámetro crítico [[1]](#ref1), [[2]](#ref2) y que la temperatura debe analizarse junto con él [[3]](#ref3), [[5]](#ref5). También permitió detectar un límite importante: **los valores de conductividad provienen de contextos distintos** (raceways en Nepal [[8]](#ref8) y sistemas de recirculación [[7]](#ref7)), por lo que no deben tomarse como valores definitivos para otras condiciones sin contrastarlos.
 
 ---
 
 ## 7. Conocimiento obtenido durante el TRL 1
 
-Como resultado de la revisión realizada durante esta etapa, se identificaron los siguientes conocimientos principales:
+1. La calidad del agua influye directamente en la supervivencia, crecimiento y bienestar de la trucha arco iris [[1]](#ref1).
 
-1. La calidad del agua influye directamente en la supervivencia, crecimiento y bienestar de la trucha arco iris (*Oncorhynchus mykiss*) [[1]](#ref1).
-
-2. El oxígeno disuelto constituye uno de los parámetros más críticos, debido a que concentraciones bajas pueden generar estrés, asfixia e incluso mortalidad en los peces [[1]](#ref1), [[2]](#ref2).
+2. El oxígeno disuelto es uno de los parámetros más críticos: concentraciones bajas generan estrés, asfixia, retraso del crecimiento y mortalidad [[1]](#ref1), [[2]](#ref2).
 
 3. La cantidad de oxígeno que el agua puede contener depende de la temperatura, la presión y la salinidad [[3]](#ref3).
 
-4. El oxígeno disuelto puede determinarse mediante tres métodos con principios distintos: colorimétrico (cambio de color proporcional al oxígeno), Winkler (titulación yodométrica) y electrométrico (difusión de oxígeno a través de una membrana hacia un electrodo) [[4]](#ref4), [[10]](#ref10), [[11]](#ref11).
+4. El oxígeno disuelto puede determinarse con tres métodos de principio distinto: colorimétrico (cambio de color), Winkler (fijación química y titulación) y electrométrico (señal eléctrica de un sensor) [[4]](#ref4), [[10]](#ref10), [[11]](#ref11).
 
-5. La temperatura del agua influye en procesos como el metabolismo, la alimentación y el crecimiento de la trucha, e interactúa con el oxígeno disuelto [[1]](#ref1), [[5]](#ref5).
+5. La temperatura regula el metabolismo, la alimentación y el crecimiento de la trucha, e interactúa con el oxígeno disuelto [[1]](#ref1), [[5]](#ref5). Puede medirse con RTD, termistores o termopares [[6]](#ref6).
 
-6. El pH y la turbidez también son parámetros importantes para caracterizar las condiciones del ambiente acuático y detectar situaciones que puedan resultar desfavorables para los peces [[1]](#ref1).
+6. El pH indica qué tan ácida o básica es el agua y revela cambios químicos [[15]](#ref15); el rango favorable para la trucha es 7.0 – 8.0 [[1]](#ref1).
 
-7. Las condiciones físico-químicas del agua pueden presentar diferencias según la profundidad, especialmente entre la superficie, la zona media y el fondo [[9]](#ref9).
+7. La turbidez mide la claridad del agua y puede afectar las branquias si los sólidos son elevados [[1]](#ref1), [[14]](#ref14).
 
-8. La conductividad eléctrica constituye un parámetro útil para caracterizar las condiciones físico-químicas del agua debido a su relación con la presencia de sustancias iónicas disueltas. En sistemas de cultivo de trucha arco iris se han reportado diferentes valores de conductividad dependiendo de las características del agua y del sistema de cultivo [[7]](#ref7), [[8]](#ref8).
+8. La conductividad refleja las sustancias disueltas [[16]](#ref16) y se ha registrado en cultivos de trucha en valores de 35 a 204 µS/cm [[8]](#ref8) y con referencia de 20 a 500 µS/cm a 20 °C [[7]](#ref7).
 
-9. Se identificó la necesidad de continuar investigando la relación entre estas variables para comprender de manera más completa las condiciones favorables y de riesgo presentes en los sistemas de crianza de trucha.
+9. Las condiciones del agua pueden variar entre superficie, zona media y fondo, por lo que una medición en un solo punto puede no representar todo el sistema [[9]](#ref9).
 
-En conjunto, estos conocimientos constituyen la base científica inicial necesaria para continuar con etapas posteriores de investigación y desarrollo tecnológico.
+10. Es necesario seguir investigando la relación simultánea entre estas variables para comprender las condiciones favorables y de riesgo.
+
+Estos conocimientos constituyen la base científica inicial para las siguientes etapas de investigación y desarrollo.
 
 ---
 
 ## 8. Cumplimiento de indicadores del TRL 1
 
-| Indicador TRL 1 | Evidencia desarrollada |
+### 8.1 Matriz de cumplimiento
+
+| Indicador TRL 1 | Evidencia desarrollada | Secciones | Estado |
+|---|---|---|---|
+| **Identificación del principio de la tecnología** | Relación entre las condiciones físico-químicas del agua y la supervivencia de la trucha, con fundamento científico de cada parámetro y de los métodos de medición del oxígeno. [[1]](#ref1), [[3]](#ref3), [[4]](#ref4), [[10]](#ref10) | 2 | Cumplido |
+| **Generación de conocimiento** | Rangos de referencia, interacciones entre parámetros y variación según la profundidad. [[1]](#ref1), [[9]](#ref9) | 3 | Cumplido |
+| **Responde a una pregunta de investigación** | Pregunta principal y preguntas complementarias con su base científica. | 4 | Cumplido |
+| **No declara un uso aplicativo de la tecnología** | Se declara qué se estudia y qué queda fuera de esta etapa. [[12]](#ref12), [[13]](#ref13) | 5 | Cumplido |
+| **Genera como resultado artículos científicos** | Revisión de literatura científica y técnica [[2]](#ref2)–[[11]](#ref11), [[14]](#ref14)–[[16]](#ref16). | 6 | En fortalecimiento |
+
+### 8.2 Síntesis y limitaciones
+
+Se evidencia el cumplimiento de los componentes conceptuales del TRL 1: principios identificados, conocimiento generado y pregunta de investigación formulada.
+
+Reconocemos, con honestidad, las siguientes limitaciones:
+
+| Limitación | Implicancia |
 |---|---|
-| **Identificación del principio de la tecnología** | Se identificó la relación entre las condiciones físico-químicas del agua y la supervivencia y desarrollo de la trucha arco iris, junto con el fundamento científico de cada parámetro y de los métodos de medición del oxígeno disuelto [[1]](#ref1), [[3]](#ref3), [[4]](#ref4), [[10]](#ref10). |
-| **Generación de conocimiento** | Se organizaron los principales parámetros críticos, sus rangos de referencia, sus interacciones y las posibles diferencias de las condiciones del agua según la profundidad [[1]](#ref1), [[9]](#ref9). |
-| **Responde a una pregunta de investigación** | Se formuló una pregunta orientada a comprender la variación de los principales parámetros físico-químicos del agua y su relación con condiciones adecuadas o de riesgo para la trucha. |
-| **No declara un uso aplicativo de la tecnología** | En esta etapa no se evalúa una solución tecnológica específica; el análisis se concentra en los principios científicos y en la comprensión del fenómeno. |
-| **Genera como resultado artículos científicos** | Se complementó la documentación técnica con literatura científica y técnica sobre oxígeno disuelto, temperatura, hipoxia, conductividad y variación de parámetros en sistemas acuícolas [[2]](#ref2)–[[11]](#ref11). |
-
-### Síntesis
-
-A partir de las actividades desarrolladas se evidencia el cumplimiento de los principales componentes conceptuales del TRL 1: identificación de principios fundamentales, generación inicial de conocimiento y formulación de una pregunta de investigación.
-
-El componente relacionado con la generación de artículos científicos requiere continuar fortaleciendo la revisión de literatura y documentar los resultados de la investigación antes de considerarlo completamente alcanzado.
+| El indicador de artículos científicos debe seguir fortaleciéndose [[13]](#ref13). | Ampliar la cantidad de artículos revisados, priorizando estudios en contextos similares al peruano. |
+| Los valores de conductividad provienen de contextos distintos [[7]](#ref7), [[8]](#ref8). | Contrastarlos antes de adoptarlos como referencia propia. |
+| Los rangos del manual de FONDEPES corresponden a ambientes convencionales [[1]](#ref1). | Verificar su aplicabilidad a las condiciones específicas de estudio. |
+| No se han generado datos propios. | Es esperable en TRL 1, que se basa en revisión documental. |
 
 ---
 
 ## 9. Conclusión
 
-La etapa TRL 1 permitió identificar y organizar los principios científicos fundamentales relacionados con la calidad del agua y su influencia en la crianza de trucha arco iris (*Oncorhynchus mykiss*).
+La etapa TRL 1 nos permitió identificar y organizar los principios científicos que relacionan la calidad del agua con la vida de la trucha arco iris (*Oncorhynchus mykiss*). Entendimos que el oxígeno disuelto, la temperatura, el pH, la turbidez y la conductividad son parámetros que se influyen entre sí y que, juntos, definen si el ambiente es favorable o de riesgo para el pez [[1]](#ref1), [[3]](#ref3), [[5]](#ref5), [[7]](#ref7).
 
-A partir de la revisión realizada, se reconoció al oxígeno disuelto, la temperatura, el pH, la turbidez y la conductividad como parámetros relevantes para caracterizar las condiciones del ambiente acuático. Se explicó el fundamento científico de cada uno y los principios de los tres métodos de medición del oxígeno disuelto. Asimismo, se identificó que estas condiciones pueden presentar diferencias según la profundidad de la columna de agua.
+Además, explicamos el fundamento científico de cada parámetro y los principios de los tres métodos de medición del oxígeno disuelto, e identificamos que las condiciones del agua pueden variar según la profundidad [[9]](#ref9), lo que obliga a no confiar en una medición puntual.
 
-En conjunto, la investigación desarrollada permitió generar una base inicial de conocimiento y comprender los principales factores físico-químicos relacionados con condiciones favorables o de riesgo para la crianza de trucha, proporcionando sustento científico para continuar con etapas posteriores de investigación y desarrollo tecnológico.
+En coherencia con la metodología TRL adoptada en el Perú [[12]](#ref12), este trabajo se limita a los principios básicos y no declara una solución tecnológica. Con ello queda una base de conocimiento inicial y una pregunta de investigación clara, que sustentan la continuación del proyecto hacia los siguientes niveles de madurez.
 
 ---
 
@@ -364,3 +469,13 @@ En conjunto, la investigación desarrollada permitió generar una base inicial d
 <a id="ref10"></a>[10] California State Water Resources Control Board, Surface Water Ambient Monitoring Program (SWAMP), “Dissolved oxygen measurement principles and methods,” *Information Paper*, Data Quality Management System, s. f. [Online]. Available: [https://www.waterboards.ca.gov/water_issues/programs/swamp/docs/cwt/guidance/311.pdf](https://www.waterboards.ca.gov/water_issues/programs/swamp/docs/cwt/guidance/311.pdf)
 
 <a id="ref11"></a>[11] American Public Health Association (APHA), American Water Works Association (AWWA), and Water Environment Federation (WEF), *Standard Methods for the Examination of Water and Wastewater*, 23rd ed. Washington, DC, USA: APHA, 2017, ISBN: 978-0-87553-287-5.
+
+<a id="ref12"></a>[12] M. Ríos, “Concytec implementa herramienta para identificar niveles de tecnología en proyectos de investigación e innovación,” *Gestión*, Lima, Perú, Mar. 25, 2022. [Online]. Available: [https://gestion.pe/tecnologia/concytec-implementa-herramienta-para-identificar-niveles-de-tecnologia-en-proyectos-de-investigacion-e-innovacion-noticia/](https://gestion.pe/tecnologia/concytec-implementa-herramienta-para-identificar-niveles-de-tecnologia-en-proyectos-de-investigacion-e-innovacion-noticia/)
+
+<a id="ref13"></a>[13] Ministerio de Industria, Comercio y Turismo (España), “Niveles de madurez de la tecnología,” *Economía Industrial*, n.º 393, s. f. [Online]. Available: [https://www.mintur.gob.es/publicaciones/publicacionesperiodicas/economiaindustrial/revistaeconomiaindustrial/393/notas.pdf](https://www.mintur.gob.es/publicaciones/publicacionesperiodicas/economiaindustrial/revistaeconomiaindustrial/393/notas.pdf)
+
+<a id="ref14"></a>[14] U.S. Geological Survey, “Turbidity and water,” *USGS Water Science School*, s. f. [Online]. Available: [https://www.usgs.gov/water-science-school/science/turbidity-and-water](https://www.usgs.gov/water-science-school/science/turbidity-and-water)
+
+<a id="ref15"></a>[15] U.S. Geological Survey, “pH and water,” *USGS Water Science School*, s. f. [Online]. Available: [https://www.usgs.gov/water-science-school/science/ph-and-water](https://www.usgs.gov/water-science-school/science/ph-and-water)
+
+<a id="ref16"></a>[16] D. B. Radtke, J. V. Davis, and F. D. Wilde, “Specific electrical conductance (Version 1.2),” *U.S. Geological Survey Techniques of Water-Resources Investigations*, book 9, chap. A6.3, 2005, doi: [10.3133/twri09A6.3](https://doi.org/10.3133/twri09A6.3).
