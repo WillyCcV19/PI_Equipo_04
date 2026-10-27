@@ -273,7 +273,11 @@ El componente relacionado con la generación de artículos científicos requiere
 
 ## 9. Conclusión
 
-La etapa TRL 1 permitió identificar y organizar los principios científicos fundamentales relacionados con la calidad del agua y su influencia en la crianza de trucha arco iris (*Oncorhynchus mykiss*). A partir de la revisión realizada, se reconoció al oxígeno disuelto, la temperatura, el pH y la turbidez como parámetros relevantes para caracterizar las condiciones del ambiente acuático. Asimismo, se identificó que estas condiciones pueden presentar diferencias según la profundidad de la columna de agua.
+La etapa TRL 1 permitió identificar y organizar los principios científicos fundamentales relacionados con la calidad del agua y su influencia en la crianza de trucha arco iris (*Oncorhynchus mykiss*).
+
+A partir de la revisión realizada, se reconoció al oxígeno disuelto, la temperatura, el pH, la turbidez y la conductividad como parámetros relevantes para caracterizar las condiciones del ambiente acuático. Asimismo, se identificó que estas condiciones pueden presentar diferencias según la profundidad de la columna de agua.
+
+En conjunto, la investigación desarrollada permitió generar una base inicial de conocimiento y comprender los principales factores físico-químicos relacionados con condiciones favorables o de riesgo para la crianza de trucha, proporcionando sustento científico para continuar con etapas posteriores de investigación y desarrollo tecnológico.
 
 ---
 
