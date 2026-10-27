@@ -24,7 +24,15 @@ Para ello se realizará una revisión del estado del arte de sistemas de monitor
 
 ### 2.1 Sistemas tecnológicos de monitoreo de calidad del agua
 
-[En esta sección se revisarán artículos científicos sobre sistemas que utilicen sensores para monitorear parámetros físico-químicos del agua.]
+Diversas investigaciones muestran que las tecnologías IoT permiten monitorear continuamente parámetros físico-químicos del agua mediante sensores, unidades de procesamiento y sistemas de comunicación.
+
+Adrián, Jiménez y Amundarain analizaron 13 investigaciones sobre monitoreo de calidad del agua con IoT. Aproximadamente el 69 % empleó microcontroladores Arduino y los parámetros más monitoreados fueron pH, temperatura, turbidez, sólidos disueltos, conductividad y oxígeno disuelto [[1]](#ref1). Su propuesta integra sensores, microcontrolador, comunicación inalámbrica, almacenamiento y visualización de datos.
+
+Santamaría Masapuncho y Bayas Altamirano implementaron en Ecuador un sistema IoT organizado en tres capas: percepción, red y aplicación. Utilizaron sensores de pH, turbidez y cloro residual junto con Arduino Mega y NodeMCU ESP8266. El sistema alcanzó una disponibilidad de 97.3 % y una latencia media de 3.2 segundos [[2]](#ref2). El estudio también resalta la importancia de la calibración y mantenimiento de los sensores.
+
+En Perú, Garcia-Gonzales y García-Estrella desarrollaron un sistema IoT de bajo costo que integró sensores de pH, turbidez, temperatura, sólidos disueltos y conductividad eléctrica. Durante 60 días se recopilaron 2880 registros automáticos, demostrando la posibilidad de realizar monitoreo continuo mediante sensores de bajo costo [[3]](#ref3).
+
+Los tres antecedentes muestran que es técnicamente posible integrar sensores de diferentes parámetros físico-químicos con sistemas de procesamiento y comunicación IoT. Sin embargo, las aplicaciones revisadas se orientan principalmente al agua potable y al monitoreo ambiental. En consecuencia, se identifica la oportunidad de estudiar la adaptación de estas tecnologías al monitoreo de las condiciones del agua en sistemas de crianza de trucha arco iris, considerando variables específicas como oxígeno disuelto, temperatura, pH, turbidez y conductividad.
 
 ### 2.2 Aplicación de IoT en acuicultura
 
@@ -37,3 +45,14 @@ Para ello se realizará una revisión del estado del arte de sistemas de monitor
 ### 2.4 Comparación de soluciones existentes
 
 [Se compararán las tecnologías encontradas considerando variables medidas, método de comunicación, procesamiento de información, visualización y generación de alertas.]
+
+
+---
+
+## Referencias
+
+<a id="ref1"></a>[1] M. Adrián, I. Jiménez, and I. Amundarain, “Sistemas de monitoreo de calidad del agua en acueductos usando sensores IoT (Internet de las cosas),” 2026.
+
+<a id="ref2"></a>[2] A. H. Santamaría Masapuncho and M. M. Bayas Altamirano, “Monitoreo y evaluación de parámetros de calidad de agua obtenidos por la Internet de las cosas (IoT) para la planta de tratamiento de agua potable El Carrizal, perteneciente a la parroquia San Miguel, del Cantón Salcedo, provincia de Cotopaxi,” *Revista Ingenio Global*, vol. 4, no. 2, pp. 280–300, 2025, doi: [10.62943/rig.v4n2.2025.380](https://doi.org/10.62943/rig.v4n2.2025.380).
+
+<a id="ref3"></a>[3] A. A. Garcia-Gonzales and C. García-Estrella, “Monitoreo de la calidad del agua para zonas rurales mediante un sistema de sensores de bajo costo basados en IoT,” *Revista Amazonía Digital*, vol. 5, no. 1, Art. no. e452, 2026, doi: [10.55873/rad.v5i1.452](https://doi.org/10.55873/rad.v5i1.452).
