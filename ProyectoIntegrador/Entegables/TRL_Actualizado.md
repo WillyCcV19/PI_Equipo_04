@@ -384,7 +384,7 @@ Tomamos como fuente técnica inicial el manual de FONDEPES, que describe paráme
 | Medición de la temperatura del agua | [[6]](#ref6) | Alternativas al termómetro de vidrio: RTD, termistores y termopares. |
 | Conductividad en cultivos de trucha | [[7]](#ref7), [[8]](#ref8), [[16]](#ref16) | Valores de referencia, valores registrados y fundamento de la medición. |
 | Variación vertical del oxígeno | [[9]](#ref9) | Diferencias de oxígeno por estratificación en la columna de agua. |
-| Turbidez y pH | [[14]](#ref14), [[15]](#ref15) | Definición, principio de medición e importancia como indicadores de calidad. |
+| Turbidez y pH | [[14]](#ref14), [[15]](#ref15), [[17]](#ref17) | Definición, principio de medición e importancia como indicadores de calidad. |
 | Metodología TRL en el Perú | [[12]](#ref12), [[13]](#ref13) | Marco de niveles de madurez y resultados esperados del TRL 1. |
 
 ### 6.4 Qué aportó la comparación entre fuentes
