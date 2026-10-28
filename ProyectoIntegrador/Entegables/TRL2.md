@@ -109,6 +109,52 @@ Las señales obtenidas por estos sensores serán recibidas por el Arduino Nano, 
 
 La selección de estos sensores permite formular un sistema multiparámetro capaz de supervisar simultáneamente las principales variables de calidad del agua consideradas para la crianza de trucha arco iris.
 
+## 4. Arquitectura conceptual de FishMon 365
+
+La arquitectura conceptual de FishMon 365 se plantea a partir de lo identificado en el TRL 1, donde se reconoció que las condiciones del agua pueden variar según la profundidad. Por esta razón, el sistema considera mediciones en distintos niveles de la columna de agua.
+
+FishMon 365 estará conformado por dos módulos principales: un módulo sumergible y un módulo flotante.
+
+### 4.1 Módulo sumergible
+
+El módulo sumergible contendrá los sensores encargados de medir las variables de calidad del agua: oxígeno disuelto, temperatura, pH, turbidez y conductividad. Este módulo será el encargado de realizar las mediciones directamente dentro del agua.
+
+Se plantea que el módulo sumergible pueda tomar lecturas en tres niveles de profundidad:
+
+- una profundidad baja o cercana al fondo;
+- una profundidad intermedia;
+- una profundidad cercana a la superficie.
+
+De esta manera, el sistema permitirá comparar el comportamiento de las variables según la profundidad y obtener una representación más completa de las condiciones del agua.
+
+### 4.2 Módulo flotante
+
+El módulo flotante estará ubicado en la superficie y contendrá los elementos de comunicación y alimentación del sistema. En este módulo se considera integrar el ESP32, el sistema de transmisión LoRa, la batería y el mecanismo de soporte del sistema. Adicionalmente, se evalúa la incorporación de un motor como parte del funcionamiento del módulo, según los requerimientos del diseño final.
+
+### 4.3 Adquisición y transferencia de datos
+
+Las señales generadas por los sensores del módulo sumergible serán recibidas y organizadas por el sistema de adquisición de datos. Posteriormente, la información será enviada al módulo flotante, donde el ESP32 se encargará de recibir los datos y prepararlos para su transmisión.
+
+### 4.4 Comunicación inalámbrica
+
+El módulo flotante transmitirá la información mediante tecnología LoRa, permitiendo enviar las mediciones hacia un sistema receptor para su posterior visualización.
+
+### 4.5 Visualización y alertas
+
+Los datos transmitidos serán presentados en un dashboard, donde el usuario podrá visualizar las mediciones obtenidas en las distintas profundidades y recibir alertas cuando alguna variable se encuentre fuera de los rangos establecidos para la crianza de trucha arco iris.
+
+### 4.6 Flujo conceptual del sistema
+
+El funcionamiento general de FishMon 365 se resume de la siguiente manera:
+
+1. El módulo sumergible toma mediciones de calidad del agua.
+2. Las mediciones se realizan en tres niveles de profundidad.
+3. La información es transferida hacia el módulo flotante.
+4. El ESP32 recibe los datos y los transmite mediante LoRa.
+5. La información llega al sistema receptor.
+6. Los datos se muestran en un dashboard.
+7. El sistema genera alertas cuando se detectan valores fuera de rango.
+
 ---
 
 ## Referencias
