@@ -36,7 +36,13 @@ Los tres antecedentes muestran que es técnicamente posible integrar sensores de
 
 ### 2.2 Aplicación de IoT en acuicultura
 
-[Se revisarán investigaciones que empleen tecnologías IoT para adquirir, transmitir y visualizar información de sistemas acuícolas.]
+En el ámbito acuícola existen propuestas que emplean tecnologías IoT para monitorear las condiciones del agua y apoyar la gestión de los sistemas de cultivo.
+
+PROCIENCIA registra un proyecto peruano orientado al desarrollo de un sistema IoT multiparámetro para estanques de trucha arco iris (*Oncorhynchus mykiss*). La propuesta considera el monitoreo en tiempo real de temperatura, pH y oxígeno disuelto, junto con procesamiento y transmisión de datos hacia servicios en la nube [[4]](#ref4).
+
+Cuenca Luna et al. desarrollaron WiFish, una plataforma IoT para monitoreo acuícola basada en microcontroladores ESP32, sensores de pH y temperatura, transmisión por Wi-Fi y procesamiento en la nube. El sistema permite visualizar datos en tiempo real, generar alertas y realizar supervisión remota mediante una aplicación móvil [[5]](#ref5).
+
+Estos antecedentes respaldan la formulación de FishMon 365 al demostrar que en sistemas acuícolas es posible integrar sensores para medir variables de calidad del agua, transmitir los datos mediante tecnologías IoT, almacenarlos en plataformas digitales y generar alertas para el monitoreo remoto. En particular, WiFish valida una arquitectura basada en ESP32, conectividad Wi-Fi, procesamiento en la nube y visualización mediante una aplicación móvil, mientras que el proyecto registrado por PROCIENCIA evidencia la aplicación de sistemas multiparámetro específicamente en el cultivo de trucha arco iris [4], [5].
 
 ### 2.3 Sistemas de monitoreo multiparámetro
 
@@ -56,3 +62,7 @@ Los tres antecedentes muestran que es técnicamente posible integrar sensores de
 <a id="ref2"></a>[2] A. H. Santamaría Masapuncho and M. M. Bayas Altamirano, “Monitoreo y evaluación de parámetros de calidad de agua obtenidos por la Internet de las cosas (IoT) para la planta de tratamiento de agua potable El Carrizal, perteneciente a la parroquia San Miguel, del Cantón Salcedo, provincia de Cotopaxi,” *Revista Ingenio Global*, vol. 4, no. 2, pp. 280–300, 2025, doi: [10.62943/rig.v4n2.2025.380](https://doi.org/10.62943/rig.v4n2.2025.380). [Online]. Available: [https://editorialinnova.com/index.php/rig/article/view/380](https://editorialinnova.com/index.php/rig/article/view/380)
 
 <a id="ref3"></a>[3] A. A. Garcia-Gonzales and C. García-Estrella, “Monitoreo de la calidad del agua para zonas rurales mediante un sistema de sensores de bajo costo basados en IoT,” *Revista Amazonía Digital*, vol. 5, no. 1, Art. no. e452, 2026, doi: [10.55873/rad.v5i1.452](https://doi.org/10.55873/rad.v5i1.452). [Online]. Available: [https://revistas.unamad.edu.pe/index.php/rad/article/view/452](https://revistas.unamad.edu.pe/index.php/rad/article/view/452)
+
+<a id="ref4"></a>[4] Programa Nacional de Investigación Científica y Estudios Avanzados (PROCIENCIA), “Desarrollo y escalamiento de un sistema IoT multiparámetro para la gestión automatizada de calidad del agua en múltiples estanques de cultivo de *Oncorhynchus mykiss*,” Proyecto PE501097073-2025, Universidad Nacional Toribio Rodríguez de Mendoza de Amazonas, Perú, 2025. [Online]. Available: [https://observatorio.prociencia.gob.pe/DetalleSubvencion/woz8JiZ4/desarrollo-y-escalamiento-de-un-sistema-iot-multiparametro-para-la-gestion-automatizada-de-calidad-del-agua-en-multiples-estanques-de-cultivo-de-oncorhynchus-mykiss]
+
+<a id="ref5"></a>[5] A. J. Cuenca Luna, R. D. Quelal Villarreal, F. S. Donoso Martínez, F. G. Cuzme Rodríguez, and P. D. Muñoz Criollo, “WiFish: Plataforma de monitoreo de acuicultura basada en IoT y cloud computing con cifrado AES-128,” *Revista Colombiana de Tecnologías de Avanzada (RCTA)*, vol. 2, no. 46, pp. 190–200, 2025, doi: [10.24054/rcta.v2i46.4140](https://doi.org/10.24054/rcta.v2i46.4140). [Online]. Available: [https://ojs.unipamplona.edu.co/index.php/rcta/article/view/4140](https://ojs.unipamplona.edu.co/index.php/rcta/article/view/4140)
