@@ -373,4 +373,10 @@ De esta manera, FishMon 365 cuenta con una propuesta tecnológica formulada y su
 
 <a id="ref5"></a>[5] A. J. Cuenca Luna, R. D. Quelal Villarreal, F. S. Donoso Martínez, F. G. Cuzme Rodríguez, and P. D. Muñoz Criollo, “WiFish: Plataforma de monitoreo de acuicultura basada en IoT y cloud computing con cifrado AES-128,” *Revista Colombiana de Tecnologías de Avanzada (RCTA)*, vol. 2, no. 46, pp. 190–200, 2025, doi: [10.24054/rcta.v2i46.4140](https://doi.org/10.24054/rcta.v2i46.4140). [Online]. Available: [https://ojs.unipamplona.edu.co/index.php/rcta/article/view/4140](https://ojs.unipamplona.edu.co/index.php/rcta/article/view/4140)
 
+<a id="ref6"></a>[6] Beijing Yongcheng Also Credit Science and Technology Development Co., Ltd., “Handheld water quality measuring instrument,” Utility Model CN216791993U, Jun. 21, 2022. [Online]. Available: https://worldwide.espacenet.com/patent/search/family/081998412/publication/CN216791993U?q=ti%20all%20%22Handheld%20water%20quality%20measuring%20instrument%22
+
+<a id="ref7"></a>[7] Point Four Water Quality Technologies (Suzhou) Co., Ltd., “Handheld water quality measuring instrument,” Patent CN102809637A, Jan. 4, 2012. [Online]. Available: https://worldwide.espacenet.com/patent/search/family/047233397/publication/CN102809637A?q=ti%20all%20%22Handheld%20water%20quality%20measuring%20instrument%22
+
+<a id="ref8"></a>[8] Hangzhou Zonwon Technology Co., Ltd., “Wireless water quality multi-parameter monitoring system,” Patent CN103969414A, Aug. 6, 2014. [Online]. Available: https://worldwide.espacenet.com/patent/search/family/051239164/publication/CN103969414A?q=ti%20all%20%22Wireless%20multi-parameter%20water-quality%20monitoring%20system%22
+
 <a id="ref9"></a>[9] S. F. C. Salva, A. K. A. Gordo, M. E. P. Ceniza, and A. S. Chavez, “Aquaculture monitoring device,” Patent WO2022119461A1, Jun. 9, 2022. [Online]. Available: https://patents.google.com/patent/WO2022119461A1/en
