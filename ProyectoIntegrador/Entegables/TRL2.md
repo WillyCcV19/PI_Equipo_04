@@ -46,7 +46,13 @@ Estos antecedentes respaldan la formulación de FishMon 365 al demostrar que en 
 
 ### 2.3 Sistemas de monitoreo multiparámetro
 
-[Se analizarán propuestas que integren diferentes sensores de calidad del agua en un mismo sistema.]
+Los sistemas multiparámetro permiten integrar varios sensores dentro de una misma plataforma para obtener una visión más completa de la calidad del agua.
+
+Adrián, Jiménez y Amundarain identificaron sistemas IoT capaces de monitorear simultáneamente variables como pH, temperatura, turbidez, sólidos disueltos, conductividad y oxígeno disuelto, utilizando microcontroladores y módulos de comunicación para centralizar las mediciones [[1]](#ref1).
+
+Por otro lado, WiFish integra sensores de pH y temperatura con un microcontrolador ESP32, transmisión por Wi-Fi, procesamiento en la nube, visualización remota y generación de alertas [[5]](#ref5).
+
+Estos antecedentes muestran que es viable combinar diferentes sensores dentro de una sola arquitectura tecnológica, lo que respalda el enfoque multiparámetro de FishMon 365 para supervisar oxígeno disuelto, temperatura, pH, turbidez y conductividad.
 
 ### 2.4 Comparación de soluciones existentes
 
