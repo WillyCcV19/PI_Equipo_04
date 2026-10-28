@@ -69,6 +69,46 @@ A partir de los antecedentes revisados, se compararon las principales caracterí
 
 FishMon 365 plantea una arquitectura en la que el Arduino Nano se encuentra conectado a los sensores sumergidos y se encarga de realizar la lectura de las variables de calidad del agua. Posteriormente, los datos son enviados al ESP32, que cumple la función de recibir la información y transmitirla mediante comunicación LoRa. Finalmente, las mediciones son enviadas a un dashboard para su visualización y para la generación de alertas.
 
+## 3. Formulación del concepto tecnológico
+
+### 3.1 Concepto de FishMon 365
+
+FishMon 365 se plantea como un sistema tecnológico para el monitoreo continuo de la calidad del agua en sistemas de crianza de trucha arco iris (*Oncorhynchus mykiss*).
+
+La propuesta integra sensores para medir oxígeno disuelto, temperatura, pH, turbidez y conductividad. Las señales generadas por estos sensores serán recibidas por un Arduino Nano, encargado de realizar la lectura de las variables monitoreadas y enviar la información obtenida hacia un ESP32.
+
+El ESP32 recibirá los datos provenientes del Arduino Nano y se encargará de su transmisión inalámbrica mediante tecnología LoRa. Finalmente, la información será enviada hacia un dashboard, donde podrá ser visualizada de forma remota y se podrán generar alertas cuando alguno de los parámetros se encuentre fuera de los rangos establecidos.
+
+### 3.2 Problema que busca atender
+
+El monitoreo de la calidad del agua es una actividad importante en la crianza de trucha, ya que las variaciones en parámetros físico-químicos pueden modificar las condiciones del entorno acuático.
+
+FishMon 365 busca reducir la dependencia de mediciones manuales y facilitar el seguimiento continuo de las condiciones del agua mediante sensores y transmisión remota de datos. De esta manera, el usuario podrá disponer de información actualizada sobre diferentes parámetros sin necesidad de realizar constantemente mediciones presenciales.
+
+### 3.3 Propuesta de solución tecnológica
+
+La propuesta consiste en desarrollar un sistema distribuido de monitoreo compuesto por una unidad de sensado, una unidad de adquisición de datos, una unidad de comunicación y una plataforma de visualización.
+
+Los sensores sumergidos medirán las variables de calidad del agua y enviarán sus señales hacia un Arduino Nano. Este dispositivo será responsable de recibir y procesar las lecturas de los sensores y transferir la información hacia un ESP32.
+
+Posteriormente, el ESP32 se encargará de transmitir los datos mediante comunicación LoRa. Finalmente, la información será integrada en un dashboard que permitirá consultar las mediciones, visualizar el comportamiento de las variables y generar alertas cuando los valores registrados se encuentren fuera de los rangos establecidos para la crianza de trucha arco iris.
+
+### 3.4 Variables y sensores considerados
+
+FishMon 365 considera cinco variables principales para el monitoreo de la calidad del agua: oxígeno disuelto, temperatura, pH, turbidez y conductividad.
+
+Para cada variable se evaluaron diferentes alternativas de sensado mediante una matriz morfológica, considerando su posible integración con la arquitectura electrónica propuesta. A partir de esta evaluación se seleccionó una alternativa de sensor para cada parámetro:
+
+- **pH:** sensor de pH con módulo de acondicionamiento de señal.
+- **Turbidez:** sensor de turbidez para medición de partículas suspendidas en el agua.
+- **Conductividad:** sensor de conductividad eléctrica con sonda para contacto con el agua.
+- **Temperatura:** termistor NTC 10K sumergible.
+- **Oxígeno disuelto:** sensor con sonda para medición de oxígeno disuelto en el agua.
+
+Las señales obtenidas por estos sensores serán recibidas por el Arduino Nano, encargado de realizar la adquisición de las mediciones. Posteriormente, la información será enviada al ESP32 para su transmisión mediante LoRa y finalmente será presentada en el dashboard de FishMon 365.
+
+La selección de estos sensores permite formular un sistema multiparámetro capaz de supervisar simultáneamente las principales variables de calidad del agua consideradas para la crianza de trucha arco iris.
+
 ---
 
 ## Referencias
