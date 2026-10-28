@@ -65,11 +65,9 @@ A partir de los antecedentes revisados, se compararon las principales caracterí
 | Garcia-Gonzales y García-Estrella [[3]](#ref3) | pH, turbidez, temperatura, TDS y conductividad | Arduino Mega / comunicación IoT | Registro y monitoreo de datos | Agua en zona rural |
 | Proyecto PROCIENCIA [[4]](#ref4) | Temperatura, pH y oxígeno disuelto | Microcontroladores / servicios en la nube | Monitoreo en tiempo real | Estanques de trucha arco iris |
 | WiFish [[5]](#ref5) | pH y temperatura | ESP32 / Wi-Fi / Huawei Cloud | Aplicación móvil, bot de Telegram y alertas | Acuicultura |
-| **FishMon 365** | **Oxígeno disuelto, temperatura, pH, turbidez y conductividad** | **Arquitectura IoT por definir** | **Visualización y alertas propuestas** | **Crianza de trucha arco iris** |
+| **FishMon 365** | **Oxígeno disuelto, temperatura, pH, turbidez y conductividad** | **Arduino Nano para lectura de sensores + ESP32 con LoRa para recepción y transmisión de datos** | **Dashboard para visualización de datos y generación de alertas** | **Crianza de trucha arco iris** |
 
-La comparación evidencia que existen soluciones capaces de integrar sensores, comunicación IoT, almacenamiento y visualización de datos. En particular, el proyecto de PROCIENCIA presenta una aplicación directa en trucha arco iris, mientras que WiFish demuestra la integración de monitoreo, servicios en la nube y alertas en entornos acuícolas [[4]](#ref4), [[5]](#ref5).
-
-FishMon 365 se diferencia principalmente por plantear el monitoreo conjunto de **cinco variables de calidad del agua** —oxígeno disuelto, temperatura, pH, turbidez y conductividad— específicamente orientadas a la crianza de trucha arco iris.
+FishMon 365 plantea una arquitectura en la que el Arduino Nano se encuentra conectado a los sensores sumergidos y se encarga de realizar la lectura de las variables de calidad del agua. Posteriormente, los datos son enviados al ESP32, que cumple la función de recibir la información y transmitirla mediante comunicación LoRa. Finalmente, las mediciones son enviadas a un dashboard para su visualización y para la generación de alertas.
 
 ---
 
