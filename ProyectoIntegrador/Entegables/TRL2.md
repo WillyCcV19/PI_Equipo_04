@@ -56,8 +56,20 @@ Estos antecedentes muestran que es viable combinar diferentes sensores dentro de
 
 ### 2.4 Comparación de soluciones existentes
 
-[Se compararán las tecnologías encontradas considerando variables medidas, método de comunicación, procesamiento de información, visualización y generación de alertas.]
+A partir de los antecedentes revisados, se compararon las principales características de las soluciones tecnológicas relacionadas con el monitoreo de calidad del agua.
 
+| Solución / antecedente | Variables monitoreadas | Procesamiento / comunicación | Visualización y alertas | Aplicación |
+|---|---|---|---|---|
+| Sistemas revisados por Adrián et al. [[1]](#ref1) | pH, temperatura, turbidez, TDS, conductividad y oxígeno disuelto, según el sistema | Principalmente Arduino; diferentes tecnologías IoT | Depende de cada implementación | Monitoreo de calidad del agua |
+| Santamaría Masapuncho y Bayas Altamirano [[2]](#ref2) | pH, turbidez y cloro residual | Arduino Mega + NodeMCU ESP8266 / Wi-Fi | Plataforma IoT y alertas | Planta de tratamiento de agua |
+| Garcia-Gonzales y García-Estrella [[3]](#ref3) | pH, turbidez, temperatura, TDS y conductividad | Arduino Mega / comunicación IoT | Registro y monitoreo de datos | Agua en zona rural |
+| Proyecto PROCIENCIA [[4]](#ref4) | Temperatura, pH y oxígeno disuelto | Microcontroladores / servicios en la nube | Monitoreo en tiempo real | Estanques de trucha arco iris |
+| WiFish [[5]](#ref5) | pH y temperatura | ESP32 / Wi-Fi / Huawei Cloud | Aplicación móvil, bot de Telegram y alertas | Acuicultura |
+| **FishMon 365** | **Oxígeno disuelto, temperatura, pH, turbidez y conductividad** | **Arquitectura IoT por definir** | **Visualización y alertas propuestas** | **Crianza de trucha arco iris** |
+
+La comparación evidencia que existen soluciones capaces de integrar sensores, comunicación IoT, almacenamiento y visualización de datos. En particular, el proyecto de PROCIENCIA presenta una aplicación directa en trucha arco iris, mientras que WiFish demuestra la integración de monitoreo, servicios en la nube y alertas en entornos acuícolas [[4]](#ref4), [[5]](#ref5).
+
+FishMon 365 se diferencia principalmente por plantear el monitoreo conjunto de **cinco variables de calidad del agua** —oxígeno disuelto, temperatura, pH, turbidez y conductividad— específicamente orientadas a la crianza de trucha arco iris.
 
 ---
 
