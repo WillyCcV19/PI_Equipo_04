@@ -359,6 +359,7 @@ A partir de los principios científicos identificados en el TRL 1 y de la revisi
 El concepto integra un Arduino Nano para la adquisición de las señales de los sensores, un ESP32 con LoRa para la transmisión inalámbrica, un mecanismo de descenso y elevación del módulo sumergible y un dashboard para la visualización de datos y generación de alertas.
 
 De esta manera, FishMon 365 cuenta con una propuesta tecnológica formulada y sustentada conceptualmente, constituyendo la base para continuar hacia etapas posteriores de desarrollo, implementación y validación experimental.
+
 ---
 
 ## Referencias
