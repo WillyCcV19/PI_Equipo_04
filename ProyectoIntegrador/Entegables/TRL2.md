@@ -159,7 +159,19 @@ El funcionamiento general de FishMon 365 se resume de la siguiente manera:
 
 ### 5.1 Matriz morfológica
 
-![Matriz morfológica de FishMon 365](ruta_de_imagen)
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/239a2afa-157e-4e17-a683-65b463ee0ab6">
+    <img 
+      src="https://github.com/user-attachments/assets/239a2afa-157e-4e17-a683-65b463ee0ab6"
+      alt="Matriz morfológica FishMon 365"
+      width="100%">
+  </a>
+</p>
+
+<p align="center">
+  <i>Haz clic sobre la imagen para verla en tamaño completo.</i>
+</p>
+
 
 **Figura 1.** Matriz morfológica utilizada para la selección preliminar de componentes de FishMon 365.
 
