@@ -131,7 +131,7 @@ De esta manera, el sistema permitirá comparar el comportamiento de las variable
 
 ### 4.2 Módulo flotante
 
-El módulo flotante estará ubicado en la superficie y contendrá los elementos de comunicación y alimentación del sistema. En este módulo se considera integrar el ESP32, el sistema de transmisión LoRa, la batería y el mecanismo de soporte del sistema. Adicionalmente, se evalúa la incorporación de un motor como parte del funcionamiento del módulo, según los requerimientos del diseño final.
+El módulo flotante estará ubicado en la superficie y contendrá los elementos de alimentación, control y comunicación del sistema. En este módulo se integrarán la batería, el ESP32 con LoRa y el motor encargado del mecanismo de descenso y elevación del módulo sumergible.
 
 ### 4.3 Adquisición y transferencia de datos
 
