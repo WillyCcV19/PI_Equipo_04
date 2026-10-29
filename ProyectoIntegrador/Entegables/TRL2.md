@@ -174,6 +174,8 @@ El funcionamiento general de FishMon 365 se resume de la siguiente manera:
   <i>Haz clic sobre la imagen para verla en tamaño completo.</i>
 </p>
 
+**Figura 1.** Matriz morfológica utilizada para la selección preliminar de componentes de FishMon 365.
+
 | Elemento | Componente seleccionado | Función |
 |---|---|---|
 | Adquisición | Arduino Nano | Recibir y procesar las señales de los sensores |
@@ -185,9 +187,51 @@ El funcionamiento general de FishMon 365 se resume de la siguiente manera:
 | Oxígeno disuelto | Sensor seleccionado en matriz | Medir OD |
 | Movimiento | Motor de descenso/elevación | Posicionar el módulo sumergible |
 
+### 5.2 Bocetos conceptuales
 
-**Figura 1.** Matriz morfológica utilizada para la selección preliminar de componentes de FishMon 365.
- 
+Se desarrollaron diferentes alternativas de diseño para la estructura de FishMon 365. A partir de la comparación de criterios como flotabilidad, estabilidad, protección de los componentes, distribución del centro de gravedad y facilidad de mantenimiento, se seleccionó el boceto que mejor se adapta a los requerimientos planteados.
+
+<!-- INSERTAR AQUÍ CAPTURA DE LOS BOCETOS -->
+
+<p align="center">
+  <i>Figura 2. Bocetos conceptuales de FishMon 365.</i>
+</p>
+
+### 5.3 Modelado 3D
+
+Se realizó un modelado tridimensional preliminar de FishMon 365 para representar la distribución física de sus principales componentes.
+
+El módulo flotante contempla la batería, el ESP32 con LoRa, la antena y el motor encargado del mecanismo de descenso y elevación. El módulo sumergible integra el Arduino Nano y los sensores destinados a la medición de las variables de calidad del agua.
+
+<!-- INSERTAR AQUÍ CAPTURA DE ONSHAPE -->
+
+<p align="center">
+  <i>Figura 3. Modelado 3D conceptual de FishMon 365.</i>
+</p>
+
+### 5.4 Diseño electrónico preliminar
+
+El diseño electrónico conceptual establece la conexión de los sensores con el Arduino Nano para la adquisición de las señales. Posteriormente, las mediciones serán transferidas al ESP32 con LoRa ubicado en el módulo flotante para su transmisión inalámbrica.
+
+En esta etapa se definirán las conexiones y distribución electrónica necesarias para el posterior desarrollo del esquemático y PCB.
+
+<!-- INSERTAR AQUÍ CAPTURA DEL DIAGRAMA, ESQUEMÁTICO O PCB SI YA LO TIENEN -->
+
+<p align="center">
+  <i>Figura 4. Diseño electrónico preliminar de FishMon 365.</i>
+</p>
+
+### 5.5 Diseño del dashboard
+
+Se plantea un dashboard para visualizar las mediciones obtenidas por FishMon 365 y facilitar el seguimiento de las condiciones del agua.
+
+La interfaz propuesta deberá mostrar las cinco variables monitoreadas, el nivel de profundidad de cada medición, el historial de datos y las alertas generadas cuando algún parámetro se encuentre fuera de los rangos establecidos.
+
+<!-- INSERTAR AQUÍ CAPTURAS DE FIGMA O PANTALLAS PROPUESTAS -->
+
+<p align="center">
+  <i>Figura 5. Propuesta de interfaz del dashboard de FishMon 365.</i>
+</p>
 ## 6. Requisitos conceptuales
 
 A partir del concepto tecnológico planteado y de los requerimientos previamente definidos para FishMon 365, se establecen los siguientes requisitos conceptuales:
