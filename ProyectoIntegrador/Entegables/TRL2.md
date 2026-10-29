@@ -172,6 +172,17 @@ El funcionamiento general de FishMon 365 se resume de la siguiente manera:
   <i>Haz clic sobre la imagen para verla en tamaño completo.</i>
 </p>
 
+| Elemento | Componente seleccionado | Función |
+|---|---|---|
+| Adquisición | Arduino Nano | Recibir y procesar las señales de los sensores |
+| Comunicación | ESP32 + LoRa | Transmitir las mediciones |
+| Temperatura | Termistor NTC 10K sumergible | Medir temperatura |
+| pH | Sensor seleccionado en matriz | Medir pH |
+| Turbidez | Sensor seleccionado en matriz | Medir turbidez |
+| Conductividad | Sensor seleccionado en matriz | Medir conductividad |
+| Oxígeno disuelto | Sensor seleccionado en matriz | Medir OD |
+| Movimiento | Motor de descenso/elevación | Posicionar el módulo sumergible |
+
 
 **Figura 1.** Matriz morfológica utilizada para la selección preliminar de componentes de FishMon 365.
 
