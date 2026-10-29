@@ -185,7 +185,7 @@ El funcionamiento general de FishMon 365 se resume de la siguiente manera:
 
 
 **Figura 1.** Matriz morfológica utilizada para la selección preliminar de componentes de FishMon 365.
-
+ 
 ## 6. Requisitos conceptuales
 
 A partir del concepto tecnológico planteado y de los requerimientos previamente definidos para FishMon 365, se establecen los siguientes requisitos conceptuales:
