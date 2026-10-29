@@ -155,23 +155,13 @@ El funcionamiento general de FishMon 365 se resume de la siguiente manera:
 6. Los datos se muestran en un dashboard.
 7. El sistema genera alertas cuando se detectan valores fuera de rango.
 
-## 5. Funcionamiento esperado del sistema
+## 5. Evidencias de diseño conceptual
 
-FishMon 365 se plantea como una boya IoT autónoma capaz de realizar mediciones de calidad del agua en diferentes niveles de profundidad y transmitir los datos de manera inalámbrica para su monitoreo remoto.
+### 5.1 Matriz morfológica
 
-El funcionamiento esperado del sistema se desarrolla de la siguiente manera:
+![Matriz morfológica de FishMon 365](ruta_de_imagen)
 
-1. El módulo flotante permanece en la superficie y contiene los elementos principales de alimentación, control y comunicación.
-2. Mediante un mecanismo de descenso y elevación, el módulo sumergible se desplaza hacia los niveles de medición definidos: superficie, media agua y fondo.
-3. En cada nivel, los sensores registran las variables de oxígeno disuelto, temperatura, pH, turbidez y conductividad.
-4. Las señales generadas por los sensores son recibidas por el Arduino Nano, encargado de adquirir y organizar las lecturas.
-5. La información obtenida es enviada mediante un único enlace hacia el ESP32 con LoRa ubicado en el módulo flotante.
-6. El ESP32 transmite los datos de forma inalámbrica mediante tecnología LoRa hacia un sistema receptor.
-7. La información recibida es almacenada y mostrada en un dashboard.
-8. Las mediciones son comparadas con los rangos definidos para la crianza de trucha arco iris.
-9. Cuando alguna variable se encuentra fuera del rango establecido, el sistema genera una alerta para informar al usuario.
-
-De esta manera, FishMon 365 busca proporcionar datos multiparámetro y multinivel que faciliten el seguimiento continuo de las condiciones del agua.
+**Figura 1.** Matriz morfológica utilizada para la selección preliminar de componentes de FishMon 365.
 
 ## 6. Requisitos conceptuales
 
