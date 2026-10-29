@@ -97,17 +97,19 @@ Posteriormente, el ESP32 se encargará de transmitir los datos mediante comunica
 
 FishMon 365 considera cinco variables principales para el monitoreo de la calidad del agua: oxígeno disuelto, temperatura, pH, turbidez y conductividad.
 
-Para cada variable se evaluaron diferentes alternativas de sensado mediante una matriz morfológica, considerando su posible integración con la arquitectura electrónica propuesta. A partir de esta evaluación se seleccionó una alternativa de sensor para cada parámetro:
+Las alternativas fueron seleccionadas mediante la matriz morfológica del proyecto:
 
-- **pH:** sensor de pH con módulo de acondicionamiento de señal.
-- **Turbidez:** sensor de turbidez para medición de partículas suspendidas en el agua.
-- **Conductividad:** sensor de conductividad eléctrica con sonda para contacto con el agua.
-- **Temperatura:** termistor NTC 10K sumergible.
-- **Oxígeno disuelto:** sensor con sonda para medición de oxígeno disuelto en el agua.
+| Variable | Alternativa seleccionada |
+|---|---|
+| pH | Sensor genérico de pH con amplificador personalizado |
+| Turbidez | Sensor genérico infrarrojo con fototransistor |
+| Conductividad | Circuito medidor personalizado basado en LM324 |
+| Temperatura | Termistor NTC 10K sumergible |
+| Oxígeno disuelto | DFRobot Gravity DO Sensor |
 
-Las señales obtenidas por estos sensores serán recibidas por el Arduino Nano, encargado de realizar la adquisición de las mediciones. Posteriormente, la información será enviada al ESP32 para su transmisión mediante LoRa y finalmente será presentada en el dashboard de FishMon 365.
+Las señales obtenidas serán recibidas por el Arduino Nano, encargado de la adquisición de las mediciones. Posteriormente, la información será transferida al ESP32 con LoRa para su transmisión hacia el sistema de monitoreo.
 
-La selección de estos sensores permite formular un sistema multiparámetro capaz de supervisar simultáneamente las principales variables de calidad del agua consideradas para la crianza de trucha arco iris.
+La selección definitiva y calibración de estos sensores se realizará en etapas posteriores de desarrollo tecnológico.
 
 ## 4. Arquitectura conceptual de FishMon 365
 
