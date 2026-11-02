@@ -346,11 +346,11 @@ La interfaz propone mostrar las mediciones de los cinco parámetros correspondie
 También se consideran opciones para seleccionar el nivel de profundidad y consultar información histórica en distintos intervalos de tiempo.
 
 <p align="center">
-  <img src="URL_IMAGEN_2" alt="Monitoreo por profundidad de FishMon 365" width="90%">
+  <img src="https://github.com/user-attachments/assets/64e4ddb3-dbc5-49d3-99e7-a8dbde3fca22" alt="Monitoreo por profundidad de FishMon 365" width="90%">
 </p>
 
 <p align="center">
-  <i>Figura 6. Propuesta conceptual de monitoreo y comparación de parámetros según la profundidad.</i>
+  <i>Propuesta conceptual de monitoreo y comparación de parámetros según la profundidad.</i>
 </p>
 
 #### 5.5.3 Alertas e historial
