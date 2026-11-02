@@ -207,11 +207,35 @@ Se realizó un modelado tridimensional preliminar de FishMon 365 para representa
 
 El módulo flotante contempla la batería, el ESP32 con LoRa, la antena y el motor encargado del mecanismo de descenso y elevación. El módulo sumergible integra el Arduino Nano y los sensores destinados a la medición de las variables de calidad del agua.
 
-<!-- INSERTAR AQUÍ CAPTURA DE ONSHAPE -->
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/631d9f9e-7155-4184-87ca-56255b283b7c" width="320"><br>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/95537641-5e0b-4ec5-83ec-e6a01767f7c9" width="240"><br>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/c7d67cf3-e7b4-44c2-8206-dd502d44427a" width="320"><br>
+      <i>Modelado del módulo sumergible </i>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <i>Figura 3. Modelado 3D conceptual de FishMon 365.</i>
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/cee8b499-b67d-474c-abf0-a9a22f2968bc" width="320"><br>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/07c6fe5d-2af7-4752-a7bd-c41c88bf5544" width="240"><br>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/0fa1c009-d26e-4225-916c-fa31b7ed24bb" width="320"><br>
+      <i>Modelado del módulo flotante </i>
+    </td>
+  </tr>
+</table>
 
 ### 5.4 Diseño electrónico preliminar
 
