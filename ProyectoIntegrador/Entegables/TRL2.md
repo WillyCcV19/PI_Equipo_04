@@ -258,15 +258,15 @@ En esta etapa se definirán las conexiones y distribución electrónica necesari
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/6bf42a35-6439-4511-b693-d8c074089a6e" width="320"><br>
+      <img src="https://github.com/user-attachments/assets/6bf42a35-6439-4511-b693-d8c074089a6e" width="520"><br>
       <i>Esquemático del módulo flotante </i>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/f96f549d-c357-4d8a-b9c2-3bd0d9323234" width="240"><br>
+      <img src="https://github.com/user-attachments/assets/f96f549d-c357-4d8a-b9c2-3bd0d9323234" width="440"><br>
       <i>PCB del módulo flotante </i>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/09878eb4-5945-452f-8f3a-9760a2f3f7ee" width="320"><br>
+      <img src="https://github.com/user-attachments/assets/09878eb4-5945-452f-8f3a-9760a2f3f7ee" width="520"><br>
       <i>3D del módulo flotante </i>
     </td>
   </tr>
