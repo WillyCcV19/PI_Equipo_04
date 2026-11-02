@@ -317,15 +317,82 @@ En esta etapa se definirán las conexiones y distribución electrónica necesari
 
 ### 5.5 Diseño del dashboard
 
-Se plantea un dashboard para visualizar las mediciones obtenidas por FishMon 365 y facilitar el seguimiento de las condiciones del agua.
+Se desarrolló una propuesta conceptual de interfaz gráfica para el sistema FishMon 365, con el propósito de representar cómo los usuarios podrán consultar las mediciones de calidad del agua, comparar los parámetros según la profundidad y supervisar el estado general del sistema.
 
-La interfaz propuesta deberá mostrar las cinco variables monitoreadas, el nivel de profundidad de cada medición, el historial de datos y las alertas generadas cuando algún parámetro se encuentre fuera de los rangos establecidos.
+El diseño fue elaborado en Figma y se organiza en cuatro pantallas principales: dashboard general, monitoreo por profundidad, alertas e historial, y estado del sistema y registro de datos.
 
-<!-- INSERTAR AQUÍ CAPTURAS DE FIGMA O PANTALLAS PROPUESTAS -->
+#### 5.5.1 Dashboard general
+
+La pantalla principal presenta una visión general de las condiciones del agua correspondientes al nivel de profundidad seleccionado. Se muestran los cinco parámetros monitoreados: oxígeno disuelto, temperatura, pH, turbidez y conductividad.
+
+Cada parámetro cuenta con una tarjeta que incluye el valor de la medición, su unidad, el rango de referencia propuesto, un indicador visual de estado y una representación gráfica de su tendencia.
+
+Asimismo, se contempla información sobre la comunicación LoRa, el nivel de batería, la última actualización y la profundidad activa del módulo sumergible.
 
 <p align="center">
-  <i>Figura 5. Propuesta de interfaz del dashboard de FishMon 365.</i>
+  <img src="https://github.com/user-attachments/assets/d7991ed6-e347-4143-bdee-791f5188f395" alt="Dashboard general de FishMon 365" width="90%">
 </p>
+
+<p align="center">
+  <i>Propuesta conceptual de la pantalla principal de FishMon 365.</i>
+</p>
+
+#### 5.5.2 Monitoreo por profundidad
+
+Esta pantalla está orientada a la comparación de las condiciones del agua en tres niveles de profundidad: superficie, media agua y fondo.
+
+La interfaz propone mostrar las mediciones de los cinco parámetros correspondientes a cada nivel, acompañadas de gráficos comparativos que permitan observar su comportamiento a lo largo del tiempo.
+
+También se consideran opciones para seleccionar el nivel de profundidad y consultar información histórica en distintos intervalos de tiempo.
+
+<p align="center">
+  <img src="URL_IMAGEN_2" alt="Monitoreo por profundidad de FishMon 365" width="90%">
+</p>
+
+<p align="center">
+  <i>Figura 6. Propuesta conceptual de monitoreo y comparación de parámetros según la profundidad.</i>
+</p>
+
+#### 5.5.3 Alertas e historial
+
+La tercera pantalla contempla un sistema de alertas para identificar mediciones que se encuentren fuera de los rangos establecidos para la crianza de trucha arco iris.
+
+Se propone una tabla de eventos que presente el parámetro involucrado, el valor registrado, la profundidad, la fecha, la hora y el nivel de severidad de la alerta.
+
+Adicionalmente, se incluye una sección de historial con gráficos que permitan consultar la evolución de los parámetros monitoreados en diferentes períodos.
+
+<p align="center">
+  <img src="URL_IMAGEN_3" alt="Alertas e historial de FishMon 365" width="90%">
+</p>
+
+<p align="center">
+  <i>Figura 7. Propuesta conceptual de visualización de alertas e historial de mediciones.</i>
+</p>
+
+#### 5.5.4 Estado del sistema y registro de datos
+
+La cuarta pantalla está orientada a la supervisión del estado operativo de FishMon 365.
+
+La interfaz contempla indicadores del módulo flotante, módulo sumergible, Arduino Nano, ESP32 con LoRa, comunicación inalámbrica y nivel de batería.
+
+También se propone un registro tabular de las mediciones que permita consultar la fecha, hora, profundidad, valores de los cinco parámetros y estado asociado a cada registro.
+
+<p align="center">
+  <img src="URL_IMAGEN_4" alt="Estado del sistema y registro de datos de FishMon 365" width="90%">
+</p>
+
+<p align="center">
+  <i>Figura 8. Propuesta conceptual de supervisión del sistema y registro de mediciones.</i>
+</p>
+
+#### 5.5.5 Alcance del diseño conceptual
+
+Las cuatro pantallas constituyen una propuesta preliminar de la interfaz de usuario de FishMon 365. Los valores, gráficos, estados operativos y alertas mostrados corresponden a datos de demostración utilizados para representar las funcionalidades previstas.
+
+En esta etapa TRL 2 no se ha validado experimentalmente la integración del dashboard con los sensores, la comunicación LoRa ni el sistema de almacenamiento de datos.
+
+La implementación funcional y las pruebas de estas características se realizarán en etapas posteriores de desarrollo tecnológico.
+
 ## 6. Requisitos conceptuales
 
 A partir del concepto tecnológico planteado y de los requerimientos previamente definidos para FishMon 365, se establecen los siguientes requisitos conceptuales:
