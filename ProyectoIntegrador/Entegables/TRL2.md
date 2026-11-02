@@ -209,10 +209,6 @@ La configuración seleccionada también facilita la distribución de los compone
   <i>Boceto 3 — diseño conceptual seleccionado</i>
 </p>
 
-<p align="center">
-  <i>Figura 2. Comparación de alternativas de diseño de FishMon 365.</i>
-</p>
-
 ### 5.3 Modelado 3D
 
 Se realizó un modelado tridimensional preliminar de FishMon 365 para representar la distribución física de sus principales componentes.
