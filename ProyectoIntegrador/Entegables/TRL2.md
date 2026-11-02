@@ -273,6 +273,23 @@ En esta etapa se definirán las conexiones y distribución electrónica necesari
 </table>
 
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/b4dd677f-0481-4216-8f20-fd4242b60223" width="520"><br>
+      <i>Esquemático del módulo hundible </i>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/ab77e475-acf9-48f1-b8af-0a8f9fb92409" width="440"><br>
+      <i>PCB del módulo hundible </i>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/e305ef47-6c7c-4b66-ae7b-99e1124d3901" width="520"><br>
+      <i>3D del módulo hundible </i>
+    </td>
+  </tr>
+</table>
+
 ### 5.5 Diseño del dashboard
 
 Se plantea un dashboard para visualizar las mediciones obtenidas por FishMon 365 y facilitar el seguimiento de las condiciones del agua.
