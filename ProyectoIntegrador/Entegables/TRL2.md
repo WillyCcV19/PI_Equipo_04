@@ -255,11 +255,23 @@ El diseño electrónico conceptual establece la conexión de los sensores con el
 
 En esta etapa se definirán las conexiones y distribución electrónica necesarias para el posterior desarrollo del esquemático y PCB.
 
-<!-- INSERTAR AQUÍ CAPTURA DEL DIAGRAMA, ESQUEMÁTICO O PCB SI YA LO TIENEN -->
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/6bf42a35-6439-4511-b693-d8c074089a6e" width="320"><br>
+      <i>Esquemático del módulo flotante </i>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/f96f549d-c357-4d8a-b9c2-3bd0d9323234" width="240"><br>
+      <i>PCB del módulo flotante </i>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/09878eb4-5945-452f-8f3a-9760a2f3f7ee" width="320"><br>
+      <i>3D del módulo flotante </i>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <i>Figura 4. Diseño electrónico preliminar de FishMon 365.</i>
-</p>
 
 ### 5.5 Diseño del dashboard
 
