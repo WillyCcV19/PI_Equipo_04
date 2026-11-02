@@ -362,11 +362,11 @@ Se propone una tabla de eventos que presente el parámetro involucrado, el valor
 Adicionalmente, se incluye una sección de historial con gráficos que permitan consultar la evolución de los parámetros monitoreados en diferentes períodos.
 
 <p align="center">
-  <img src="URL_IMAGEN_3" alt="Alertas e historial de FishMon 365" width="90%">
+  <img ssrc="https://github.com/user-attachments/assets/5199ca95-7775-428b-ad7f-6a06533d4304" alt="Alertas e historial de FishMon 365" width="90%">
 </p>
 
 <p align="center">
-  <i>Figura 7. Propuesta conceptual de visualización de alertas e historial de mediciones.</i>
+  <i>Propuesta conceptual de visualización de alertas e historial de mediciones.</i>
 </p>
 
 #### 5.5.4 Estado del sistema y registro de datos
@@ -378,11 +378,11 @@ La interfaz contempla indicadores del módulo flotante, módulo sumergible, Ardu
 También se propone un registro tabular de las mediciones que permita consultar la fecha, hora, profundidad, valores de los cinco parámetros y estado asociado a cada registro.
 
 <p align="center">
-  <img src="URL_IMAGEN_4" alt="Estado del sistema y registro de datos de FishMon 365" width="90%">
+  <img src="https://github.com/user-attachments/assets/5b46790c-79a0-477c-bd8f-e441e2b4fef6" alt="Estado del sistema y registro de datos de FishMon 365" width="90%">
 </p>
 
 <p align="center">
-  <i>Figura 8. Propuesta conceptual de supervisión del sistema y registro de mediciones.</i>
+  <i>Propuesta conceptual de supervisión del sistema y registro de mediciones.</i>
 </p>
 
 #### 5.5.5 Alcance del diseño conceptual
