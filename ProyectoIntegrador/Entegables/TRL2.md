@@ -362,7 +362,7 @@ Se propone una tabla de eventos que presente el parámetro involucrado, el valor
 Adicionalmente, se incluye una sección de historial con gráficos que permitan consultar la evolución de los parámetros monitoreados en diferentes períodos.
 
 <p align="center">
-  <img ssrc="https://github.com/user-attachments/assets/5199ca95-7775-428b-ad7f-6a06533d4304" alt="Alertas e historial de FishMon 365" width="90%">
+  <img src="https://github.com/user-attachments/assets/5199ca95-7775-428b-ad7f-6a06533d4304" alt="Alertas e historial de FishMon 365" width="90%">
 </p>
 
 <p align="center">
@@ -384,14 +384,6 @@ También se propone un registro tabular de las mediciones que permita consultar 
 <p align="center">
   <i>Propuesta conceptual de supervisión del sistema y registro de mediciones.</i>
 </p>
-
-#### 5.5.5 Alcance del diseño conceptual
-
-Las cuatro pantallas constituyen una propuesta preliminar de la interfaz de usuario de FishMon 365. Los valores, gráficos, estados operativos y alertas mostrados corresponden a datos de demostración utilizados para representar las funcionalidades previstas.
-
-En esta etapa TRL 2 no se ha validado experimentalmente la integración del dashboard con los sensores, la comunicación LoRa ni el sistema de almacenamiento de datos.
-
-La implementación funcional y las pruebas de estas características se realizarán en etapas posteriores de desarrollo tecnológico.
 
 ## 6. Requisitos conceptuales
 
