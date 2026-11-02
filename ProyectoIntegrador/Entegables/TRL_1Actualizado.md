@@ -4,7 +4,7 @@
 
 ### Universidad Peruana Cayetano Heredia
 
-**Carrera de Ingeniería Informática – Proyecto Integrador**  
+**Carrera de Ingeniería Informática e Industrial – Proyecto Integrador**  
 **2026-II**
 
 ### Grupo 4
