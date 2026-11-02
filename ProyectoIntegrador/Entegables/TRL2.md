@@ -194,7 +194,9 @@ Se desarrollaron diferentes alternativas de diseño para la estructura de FishMo
 <!-- INSERTAR AQUÍ CAPTURA DE LOS BOCETOS -->
 
 <p align="center">
-  <i>Figura 2. Bocetos conceptuales de FishMon 365.</i>
+  <img width="1024" height="1536" alt="Boceto 2 de boya sondadora" src="https://github.com/user-attachments/assets/875493d8-8769-4fc0-a317-f94a0b1b4d81" />
+  <img width="1800" height="5142" alt="Boceto_3_FISHMON365_vertical_completo" src="https://github.com/user-attachments/assets/39c718a0-9542-4a4b-a9c8-16e2c408fc47" />
+
 </p>
 
 ### 5.3 Modelado 3D
