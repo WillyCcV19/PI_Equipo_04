@@ -472,7 +472,7 @@ Estos aspectos deberán evaluarse en niveles posteriores de madurez tecnológica
 | Arquitectura conceptual | Se establecieron un módulo flotante, un módulo sumergible, Arduino Nano, ESP32 con LoRa, sensores, mecanismo de movimiento y dashboard. |
 | Aplicación propuesta | El sistema se orienta al monitoreo de la calidad del agua en la crianza de trucha arco iris. |
 | Perfil o propuesta del proyecto | Se definieron el problema, objetivos, usuarios, propuesta tecnológica, resultados esperados, alcance y limitaciones. |
-| Análisis de patentabilidad y protección | Se desarrollará mediante la búsqueda y comparación de antecedentes patentados relacionados con sistemas IoT de monitoreo acuícola y calidad del agua. |
+| Análisis de patentabilidad y protección | Se realizó una búsqueda preliminar y comparación de antecedentes patentados relacionados con sistemas IoT de monitoreo acuícola y calidad del agua. |
 
 ## 10. Conclusión
 
