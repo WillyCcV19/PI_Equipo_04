@@ -191,14 +191,26 @@ El funcionamiento general de FishMon 365 se resume de la siguiente manera:
 
 ### 5.2 Bocetos conceptuales
 
-Se desarrollaron diferentes alternativas de diseño para la estructura de FishMon 365. A partir de la comparación de criterios como flotabilidad, estabilidad, protección de los componentes, distribución del centro de gravedad y facilidad de mantenimiento, se seleccionó el boceto que mejor se adapta a los requerimientos planteados.
+Se desarrollaron diferentes alternativas de diseño para la estructura de FishMon 365, considerando la distribución de los componentes electrónicos, el sistema de sensado, el mecanismo de descenso del módulo sumergible y la estabilidad del conjunto.
 
-<!-- INSERTAR AQUÍ CAPTURA DE LOS BOCETOS -->
+Tras comparar las propuestas, se optó por el **Boceto 3** como diseño conceptual principal. Esta alternativa incorpora tubos de flotación externos alrededor de la estructura, lo que proporciona una mayor superficie de apoyo y una mejor distribución del sistema en el agua. Asimismo, mantiene separados el módulo flotante —donde se ubican la batería, el ESP32, la antena y el mecanismo de accionamiento— y el módulo sumergible, que contiene el Arduino Nano y los sensores de calidad del agua.
+
+La configuración seleccionada también facilita la distribución de los componentes, el acceso para mantenimiento y la integración del mecanismo de descenso y elevación necesario para realizar mediciones en diferentes profundidades.
 
 <p align="center">
-  <img width="1024" height="1536" alt="Boceto 2 de boya sondadora" src="https://github.com/user-attachments/assets/875493d8-8769-4fc0-a317-f94a0b1b4d81" />
-  <img width="1800" height="5142" alt="Boceto_3_FISHMON365_vertical_completo" src="https://github.com/user-attachments/assets/39c718a0-9542-4a4b-a9c8-16e2c408fc47" />
+  <img width="44%" alt="Boceto 2 de FishMon 365" src="https://github.com/user-attachments/assets/875493d8-8769-4fc0-a317-f94a0b1b4d81" />
+  &nbsp;&nbsp;&nbsp;
+  <img width="25%" alt="Boceto 3 seleccionado de FishMon 365" src="https://github.com/user-attachments/assets/39c718a0-9542-4a4b-a9c8-16e2c408fc47" />
+</p>
 
+<p align="center">
+  <i>Boceto 2 — alternativa evaluada</i>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <i>Boceto 3 — diseño conceptual seleccionado</i>
+</p>
+
+<p align="center">
+  <i>Figura 2. Comparación de alternativas de diseño de FishMon 365.</i>
 </p>
 
 ### 5.3 Modelado 3D
