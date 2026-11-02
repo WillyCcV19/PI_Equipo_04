@@ -174,18 +174,20 @@ El funcionamiento general de FishMon 365 se resume de la siguiente manera:
   <i>Haz clic sobre la imagen para verla en tamaño completo.</i>
 </p>
 
-**Figura 1.** Matriz morfológica utilizada para la selección preliminar de componentes de FishMon 365.
-
 | Elemento | Componente seleccionado | Función |
 |---|---|---|
-| Adquisición | Arduino Nano | Recibir y procesar las señales de los sensores |
-| Comunicación | ESP32 + LoRa | Transmitir las mediciones |
-| Temperatura | Termistor NTC 10K sumergible | Medir temperatura |
-| pH | Sensor seleccionado en matriz | Medir pH |
-| Turbidez | Sensor seleccionado en matriz | Medir turbidez |
-| Conductividad | Sensor seleccionado en matriz | Medir conductividad |
-| Oxígeno disuelto | Sensor seleccionado en matriz | Medir OD |
-| Movimiento | Motor de descenso/elevación | Posicionar el módulo sumergible |
+| Adquisición de señales | Arduino Nano ATmega328P | Recibir y procesar las señales provenientes de los sensores |
+| Comunicación | Heltec LoRa V4 / ESP32 + LoRa | Recibir los datos del Arduino Nano y transmitirlos mediante LoRa |
+| Temperatura | Termistor NTC 10K sumergible | Medir la temperatura del agua |
+| pH | Sensor genérico de pH con amplificador personalizado | Medir el nivel de acidez o alcalinidad del agua |
+| Turbidez | Sensor genérico infrarrojo con fototransistor | Detectar variaciones de turbidez en el agua |
+| Conductividad | Circuito medidor personalizado basado en LM324 | Medir la conductividad eléctrica del agua |
+| Oxígeno disuelto | DFRobot Gravity DO Sensor | Medir la concentración de oxígeno disuelto |
+| Movimiento vertical | Motorreductor 28BYJ con módulo de control | Accionar el mecanismo de descenso y elevación del módulo sumergible |
+| Alimentación | Batería Li-ion 451P 18650 | Proporcionar energía al sistema |
+| Cable de izado | Senda de nylon monofilamento 80–100 lb | Sostener y desplazar el módulo sumergible |
+| Flotabilidad | Compartimentos vacíos impresos en 3D | Mantener el módulo flotante en la superficie |
+| Encendido | Interruptor basculante | Permitir el encendido y apagado del sistema |
 
 ### 5.2 Bocetos conceptuales
 
