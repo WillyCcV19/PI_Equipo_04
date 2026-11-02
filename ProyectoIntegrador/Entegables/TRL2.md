@@ -149,13 +149,42 @@ Los datos transmitidos serán presentados en un dashboard, donde el usuario podr
 
 El funcionamiento general de FishMon 365 se resume de la siguiente manera:
 
-1. El módulo sumergible toma mediciones de calidad del agua.
-2. Las mediciones se realizan en tres niveles de profundidad.
-3. La información es transferida hacia el módulo flotante.
-4. El ESP32 recibe los datos y los transmite mediante LoRa.
-5. La información llega al sistema receptor.
-6. Los datos se muestran en un dashboard.
-7. El sistema genera alertas cuando se detectan valores fuera de rango.
+```mermaid
+flowchart TD
+    subgraph A["MÓDULO SUMERGIBLE"]
+        S["Sensores de calidad del agua<br/>Oxígeno disuelto, temperatura,<br/>pH, turbidez y conductividad"]
+        N["Arduino Nano<br/>Adquisición de datos"]
+        S --> N
+    end
+
+    subgraph B["MÓDULO FLOTANTE"]
+        E["ESP32 + LoRa<br/>Comunicación inalámbrica"]
+        M["Motorreductor<br/>Descenso y elevación"]
+    end
+
+    subgraph C["SISTEMA DE MONITOREO"]
+        R["Receptor LoRa / Gateway"]
+        D["Servidor y dashboard"]
+        AL["Visualización y alertas"]
+        R --> D --> AL
+    end
+
+    N -->|"Conexión física de datos"| E
+    E -->|"Transmisión LoRa"| R
+
+    M --> P["Posicionamiento del módulo sumergible"]
+    P --> P1["Superficie"]
+    P --> P2["Media agua"]
+    P --> P3["Fondo"]
+
+    classDef sensor fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef control fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef monitor fill:#f3e8ff,stroke:#9333ea,color:#581c87
+
+    class S,N sensor
+    class E,M,P,P1,P2,P3 control
+    class R,D,AL monitor
+```
 
 ## 5. Evidencias de diseño conceptual
 
