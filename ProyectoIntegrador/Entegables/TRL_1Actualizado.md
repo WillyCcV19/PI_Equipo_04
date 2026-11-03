@@ -361,7 +361,7 @@ No se evalúa una solución tecnológica específica ni se busca demostrar el fu
 El resultado del TRL 1 es, por tanto, una base científica y conceptual que permita entender el fenómeno antes de plantear una solución.
 
 ---
-## 6. Revisión de antecedentes científicos, tecnológicos y patentes
+## 6. Indicador 5: Revisión de antecedentes científicos, tecnológicos y patentes
 
 La identificación de los principios fundamentales no solo requiere comprender los fenómenos físico-químicos involucrados, sino también conocer qué investigaciones, tecnologías y desarrollos previos existen alrededor del problema estudiado.
 
