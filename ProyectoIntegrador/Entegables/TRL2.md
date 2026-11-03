@@ -230,6 +230,8 @@ La configuración seleccionada también facilita la distribución de los compone
   <img width="44%" alt="Boceto 2 de FishMon 365" src="https://github.com/user-attachments/assets/875493d8-8769-4fc0-a317-f94a0b1b4d81" />
   &nbsp;&nbsp;&nbsp;
   <img width="25%" alt="Boceto 3 seleccionado de FishMon 365" src="https://github.com/user-attachments/assets/39c718a0-9542-4a4b-a9c8-16e2c408fc47" />
+  &nbsp;&nbsp;&nbsp;
+  <img width="25%" alt="Boceto 3 seleccionado de FishMon 365" src="/Imagenes/func/DrawingJK.jpeg" />
 </p>
 
 <p align="center">
