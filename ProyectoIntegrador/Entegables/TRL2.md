@@ -123,7 +123,11 @@ La arquitectura conceptual de FishMon 365 se plantea a partir de lo identificado
 
 FishMon 365 estará conformado por dos módulos principales: un módulo sumergible y un módulo flotante.
 
-### 4.1 Módulo sumergible
+### 4.1 Caja negra del sistema
+
+### 4.2 Esquema funcional de FishMon 365
+
+### 4.3 Módulo sumergible
 
 El módulo sumergible contendrá los sensores encargados de medir las variables de calidad del agua: oxígeno disuelto, temperatura, pH, turbidez y conductividad. Este módulo será el encargado de realizar las mediciones directamente dentro del agua.
 
@@ -135,23 +139,23 @@ Se plantea que el módulo sumergible pueda tomar lecturas en tres niveles de pro
 
 De esta manera, el sistema permitirá comparar el comportamiento de las variables según la profundidad y obtener una representación más completa de las condiciones del agua.
 
-### 4.2 Módulo flotante
+### 4.4 Módulo flotante
 
 El módulo flotante estará ubicado en la superficie y contendrá los elementos de alimentación, control y comunicación del sistema. En este módulo se integrarán la batería, el ESP32 con LoRa y el motor encargado del mecanismo de descenso y elevación del módulo sumergible.
 
-### 4.3 Adquisición y transferencia de datos
+### 4.5 Adquisición y transferencia de datos
 
 Las señales generadas por los sensores del módulo sumergible serán recibidas y organizadas por el sistema de adquisición de datos. Posteriormente, la información será enviada al módulo flotante, donde el ESP32 se encargará de recibir los datos y prepararlos para su transmisión.
 
-### 4.4 Comunicación inalámbrica
+### 4.6 Comunicación inalámbrica
 
 El módulo flotante transmitirá la información mediante tecnología LoRa, permitiendo enviar las mediciones hacia un sistema receptor para su posterior visualización.
 
-### 4.5 Visualización y alertas
+### 4.7 Visualización y alertas
 
 Los datos transmitidos serán presentados en un dashboard, donde el usuario podrá visualizar las mediciones obtenidas en las distintas profundidades y recibir alertas cuando alguna variable se encuentre fuera de los rangos establecidos para la crianza de trucha arco iris.
 
-### 4.6 Flujo conceptual del sistema
+### 4.8 Flujo conceptual del sistema
 
 El funcionamiento general de FishMon 365 se resume de la siguiente manera:
 
