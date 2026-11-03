@@ -233,7 +233,7 @@ Tras comparar las propuestas, se optó por el **Boceto 3** como diseño conceptu
 La configuración seleccionada también facilita la distribución de los componentes, el acceso para mantenimiento y la integración del mecanismo de descenso y elevación necesario para realizar mediciones en diferentes profundidades.
 
 <p align="center">
-  <img width="25%" alt="Boceto 1 seleccionado de FishMon 365" src="/Imagenes/func/DrawingJK.jpeg" />
+  <img width="20%" alt="Boceto 1 o de FishMon 365" src="https://github.com/user-attachments/assets/c753c650-1d69-4d24-885a-d57a89e6331d" />
   &nbsp;&nbsp;&nbsp;
   <img width="44%" alt="Boceto 2 de FishMon 365" src="https://github.com/user-attachments/assets/875493d8-8769-4fc0-a317-f94a0b1b4d81" />
   &nbsp;&nbsp;&nbsp;
