@@ -57,6 +57,108 @@ Debido a que la conductividad es la inversa de la resistencia, medir con precisi
 
 ### 2.2. Caracterización y calibración de sensores
 
+## Objetivo: Obtener voltajes en condiciones de 100% y 0% de oxígeno disuelto en agua
+- Caracterizar de manera preliminar la respuesta del sensor de oxígeno disuelto en aire, agua aireada y agua con sulfito de sodio
+- Identificar lecturas de referencia para una posterior calibración
+
+## Detalles
+- Para lograr una concentración cercana (no verificada) de 0% oxígeno disuelto se disolvió 1 gramo de sulfito de sodio en 30mL de agua destilada (era la unidad mínima de mi balanza)
+- Para lograr un aproximado (no verificado) de 100% se agitó el agua vigorosamente y se lo dejó airear numerosas veces
+- El osciloscopio posee 8 cuadros de altura (con precisión variable por cada uno)
+- Las mediciones son de RMS hechas durante 12 segundos (12 cuadros horizontales, 1 segundo cada uno)
+
+#### 2.2.1. Oxígeno disuelto
+El objetivo fue caracterizar de manera preliminar la respuesta del sensor de oxígeno disuelto en aire, agua aireada y agua con sulfito de sodio e identificar lecturas de referencia para una posterior calibración.
+
+Detalles:
+- Para lograr una concentración cercana (no verificada) de 0% oxígeno disuelto se disolvió 1 gramo de sulfito de sodio en 30mL de agua destilada (era la unidad mínima de mi balanza)
+- Para lograr un aproximado (no verificado) de 100% se agitó el agua vigorosamente y se lo dejó airear numerosas veces
+- El osciloscopio posee 8 cuadros de altura (con precisión variable por cada uno)
+- Las mediciones son de RMS hechas durante 12 segundos (12 cuadros horizontales, 1 segundo cada uno)
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="/Imagenes/Simulaciones/img2.jpeg" width="100%">
+      <br>
+      <em>Materiales para medir DO con el sensor de DF Robot Gravity DO - SEN237</em>
+    </td>
+    <td align="center">
+      <img src="/Imagenes/Simulaciones/img5.jpeg" width="100%">
+      <br>
+      <em>Amplificador provisional para comprobar el funcionamiento del sensor DO anterior</em>
+    </td>
+  </tr>
+</table>
+
+#### Resultados: 
+
+Al sumergirlo en solución con sulfito de sodio (0% oxígeno disuelto)
+| Tiempo | Voltaje (mv) | Precisión por cuadro (mv) |
+|--|--|--|
+|1:30|47|500|
+|2:00|26|500|
+|2:30|9|500|
+
+Al dejarlo en agua aireada
+
+| Tiempo | Voltaje (mv) | Precisión por cuadro (mv) |
+|--|--|--|
+|1:30|1200|500|
+|2:30|1030|500|
+|3:30|940|500|
+|4:30|870|500|
+|5:00|850|500|
+
+#### 2.2.2 pH
+
+Se utilizó un amplificador con ganancias de 3 y 5:
+
+ph
+<img src="/Imagenes/Simulaciones/img3.jpeg" width="800"/>
+
+#### Resultados:
+
+### Amplificación X5
+|ph4|ph7|ph10|
+|--|--|--|
+|86|-6.2|-200|
+|86.8| -31.6| -199|
+|86.2| -47.2| -206|
+|87| -47.6| -208|
+|87| -52| -214|
+
+
+### Amplificación X3
+|ph4|ph7|ph10|
+|-|-|-|
+|117| -60| -222|
+|106| -52.6| -214|
+|94| -67.3| -218|
+|95.7| -68| -230|
+|102| -63| -225|
+
+#### 2.2.3. Conductividad
+
+Los resultados fueron obtenidos con el siguiente circuito ensamblado. Consultar con el esquemático en la sección de 2.1.3. Acondicionamiento del sensor de conductividad.
+
+<img src="/Imagenes/Simulaciones/img4.jpeg" width="800"/>
+
+|Resistencia (ohms)|Resistencia medida|Error |
+|------------------|------------------|------|
+|5000              |4950              |-1    |
+|3330              |3290              |-1.2  |
+|2500              |2480              |-0.8  |
+|2040              |2050              |0.5   |
+|1530              |1540              |0.7   |
+|1020              |1020              |0     |
+|510               |510               |0     |
+|255               |237               |-7.1  |
+|170               |160               |-5.9  |
+|128               |121               |-4.7  |
+
+El error de medición no supera el +- 10%
+
 ### 2.3. Simulación estructurales de las piezas de carcasa
 
 Las simulaciones estáticas demuestran de forma analítica que las piezas estructurales críticas de FISHMON 365 resisten las cargas de operación, con un factor de seguridad mínimo de 5.6.
@@ -95,7 +197,7 @@ Se realizaron análisis estáticos lineales en **SimScale**, con la geometría m
 
 El factor de seguridad se calculó así:
 
-
+<img src="/Imagenes/Simulaciones/form1.png" width="300"/>
 
 FS=40 MPa/Esfuerzo máximo
 
@@ -124,10 +226,13 @@ Cada carga se calculó a partir de las condiciones de uso del dispositivo en est
 
 **Presión hidrostática:**
 
+<img src="/Imagenes/Simulaciones/form2.png" width="300"/>
+
 P = 1000\*9.81\*5= 49050 Pa
 
 **Fuerza de arrastre de la corriente:**
 
+<img src="/Imagenes/Simulaciones/form3.png" width="300"/>
 
 FD= 1.6-2N (v= 0.3 m/s)
 
@@ -137,6 +242,7 @@ T= 34 mN.m \* 32= 1.1Nm
 
 **Fuerza máxima del cable** (carrete de 25 mm de diámetro):
 
+<img src="/Imagenes/Simulaciones/form4.png" width="300"/>
 
 F= 1.1/0.0125= 87N
 
