@@ -387,3 +387,8 @@ El análisis demuestra que el concepto estructural de FISHMON 365 es viable: con
 Con estos resultados, la prueba analítica de las funciones estructurales críticas queda cubierta, lo que respalda el nivel TRL 3.
 
 ## 3. Conclusión e indicadores del cumplimiento del TRL-3
+
+Los resultados obtenidos respaldan la viabilidad técnica de los principios de funcionamiento de FISHMON 365. Las simulaciones eléctricas y las pruebas preliminares de los sensores demuestran que es posible acondicionar y medir las señales de conductividad, oxígeno disuelto y pH. Asimismo, las simulaciones estructurales confirman que las piezas críticas soportan las cargas previstas, con factores de seguridad superiores al mínimo establecido.
+
+En conjunto, estas evidencias respaldan la viabilidad del concepto y permiten justificar el nivel de madurez tecnológica TRL 3, aunque todavía será necesario realizar pruebas experimentales integradas y de resistencia al agua para validar el funcionamiento del sistema completo.
+
