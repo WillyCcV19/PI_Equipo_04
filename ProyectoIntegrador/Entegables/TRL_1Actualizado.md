@@ -361,35 +361,112 @@ No se evalúa una solución tecnológica específica ni se busca demostrar el fu
 El resultado del TRL 1 es, por tanto, una base científica y conceptual que permita entender el fenómeno antes de plantear una solución.
 
 ---
+## 6. Revisión de antecedentes científicos, tecnológicos y patentes
 
-## 6. Indicador 5: Generación y revisión de conocimiento científico
+La identificación de los principios fundamentales no solo requiere comprender los fenómenos físico-químicos involucrados, sino también conocer qué investigaciones, tecnologías y desarrollos previos existen alrededor del problema estudiado.
 
-### 6.1 Por qué este indicador es central en el TRL 1
+Por ello, además de la revisión científica sobre calidad del agua y crianza de trucha arco iris, se realizó una revisión inicial de tecnologías de monitoreo, sistemas IoT aplicados a calidad del agua y acuicultura, soluciones multiparámetro y patentes relacionadas.
 
-En el TRL 1, la evidencia esperada son artículos científicos publicados sobre los principios de la tecnología [[13]](#ref13). Por eso este indicador es el que respalda a todos los demás: sin literatura que sustente los principios, el resto sería solo una afirmación.
+En esta etapa, la revisión tecnológica y de patentes tiene como finalidad **conocer el estado previo del conocimiento y de la tecnología**, sin plantear todavía una solución tecnológica propia ni afirmar la patentabilidad de una propuesta.
 
-### 6.2 Cómo se realizó la revisión
+### 6.1 Antecedentes científicos
 
-Tomamos como fuente técnica inicial el manual de FONDEPES, que describe parámetros relevantes de calidad del agua: oxígeno disuelto, temperatura, pH y sólidos en suspensión [[1]](#ref1). Luego la complementamos con literatura científica y técnica, y contrastamos lo que dice el manual con resultados experimentales y documentos técnicos.
+La revisión científica se orientó inicialmente a comprender los principios físico-químicos que determinan la calidad del agua en la crianza de trucha arco iris (*Oncorhynchus mykiss*).
 
-### 6.3 Matriz de fuentes revisadas
+Como fuente técnica principal se utilizó el *Manual de Cultivo de Trucha en Ambientes Convencionales* de FONDEPES [[1]](#ref1), complementado con artículos científicos y documentos técnicos relacionados con oxígeno disuelto, temperatura, pH, turbidez y conductividad.
+
+La literatura revisada permitió establecer que el oxígeno disuelto constituye uno de los parámetros más importantes para la supervivencia y crecimiento de la trucha [[1]](#ref1), [[2]](#ref2). Asimismo, se identificó que la temperatura influye tanto en el metabolismo del pez como en la capacidad del agua para contener oxígeno [[3]](#ref3), [[5]](#ref5).
+
+También se revisaron los principios científicos de los diferentes métodos de medición. Para el oxígeno disuelto se identificaron métodos colorimétricos, el método de Winkler y métodos electrométricos [[4]](#ref4), [[10]](#ref10), [[11]](#ref11). Para la temperatura se analizaron sensores resistivos como RTD y termistores, así como termopares [[6]](#ref6).
+
+En el caso del pH, se identificó el principio electrométrico basado en un electrodo sensible a los iones hidrógeno [[15]](#ref15), [[17]](#ref17). La turbidez se relaciona con la dispersión de luz producida por partículas suspendidas [[14]](#ref14), mientras que la conductividad eléctrica depende de la presencia de sustancias e iones disueltos en el agua [[7]](#ref7), [[8]](#ref8), [[16]](#ref16).
+
+Otro conocimiento relevante obtenido de la literatura es que las condiciones del agua pueden variar verticalmente. Se han observado diferencias de oxígeno asociadas a procesos de estratificación y mezcla de la columna de agua [[9]](#ref9), lo que indica que una medición realizada en un único punto puede no representar completamente las condiciones del sistema acuático.
+
+#### Matriz de antecedentes científicos
 
 | Tema revisado | Fuente(s) | Aporte principal |
 |---|---|---|
-| Parámetros de calidad del agua en cultivo de trucha | [[1]](#ref1) | Rangos de referencia de oxígeno, temperatura, pH y sólidos. |
-| Efectos de la hipoxia en la trucha arco iris | [[2]](#ref2) | La falta de oxígeno retrasa el crecimiento y altera el metabolismo del calcio. |
-| Influencia de temperatura, salinidad y presión en el oxígeno disuelto | [[3]](#ref3) | Ecuaciones de solubilidad del oxígeno en agua. |
-| Métodos para determinar el oxígeno disuelto | [[4]](#ref4), [[10]](#ref10), [[11]](#ref11) | Principios de los métodos colorimétrico, Winkler y electrométrico. |
-| Interacción temperatura–oxígeno disuelto | [[5]](#ref5) | Ambos factores interactúan sobre el crecimiento y la condición del pez. |
-| Medición de la temperatura del agua | [[6]](#ref6) | Alternativas al termómetro de vidrio: RTD, termistores y termopares. |
-| Conductividad en cultivos de trucha | [[7]](#ref7), [[8]](#ref8), [[16]](#ref16) | Valores de referencia, valores registrados y fundamento de la medición. |
-| Variación vertical del oxígeno | [[9]](#ref9) | Diferencias de oxígeno por estratificación en la columna de agua. |
-| Turbidez y pH | [[14]](#ref14), [[15]](#ref15), [[17]](#ref17) | Definición, principio de medición e importancia como indicadores de calidad. |
-| Metodología TRL en el Perú | [[12]](#ref12), [[13]](#ref13) | Marco de niveles de madurez y resultados esperados del TRL 1. |
+| Parámetros de calidad del agua en cultivo de trucha | [[1]](#ref1) | Rangos de referencia de oxígeno, temperatura, pH y sólidos |
+| Efectos de la hipoxia en la trucha arco iris | [[2]](#ref2) | Relación entre falta de oxígeno, crecimiento y metabolismo |
+| Solubilidad del oxígeno | [[3]](#ref3) | Influencia de temperatura, presión y salinidad |
+| Métodos de medición de oxígeno disuelto | [[4]](#ref4), [[10]](#ref10), [[11]](#ref11) | Principios colorimétrico, Winkler y electrométrico |
+| Temperatura y oxígeno | [[5]](#ref5) | Interacción entre ambas variables y crecimiento de la trucha |
+| Sensores de temperatura | [[6]](#ref6) | Principios de RTD, termistores y termopares |
+| Conductividad en sistemas acuícolas | [[7]](#ref7), [[8]](#ref8), [[16]](#ref16) | Valores registrados y fundamento de la medición |
+| Variación según profundidad | [[9]](#ref9) | Diferencias verticales de oxígeno en la columna de agua |
+| Turbidez y pH | [[14]](#ref14), [[15]](#ref15), [[17]](#ref17) | Fundamentos de medición e importancia para calidad del agua |
 
-### 6.4 Qué aportó la comparación entre fuentes
+### 6.2 Antecedentes tecnológicos de monitoreo de calidad del agua
 
-Contrastar el manual de FONDEPES con estudios internacionales permitió confirmar que el oxígeno es un parámetro crítico [[1]](#ref1), [[2]](#ref2) y que la temperatura debe analizarse junto con él [[3]](#ref3), [[5]](#ref5). También permitió detectar un límite importante: **los valores de conductividad provienen de contextos distintos** (raceways en Nepal [[8]](#ref8) y sistemas de recirculación [[7]](#ref7)), por lo que no deben tomarse como valores definitivos para otras condiciones sin contrastarlos.
+Además de los fundamentos científicos, se revisaron sistemas tecnológicos desarrollados para realizar monitoreo automático de parámetros de calidad del agua.
+
+Adrián, Jiménez y Amundarain analizaron diferentes sistemas de monitoreo de calidad del agua basados en IoT. En los trabajos estudiados se utilizaron sensores para variables como pH, temperatura, turbidez, sólidos disueltos, conductividad y oxígeno disuelto, combinados con microcontroladores y tecnologías de comunicación [[18]](#ref18).
+
+Santamaría Masapuncho y Bayas Altamirano desarrollaron un sistema IoT para monitorear parámetros de calidad del agua en una planta de tratamiento. Su arquitectura se organizó en capas de percepción, red y aplicación e integró sensores de pH, turbidez y cloro residual con Arduino Mega y NodeMCU ESP8266 [[19]](#ref19).
+
+En Perú, Garcia-Gonzales y García-Estrella implementaron un sistema de sensores de bajo costo basado en IoT para monitorear pH, turbidez, temperatura, sólidos disueltos y conductividad eléctrica. Durante el estudio se recopilaron datos automáticamente durante un periodo prolongado, demostrando la posibilidad de realizar monitoreo continuo con sensores electrónicos [[20]](#ref20).
+
+Estos antecedentes muestran que el monitoreo de calidad del agua puede realizarse mediante una arquitectura compuesta por sensores, unidades de procesamiento, sistemas de comunicación y plataformas de almacenamiento o visualización.
+
+### 6.3 Tecnologías IoT aplicadas a acuicultura
+
+También se identificaron antecedentes específicamente relacionados con acuicultura.
+
+PROCIENCIA registra un proyecto peruano orientado al desarrollo y escalamiento de un sistema IoT multiparámetro para la gestión automatizada de la calidad del agua en múltiples estanques de cultivo de *Oncorhynchus mykiss*. El proyecto considera variables como temperatura, pH y oxígeno disuelto y plantea el procesamiento y transmisión de los datos mediante tecnologías IoT [[21]](#ref21).
+
+Por otro lado, Cuenca Luna et al. desarrollaron **WiFish**, una plataforma de monitoreo acuícola basada en IoT y computación en la nube. El sistema utiliza un ESP32, sensores de pH y temperatura, transmisión mediante Wi-Fi, almacenamiento en la nube, visualización remota y generación de alertas [[22]](#ref22).
+
+Estos desarrollos demuestran que las tecnologías IoT ya se utilizan para supervisar condiciones del agua en entornos acuícolas y que es posible combinar sensores, microcontroladores, comunicación inalámbrica y plataformas digitales para obtener información de manera remota.
+
+### 6.4 Sistemas de monitoreo multiparámetro
+
+La revisión tecnológica también permitió identificar sistemas capaces de medir varias variables de manera simultánea.
+
+Los trabajos revisados por Adrián, Jiménez y Amundarain incluyen sistemas que integran diferentes combinaciones de sensores para pH, temperatura, turbidez, sólidos disueltos, conductividad y oxígeno disuelto [[18]](#ref18).
+
+De manera similar, los antecedentes acuícolas analizados utilizan más de una variable para obtener una representación más completa de las condiciones del agua. El proyecto registrado por PROCIENCIA considera temperatura, pH y oxígeno disuelto [[21]](#ref21), mientras que WiFish integra sensores de pH y temperatura dentro de una misma plataforma tecnológica [[22]](#ref22).
+
+Estos antecedentes permiten reconocer que el monitoreo multiparámetro constituye un enfoque utilizado previamente para estudiar la calidad del agua. Sin embargo, en TRL 1 esta información se presenta únicamente como parte del conocimiento tecnológico existente y no como selección de una arquitectura o solución propia.
+
+#### Síntesis de antecedentes tecnológicos
+
+| Antecedente | Variables principales | Tecnología utilizada | Aplicación |
+|---|---|---|---|
+| Adrián et al. [[18]](#ref18) | pH, temperatura, turbidez, TDS, conductividad, oxígeno disuelto, según el sistema | Arduino y tecnologías IoT | Monitoreo de calidad del agua |
+| Santamaría Masapuncho y Bayas Altamirano [[19]](#ref19) | pH, turbidez y cloro residual | Arduino Mega + NodeMCU ESP8266 | Planta de tratamiento de agua |
+| Garcia-Gonzales y García-Estrella [[20]](#ref20) | pH, turbidez, temperatura, TDS y conductividad | Sensores de bajo costo + IoT | Monitoreo de agua en zonas rurales |
+| PROCIENCIA [[21]](#ref21) | Temperatura, pH y oxígeno disuelto | Sistema IoT multiparámetro | Estanques de trucha arco iris |
+| WiFish [[22]](#ref22) | pH y temperatura | ESP32 + Wi-Fi + Cloud | Acuicultura |
+
+### 6.5 Patentes relacionadas
+
+Como parte de la revisión del conocimiento tecnológico existente, se realizó una búsqueda preliminar de patentes relacionadas con instrumentos y sistemas para la medición y monitoreo de calidad del agua.
+
+Se identificó el modelo de utilidad **CN216791993U**, denominado *Handheld water quality measuring instrument*, correspondiente a un instrumento portátil para realizar mediciones de calidad del agua y proteger los componentes utilizados durante el proceso de medición [[23]](#ref23).
+
+Asimismo, se revisó la patente **CN102809637A**, también relacionada con un instrumento de medición multiparámetro de calidad del agua. La solución contempla diferentes elementos de sensado para variables relacionadas con conductividad o salinidad, potencial de oxidación-reducción, pH, gases disueltos y oxígeno disuelto, además del almacenamiento de información [[24]](#ref24).
+
+También se identificó la patente **CN103969414A**, denominada *Wireless water quality multi-parameter monitoring system*. Esta propuesta incorpora diferentes sensores, baterías, circuitos de control y comunicación inalámbrica conectados a un sistema externo para realizar monitoreo de calidad del agua [[25]](#ref25).
+
+Finalmente, se revisó la patente **WO2022119461A1**, denominada *Aquaculture monitoring device*. Esta resulta especialmente relevante por estar orientada a un contexto acuícola. El dispositivo incorpora elementos de flotación, sensores de temperatura, pH y oxígeno disuelto, un microcomputador, alimentación eléctrica y conectividad inalámbrica. La solución permite registrar mediciones y generar notificaciones frente a valores críticos [[26]](#ref26).
+
+#### Comparación general de las patentes revisadas
+
+| Patente | Tipo de solución | Características principales |
+|---|---|---|
+| CN216791993U [[23]](#ref23) | Instrumento portátil de calidad del agua | Medición y protección de componentes |
+| CN102809637A [[24]](#ref24) | Instrumento multiparámetro | Integra diferentes sensores y almacenamiento de datos |
+| CN103969414A [[25]](#ref25) | Sistema inalámbrico multiparámetro | Sensores, batería, control y comunicación inalámbrica |
+| WO2022119461A1 [[26]](#ref26) | Dispositivo de monitoreo acuícola | Flotación, sensores, procesamiento, comunicación y alertas |
+
+La presencia de estas patentes demuestra que ya existen desarrollos relacionados con medición multiparámetro, estructuras flotantes, sensores y transmisión inalámbrica de datos.
+
+En este TRL no se realiza todavía una evaluación de novedad ni se afirma la existencia de una solución patentable. La revisión tiene como finalidad reconocer tecnologías previamente desarrolladas y establecer una base para comparaciones posteriores.
+
+### 6.6 Síntesis del conocimiento existente
+
+La revisión científica, tecnológica y de patentes permitió identificar tres niveles de conocimiento relevantes para continuar el desarrollo del proyecto. En primer lugar, existe una base científica que explica la importancia del oxígeno disuelto, temperatura, pH, turbidez y conductividad en la calidad del agua y en la crianza de trucha arco iris. En segundo lugar, existen soluciones tecnológicas capaces de integrar sensores, microcontroladores, sistemas de comunicación IoT, almacenamiento y plataformas de visualización para realizar monitoreo continuo de calidad del agua. En tercer lugar, la revisión de patentes evidencia que tecnologías como el monitoreo multiparámetro, la transmisión inalámbrica, las estructuras flotantes y el uso de sensores en acuicultura ya han sido desarrolladas previamente. Esta revisión permite reconocer el conocimiento existente antes de formular una propuesta tecnológica propia. Por ello, en el TRL 1 se limita el análisis a identificar los principios científicos, tecnologías existentes y antecedentes patentados, mientras que la formulación, selección de componentes, arquitectura y diferenciación de una solución concreta corresponden a niveles posteriores de madurez tecnológica.
 
 ---
 
@@ -429,7 +506,7 @@ Estos conocimientos constituyen la base científica inicial para las siguientes 
 | **Generación de conocimiento** | Rangos de referencia, interacciones entre parámetros y variación según la profundidad. [[1]](#ref1), [[9]](#ref9) | 3 | Cumplido |
 | **Responde a una pregunta de investigación** | Pregunta principal y preguntas complementarias con su base científica. | 4 | Cumplido |
 | **No declara un uso aplicativo de la tecnología** | Se declara qué se estudia y qué queda fuera de esta etapa. [[12]](#ref12), [[13]](#ref13) | 5 | Cumplido |
-| **Genera como resultado artículos científicos** | Revisión de literatura científica y técnica [[2]](#ref2)–[[11]](#ref11), [[14]](#ref14)–[[17]](#ref17). | 6 | En fortalecimiento |
+| **Generación y revisión de conocimiento científico** | Se realizó una revisión de literatura científica, antecedentes tecnológicos, sistemas IoT aplicados a calidad del agua y acuicultura, así como una revisión preliminar de patentes relacionadas. | 6 | Cumplido |
 
 ### 8.2 Síntesis y limitaciones
 
@@ -450,9 +527,7 @@ Reconocemos, con honestidad, las siguientes limitaciones:
 
 La etapa TRL 1 nos permitió identificar y organizar los principios científicos que relacionan la calidad del agua con la vida de la trucha arco iris (*Oncorhynchus mykiss*). Entendimos que el oxígeno disuelto, la temperatura, el pH, la turbidez y la conductividad son parámetros que se influyen entre sí y que, juntos, definen si el ambiente es favorable o de riesgo para el pez [[1]](#ref1), [[3]](#ref3), [[5]](#ref5), [[7]](#ref7).
 
-Además, explicamos el fundamento científico de cada parámetro y los principios de los tres métodos de medición del oxígeno disuelto, e identificamos que las condiciones del agua pueden variar según la profundidad [[9]](#ref9), lo que obliga a no confiar en una medición puntual.
-
-En coherencia con la metodología TRL adoptada en el Perú [[12]](#ref12), este trabajo se limita a los principios básicos y no declara una solución tecnológica. Con ello queda una base de conocimiento inicial y una pregunta de investigación clara, que sustentan la continuación del proyecto hacia los siguientes niveles de madurez.
+Además, explicamos el fundamento científico de cada parámetro y los principios de los tres métodos de medición del oxígeno disuelto, e identificamos que las condiciones del agua pueden variar según la profundidad [[9]](#ref9), lo que obliga a no confiar en una medición puntual. En coherencia con la metodología TRL adoptada en el Perú [[12]](#ref12), este trabajo se limita a los principios básicos y no declara una solución tecnológica. Con ello queda una base de conocimiento inicial y una pregunta de investigación clara, que sustentan la continuación del proyecto hacia los siguientes niveles de madurez. Asimismo, la revisión de antecedentes tecnológicos y patentes permitió reconocer soluciones existentes relacionadas con monitoreo multiparámetro, IoT y acuicultura, proporcionando una base para la posterior formulación del concepto tecnológico.
 
 ---
 
@@ -491,3 +566,21 @@ En coherencia con la metodología TRL adoptada en el Perú [[12]](#ref12), este 
 <a id="ref16"></a>[16] D. B. Radtke, J. V. Davis, and F. D. Wilde, “Specific electrical conductance (Version 1.2),” *U.S. Geological Survey Techniques of Water-Resources Investigations*, book 9, chap. A6.3, 2005, doi: [10.3133/twri09A6.3](https://doi.org/10.3133/twri09A6.3).
 
 <a id="ref17"></a>[17] U.S. Geological Survey, *Chapter A6.4. Measurement of pH*, U.S. Geological Survey Techniques and Methods, book 9, chap. A6.4, 2021. [Online]. Available: [https://pubs.usgs.gov/publication/tm9A6.4](https://pubs.usgs.gov/publication/tm9A6.4)
+
+<a id="ref18"></a>[18] M. Adrián, I. Jiménez, and I. Amundarain, “Sistemas de monitoreo de calidad del agua en acueductos usando sensores IoT (Internet de las cosas),” 2026. [Online]. Available: [https://www.researchgate.net/publication/415921220_Sistemas_de_monitoreo_de_calidad_del_agua_en_acueductos_usando_sensores_IoT_Internet_de_las_cosas](https://www.researchgate.net/publication/415921220_Sistemas_de_monitoreo_de_calidad_del_agua_en_acueductos_usando_sensores_IoT_Internet_de_las_cosas)
+
+<a id="ref19"></a>[19] A. H. Santamaría Masapuncho and M. M. Bayas Altamirano, “Monitoreo y evaluación de parámetros de calidad de agua obtenidos por la Internet de las cosas (IoT) para la planta de tratamiento de agua potable El Carrizal, perteneciente a la parroquia San Miguel, del Cantón Salcedo, provincia de Cotopaxi,” *Revista Ingenio Global*, vol. 4, no. 2, pp. 280–300, 2025, doi: [10.62943/rig.v4n2.2025.380](https://doi.org/10.62943/rig.v4n2.2025.380).
+
+<a id="ref20"></a>[20] A. A. Garcia-Gonzales and C. García-Estrella, “Monitoreo de la calidad del agua para zonas rurales mediante un sistema de sensores de bajo costo basados en IoT,” *Revista Amazonía Digital*, vol. 5, no. 1, Art. no. e452, 2026, doi: [10.55873/rad.v5i1.452](https://doi.org/10.55873/rad.v5i1.452).
+
+<a id="ref21"></a>[21] Programa Nacional de Investigación Científica y Estudios Avanzados (PROCIENCIA), “Desarrollo y escalamiento de un sistema IoT multiparámetro para la gestión automatizada de calidad del agua en múltiples estanques de cultivo de *Oncorhynchus mykiss*,” Proyecto PE501097073-2025, Universidad Nacional Toribio Rodríguez de Mendoza de Amazonas, Perú, 2025. [Online]. Available: https://observatorio.prociencia.gob.pe/DetalleSubvencion/woz8JiZ4/desarrollo-y-escalamiento-de-un-sistema-iot-multiparametro-para-la-gestion-automatizada-de-calidad-del-agua-en-multiples-estanques-de-cultivo-de-oncorhynchus-mykiss
+
+<a id="ref22"></a>[22] A. J. Cuenca Luna, R. D. Quelal Villarreal, F. S. Donoso Martínez, F. G. Cuzme Rodríguez, and P. D. Muñoz Criollo, “WiFish: Plataforma de monitoreo de acuicultura basada en IoT y cloud computing con cifrado AES-128,” *Revista Colombiana de Tecnologías de Avanzada (RCTA)*, vol. 2, no. 46, pp. 190–200, 2025, doi: [10.24054/rcta.v2i46.4140](https://doi.org/10.24054/rcta.v2i46.4140).
+
+<a id="ref23"></a>[23] Beijing Yongcheng Also Credit Science and Technology Development Co., Ltd., “Handheld water quality measuring instrument,” Utility Model CN216791993U, Jun. 21, 2022. [Online]. Available: https://worldwide.espacenet.com/patent/search/family/081998412/publication/CN216791993U
+
+<a id="ref24"></a>[24] Point Four Water Quality Technologies (Suzhou) Co., Ltd., “Handheld water quality measuring instrument,” Patent CN102809637A, Jan. 4, 2012. [Online]. Available: https://worldwide.espacenet.com/patent/search/family/047233397/publication/CN102809637A
+
+<a id="ref25"></a>[25] Hangzhou Zonwon Technology Co., Ltd., “Wireless water quality multi-parameter monitoring system,” Patent CN103969414A, Aug. 6, 2014. [Online]. Available: https://worldwide.espacenet.com/patent/search/family/051239164/publication/CN103969414A
+
+<a id="ref26"></a>[26] S. F. C. Salva, A. K. A. Gordo, M. E. P. Ceniza, and A. S. Chavez, “Aquaculture monitoring device,” Patent WO2022119461A1, Jun. 9, 2022. [Online]. Available: https://patents.google.com/patent/WO2022119461A1/en
