@@ -4,70 +4,76 @@
 
 ### 1.1 ¿Qué representa el TRL 2?
 
-El TRL 2 corresponde a una etapa de investigación aplicada en la que, a partir de los principios científicos identificados previamente, se formula un concepto tecnológico y se analizan sus posibles aplicaciones. En este nivel la aplicación propuesta todavía es especulativa, por lo que no se busca demostrar experimentalmente el funcionamiento de un prototipo, sino sustentar la viabilidad conceptual de una solución mediante literatura científica, antecedentes tecnológicos y una propuesta de proyecto.
-
-Para este nivel se consideran como principales evidencias los artículos científicos relacionados directamente con la propuesta tecnológica, el análisis de patentabilidad y protección, y la formulación del perfil o propuesta del proyecto.
+El TRL 2 corresponde a una etapa de investigación aplicada en la que, a partir de los principios científicos y antecedentes identificados previamente, se formula un concepto tecnológico y se analiza su posible aplicación. En este nivel la aplicación propuesta todavía es conceptual, por lo que no se busca demostrar experimentalmente el funcionamiento completo de un prototipo, sino definir una solución tecnológica, su arquitectura, sus funciones principales y su posible diferenciación respecto de tecnologías existentes.
 
 ### 1.2 Antecedentes provenientes del TRL 1
 
-Durante el TRL 1 se identificaron los principios científicos relacionados con la calidad del agua para la crianza de trucha arco iris (*Oncorhynchus mykiss*). Se determinaron como variables de interés el oxígeno disuelto, la temperatura, el pH, la turbidez y la conductividad, debido a su relación con las condiciones físico-químicas del medio acuático.
+Durante el TRL 1 se identificaron los principios científicos relacionados con la calidad del agua para la crianza de trucha arco iris (Oncorhynchus mykiss). Se determinaron como variables de interés el oxígeno disuelto, la temperatura, el pH, la turbidez y la conductividad. Asimismo, se analizaron los principios de medición de estas variables, la variación de las condiciones del agua según la profundidad y antecedentes científicos y tecnológicos relacionados con sistemas de monitoreo de calidad del agua. También se realizó una revisión preliminar de patentes relacionadas con instrumentos multiparámetro, sistemas inalámbricos de monitoreo y dispositivos orientados a acuicultura.
 
-Asimismo, se analizaron los principios y métodos que permiten medir estas variables, estableciendo una base científica para considerar posteriormente su monitoreo mediante tecnologías de sensado.
+Estos antecedentes constituyen la base para formular en el TRL 2 una solución tecnológica propia.
 
 ### 1.3 Objetivo del TRL 2
 
-El objetivo de esta etapa es formular el concepto tecnológico de **FishMon 365**, una propuesta de sistema para el monitoreo de parámetros de calidad del agua en la crianza de trucha arco iris, sustentando su posible funcionamiento mediante antecedentes científicos y tecnológicos.
+El objetivo de esta etapa es formular el concepto tecnológico de FishMon 365, una propuesta de sistema para el monitoreo multiparámetro y multinivel de la calidad del agua en la crianza de trucha arco iris. Para ello se compararán los antecedentes identificados durante el TRL 1 con la propuesta FishMon 365, se definirá su arquitectura conceptual, se seleccionarán preliminarmente sus componentes, se establecerán sus funciones y requisitos principales y se desarrollarán evidencias de diseño como bocetos, modelado, diseño electrónico y propuesta de dashboard.
 
-Para ello se realizará una revisión del estado del arte de sistemas de monitoreo aplicados a acuicultura, se formulará una arquitectura conceptual de la solución, se establecerán sus funciones principales y se realizará una revisión preliminar de antecedentes relacionados con propiedad intelectual y patentabilidad.
+## 2. Estado del arte de la propuesta tecnológica (Análisis para la formulación de FishMon 365)
 
-## 2. Estado del arte de la propuesta tecnológica
+### 2.1 Comparación de soluciones existentes con FishMon 365
 
-### 2.1 Sistemas tecnológicos de monitoreo de calidad del agua
+Los antecedentes revisados muestran que existen sistemas capaces de monitorear parámetros de calidad del agua mediante sensores, microcontroladores, comunicación inalámbrica y plataformas digitales [[1]](#ref1)–[[5]](#ref5).
 
-Diversas investigaciones muestran que las tecnologías IoT permiten monitorear continuamente parámetros físico-químicos del agua mediante sensores, unidades de procesamiento y sistemas de comunicación.
-
-Adrián, Jiménez y Amundarain analizaron 13 investigaciones sobre monitoreo de calidad del agua con IoT. Aproximadamente el 69 % empleó microcontroladores Arduino y los parámetros más monitoreados fueron pH, temperatura, turbidez, sólidos disueltos, conductividad y oxígeno disuelto [[1]](#ref1). Su propuesta integra sensores, microcontrolador, comunicación inalámbrica, almacenamiento y visualización de datos.
-
-Santamaría Masapuncho y Bayas Altamirano implementaron en Ecuador un sistema IoT organizado en tres capas: percepción, red y aplicación. Utilizaron sensores de pH, turbidez y cloro residual junto con Arduino Mega y NodeMCU ESP8266. El sistema alcanzó una disponibilidad de 97.3 % y una latencia media de 3.2 segundos [[2]](#ref2). El estudio también resalta la importancia de la calibración y mantenimiento de los sensores.
-
-En Perú, Garcia-Gonzales y García-Estrella desarrollaron un sistema IoT de bajo costo que integró sensores de pH, turbidez, temperatura, sólidos disueltos y conductividad eléctrica. Durante 60 días se recopilaron 2880 registros automáticos, demostrando la posibilidad de realizar monitoreo continuo mediante sensores de bajo costo [[3]](#ref3).
-
-Los tres antecedentes muestran que es técnicamente posible integrar sensores de diferentes parámetros físico-químicos con sistemas de procesamiento y comunicación IoT. Sin embargo, las aplicaciones revisadas se orientan principalmente al agua potable y al monitoreo ambiental. En consecuencia, se identifica la oportunidad de estudiar la adaptación de estas tecnologías al monitoreo de las condiciones del agua en sistemas de crianza de trucha arco iris, considerando variables específicas como oxígeno disuelto, temperatura, pH, turbidez y conductividad.
-
-### 2.2 Aplicación de IoT en acuicultura
-
-En el ámbito acuícola existen propuestas que emplean tecnologías IoT para monitorear las condiciones del agua y apoyar la gestión de los sistemas de cultivo.
-
-PROCIENCIA registra un proyecto peruano orientado al desarrollo de un sistema IoT multiparámetro para estanques de trucha arco iris (*Oncorhynchus mykiss*). La propuesta considera el monitoreo en tiempo real de temperatura, pH y oxígeno disuelto, junto con procesamiento y transmisión de datos hacia servicios en la nube [[4]](#ref4).
-
-Cuenca Luna et al. desarrollaron WiFish, una plataforma IoT para monitoreo acuícola basada en microcontroladores ESP32, sensores de pH y temperatura, transmisión por Wi-Fi y procesamiento en la nube. El sistema permite visualizar datos en tiempo real, generar alertas y realizar supervisión remota mediante una aplicación móvil [[5]](#ref5).
-
-Estos antecedentes respaldan la formulación de FishMon 365 al demostrar que en sistemas acuícolas es posible integrar sensores para medir variables de calidad del agua, transmitir los datos mediante tecnologías IoT, almacenarlos en plataformas digitales y generar alertas para el monitoreo remoto. En particular, WiFish valida una arquitectura basada en ESP32, conectividad Wi-Fi, procesamiento en la nube y visualización mediante una aplicación móvil, mientras que el proyecto registrado por PROCIENCIA evidencia la aplicación de sistemas multiparámetro específicamente en el cultivo de trucha arco iris [4], [5].
-
-### 2.3 Sistemas de monitoreo multiparámetro
-
-Los sistemas multiparámetro permiten integrar varios sensores dentro de una misma plataforma para obtener una visión más completa de la calidad del agua.
-
-Adrián, Jiménez y Amundarain identificaron sistemas IoT capaces de monitorear simultáneamente variables como pH, temperatura, turbidez, sólidos disueltos, conductividad y oxígeno disuelto, utilizando microcontroladores y módulos de comunicación para centralizar las mediciones [[1]](#ref1).
-
-Por otro lado, WiFish integra sensores de pH y temperatura con un microcontrolador ESP32, transmisión por Wi-Fi, procesamiento en la nube, visualización remota y generación de alertas [[5]](#ref5).
-
-Estos antecedentes muestran que es viable combinar diferentes sensores dentro de una sola arquitectura tecnológica, lo que respalda el enfoque multiparámetro de FishMon 365 para supervisar oxígeno disuelto, temperatura, pH, turbidez y conductividad.
-
-### 2.4 Comparación de soluciones existentes
-
-A partir de los antecedentes revisados, se compararon las principales características de las soluciones tecnológicas relacionadas con el monitoreo de calidad del agua.
+A partir de estos antecedentes se realizó la siguiente comparación:
 
 | Solución / antecedente | Variables monitoreadas | Procesamiento / comunicación | Visualización y alertas | Aplicación |
 |---|---|---|---|---|
-| Sistemas revisados por Adrián et al. [[1]](#ref1) | pH, temperatura, turbidez, TDS, conductividad y oxígeno disuelto, según el sistema | Principalmente Arduino; diferentes tecnologías IoT | Depende de cada implementación | Monitoreo de calidad del agua |
+| Sistemas revisados por Adrián et al. [[1]](#ref1) | pH, temperatura, turbidez, TDS, conductividad y oxígeno disuelto, según el sistema | Principalmente Arduino y diferentes tecnologías IoT | Depende de cada implementación | Monitoreo de calidad del agua |
 | Santamaría Masapuncho y Bayas Altamirano [[2]](#ref2) | pH, turbidez y cloro residual | Arduino Mega + NodeMCU ESP8266 / Wi-Fi | Plataforma IoT y alertas | Planta de tratamiento de agua |
 | Garcia-Gonzales y García-Estrella [[3]](#ref3) | pH, turbidez, temperatura, TDS y conductividad | Arduino Mega / comunicación IoT | Registro y monitoreo de datos | Agua en zona rural |
 | Proyecto PROCIENCIA [[4]](#ref4) | Temperatura, pH y oxígeno disuelto | Microcontroladores / servicios en la nube | Monitoreo en tiempo real | Estanques de trucha arco iris |
 | WiFish [[5]](#ref5) | pH y temperatura | ESP32 / Wi-Fi / Huawei Cloud | Aplicación móvil, bot de Telegram y alertas | Acuicultura |
-| **FishMon 365** | **Oxígeno disuelto, temperatura, pH, turbidez y conductividad** | **Arduino Nano para lectura de sensores + ESP32 con LoRa para recepción y transmisión de datos** | **Dashboard para visualización de datos y generación de alertas** | **Crianza de trucha arco iris** |
+| **FishMon 365** | **Oxígeno disuelto, temperatura, pH, turbidez y conductividad** | **Arduino Nano + ESP32 con LoRa** | **Dashboard, historial y alertas** | **Crianza de trucha arco iris** |
 
-FishMon 365 plantea una arquitectura en la que el Arduino Nano se encuentra conectado a los sensores sumergidos y se encarga de realizar la lectura de las variables de calidad del agua. Posteriormente, los datos son enviados al ESP32, que cumple la función de recibir la información y transmitirla mediante comunicación LoRa. Finalmente, las mediciones son enviadas a un dashboard para su visualización y para la generación de alertas.
+La comparación evidencia que varios elementos considerados en FishMon 365 ya se utilizan en desarrollos previos, como sensores, microcontroladores, transmisión inalámbrica y visualización remota.
+
+Sin embargo, FishMon 365 plantea combinar estas funciones con mediciones en diferentes niveles de la columna de agua y una arquitectura formada por un módulo flotante y un módulo sumergible móvil.
+
+### 2.2 Comparación con patentes revisadas
+
+Las patentes revisadas durante el TRL 1 presentan características relacionadas con medición multiparámetro, procesamiento electrónico, transmisión inalámbrica y monitoreo acuícola [[6]](#ref6)–[[9]](#ref9).
+
+La patente *Aquaculture monitoring device* [[9]](#ref9) presenta una similitud importante con FishMon 365 debido a que incorpora una estructura flotante, sensores de temperatura, pH y oxígeno disuelto y conectividad inalámbrica.
+
+A partir de estas referencias se identificó la siguiente comparación:
+
+| Aspecto | Tecnologías patentadas revisadas | FishMon 365 |
+|---|---|---|
+| Monitoreo multiparámetro | Presente [[7]](#ref7), [[8]](#ref8) | Cinco variables |
+| Estructura flotante | Presente en solución acuícola [[9]](#ref9) | Módulo flotante |
+| Sensores sumergidos | Presente en soluciones de monitoreo | Integrados en módulo sumergible |
+| Comunicación inalámbrica | Presente [[8]](#ref8), [[9]](#ref9) | LoRa |
+| Alertas | Presente en algunas soluciones [[9]](#ref9) | Dashboard con alertas |
+| Medición por profundidad | No identificada como característica central en los antecedentes revisados | Superficie, media agua y fondo |
+| Movimiento vertical de sensores | No identificado como característica principal en los antecedentes revisados | Mecanismo de descenso y elevación |
+| Módulo flotante + módulo sumergible móvil | No identificado de forma equivalente en los antecedentes revisados | Elemento central de la arquitectura |
+
+Esta comparación no permite afirmar que FishMon 365 sea patentable. Para ello sería necesario realizar posteriormente un análisis formal de las reivindicaciones, novedad y actividad inventiva.
+
+### 2.3 Oportunidad tecnológica identificada
+
+Los antecedentes demuestran que es posible integrar sensores, microcontroladores, tecnologías IoT y plataformas digitales para monitorear calidad del agua.
+
+A partir de la comparación se identifica la oportunidad de formular un sistema orientado específicamente a la crianza de trucha arco iris que combine:
+
+- monitoreo de oxígeno disuelto, temperatura, pH, turbidez y conductividad;
+- mediciones en superficie, media agua y fondo;
+- módulo flotante y módulo sumergible móvil;
+- mecanismo de descenso y elevación;
+- adquisición de datos mediante Arduino Nano;
+- transmisión mediante ESP32 con LoRa;
+- asociación de cada medición con su nivel de profundidad;
+- visualización histórica y generación de alertas mediante un dashboard.
+
+La propuesta de FishMon 365 no se diferencia por un componente individual, sino por la **integración funcional de estos elementos dentro de una arquitectura orientada al monitoreo multiparámetro y multinivel**.
 
 ## 3. Formulación del concepto tecnológico
 
@@ -207,7 +213,7 @@ flowchart TD
 |---|---|---|
 | Adquisición de señales | Arduino Nano ATmega328P | Recibir y procesar las señales provenientes de los sensores |
 | Comunicación | Heltec LoRa V4 / ESP32 + LoRa | Recibir los datos del Arduino Nano y transmitirlos mediante LoRa |
-| Temperatura | Termistor NTC 10K sumergible | Medir la temperatura del agua |
+| Temperatura | Termistor digital DS18B20 | Medir la temperatura del agua |
 | pH | Sensor genérico de pH con amplificador personalizado | Medir el nivel de acidez o alcalinidad del agua |
 | Turbidez | Sensor genérico infrarrojo con fototransistor | Detectar variaciones de turbidez en el agua |
 | Conductividad | Circuito medidor personalizado basado en LM324 | Medir la conductividad eléctrica del agua |
@@ -441,51 +447,49 @@ El sistema deberá comparar las mediciones con los rangos establecidos para la c
 
 El diseño deberá facilitar el acceso a sensores, batería, cables y componentes electrónicos para permitir su reemplazo, mantenimiento y calibración periódica.
 
-## 7. Análisis de patentabilidad y protección
+## 7. Elementos de diferenciación de FishMon 365
 
-### 7.1 Búsqueda de patentes relacionadas
+A partir de la comparación con antecedentes tecnológicos y patentes revisados previamente, se identificaron características que permiten definir conceptualmente la propuesta de FishMon 365.
 
-Como parte del análisis preliminar de patentabilidad de FishMon 365, se realizó una búsqueda de patentes relacionadas con tecnologías para la medición y monitoreo de la calidad del agua.
+### 7.1 Elementos presentes en tecnologías existentes
 
-Entre las patentes identificadas se encuentran soluciones orientadas a instrumentos portátiles de medición, integración de múltiples sensores y transmisión inalámbrica de datos de calidad del agua.
+La revisión previa mostró que existen soluciones que ya incorporan:
 
-Una de las patentes revisadas corresponde a un instrumento portátil diseñado para realizar mediciones de calidad del agua y proteger los componentes utilizados durante el proceso de medición [[6]](#ref6).
+- sensores para medir diferentes parámetros de calidad del agua;
+- sistemas multiparámetro;
+- microcontroladores;
+- comunicación inalámbrica;
+- estructuras flotantes;
+- almacenamiento y visualización de datos;
+- generación de alertas.
 
-También se identificó una patente de un instrumento multiparámetro que integra sensores de conductividad o salinidad, potencial de oxidación-reducción, pH, gases disueltos y oxígeno disuelto, además de permitir el almacenamiento de los datos obtenidos [[7]](#ref7).
+Por ello, estos elementos considerados individualmente no constituyen por sí solos una diferenciación de FishMon 365.
 
-Asimismo, se encontró una patente correspondiente a un sistema inalámbrico de monitoreo multiparámetro de calidad del agua. Esta solución integra sensores, baterías, circuitos de control y módulos de comunicación inalámbrica conectados con un servidor para proporcionar información en tiempo real [[8]](#ref8).
+### 7.2 Integración propuesta en FishMon 365
 
-Adicionalmente, se identificó la patente **WO2022119461A1**, denominada *Aquaculture monitoring device*, específicamente orientada al monitoreo acuícola. La propuesta utiliza una estructura con elementos de flotación e integra sensores de temperatura, pH y oxígeno disuelto, un microcomputador, una fuente de alimentación y conectividad inalámbrica. El sistema permite registrar las mediciones y enviar notificaciones cuando alguno de los parámetros presenta valores críticos [[9]](#ref9).
+La propuesta plantea integrar:
 
-Esta patente resulta especialmente relevante para FishMon 365 debido a que combina monitoreo de calidad del agua, flotabilidad, sensores y comunicación inalámbrica dentro de una aplicación acuícola.
+- un módulo flotante para alimentación, control y comunicación;
+- un módulo sumergible móvil que contenga los sensores;
+- un mecanismo de descenso y elevación;
+- mediciones asociadas a superficie, media agua y fondo;
+- cinco variables de calidad del agua;
+- adquisición mediante Arduino Nano;
+- transmisión de datos mediante ESP32 con LoRa;
+- visualización mediante dashboard;
+- generación de alertas de acuerdo con los valores registrados.
 
-### 7.2 Comparación de las patentes con FishMon 365
+### 7.3 Diferenciación conceptual
 
-Las patentes revisadas presentan características tecnológicas que también forman parte del concepto de FishMon 365, como el uso de múltiples sensores, procesamiento electrónico de las mediciones y transmisión de información hacia sistemas externos.
+La principal diferenciación conceptual propuesta para FishMon 365 se encuentra en la combinación del monitoreo multiparámetro con el monitoreo multinivel.
 
-La patente *Aquaculture monitoring device* presenta una mayor similitud con FishMon 365, debido a que está diseñada específicamente para acuicultura, incorpora una estructura flotante y monitorea parámetros como temperatura, pH y oxígeno disuelto.
+El módulo sumergible podrá desplazarse verticalmente para obtener mediciones en diferentes zonas de la columna de agua y asociar los valores registrados con su nivel de profundidad.
 
-Sin embargo, FishMon 365 plantea una arquitectura compuesta por un módulo flotante y un módulo sumergible móvil. El sistema propone medir cinco variables —oxígeno disuelto, temperatura, pH, turbidez y conductividad— y realizar las mediciones en tres niveles de la columna de agua: superficie, media agua y fondo.
+Esta característica busca responder al conocimiento obtenido durante el TRL 1 respecto a que las condiciones del agua pueden variar entre la superficie, la zona media y el fondo.
 
-Además, FishMon 365 plantea un mecanismo de descenso y elevación del módulo sumergible, un Arduino Nano para la adquisición de las señales de los sensores, un ESP32 con LoRa para la transmisión de datos y un dashboard para la visualización y generación de alertas.
+La identificación de estas características no permite afirmar todavía que FishMon 365 sea patentable. Su novedad y posible protección deberán evaluarse posteriormente mediante un análisis más detallado de las reivindicaciones de las patentes existentes.
 
-### 7.3 Evaluación preliminar de protección
-
-La búsqueda realizada permite identificar que varios elementos individuales de FishMon 365, como los sensores multiparámetro, la transmisión inalámbrica, las estructuras flotantes y el almacenamiento de información, ya se encuentran presentes en tecnologías patentadas.
-
-Por esta razón, una posible diferenciación de FishMon 365 no debería sustentarse únicamente en el uso de sensores o comunicación inalámbrica, sino en la integración y funcionamiento conjunto de sus componentes.
-
-Entre los elementos que requieren un análisis posterior se encuentran:
-
-- la combinación de un módulo flotante y un módulo sumergible móvil;
-- el mecanismo de descenso y elevación de los sensores;
-- la medición secuencial en superficie, media agua y fondo;
-- la asociación de las mediciones con cada nivel de profundidad;
-- la integración de cinco parámetros de calidad del agua en una sola solución;
-- la comunicación mediante LoRa y la visualización mediante dashboard;
-- la aplicación específica del sistema en la crianza de trucha arco iris.
-
-La identificación de estos elementos no permite afirmar todavía que FishMon 365 sea patentable. Para determinarlo será necesario realizar una revisión más detallada de las reivindicaciones de las patentes encontradas y evaluar criterios como novedad y actividad inventiva.
+---
 
 ## 8. Perfil del proyecto FishMon 365
 
@@ -558,13 +562,14 @@ Estos aspectos deberán evaluarse en niveles posteriores de madurez tecnológica
 
 | Indicador del TRL 2 | Evidencia desarrollada en FishMon 365 |
 |---|---|
-| Artículos científicos directamente relacionados con la propuesta tecnológica | Se revisaron investigaciones sobre monitoreo IoT de calidad del agua, acuicultura y sistemas multiparámetro en la Sección 2. |
-| Estado del arte de la aplicación tecnológica | Se analizaron y compararon soluciones existentes relacionadas con sensores, IoT, transmisión de datos, visualización y alertas. |
-| Formulación del concepto tecnológico | Se definió FishMon 365 como una boya IoT autónoma para monitoreo multiparámetro y multinivel. |
+| Antecedentes científicos y tecnológicos relacionados con la propuesta | Se utilizaron los antecedentes revisados durante el TRL 1 como base para comparar y formular FishMon 365. |
+| Análisis de soluciones existentes | Se compararon sistemas IoT de calidad del agua y acuicultura con las características propuestas para FishMon 365. |
+| Formulación del concepto tecnológico | Se definió FishMon 365 como una boya IoT para monitoreo multiparámetro y multinivel. |
 | Arquitectura conceptual | Se establecieron un módulo flotante, un módulo sumergible, Arduino Nano, ESP32 con LoRa, sensores, mecanismo de movimiento y dashboard. |
 | Aplicación propuesta | El sistema se orienta al monitoreo de la calidad del agua en la crianza de trucha arco iris. |
-| Perfil o propuesta del proyecto | Se definieron el problema, objetivos, usuarios, propuesta tecnológica, resultados esperados, alcance y limitaciones. |
-| Análisis de patentabilidad y protección | Se realizó una búsqueda preliminar y comparación de antecedentes patentados relacionados con sistemas IoT de monitoreo acuícola y calidad del agua. |
+| Evidencias de diseño conceptual | Se desarrollaron matriz morfológica, bocetos, modelado 3D, diseño electrónico preliminar y propuesta de dashboard. |
+| Perfil o propuesta del proyecto | Se definieron problema, objetivos, usuarios, propuesta tecnológica, resultados esperados, alcance y limitaciones. |
+| Análisis de diferenciación | Se comparó FishMon 365 con antecedentes tecnológicos y patentes revisados previamente, identificando como elemento central el monitoreo multiparámetro y multinivel. |
 
 ## 10. Conclusión
 
