@@ -179,21 +179,13 @@ Se realizaron análisis estáticos lineales en **SimScale**, con la geometría m
 | Parámetro                           | Valor                 |
 | ----------------------------------- | --------------------- |
 | Tipo de análisis                    | Estático lineal (FEA) |
-| ---                                 | ---                   |
 | Material                            | ABS                   |
-| ---                                 | ---                   |
 | Módulo de elasticidad (E)           | 1.8 GPa               |
-| ---                                 | ---                   |
 | Coeficiente de Poisson (ν)          | 0.35                  |
-| ---                                 | ---                   |
 | Densidad                            | 1200 kg/m3            |
-| ---                                 | ---                   |
 | Límite elástico                     | 40 MPa                |
-| ---                                 | ---                   |
 | Contacto entre piezas (tapa–cuerpo) | Bonded (unido)        |
-| ---                                 | ---                   |
 | Criterio de falla                   | Esfuerzo de Von Mises |
-| ---                                 | ---                   |
 
 El factor de seguridad se calculó así:
 
@@ -210,19 +202,12 @@ Cada carga se calculó a partir de las condiciones de uso del dispositivo en est
 | Carga                            | Valor     | Origen                                                        |
 | -------------------------------- | --------- | ------------------------------------------------------------- |
 | Presión hidrostática en la sonda | 49 050 Pa | Profundidad máxima de 5 m (lista de exigencias)               |
-| ---                              | ---       | ---                                                           |
 | Presión sobre la boya            | 2 000 Pa  | Estimación conservadora de la parte sumergida                 |
-| ---                              | ---       | ---                                                           |
 | Fuerza de la corriente           | 2 N       | Arrastre con v = 0.3 m/s, velocidad típica en estanques       |
-| ---                              | ---       | ---                                                           |
 | Peso interno de la boya          | 10 N      | Masa estimada de 1 kg (motor, carrete, electrónica, batería)  |
-| ---                              | ---       | ---                                                           |
 | Fuerza máxima del cable          | 87 N      | Torque máximo del motor tras la reducción / radio del carrete |
-| ---                              | ---       | ---                                                           |
 | Fuerza en el diente de la corona | 22 N      | Torque máximo / radio de la corona                            |
-| ---                              | ---       | ---                                                           |
 | Empuje axial del sinfín          | 30 N      | Reacción del engranaje sobre los apoyos del sinfín            |
-| ---                              | ---       | ---                                                           |
 
 **Presión hidrostática:**
 
@@ -255,17 +240,11 @@ Se simularon seis casos de carga; en cada uno se fijó la zona por donde la piez
 | Caso | Pieza                     | Apoyo fijo                               | Cargas aplicadas                                                              |
 | ---- | ------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------- |
 | 1    | Sonda + tapa              | Punto de sujeción del cable              | Presión de 49 050 Pa en todas las caras exteriores                            |
-| ---  | ---                       | ---                                      | ---                                                                           |
 | 2    | Sonda + tapa              | Punto de sujeción del cable              | Presión de 49 050 Pa + 87 N de tirón del cable                                |
-| ---  | ---                       | ---                                      | ---                                                                           |
 | 3    | Boya (cuerpo + cono)      | Punta del cono (salida del cable)        | Presión de 2 000 Pa en el cono y el cilindro                                  |
-| ---  | ---                       | ---                                      | ---                                                                           |
 | 4    | Boya (cuerpo + cono)      | Punta del cono                           | 2 N laterales (corriente) + 10 N verticales (peso interno)                    |
-| ---  | ---                       | ---                                      | ---                                                                           |
 | 5    | Corona                    | Agujero central (eje)                    | 22 N tangenciales en un diente                                                |
-| ---  | ---                       | ---                                      | ---                                                                           |
 | 6    | Carcasa del motorreductor | Alojamientos de los tornillos de la base | 87 N en el apoyo del eje de la corona + 30 N axiales en los apoyos del sinfín |
-| ---  | ---                       | ---                                      | ---                                                                           |
 
 En los casos con tapa se usó contacto _bonded_ para representar el sellado entre la tapa y el cuerpo.
 
@@ -276,17 +255,11 @@ Todos los casos superaron el criterio de aceptación de FS>= 2; el más exigido 
 | Caso | Pieza                           | Esfuerzo máx. Von Mises (MPa) | Deformación máx. (mm) | FS   | Resultado |
 | ---- | ------------------------------- | ----------------------------- | --------------------- | ---- | --------- |
 | 1    | Sonda – presión a 5 m           | 7.1                           | 0.096                 | 5.6  | Resiste   |
-| ---  | ---                             | ---                           | ---                   | ---  | ---       |
 | 2    | Sonda – presión + cable 87 N    | 5.4                           | 0.13                  | 7.4  | Resiste   |
-| ---  | ---                             | ---                           | ---                   | ---  | ---       |
 | 3    | Boya – flotación                | 0.85                          | 0.04                  | 47   | Resiste   |
-| ---  | ---                             | ---                           | ---                   | ---  | ---       |
 | 4    | Boya – corriente + peso interno | 0.67                          | 0.025                 | 60   | Resiste   |
-| ---  | ---                             | ---                           | ---                   | ---  | ---       |
 | 5    | Corona – fuerza en el diente    | 5.1                           | 0.013                 | 7.9  | Resiste   |
-| ---  | ---                             | ---                           | ---                   | ---  | ---       |
 | 6    | Carcasa del motorreductor       | 2.05                          | 0.054                 | 19.5 | Resiste   |
-| ---  | ---                             | ---                           | ---                   | ---  | ---       |
 
 Las capturas de Von Mises y desplazamiento de cada caso se adjuntan como evidencia. En las imágenes de desplazamiento, el azul es la zona fija y el rojo el punto de mayor deformación; el rojo no indica falla.
 
