@@ -125,7 +125,14 @@ FishMon 365 estará conformado por dos módulos principales: un módulo sumergib
 
 ### 4.1 Caja negra del sistema
 
+
+<img width="1920" height="1080" alt="FishMon 365" src="https://github.com/user-attachments/assets/f6450f98-f4ad-41db-a94a-55970bbb262f" />
+
+
 ### 4.2 Esquema funcional de FishMon 365
+
+<img width="1920" height="1080" alt="FishMon 365 (1)" src="https://github.com/user-attachments/assets/194a18dc-925a-40f6-8919-becbcfe88873" />
+
 
 ### 4.3 Módulo sumergible
 
