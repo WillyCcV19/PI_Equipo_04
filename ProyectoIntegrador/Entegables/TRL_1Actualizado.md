@@ -214,7 +214,7 @@ El pH es un buen indicador de que el agua está cambiando químicamente, ya que 
 
 #### 2.6.1 ¿Qué es?
 
-La turbidez es la claridad del agua: qué tan cloudy u opaca está [[14]](#ref14). Se debe a partículas y sólidos suspendidos, como sedimentos arrastrados desde el suelo, que dispersan la luz que atraviesa el agua. En la práctica se mide haciendo pasar luz por la muestra y se reporta en NTU [[14]](#ref14).
+La turbidez se relaciona con la claridad del agua y expresa qué tan turbia u opaca se encuentra [[14]](#ref14). Se debe a partículas y sólidos suspendidos, como sedimentos arrastrados desde el suelo, que dispersan la luz que atraviesa el agua. En la práctica se mide haciendo pasar luz por la muestra y se reporta en NTU [[14]](#ref14).
 
 #### 2.6.2 ¿Por qué importa para la trucha?
 
