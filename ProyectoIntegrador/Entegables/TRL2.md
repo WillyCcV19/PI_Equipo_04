@@ -104,7 +104,7 @@ Las alternativas fueron seleccionadas mediante la matriz morfológica del proyec
 | pH | Sensor genérico de pH con amplificador personalizado |
 | Turbidez | Sensor genérico infrarrojo con fototransistor |
 | Conductividad | Circuito medidor personalizado basado en LM324 |
-| Temperatura | Termistor NTC 10K sumergible |
+| Temperatura | Termistor digital DS18B20 |
 | Oxígeno disuelto | DFRobot Gravity DO Sensor |
 
 Las señales obtenidas serán recibidas por el Arduino Nano, encargado de la adquisición de las mediciones. Posteriormente, la información será transferida al ESP32 con LoRa para su transmisión hacia el sistema de monitoreo.
@@ -227,17 +227,19 @@ Tras comparar las propuestas, se optó por el **Boceto 3** como diseño conceptu
 La configuración seleccionada también facilita la distribución de los componentes, el acceso para mantenimiento y la integración del mecanismo de descenso y elevación necesario para realizar mediciones en diferentes profundidades.
 
 <p align="center">
+  <img width="25%" alt="Boceto 1 seleccionado de FishMon 365" src="/Imagenes/func/DrawingJK.jpeg" />
+  &nbsp;&nbsp;&nbsp;
   <img width="44%" alt="Boceto 2 de FishMon 365" src="https://github.com/user-attachments/assets/875493d8-8769-4fc0-a317-f94a0b1b4d81" />
   &nbsp;&nbsp;&nbsp;
   <img width="25%" alt="Boceto 3 seleccionado de FishMon 365" src="https://github.com/user-attachments/assets/39c718a0-9542-4a4b-a9c8-16e2c408fc47" />
-  &nbsp;&nbsp;&nbsp;
-  <img width="25%" alt="Boceto 3 seleccionado de FishMon 365" src="/Imagenes/func/DrawingJK.jpeg" />
 </p>
 
 <p align="center">
-  <i>Boceto 2 — alternativa evaluada</i>
+  <i>Boceto 1 — Alternativa evaluada</i>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <i>Boceto 3 — diseño conceptual seleccionado</i>
+  <i>Boceto 2 — Alternativa evaluada</i>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <i>Boceto 3 — Diseño conceptual seleccionado</i>
 </p>
 
 ### 5.3 Modelado 3D
