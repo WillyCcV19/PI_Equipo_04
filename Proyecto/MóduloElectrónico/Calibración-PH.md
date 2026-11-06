@@ -1,6 +1,6 @@
 Unidades: mV
 
-### Amplificación X5
+### Amplificación X5 (Bias de 2.5V)
 |ph4|ph7|ph10|
 |--|--|--|
 |86|-6.2|-200|
@@ -10,7 +10,7 @@ Unidades: mV
 |87| -52| -214|
 
 
-### Amplificación X3
+### Amplificación X3 (Bias de 2.5V)
 |ph4|ph7|ph10|
 |-|-|-|
 |117| -60| -222|
@@ -19,6 +19,15 @@ Unidades: mV
 |95.7| -68| -230|
 |102| -63| -225|
 
+
+### Amplificación X1.5 (Bias de 1.5V, a utilizarse)
+|ph4|ph7|ph10|
+|-|-|-|
+|184|5|-170|
+|185|9|-171|
+|189|8|-171|
+|182|6|-170|
+|187|7|-171|
 
 - REF RIN
 - OUT NC
