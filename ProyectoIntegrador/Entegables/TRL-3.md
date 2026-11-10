@@ -13,96 +13,100 @@ Se propone un sistema de sensores sumergibles con profundidad controlable para r
 
 ### 1.2. Objetivo de la prueba de concepto
 
-Comprobar la viabilidad de medir tres de los cincos parámetros (conductividad, oxígeno disuelto y pH), evaluar el funcionamiento de los circuitos de acondicionamiento de señal y
-verificar la resistencia de las carcasas a la inmersión y exposición prolongada al agua.
+Comprobar la viabilidad de medir tres de los cinco parámetros (conductividad, oxígeno disuelto y pH), evaluar el funcionamiento de los circuitos de acondicionamiento de señal y verificar, de forma analítica, que las carcasas resisten las cargas de inmersión y de operación.
 
 ## 2. Pruebas de concepto
 
 ### 2.1. Simulación de los circuitos de acondicionamiento de señal
 
-Los siguientes circuitos fueron simulados para comprobar el correcto cálculo del valor de las resistencias en sus respectivos circuitos acondicionadores de señales. A partir de ello, fue posible calcular algunos valor a partir de señales ficticias.
+Los siguientes circuitos fueron simulados para comprobar el correcto cálculo del valor de las resistencias en sus respectivos circuitos acondicionadores de señal. A partir de ello, fue posible calcular algunos valores a partir de señales ficticias.
 
-#### 2.1.1. Acondicionamiento del sensor de pH:
+#### 2.1.1. Acondicionamiento del sensor de pH
 
 Se utilizó una tensión de referencia de 1.5 V para generar una tierra virtual, debido a las limitaciones en la salida del amplificador operacional CA3140. Alimentado con 5 V, este puede entregar señales aproximadamente entre 0 y 3 V, por lo que se decidió trabajar alrededor de una referencia de 1.5 V.
 
 Con una ganancia de 2.5, la señal máxima de entrada antes de alcanzar los límites de salida es de aproximadamente ±0.6 V respecto a la referencia. Considerando una respuesta de 0.06 V por unidad de pH, una variación de ±7 unidades respecto al pH 7 produciría una señal de aproximadamente ±0.42 V, manteniéndose dentro del rango de entrada establecido.
 
-En la siguiente imagen se observa una señal de entrada cuadrada que abarca el rango de operación del sensor de pH (±0.425 V), medida respecto a una referencia de 1.522 V. Al ser amplificada con una ganancia de 2.5, la señal de salida alcanza una amplitud de ±1.063 V alrededor de la misma referencia, obteniendo un valor máximo teórico de 2.585 V. Este valor es cercano al máximo de 2.686 V obtenido en la simulación, cuya diferencia podría deberse a un pico transitorio poco perceptible en la señal.
+En la Figura 1 se observa una señal de entrada cuadrada que abarca el rango de operación del sensor de pH (±0.425 V), medida respecto a una referencia de 1.522 V. Al ser amplificada con una ganancia de 2.5, la señal de salida alcanza una amplitud de ±1.063 V alrededor de la misma referencia, obteniendo un valor máximo teórico de 2.585 V. Este valor es cercano al máximo de 2.686 V obtenido en la simulación, cuya diferencia podría deberse a un pico transitorio poco perceptible en la señal.
 
-<img src="/Imagenes/ModuloElec/simulacion_ph.png" width="800"/>
+<p align="center">
+  <img src="/Imagenes/ModuloElec/simulacion_ph.png" width="800"/>
+  <br>
+  <em>Figura 1. Simulación del circuito de acondicionamiento del sensor de pH.</em>
+</p>
 
-#### 2.1.2. Acondicionamiento del sensor de Oxígeno disuelto
+#### 2.1.2. Acondicionamiento del sensor de oxígeno disuelto
 
-Se utilizó un amplificador no inversor con ganancia de 38.6 y una resistencia tipo "shunt" en la entrada de 7.5K para completar un divisor de voltaje con la celda galvánica simulada, como aquella presente en los sensores de oxígeno disuelto galvánicos (mandan un voltaje, pero tienen una alta impedancia).
+Se utilizó un amplificador no inversor con ganancia de 38.6 y una resistencia tipo *shunt* de 7.5 kΩ en la entrada, que completa un divisor de voltaje con la celda galvánica simulada. Este tipo de celda está presente en los sensores galvánicos de oxígeno disuelto, que entregan un voltaje pero tienen una alta impedancia.
 
-La intensidad máxima teórica que puede medir es de 5.19 microamperios (1.5V * 7500ohm/ganancia), pero con la celda galvánica simulada se está midiendo un voltaje de entrada de 23.8mV (0.5V * 7.5kohm/(150+7.5)kohm) con una corriente de 3.17 microamperios (23.8mV/7500ohm). Su salida es de 0.894V respecto a 1.5V y dividiendo entre la ganancia (38.6) obtenemos 23.2mV, lo cual es cercano al voltaje de entrada y nos puede permitir calcular la intensidad del sensor.
+La intensidad máxima teórica que puede medir es de 5.19 µA (1.5 V / 7500 Ω / 38.6). Con la celda galvánica simulada se mide un voltaje de entrada de 23.8 mV (0.5 V × 7.5 kΩ / (150 + 7.5) kΩ), con una corriente de 3.17 µA (23.8 mV / 7500 Ω). La salida es de 0.894 V respecto a 1.5 V; al dividirla entre la ganancia (38.6) se obtienen 23.2 mV, valor cercano al voltaje de entrada, lo que permite calcular la intensidad del sensor (Figura 2).
 
-<img src="/Imagenes/ModuloElec/simulacion_do.png" width="800"/>
+<p align="center">
+  <img src="/Imagenes/ModuloElec/simulacion_do.png" width="800"/>
+  <br>
+  <em>Figura 2. Simulación del circuito de acondicionamiento del sensor de oxígeno disuelto.</em>
+</p>
 
 #### 2.1.3. Acondicionamiento del sensor de conductividad
 
-Se utilizó un circuito para generar una señal pulsante de 100mV alrededor de una referencia de 3V. A esa "salida de señal pulsante" se lo alimentó a un divisor de voltaje compuesto por una resistencia conocida de 1000 ohms y una de prueba de 150 ohms (en la imagen fue colocada al revés), luego se pasó por un amplificador con ganancia 6.
+Se utilizó un circuito para generar una señal pulsante de 100 mV alrededor de una referencia de 3 V. Esta señal alimenta un divisor de voltaje compuesto por una resistencia conocida de 1000 Ω y una de prueba de 150 Ω (en la Figura 3 aparece colocada al revés); luego pasa por un amplificador con ganancia 6.
 
-Con las señales de "salida pulso respecto a ref", "salida de divisor respecto a ref" y "salida conductividad" podemos calcular la resistencia no conocida, pues estas señales son aquellas medidas del divisor de voltaje. Con:
-- Vin = "salida pulso respecto a ref" = 96.8mV
-- Vout = "salida de divisor respecto a ref" = 12.9mV
-- Vout * 6 = "salida conductividad" = 79.4 mV
-- R1 = 1000 Ohm
-podemos calcular que R2 es 153 ohms (1000ohm*Vout/(Vin-Vout)), cercano a 150 ohms.
+Con las señales "salida pulso respecto a ref", "salida de divisor respecto a ref" y "salida conductividad" se puede calcular la resistencia desconocida, pues son las medidas del divisor de voltaje:
+- Vin = "salida pulso respecto a ref" = 96.8 mV
+- Vout = "salida de divisor respecto a ref" = 12.9 mV
+- Vout × 6 = "salida conductividad" = 79.4 mV
+- R1 = 1000 Ω
 
-Debido a que la conductividad es la inversa de la resistencia, medir con precisión una resistencia utilizando pulsos de excitación es indicador de que el sensor de conductividad puede realizar bien su trabajo.
+Con R2 = R1 × Vout / (Vin − Vout) se obtiene R2 = 153 Ω, cercano a los 150 Ω reales.
 
-<img src="/Imagenes/ModuloElec/simulacion_cond.png" width="800"/>
+Debido a que la conductividad es la inversa de la resistencia, medir con precisión una resistencia utilizando pulsos de excitación indica que el sensor de conductividad puede realizar bien su trabajo.
+
+<p align="center">
+  <img src="/Imagenes/ModuloElec/simulacion_cond.png" width="800"/>
+  <br>
+  <em>Figura 3. Simulación del circuito de acondicionamiento del sensor de conductividad.</em>
+</p>
 
 ### 2.2. Caracterización y calibración de sensores
 
-## Objetivo: Obtener voltajes en condiciones de 100% y 0% de oxígeno disuelto en agua
-- Caracterizar de manera preliminar la respuesta del sensor de oxígeno disuelto en aire, agua aireada y agua con sulfito de sodio
-- Identificar lecturas de referencia para una posterior calibración
-
-## Detalles
-- Para lograr una concentración cercana (no verificada) de 0% oxígeno disuelto se disolvió 1 gramo de sulfito de sodio en 30mL de agua destilada (era la unidad mínima de mi balanza)
-- Para lograr un aproximado (no verificado) de 100% se agitó el agua vigorosamente y se lo dejó airear numerosas veces
-- El osciloscopio posee 8 cuadros de altura (con precisión variable por cada uno)
-- Las mediciones son de RMS hechas durante 12 segundos (12 cuadros horizontales, 1 segundo cada uno)
-
 #### 2.2.1. Oxígeno disuelto
-El objetivo fue caracterizar de manera preliminar la respuesta del sensor de oxígeno disuelto en aire, agua aireada y agua con sulfito de sodio e identificar lecturas de referencia para una posterior calibración.
 
-Detalles:
-- Para lograr una concentración cercana (no verificada) de 0% oxígeno disuelto se disolvió 1 gramo de sulfito de sodio en 30mL de agua destilada (era la unidad mínima de mi balanza)
-- Para lograr un aproximado (no verificado) de 100% se agitó el agua vigorosamente y se lo dejó airear numerosas veces
-- El osciloscopio posee 8 cuadros de altura (con precisión variable por cada uno)
-- Las mediciones son de RMS hechas durante 12 segundos (12 cuadros horizontales, 1 segundo cada uno)
+El objetivo fue caracterizar de manera preliminar la respuesta del sensor de oxígeno disuelto (DFRobot Gravity SEN0237) en agua aireada y en agua con sulfito de sodio, e identificar lecturas de referencia para una posterior calibración en los puntos de 0% y 100% de saturación.
+
+Detalles de la prueba:
+- Para lograr una concentración cercana (no verificada) a 0% de oxígeno disuelto se disolvió 1 g de sulfito de sodio en 30 mL de agua destilada (1 g era la resolución mínima de la balanza utilizada).
+- Para lograr un valor aproximado (no verificado) de 100% se agitó el agua vigorosamente y se dejó airear varias veces.
+- El osciloscopio posee 8 cuadros de altura, con escala variable por cuadro.
+- Las mediciones son valores RMS tomados durante 12 segundos (12 cuadros horizontales, 1 segundo cada uno).
 
 <table>
   <tr>
     <td align="center">
       <img src="/Imagenes/Simulaciones/img2.jpeg" width="100%">
       <br>
-      <em>Materiales para medir DO con el sensor de DF Robot Gravity DO - SEN237</em>
+      <em>Figura 4. Materiales para medir OD con el sensor DFRobot Gravity SEN0237.</em>
     </td>
     <td align="center">
       <img src="/Imagenes/Simulaciones/img5.jpeg" width="100%">
       <br>
-      <em>Amplificador provisional para comprobar el funcionamiento del sensor DO anterior</em>
+      <em>Figura 5. Amplificador provisional para comprobar el funcionamiento del sensor de OD.</em>
     </td>
   </tr>
 </table>
 
-#### Resultados: 
+**Resultados**
 
-Al sumergirlo en solución con sulfito de sodio (0% oxígeno disuelto)
-| Tiempo | Voltaje (mv) | Precisión por cuadro (mv) |
+Sensor sumergido en solución con sulfito de sodio (≈ 0% de oxígeno disuelto):
+
+| Tiempo (min:s) | Voltaje (mV) | Escala por cuadro (mV) |
 |--|--|--|
 |1:30|47|500|
 |2:00|26|500|
 |2:30|9|500|
 
-Al dejarlo en agua aireada
+Sensor en agua aireada (≈ 100% de saturación):
 
-| Tiempo | Voltaje (mv) | Precisión por cuadro (mv) |
+| Tiempo (min:s) | Voltaje (mV) | Escala por cuadro (mV) |
 |--|--|--|
 |1:30|1200|500|
 |2:30|1030|500|
@@ -110,41 +114,55 @@ Al dejarlo en agua aireada
 |4:30|870|500|
 |5:00|850|500|
 
-#### 2.2.2 pH
+En la solución con sulfito, la lectura baja hasta unos 9 mV en 2.5 minutos, cercana al cero esperado. En agua aireada, la lectura desciende y tiende a estabilizarse alrededor de 850 mV después de unos 5 minutos. Estos dos valores sirven como puntos de referencia preliminares de 0% y 100% para la calibración, considerando que el sensor necesita varios minutos para estabilizarse.
 
-Se utilizó un amplificador con ganancias de 3 y 5:
+#### 2.2.2. pH
 
-ph
-<img src="/Imagenes/Simulaciones/img3.jpeg" width="800"/>
+Se utilizó un amplificador con ganancias de 3 y 5 y se midieron soluciones tampón de pH 4, 7 y 10 (Figura 6).
 
-#### Resultados:
+<p align="center">
+  <img src="/Imagenes/Simulaciones/img3.jpeg" width="800"/>
+  <br>
+  <em>Figura 6. Montaje para la medición del sensor de pH.</em>
+</p>
 
-### Amplificación X5
-|ph4|ph7|ph10|
+**Resultados** (lecturas de voltaje de salida, en mV)
+
+Amplificación ×5:
+
+|pH 4|pH 7|pH 10|
 |--|--|--|
 |86|-6.2|-200|
-|86.8| -31.6| -199|
-|86.2| -47.2| -206|
-|87| -47.6| -208|
-|87| -52| -214|
+|86.8|-31.6|-199|
+|86.2|-47.2|-206|
+|87|-47.6|-208|
+|87|-52|-214|
+|**Promedio: 86.6**|**Promedio: -36.9**|**Promedio: -205.4**|
 
+Amplificación ×3:
 
-### Amplificación X3
-|ph4|ph7|ph10|
-|-|-|-|
-|117| -60| -222|
-|106| -52.6| -214|
-|94| -67.3| -218|
-|95.7| -68| -230|
-|102| -63| -225|
+|pH 4|pH 7|pH 10|
+|--|--|--|
+|117|-60|-222|
+|106|-52.6|-214|
+|94|-67.3|-218|
+|95.7|-68|-230|
+|102|-63|-225|
+|**Promedio: 102.9**|**Promedio: -62.2**|**Promedio: -221.8**|
+
+En ambas ganancias el voltaje disminuye de forma ordenada al aumentar el pH, lo que confirma que el sensor responde a los cambios de pH. Con ganancia ×5, la lectura en pH 7 deriva de −6.2 a −52 mV, por lo que el sensor requiere más tiempo de estabilización antes de registrar el valor. Estos promedios servirán como puntos de calibración de 3 valores (pH 4, 7 y 10).
 
 #### 2.2.3. Conductividad
 
-Los resultados fueron obtenidos con el siguiente circuito ensamblado. Consultar con el esquemático en la sección de 2.1.3. Acondicionamiento del sensor de conductividad.
+Los resultados se obtuvieron con el circuito ensamblado de la Figura 7, cuyo esquemático se muestra en la sección 2.1.3.
 
-<img src="/Imagenes/Simulaciones/img4.jpeg" width="800"/>
+<p align="center">
+  <img src="/Imagenes/Simulaciones/img4.jpeg" width="800"/>
+  <br>
+  <em>Figura 7. Circuito de conductividad ensamblado.</em>
+</p>
 
-|Resistencia (ohms)|Resistencia medida|Error |
+|Resistencia real (Ω)|Resistencia medida (Ω)|Error (%)|
 |------------------|------------------|------|
 |5000              |4950              |-1    |
 |3330              |3290              |-1.2  |
@@ -157,9 +175,9 @@ Los resultados fueron obtenidos con el siguiente circuito ensamblado. Consultar 
 |170               |160               |-5.9  |
 |128               |121               |-4.7  |
 
-El error de medición no supera el +- 10%
+El error de medición no supera el ±10% en todo el rango probado. Entre 510 Ω y 5000 Ω el error es menor a ±1.2%; por debajo de 255 Ω aumenta hasta un 7.1%, ya que con resistencias bajas la caída de voltaje en el divisor es pequeña y pesan más el ruido y la resolución de la medición. Este rango de resistencias bajas corresponde al agua de mayor conductividad.
 
-### 2.3. Simulación estructurales de las piezas de carcasa
+### 2.3. Simulaciones estructurales de las piezas de carcasa
 
 Las simulaciones estáticas demuestran de forma analítica que las piezas estructurales críticas de FISHMON 365 resisten las cargas de operación. Los resultados dependen del material con que se fabrique cada pieza, por lo que la sonda y el carrete se evaluaron con distintos materiales (ABS, PETG y TPU).
 
@@ -173,7 +191,7 @@ Piezas evaluadas:
 - Carrete: enrolla el cable que sube y baja la sonda; va montado en el eje del motor.
 - Carcasa del motorreductor: sostiene los ejes y rodamientos del mecanismo de izado.
 
-## Metodología
+#### 2.3.1. Metodología
 
 Se realizaron análisis estáticos lineales en **SimScale**, con la geometría modelada en **Onshape** y exportada en formato STEP.
 
@@ -196,7 +214,7 @@ FS = Límite elástico del material / Esfuerzo máximo (40 MPa ABS, 50 MPa PETG,
 
 Criterio de aceptación: FS >=2, para cubrir defectos de impresión 3D, desgaste y variaciones del material.
 
-## Justificación de las cargas
+#### 2.3.2. Justificación de las cargas
 
 Cada carga se calculó a partir de las condiciones de uso del dispositivo en estanques de trucha, tomando el caso más desfavorable.
 
@@ -239,7 +257,7 @@ La fuerza de 87 N corresponde al peor caso, cuando el motor trabaja a su torque 
 
 T = 87 N \* 0.0175 m = 1.52 N.m. Se aplicó este valor en el caso del carrete como condición conservadora.
 
-## Casos simulados
+#### 2.3.3. Casos simulados
 
 Se simularon siete casos de carga; en cada uno se fijó la zona por donde la pieza se sujeta en el ensamble real.
 
@@ -255,7 +273,7 @@ Se simularon siete casos de carga; en cada uno se fijó la zona por donde la pie
 
 En la sonda se usó contacto _bonded_ entre el cuerpo, la tapa y la empaquetadura para representar el sellado. Los casos 1, 2 y 7 se simularon con distintos materiales para comparar su comportamiento.
 
-## Resultados
+#### 2.3.4. Resultados
 
 Los resultados dependen del material. Con materiales rígidos (ABS y PETG) todos los casos superan el criterio de FS >= 2. Con TPU, que es un material flexible, la sonda resiste la presión pero se deforma mucho más, y en el carrete el esfuerzo en el agujero del eje supera su límite elástico.
 
@@ -286,11 +304,11 @@ Además, se revisó el esfuerzo de Von Mises solo en la empaquetadura de la sond
 La empaquetadura trabaja por debajo del límite de su material en todos los casos, por lo que mantiene el sellado entre las piezas.
 
 
-## Evidencia gráfica
+#### 2.3.5. Evidencia gráfica
 
 Capturas de SimScale de cada caso: primero el esfuerzo de Von Mises y al lado el desplazamiento. En la sonda se agrega el esfuerzo de Von Mises solo en la empaquetadura.
 
-#### 2.3.1. Presión de la sonda sumergida a 5 metros
+##### Caso 1. Presión de la sonda sumergida a 5 metros
 <table>
   <tr>
     <td align="center">
@@ -328,7 +346,7 @@ Capturas de SimScale de cada caso: primero el esfuerzo de Von Mises y al lado el
   </tr>
 </table>
 
-#### 2.3.2. Sonda a presión y con un cable que ejerce 87 N
+##### Caso 2. Sonda a presión y con un cable que ejerce 87 N
 <table>
   <tr>
     <td align="center">
@@ -366,7 +384,7 @@ Capturas de SimScale de cada caso: primero el esfuerzo de Von Mises y al lado el
   </tr>
 </table>
 
-#### 2.3.3. Flotación de la boya
+##### Caso 3. Flotación de la boya
 <table>
   <tr>
     <td align="center">
@@ -380,7 +398,7 @@ Capturas de SimScale de cada caso: primero el esfuerzo de Von Mises y al lado el
   </tr>
 </table>
 
-#### 2.3.4. Flotación de la boya con una corriente y fuerza de gravedad
+##### Caso 4. Flotación de la boya con una corriente y fuerza de gravedad
 <table>
   <tr>
     <td align="center">
@@ -394,7 +412,7 @@ Capturas de SimScale de cada caso: primero el esfuerzo de Von Mises y al lado el
   </tr>
 </table>
 
-#### 2.3.5. Prueba de fuerza en el diente del motorreductor
+##### Caso 5. Prueba de fuerza en el diente del motorreductor
 <table>
   <tr>
     <td align="center">
@@ -408,7 +426,7 @@ Capturas de SimScale de cada caso: primero el esfuerzo de Von Mises y al lado el
   </tr>
 </table>
 
-#### 2.3.6. Prueba de carcasa del motorreductor
+##### Caso 6. Prueba de carcasa del motorreductor
 <table>
   <tr>
     <td align="center">
@@ -422,7 +440,7 @@ Capturas de SimScale de cada caso: primero el esfuerzo de Von Mises y al lado el
   </tr>
 </table>
 
-#### 2.3.7. Prueba del carrete con el tirón del cable y el torque del motor
+##### Caso 7. Prueba del carrete con el tirón del cable y el torque del motor
 <table>
   <tr>
     <td align="center">
@@ -450,7 +468,7 @@ Capturas de SimScale de cada caso: primero el esfuerzo de Von Mises y al lado el
   </tr>
 </table>
 
-#### 2.3.8. Conclusión de las simulaciones de las carcasas
+#### 2.3.6. Conclusión de las simulaciones estructurales
 El análisis demuestra que el concepto estructural de FISHMON 365 es viable, y que el comportamiento de cada pieza depende del material con que se fabrique.
 
 - **Función de sellado y resistencia al agua:** la sonda soporta la presión a 5 m con todos los materiales evaluados. Con materiales rígidos (PETG y ABS) la deformación es menor a 0.3 mm; con TPU llega a 7.7–15.9 mm. La empaquetadura trabaja por debajo de su límite en todos los casos y mantiene el sellado.
@@ -459,10 +477,21 @@ El análisis demuestra que el concepto estructural de FISHMON 365 es viable, y q
 
 Con estos resultados, la prueba analítica de las funciones estructurales críticas queda cubierta, lo que respalda el nivel TRL 3.
 
-
 ## 3. Conclusión e indicadores del cumplimiento del TRL-3
 
 Los resultados obtenidos respaldan la viabilidad técnica de los principios de funcionamiento de FISHMON 365. Las simulaciones eléctricas y las pruebas preliminares de los sensores demuestran que es posible acondicionar y medir las señales de conductividad, oxígeno disuelto y pH. Asimismo, las simulaciones estructurales confirman que las piezas críticas soportan las cargas previstas con materiales rígidos (ABS y PETG), con factores de seguridad superiores al mínimo establecido.
 
+| Indicador | Criterio de cumplimiento | Evidencia | Estado |
+|---|---|---|---|
+| Acondicionamiento de pH | Salida dentro del rango de 0–3 V del amplificador | Simulación 2.1.1 | Cumple |
+| Acondicionamiento de oxígeno disuelto | Voltaje recuperado ≈ voltaje de entrada de la celda | Simulación 2.1.2 (23.2 mV vs 23.8 mV) | Cumple |
+| Acondicionamiento de conductividad | Resistencia calculada ≈ resistencia real | Simulación 2.1.3 (153 Ω vs 150 Ω) | Cumple |
+| Respuesta del sensor de oxígeno disuelto | Lecturas diferenciadas en 0% y 100% de saturación | Prueba 2.2.1 (≈ 9 mV vs ≈ 850 mV) | Cumple |
+| Respuesta del sensor de pH | Voltaje distinto y ordenado para pH 4, 7 y 10 | Prueba 2.2.2 | Cumple |
+| Medición de conductividad | Error ≤ ±10% | Prueba 2.2.3 (error máx. 7.1%) | Cumple |
+| Resistencia estructural | FS ≥ 2 con las cargas más desfavorables | Simulaciones 2.3 (ABS y PETG) | Cumple |
+| Resistencia a la inmersión prolongada | Sin ingreso de agua tras inmersión prolongada | — | Pendiente (prueba experimental) |
+
 En conjunto, estas evidencias respaldan la viabilidad del concepto y permiten justificar el nivel de madurez tecnológica TRL 3, aunque todavía será necesario realizar pruebas experimentales integradas y de resistencia al agua para validar el funcionamiento del sistema completo.
+
 
