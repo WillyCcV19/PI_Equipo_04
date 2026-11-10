@@ -161,37 +161,38 @@ El error de medición no supera el +- 10%
 
 ### 2.3. Simulación estructurales de las piezas de carcasa
 
-Las simulaciones estáticas demuestran de forma analítica que las piezas estructurales críticas de FISHMON 365 resisten las cargas de operación, con un factor de seguridad mínimo de 5.6.
+Las simulaciones estáticas demuestran de forma analítica que las piezas estructurales críticas de FISHMON 365 resisten las cargas de operación. Los resultados dependen del material con que se fabrique cada pieza, por lo que la sonda y el carrete se evaluaron con distintos materiales (ABS, PETG y TPU).
 
 El nivel TRL 3 exige una prueba de concepto analítica y/o experimental de las funciones críticas. En este proyecto, la función crítica estructural es que el dispositivo soporte el agua, la corriente y el izado de la sonda sin romperse ni deformarse. Así mismo, este documento cubre la parte analítica de esa prueba mediante análisis por elementos finitos (FEA).
 
 Piezas evaluadas:
 
-- Sonda (carcasa de sensores + tapa): queda sumergida hasta 5 m.
+- Sonda (cuerpo + tapa + empaquetadura de sellado): queda sumergida hasta 5 m.
 - Boya (cuerpo + cono): flota y aloja el mecanismo y la electrónica.
 - Corona del reductor sinfín–corona: transmite el torque del motor.
+- Carrete: enrolla el cable que sube y baja la sonda; va montado en el eje del motor.
 - Carcasa del motorreductor: sostiene los ejes y rodamientos del mecanismo de izado.
 
 ## Metodología
 
 Se realizaron análisis estáticos lineales en **SimScale**, con la geometría modelada en **Onshape** y exportada en formato STEP.
 
-| Parámetro                           | Valor                 |
-| ----------------------------------- | --------------------- |
-| Tipo de análisis                    | Estático lineal (FEA) |
-| Material                            | ABS                   |
-| Módulo de elasticidad (E)           | 1.8 GPa               |
-| Coeficiente de Poisson (ν)          | 0.35                  |
-| Densidad                            | 1200 kg/m3            |
-| Límite elástico                     | 40 MPa                |
-| Contacto entre piezas (tapa–cuerpo) | Bonded (unido)        |
-| Criterio de falla                   | Esfuerzo de Von Mises |
+| Parámetro                                          | Valor                                    |
+| -------------------------------------------------- | ---------------------------------------- |
+| Tipo de análisis                                   | Estático lineal (FEA)                    |
+| Material                                           | ABS, PETG y TPU 95A                      |
+| Módulo de elasticidad (E)                          | ABS 1.8 GPa · PETG 2.0 GPa · TPU 26 MPa  |
+| Coeficiente de Poisson (ν)                         | ABS 0.35 · PETG 0.38 · TPU 0.45          |
+| Densidad                                           | ABS 1200 · PETG 1270 · TPU 1220 kg/m3    |
+| Límite elástico                                    | ABS 40 MPa · PETG 50 MPa · TPU 8.6 MPa   |
+| Contacto entre piezas (cuerpo–empaquetadura–tapa)  | Bonded (unido)                           |
+| Criterio de falla                                  | Esfuerzo de Von Mises                    |
 
 El factor de seguridad se calculó así:
 
 <img src="/Imagenes/Simulaciones/form1.png" width="300"/>
 
-FS=40 MPa/Esfuerzo máximo
+FS = Límite elástico del material / Esfuerzo máximo (40 MPa ABS, 50 MPa PETG, 8.6 MPa TPU)
 
 Criterio de aceptación: FS >=2, para cubrir defectos de impresión 3D, desgaste y variaciones del material.
 
@@ -199,15 +200,16 @@ Criterio de aceptación: FS >=2, para cubrir defectos de impresión 3D, desgaste
 
 Cada carga se calculó a partir de las condiciones de uso del dispositivo en estanques de trucha, tomando el caso más desfavorable.
 
-| Carga                            | Valor     | Origen                                                        |
-| -------------------------------- | --------- | ------------------------------------------------------------- |
-| Presión hidrostática en la sonda | 49 050 Pa | Profundidad máxima de 5 m (lista de exigencias)               |
-| Presión sobre la boya            | 2 000 Pa  | Estimación conservadora de la parte sumergida                 |
-| Fuerza de la corriente           | 2 N       | Arrastre con v = 0.3 m/s, velocidad típica en estanques       |
-| Peso interno de la boya          | 10 N      | Masa estimada de 1 kg (motor, carrete, electrónica, batería)  |
-| Fuerza máxima del cable          | 87 N      | Torque máximo del motor tras la reducción / radio del carrete |
-| Fuerza en el diente de la corona | 22 N      | Torque máximo / radio de la corona                            |
-| Empuje axial del sinfín          | 30 N      | Reacción del engranaje sobre los apoyos del sinfín            |
+| Carga                            | Valor     | Origen                                                           |
+| -------------------------------- | --------- | ---------------------------------------------------------------- |
+| Presión hidrostática en la sonda | 49 050 Pa | Profundidad máxima de 5 m (lista de exigencias)                  |
+| Presión sobre la boya            | 2 000 Pa  | Estimación conservadora de la parte sumergida                    |
+| Fuerza de la corriente           | 2 N       | Arrastre con v = 0.3 m/s, velocidad típica en estanques          |
+| Peso interno de la boya          | 10 N      | Masa estimada de 1 kg (motor, carrete, electrónica, batería)     |
+| Fuerza máxima del cable          | 87 N      | Torque máximo del motor tras la reducción / radio del carrete    |
+| Fuerza en el diente de la corona | 22 N      | Torque máximo / radio de la corona                               |
+| Empuje axial del sinfín          | 30 N      | Reacción del engranaje sobre los apoyos del sinfín               |
+| Torque en el carrete             | 1.52 N·m  | Fuerza máxima del cable × radio del tambor del carrete (17.5 mm) |
 
 **Presión hidrostática:**
 
@@ -233,51 +235,95 @@ F= 1.1/0.0125= 87N
 
 La fuerza de 87 N corresponde al peor caso, cuando el motor trabaja a su torque máximo; por ejemplo, si la sonda se atasca. En operación normal, el cable solo soporta el peso aparente de la sonda en el agua (2–3 N).
 
+**Torque en el carrete** (tambor de 35 mm de diámetro):
+
+T = 87 N \* 0.0175 m = 1.52 N.m. Se aplicó este valor en el caso del carrete como condición conservadora.
+
 ## Casos simulados
 
-Se simularon seis casos de carga; en cada uno se fijó la zona por donde la pieza se sujeta en el ensamble real.
+Se simularon siete casos de carga; en cada uno se fijó la zona por donde la pieza se sujeta en el ensamble real.
 
-| Caso | Pieza                     | Apoyo fijo                               | Cargas aplicadas                                                              |
-| ---- | ------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------- |
-| 1    | Sonda + tapa              | Punto de sujeción del cable              | Presión de 49 050 Pa en todas las caras exteriores                            |
-| 2    | Sonda + tapa              | Punto de sujeción del cable              | Presión de 49 050 Pa + 87 N de tirón del cable                                |
-| 3    | Boya (cuerpo + cono)      | Punta del cono (salida del cable)        | Presión de 2 000 Pa en el cono y el cilindro                                  |
-| 4    | Boya (cuerpo + cono)      | Punta del cono                           | 2 N laterales (corriente) + 10 N verticales (peso interno)                    |
-| 5    | Corona                    | Agujero central (eje)                    | 22 N tangenciales en un diente                                                |
-| 6    | Carcasa del motorreductor | Alojamientos de los tornillos de la base | 87 N en el apoyo del eje de la corona + 30 N axiales en los apoyos del sinfín |
+| Caso | Pieza                        | Apoyo fijo                               | Cargas aplicadas                                                              |
+| ---- | ---------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------- |
+| 1    | Sonda + tapa + empaquetadura | Punto de sujeción del cable              | Presión de 49 050 Pa en todas las caras exteriores                            |
+| 2    | Sonda + tapa + empaquetadura | Punto de sujeción del cable              | Presión de 49 050 Pa + 87 N de tirón del cable                                |
+| 3    | Boya (cuerpo + cono)         | Punta del cono (salida del cable)        | Presión de 2 000 Pa en el cono y el cilindro                                  |
+| 4    | Boya (cuerpo + cono)         | Punta del cono                           | 2 N laterales (corriente) + 10 N verticales (peso interno)                    |
+| 5    | Corona                       | Agujero central (eje)                    | 22 N tangenciales en un diente                                                |
+| 6    | Carcasa del motorreductor    | Alojamientos de los tornillos de la base | 87 N en el apoyo del eje de la corona + 30 N axiales en los apoyos del sinfín |
+| 7    | Carrete                      | Agujero en D (eje del motor)             | 87 N del cable en el tambor + torque de 1.52 N·m                              |
 
-En los casos con tapa se usó contacto _bonded_ para representar el sellado entre la tapa y el cuerpo.
+En la sonda se usó contacto _bonded_ entre el cuerpo, la tapa y la empaquetadura para representar el sellado. Los casos 1, 2 y 7 se simularon con distintos materiales para comparar su comportamiento.
 
 ## Resultados
 
-Todos los casos superaron el criterio de aceptación de FS>= 2; el más exigido fue la sonda a 5 m de profundidad, con FS = 5.6.
+Los resultados dependen del material. Con materiales rígidos (ABS y PETG) todos los casos superan el criterio de FS >= 2. Con TPU, que es un material flexible, la sonda resiste la presión pero se deforma mucho más, y en el carrete el esfuerzo en el agujero del eje supera su límite elástico.
 
-| Caso | Pieza                           | Esfuerzo máx. Von Mises (MPa) | Deformación máx. (mm) | FS   | Resultado |
-| ---- | ------------------------------- | ----------------------------- | --------------------- | ---- | --------- |
-| 1    | Sonda – presión a 5 m           | 7.1                           | 0.096                 | 5.6  | Resiste   |
-| 2    | Sonda – presión + cable 87 N    | 5.4                           | 0.13                  | 7.4  | Resiste   |
-| 3    | Boya – flotación                | 0.85                          | 0.04                  | 47   | Resiste   |
-| 4    | Boya – corriente + peso interno | 0.67                          | 0.025                 | 60   | Resiste   |
-| 5    | Corona – fuerza en el diente    | 5.1                           | 0.013                 | 7.9  | Resiste   |
-| 6    | Carcasa del motorreductor       | 2.05                          | 0.054                 | 19.5 | Resiste   |
+| Caso | Pieza                                                  | Esfuerzo máx. Von Mises (MPa) | Deformación máx. (mm) | FS   | Resultado       |
+| ---- | ------------------------------------------------------ | ----------------------------- | --------------------- | ---- | --------------- |
+| 1    | Sonda – presión a 5 m (PETG)                           | 5.82                          | 0.25                  | 8.6  | Resiste         |
+| 1    | Sonda – presión a 5 m (TPU)                            | 5.09                          | 15.9                  | 1.7  | Resiste, FS < 2 |
+| 2    | Sonda – presión + cable 87 N (ABS + empaquetadura TPU) | 2.67                          | 0.13                  | 15   | Resiste         |
+| 2    | Sonda – presión + cable 87 N (todo TPU)                | 2.49                          | 7.7                   | 3.5  | Resiste         |
+| 3    | Boya – flotación                                       | 0.85                          | 0.04                  | 47   | Resiste         |
+| 4    | Boya – corriente + peso interno                        | 0.67                          | 0.025                 | 60   | Resiste         |
+| 5    | Corona – fuerza en el diente                           | 5.1                           | 0.013                 | 7.9  | Resiste         |
+| 6    | Carcasa del motorreductor                              | 2.05                          | 0.054                 | 19.5 | Resiste         |
+| 7    | Carrete – cable 87 N + torque (ABS)                    | 16.2                          | 0.14                  | 2.5  | Resiste         |
+| 7    | Carrete – cable 87 N + torque (TPU)                    | 14.6                          | 9.4                   | 0.6  | No resiste      |
 
 Las capturas de Von Mises y desplazamiento de cada caso se adjuntan como evidencia. En las imágenes de desplazamiento, el azul es la zona fija y el rojo el punto de mayor deformación; el rojo no indica falla.
+
+Además, se revisó el esfuerzo de Von Mises solo en la empaquetadura de la sonda, que es la pieza que asegura el sellado:
+
+| Caso | Material de la sonda           | Von Mises máx. en la empaquetadura (MPa) | FS de la empaquetadura |
+| ---- | ------------------------------ | ---------------------------------------- | ---------------------- |
+| 1    | PETG (empaquetadura de caucho) | 0.10                                     | ≈ 50 (caucho, 5 MPa)   |
+| 1    | TPU                            | 3.80                                     | 2.3                    |
+| 2    | ABS + empaquetadura TPU        | 0.18                                     | ≈ 48                   |
+| 2    | Todo TPU                       | 1.94                                     | 4.4                    |
+
+La empaquetadura trabaja por debajo del límite de su material en todos los casos, por lo que mantiene el sellado entre las piezas.
 
 
 ## Evidencia gráfica
 
-Capturas de SimScale de cada caso: primero el esfuerzo de Von Mises y debajo el desplazamiento.
+Capturas de SimScale de cada caso: primero el esfuerzo de Von Mises y al lado el desplazamiento. En la sonda se agrega el esfuerzo de Von Mises solo en la empaquetadura.
 
 #### 2.3.1. Presión de la sonda sumergida a 5 metros
 <table>
   <tr>
     <td align="center">
-      <img src="/Imagenes/Modulo_mecanico/caso1_1.png" width="100%">
+      <img src="/Imagenes/Modulo_mecanico/caso1_petg_vm.jpg" width="100%">
       <br>
+      <em>PETG – Von Mises</em>
     </td>
     <td align="center">
-      <img src="/Imagenes/Modulo_mecanico/caso1_2.png" width="100%">
+      <img src="/Imagenes/Modulo_mecanico/caso1_petg_desp.jpg" width="100%">
       <br>
+      <em>PETG – Desplazamiento</em>
+    </td>
+    <td align="center">
+      <img src="/Imagenes/Modulo_mecanico/caso1_petg_emp.jpg" width="100%">
+      <br>
+      <em>PETG – Von Mises en la empaquetadura</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="/Imagenes/Modulo_mecanico/caso1_tpu_vm.jpg" width="100%">
+      <br>
+      <em>TPU – Von Mises</em>
+    </td>
+    <td align="center">
+      <img src="/Imagenes/Modulo_mecanico/caso1_tpu_desp.jpg" width="100%">
+      <br>
+      <em>TPU – Desplazamiento</em>
+    </td>
+    <td align="center">
+      <img src="/Imagenes/Modulo_mecanico/caso1_tpu_emp.jpg" width="100%">
+      <br>
+      <em>TPU – Von Mises en la empaquetadura</em>
     </td>
   </tr>
 </table>
@@ -286,12 +332,36 @@ Capturas de SimScale de cada caso: primero el esfuerzo de Von Mises y debajo el 
 <table>
   <tr>
     <td align="center">
-      <img src="/Imagenes/Modulo_mecanico/caso2_1.png" width="100%">
+      <img src="/Imagenes/Modulo_mecanico/caso2_abs_vm.jpg" width="100%">
       <br>
+      <em>ABS + empaquetadura TPU – Von Mises</em>
     </td>
     <td align="center">
-      <img src="/Imagenes/Modulo_mecanico/caso2_2.png" width="100%">
+      <img src="/Imagenes/Modulo_mecanico/caso2_abs_desp.jpg" width="100%">
       <br>
+      <em>ABS + empaquetadura TPU – Desplazamiento</em>
+    </td>
+    <td align="center">
+      <img src="/Imagenes/Modulo_mecanico/caso2_abs_emp.jpg" width="100%">
+      <br>
+      <em>ABS + empaquetadura TPU – Von Mises en la empaquetadura</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="/Imagenes/Modulo_mecanico/caso2_tpu_vm.jpg" width="100%">
+      <br>
+      <em>Todo TPU – Von Mises</em>
+    </td>
+    <td align="center">
+      <img src="/Imagenes/Modulo_mecanico/caso2_tpu_desp.jpg" width="100%">
+      <br>
+      <em>Todo TPU – Desplazamiento</em>
+    </td>
+    <td align="center">
+      <img src="/Imagenes/Modulo_mecanico/caso2_tpu_emp.jpg" width="100%">
+      <br>
+      <em>Todo TPU – Von Mises en la empaquetadura</em>
     </td>
   </tr>
 </table>
@@ -352,16 +422,47 @@ Capturas de SimScale de cada caso: primero el esfuerzo de Von Mises y debajo el 
   </tr>
 </table>
 
-#### 2.3.7. Conclusión de las simulaciones de las carcasas
-El análisis demuestra que el concepto estructural de FISHMON 365 es viable: con las cargas más desfavorables previstas, ninguna pieza supera el límite elástico del ABS.
-    • Función de sellado y resistencia al agua: la sonda soporta la presión a 5 m con FS = 5.6 y la tapa no se separa del cuerpo.
-    • Función de flotación: la boya resiste la presión, la corriente y el peso interno con margen amplio (FS >=47).
-    • Función de izado: la corona y la carcasa soportan el torque máximo del motor, y la deformación de la carcasa (0.054 mm) no compromete la alineación del engranaje.
+#### 2.3.7. Prueba del carrete con el tirón del cable y el torque del motor
+<table>
+  <tr>
+    <td align="center">
+      <img src="/Imagenes/Modulo_mecanico/caso7_abs_vm.jpg" width="100%">
+      <br>
+      <em>ABS – Von Mises</em>
+    </td>
+    <td align="center">
+      <img src="/Imagenes/Modulo_mecanico/caso7_abs_desp.jpg" width="100%">
+      <br>
+      <em>ABS – Desplazamiento</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="/Imagenes/Modulo_mecanico/caso7_tpu_vm.jpg" width="100%">
+      <br>
+      <em>TPU – Von Mises</em>
+    </td>
+    <td align="center">
+      <img src="/Imagenes/Modulo_mecanico/caso7_tpu_desp.jpg" width="100%">
+      <br>
+      <em>TPU – Desplazamiento</em>
+    </td>
+  </tr>
+</table>
+
+#### 2.3.8. Conclusión de las simulaciones de las carcasas
+El análisis demuestra que el concepto estructural de FISHMON 365 es viable, y que el comportamiento de cada pieza depende del material con que se fabrique.
+
+- **Función de sellado y resistencia al agua:** la sonda soporta la presión a 5 m con todos los materiales evaluados. Con materiales rígidos (PETG y ABS) la deformación es menor a 0.3 mm; con TPU llega a 7.7–15.9 mm. La empaquetadura trabaja por debajo de su límite en todos los casos y mantiene el sellado.
+- **Función de flotación:** la boya resiste la presión, la corriente y el peso interno con margen amplio (FS >=47).
+- **Función de izado:** la corona y la carcasa soportan el torque máximo del motor, y la deformación de la carcasa (0.054 mm) no compromete la alineación del engranaje. El carrete en ABS soporta el tirón del cable con FS = 2.5; en TPU, el esfuerzo en el agujero del eje (14.6 MPa) supera el límite elástico del material.
+
 Con estos resultados, la prueba analítica de las funciones estructurales críticas queda cubierta, lo que respalda el nivel TRL 3.
+
 
 ## 3. Conclusión e indicadores del cumplimiento del TRL-3
 
-Los resultados obtenidos respaldan la viabilidad técnica de los principios de funcionamiento de FISHMON 365. Las simulaciones eléctricas y las pruebas preliminares de los sensores demuestran que es posible acondicionar y medir las señales de conductividad, oxígeno disuelto y pH. Asimismo, las simulaciones estructurales confirman que las piezas críticas soportan las cargas previstas, con factores de seguridad superiores al mínimo establecido.
+Los resultados obtenidos respaldan la viabilidad técnica de los principios de funcionamiento de FISHMON 365. Las simulaciones eléctricas y las pruebas preliminares de los sensores demuestran que es posible acondicionar y medir las señales de conductividad, oxígeno disuelto y pH. Asimismo, las simulaciones estructurales confirman que las piezas críticas soportan las cargas previstas con materiales rígidos (ABS y PETG), con factores de seguridad superiores al mínimo establecido.
 
 En conjunto, estas evidencias respaldan la viabilidad del concepto y permiten justificar el nivel de madurez tecnológica TRL 3, aunque todavía será necesario realizar pruebas experimentales integradas y de resistencia al agua para validar el funcionamiento del sistema completo.
 
