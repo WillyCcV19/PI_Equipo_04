@@ -1,5 +1,3 @@
-FORMULARIO N° OPI –       *(A llenar por la oficina)*
-
 FORMULARIO N° OPI – *(A llenar por la oficina)*
 
 **FORMULARIO DE DECLARACIÓN DE INVENCIÓN[^1]**
