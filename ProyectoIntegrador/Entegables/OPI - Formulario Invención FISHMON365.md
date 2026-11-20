@@ -13,7 +13,7 @@ La información contenida en este documento es de carácter confidencial y sólo
 | Código SIDISI[^3] |  | No registra. Proyecto desarrollado en el curso Proyecto Integrador (Ingeniería informática, UPCH). |  |  |  |  |  |
 | ----- | :---- | ----- | :---: | :---- | ----- | :---: | :---: |
 | Título de proyecto SIDISI |  | No aplica |  |  |  |  |  |
-| Fechas de proyecto |  | Inicio | 18/08 |  |  | Fin | 3/12 |
+| Fechas de proyecto |  | Inicio | 18/08/2026 |  |  | Fin | 3/12/2026 |
 | Título de la invención |  | **Sistema autónomo multiparámetro y multinivel para el monitoreo de la calidad del agua en la crianza de trucha arco iris** |  |  |  |  |  |
 | Título corto de la invención (si aplica) |  | **FishMon 365** |  |  |  |  |  |
 | Resumen (describir brevemente el problema técnico que resuelve la invención, y luego la invención en sí). |  | La crianza de trucha arco iris requiere vigilar variables de calidad del agua que pueden variar con la profundidad; las mediciones manuales o realizadas en un solo punto pueden no representar adecuadamente la columna de agua. FishMon 365 propone una boya IoT compuesta por un módulo flotante y un módulo sumergible móvil que mide oxígeno disuelto, temperatura, pH, turbidez y conductividad en distintos niveles de profundidad. El módulo sumergible integra sensores y un Arduino Nano; el módulo flotante integra un ESP32 con LoRa, alimentación y un mecanismo de descenso/elevación. Los datos se asocian con la profundidad de medición, se transmiten a un receptor/gateway y se visualizan en un dashboard con historial y alertas. La propuesta busca integrar monitoreo multiparámetro y multinivel en una arquitectura adaptable a diferentes instalaciones acuícolas. |  |  |  |  |  |
