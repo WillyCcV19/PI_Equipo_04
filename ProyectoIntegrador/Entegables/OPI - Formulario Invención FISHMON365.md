@@ -162,11 +162,11 @@ Indicar alguna otra información que consideren relevante
 
 | N° | Apellidos, nombres | Regalías\* | Firma | Fecha |
 | ----- | ----- | :---: | ----- | ----- |
-| 1 | Kenneth Karita John | 28% | ![][image1] | 19/11/2026 |
-| 2 | Pauccara Huancara Eber | 18% | ![][image2] | 19/11/2026 |
-| 3 | Quispitongo Leon Verenisse Mary | 18% | ![][image3] | 19/11/26 |
-| 4 | Ccatamayo Vasquez Willy Simeon | 18% | ![][image4] | 19/11/26 |
-| 5 | Cabrera Cermeno Ruben Andre | 18% | ![][image5] | 19/11/26 |
+| 1 | Kenneth Karita John | 28% | <img width="200" height="235" alt="image" src="https://github.com/user-attachments/assets/13523347-f16c-4b66-b21d-1d7ed11cdf4d" /> | 19/11/2026 |
+| 2 | Pauccara Huancara Eber | 18% | <img width="216" height="247" alt="image" src="https://github.com/user-attachments/assets/7e1af4cc-a9d3-4bcb-94f7-a15f6c971687" /> | 19/11/2026 |
+| 3 | Quispitongo Leon Verenisse Mary | 18% | <img width="279" height="209" alt="image" src="https://github.com/user-attachments/assets/717fcb39-812b-4591-b2a5-e7f8f15c58f7" /> | 19/11/26 |
+| 4 | Ccatamayo Vasquez Willy Simeon | 18% | <img width="247" height="268" alt="image" src="https://github.com/user-attachments/assets/236da023-0483-4882-b4c4-29c1ca35f269" /> | 19/11/26 |
+| 5 | Cabrera Cermeno Ruben Andre | 18% | <img width="212" height="224" alt="image" src="https://github.com/user-attachments/assets/38cd623b-2333-4388-acb6-b7a7f35a17be" />| 19/11/26 |
 
 \*Detalle del porcentaje acordado entre los inventores UPCH para la distribución de las regalías en caso de que se explote la invención. (La distribución debe sumar 100%).
 
@@ -195,9 +195,3 @@ Indicar alguna otra información que consideren relevante
 [^9]: Se define como terceros en el presente documento a cualquier otra persona natural o jurídica, incluyendo organismos del Estado.
 
 [^10]: Es una organización u oficina responsable de resolver las solicitudes de patentes en sus distintas instancias, aplicando la normativa que rige la Propiedad Intelectual en su territorio.
-
-[image1]: <PEGAR_AQUÍ_LA_IMAGEN_O_RUTA_DE_LA_FIRMA_DE_KENNETH>
-[image2]: <PEGAR_AQUÍ_LA_IMAGEN_O_RUTA_DE_LA_FIRMA_DE_EBER>
-[image3]: <PEGAR_AQUÍ_LA_IMAGEN_O_RUTA_DE_LA_FIRMA_DE_VERENISSE>
-[image4]: <PEGAR_AQUÍ_LA_IMAGEN_O_RUTA_DE_LA_FIRMA_DE_WILLY>
-[image5]: <PEGAR_AQUÍ_LA_IMAGEN_O_RUTA_DE_LA_FIRMA_DE_RUBEN>
